@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      "Finance-Starter"
+title:      "Finance Starter"
 subtitle:   " \"Hello Finance\""
 date:       2022-01-21 17:00:00
 author:     "Calvchen"
