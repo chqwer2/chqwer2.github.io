@@ -17,4 +17,11 @@ tags:
 
 ## In the Very Beginning
 
-I feel a little lazy to write this today, but I will do it maybe tomorrow…
+Sigmund Freud and B.F.Skinner, who even you are not a psychological guy will probably knew it. They have profound influence in psy-research and also on me.
+
+I had read some books about psychology and found out it is my field of insterest. Not the kind of research field insterest, but the insterest of knowing why people are thinking in certain way.
+
+So I took the [Introduction of Psychology](https://www.coursera.org/learn/introduction-psychology/home/welcome) and finished months ago. It is a very practical course for the starter, illustrating inside-out some theories of Freud, Skinner and Piaget, also some appealing experiments and probably explaination on how and why people behave in some ways given specific environment. 
+
+Unfortunately, I lost my notes of it, but it also gives me another chances to review this facinating course. 
+
