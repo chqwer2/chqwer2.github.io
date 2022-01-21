@@ -1,19 +1,20 @@
 ---
 layout:     post
-title:      "Psychology Starter"
-subtitle:   " \"Hello Psychology\""
-date:       2022-01-21 17:00:00
+title:      "Game Theory Starter"
+subtitle:   " \"Hello Game Theory\""
+date:       2022-01-21 19:00:00
 author:     "Calvchen"
 header-img: "img/post-bg-2015.jpg"
 catalog: true
 tags:
-    - Psychology
+    - Game Theory
     - Starter
+
 
 
 ---
 
-> “Yeah, Let’s go Psychology. ”
+> “Yeah, Let’s go Game Theory. ”
 
 ## In the Very Beginning
 

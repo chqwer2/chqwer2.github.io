@@ -8,7 +8,7 @@ header-img: "img/post-bg-2015.jpg"
 catalog: true
 tags:
     - Engagement
-    - Start
+    - Starter
     - List
 
 
@@ -21,6 +21,16 @@ tags:
 2022-01-21 18:00:00 Updated 
 
 [Have Fun with Emoji Unicode](https://apps.timwhitlock.info/emoji/tables/unicode#block-6c-other-additional-symbols)
+
+
+
+#### Books
+
+- How to make Friends and Influence People
+
+
+
+#### Courses
 
 ##### Coursera
 
@@ -50,11 +60,14 @@ tags:
 
 ##### Others
 
-- 
-- [Stanford CS234 Reinforcement Learning](https://www.youtube.com/watch?v=E3f2Camj0Is&list=PLoROMvodv4rOSOPzutgyCTapiGlY2Nd8u&index=3)
-  - Week 3
+- [Stanford CS224N: NLP](https://www.youtube.com/watch?v=8rXD5-xhemo)
+  - Week1
 
-- [Fast.AI]
+- [Stanford CS234: Reinforcement Learning](https://www.youtube.com/watch?v=E3f2Camj0Is&list=PLoROMvodv4rOSOPzutgyCTapiGlY2Nd8u&index=3)
+  - Week 3
+- [Fast.AI](https://course.fast.ai/videos/?lesson=7)
+  - Week 1
+
 
 #### Kaggle
 
