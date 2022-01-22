@@ -2,7 +2,7 @@
 layout:     post
 title:      "Game Theory Starter"
 subtitle:   " \"Hello Game Theory\""
-date:       2022-01-21 19:00:00
+date:       2022-01-22 00:05:00
 author:     "Calvchen"
 header-img: "img/post-bg-2015.jpg"
 catalog: true
