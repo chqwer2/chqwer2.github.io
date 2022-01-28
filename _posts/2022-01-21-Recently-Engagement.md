@@ -53,9 +53,11 @@ tags:
 - Leadership and Communication, Havard
   - [Exercising Leadership: Foundational Principles](https://learning.edx.org/course/course-v1:HarvardX+LEAD1x+2T2021a/home)
   - [Rhetoric: The Art of Persuasive Writing and Public Speaking](https://learning.edx.org/course/course-v1:HarvardX+AESTHINT15+3T2021/block-v1:HarvardX+AESTHINT15+3T2021+type@sequential+block@e2861d0cf83344bbacfb7db8775f5a03/block-v1:HarvardX+AESTHINT15+3T2021+type@vertical+block@caa831b525ae4ba1912c2cc9fcd2029a)
-
 - [MicroMasters® Program in Finance](https://www.edx.org/micromasters/mitx-finance?index=product), MIT (5)
 - [MicroMasters® Program in Statistics and Data Science](https://www.edx.org/micromasters/mitx-statistics-and-data-science?index=product&queryID=385aba5c598a6ba86e4e11e2751b725c&position=2), MIT (5)
+  - Probability (Uncertainty and Data), Starts at Jan 31 2022 
+  - Fundamentals of Statistics, Starts at Jan 24 2022
+
 - [MicroMasters® Program in Algorithms and Data Structures](https://www.edx.org/micromasters/ucsandiegox-algorithms-and-data-structures?index=product&queryID=3dc103aca69b999d437df4ed1bfbbcdc&position=1), US San Diego (8)
 
 ##### Others
@@ -71,8 +73,11 @@ tags:
 
 #### Kaggle
 
-- [Tensorflow-Great-Barrier-Reef](https://www.kaggle.com/c/tensorflow-great-barrier-reef) End in Feb 14 2022
-- 
+- [Tensorflow-Great-Barrier-Reef](https://www.kaggle.com/c/tensorflow-great-barrier-reef), End in Feb 14 2022
 
 
+
+#### Study Link
+
+- [Data Science Specialization](http://datasciencespecialization.github.io/)
 

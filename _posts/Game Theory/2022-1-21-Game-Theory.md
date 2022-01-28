@@ -14,7 +14,7 @@ tags:
 
 ---
 
-> “Yeah, Let’s go Game Theory. ”
+> “Let’s go Game Theory. ”
 
 ## In the Very Beginning
 
