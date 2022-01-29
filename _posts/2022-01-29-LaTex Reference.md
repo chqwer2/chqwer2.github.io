@@ -21,7 +21,7 @@ tags:
 
 | Renders                                                      | LaTeX markup                 | Renders                                                      | LaTeX markup               |
 | ------------------------------------------------------------ | ---------------------------- | ------------------------------------------------------------ | -------------------------- |
-| $a \quad b \qquad c$                                         | `\quad \qquad`               | $a\!b\,c\:d\;e$                                              | `\ +i,:;_`                 |
+| $$a \quad b \qquad c$$                                       | `\quad \qquad`               | $a\!b\,c\:d\;e$                                              | `\ +i,:;_`                 |
 | $\mathcal{ABC}$                                              | `\mathcal`                   | $\mathscr{ABC}$                                              | `\mathscr`                 |
 | $\mathbb{ABC}$                                               | `\mathbb`                    | $\mathfrak{ABC}$                                             | `\mathfrak`                |
 | $\mathsf{ABC}$                                               | `\mathsf`                    | $\mathbf{ABC}$                                               | `\mathbf`                  |
