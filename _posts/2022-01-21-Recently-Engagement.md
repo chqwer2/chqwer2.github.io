@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      "Recent Engagement"
+title:      "Recent Engagements"
 subtitle:   " \"A place reminds me to keep learning\""
 date:       2022-01-22 00:10:00
 author:     "Calvchen"
@@ -14,7 +14,7 @@ tags:
 
 ---
 
-> “Yeah, so many interesting things ahead of me. ”
+> “Inspire. Engage. Excel. ”
 
 ## Just a List
 
