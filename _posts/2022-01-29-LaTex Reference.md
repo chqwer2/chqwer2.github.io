@@ -85,7 +85,7 @@ $$
 | ![{\displaystyle \leftharpoonup }](https://wikimedia.org/api/rest_v1/media/math/render/svg/ed5b4c2f2ab115005b72687fbe5e6584497a0b17) | `\leftharpoonup  `  | ![{\displaystyle \rightharpoonup }](https://wikimedia.org/api/rest_v1/media/math/render/svg/912c85b375886509f9bf323bab01cd1d3d0b96c1) | `\rightharpoonup`    |
 | ![{\displaystyle \leftharpoondown }](https://wikimedia.org/api/rest_v1/media/math/render/svg/8572e40b7a21ea071eac94f81458238d9f096ff8) | `\leftharpoondown ` | ![{\displaystyle \rightharpoondown }](https://wikimedia.org/api/rest_v1/media/math/render/svg/b3b850cb314e0167a03944481381f8a0401506d8) | `\rightharpoondown`  |
 
-## Miscellaneous symbols
+### Miscellaneous symbols
 
 | Renders                                                      | LaTeX markup   | Renders                                                      | LaTeX markup  |
 | ------------------------------------------------------------ | -------------- | ------------------------------------------------------------ | ------------- |
