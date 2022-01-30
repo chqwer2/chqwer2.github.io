@@ -19,29 +19,36 @@ tags:
 
 ### Text
 
-| Renders                                                      | LaTeX markup                 | Renders                                                      | LaTeX markup               |
-| ------------------------------------------------------------ | ---------------------------- | ------------------------------------------------------------ | -------------------------- |
-| $a \quad b \qquad c$                                         | `\quad \qquad`               | $a\!b\,c\:d\;e$                                              | `\ +i,:;_`                 |
-| $\mathcal{ABC}$                                              | `\mathcal`                   | $\mathscr{ABC}$                                              | `\mathscr`                 |
-| $\mathbb{ABC}$                                               | `\mathbb`                    | $\mathfrak{ABC}$                                             | `\mathfrak`                |
-| $\mathsf{ABC}$                                               | `\mathsf`                    | $\mathbf{ABC}$                                               | `\mathbf`                  |
-| $\ell$                                                       | `\ell`                       | $\log \lg \ln$                                               | `\log \lg \ln`             |
-| $\ldots  \cdots$                                             | `\ldots cdots`               | $\vdots \ddots$                                              | `\vdots ddots`             |
-| $\vec a$                                                     | `\vec`                       | $\hat a$                                                     | `\hat`                     |
-| $\check a$                                                   | `\check`                     | $\breve a$                                                   | `\breve`                   |
-| $\tilde{a}$                                                  | `\tilde`                     | $\widetilde{a}$                                              | `\widetilde`               |
-| $\overline{a+b}$                                             | `\overline`                  | $\underline{a+b}$                                            | `\underline`               |
-| $\underset {\theta }{X} $                                    | `\underset \overset `        | $\overset{\theta }{X}$                                       | `\overset`                 |
-| $\enclose{horizontalstrike}{a}\ \enclose{verticalstrike}{a}$ | `\enclose{horizontalstrike}` | $\enclose{updiagonalstrike}{a} \enclose{downdiagonalstrike}{a}$ | `up/down + diagonalstrike` |
-| $\enclose{updiagonalstrike,downdiagonalstrike}{a}$           | `up,downdiagonalstrike`      |                                                              |                            |
-| $\color{red}{\text{red}}$                                    | `\color{red}`                | $\color{teal}{teal}$                                         | `teal`                     |
+| Renders                   | LaTeX markup          | Renders                | LaTeX markup   |
+| ------------------------- | --------------------- | ---------------------- | -------------- |
+| $a \quad b \qquad c$      | `\quad \qquad`        | $a\!b\,c\:d\;e$        | `\ +i,:;_`     |
+| $\mathcal{ABC}$           | `\mathcal`            | $\mathscr{ABC}$        | `\mathscr`     |
+| $\mathbb{ABC}$            | `\mathbb`             | $\mathfrak{ABC}$       | `\mathfrak`    |
+| $\mathsf{ABC}$            | `\mathsf`             | $\mathbf{ABC}$         | `\mathbf`      |
+| $\ell$                    | `\ell`                | $\log \lg \ln$         | `\log \lg \ln` |
+| $\ldots  \cdots$          | `\ldots cdots`        | $\vdots \ddots$        | `\vdots ddots` |
+| $\vec a$                  | `\vec`                | $\hat a$               | `\hat`         |
+| $\check a$                | `\check`              | $\breve a$             | `\breve`       |
+| $\tilde{a}$               | `\tilde`              | $\widetilde{a}$        | `\widetilde`   |
+| $\overline{a+b}$          | `\overline`           | $\underline{a+b}$      | `\underline`   |
+| $\underset {\theta }{X} $ | `\underset \overset ` | $\overset{\theta }{X}$ | `\overset`     |
+| $\color{red}{\text{red}}$ | `\color{red}`         | $\color{teal}{teal}$   | `teal`         |
 
-$\color{grey}{grey}\ \color{purple}{purple}\ \color{maroon}{maroon}\ \color{olive}{olive}\ \color{silver}{silver}\ \color{navy}{navy}\ \color{lime}{lime}$
+Color offered: $\color{grey}{grey}\ \color{purple}{purple}\ \color{maroon}{maroon}\ \color{olive}{olive}\ \color{silver}{silver}\ \color{navy}{navy}\ \color{lime}{lime}$
 
-`\overbrace{a + \underbrace{b+c}_{1.0} + d}^{2.0}`
+Markup `\overbrace{a + \underbrace{b+c}_{1.0} + d}^{2.0}` will render below:
+
+
 $$
 \overbrace{a+\underbrace{b+c}_{1.0}+d}^{2.0}
 $$
+
+
+The enclose package haven’t provided…
+
+| $$\enclose{horizontalstrike}{a}\ \enclose{verticalstrike}{a}$$ | `\enclose{horizontalstrike}` | $\enclose{updiagonalstrike}{a} \enclose{downdiagonalstrike}{a}$ | `up/down + diagonalstrike` |
+| ------------------------------------------------------------ | ---------------------------- | ------------------------------------------------------------ | -------------------------- |
+| $\enclose{updiagonalstrike,downdiagonalstrike}{a}$           | `up,downdiagonalstrike`      |                                                              |                            |
 
 ### Greek Letters
 
