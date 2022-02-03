@@ -19,22 +19,21 @@ tags:
 
 ### Text
 
-| Renders                   | LaTeX markup          | Renders                | LaTeX markup   |
-| ------------------------- | --------------------- | ---------------------- | -------------- |
-| $a \quad b \qquad c$      | `\quad \qquad`        | $a\!b\,c\:d\;e$        | `\ +i,:;_`     |
-| $\mathcal{ABC}$           | `\mathcal`            | $\mathscr{ABC}$        | `\mathscr`     |
-| $\mathbb{ABC}$            | `\mathbb`             | $\mathfrak{ABC}$       | `\mathfrak`    |
-| $\mathsf{ABC}$            | `\mathsf`             | $\mathbf{ABC}$         | `\mathbf`      |
-| $\ell$                    | `\ell`                | $\log \lg \ln$         | `\log \lg \ln` |
-| $\ldots  \cdots$          | `\ldots cdots`        | $\vdots \ddots$        | `\vdots ddots` |
-| $\vec a$                  | `\vec`                | $\hat a$               | `\hat`         |
-| $\check a$                | `\check`              | $\breve a$             | `\breve`       |
-| $\tilde{a}$               | `\tilde`              | $\widetilde{a}$        | `\widetilde`   |
-| $\overline{a+b}$          | `\overline`           | $\underline{a+b}$      | `\underline`   |
-| $\underset {\theta }{X} $ | `\underset \overset ` | $\overset{\theta }{X}$ | `\overset`     |
-| $\color{red}{\text{red}}$ | `\color{red}`         | $\color{teal}{teal}$   | `teal`         |
+| Renders                                         | LaTeX markup          | Renders                   | LaTeX markup     |
+| ----------------------------------------------- | --------------------- | ------------------------- | ---------------- |
+| $a \quad b \qquad c$                            | `\quad \qquad`        | $a\!b\,c\:d\;e$           | `\ +i,:;_`       |
+| $\mathcal{ABC}$                                 | `\mathcal`            | $\mathscr{ABC}$           | `\mathscr`       |
+| $\mathbb{ABC}$                                  | `\mathbb`             | $\mathfrak{ABC}$          | `\mathfrak`      |
+| $\mathsf{ABC}$                                  | `\mathsf`             | $\mathbf{ABC}$            | `\mathbf`        |
+| $\ell\ \Re\ \mho$                               | `\ell \Re \mho`       | $\log \lg \ln$            | `\log \lg \ln`   |
+| $\ldots  \cdots$                                | `\ldots cdots`        | $\vdots \ddots$           | `\vdots ddots`   |
+| $\bar a\ \vec a\ \hat a$                        | `\bar \vec \hat`      | $\tilde{a} \widetilde{a}$ | `\tilde \wide+X` |
+| $$                                              | ``                    | $\acute{a}\  \grave{a}$   | `\acute \grave`  |
+| $\check a \  \breve a$                          | `\check \breve`       | $\dot a \ \ddot a$        | `\dot \ddot`     |
+| $\overline{a+b}$                                | `\overline`           | $\underline{a+b}$         | `\underline`     |
+| $\underset {\theta }{X}\ \overset{\theta }{X} $ | `\underset \overset ` | $$                        | `\overset`       |
 
-Color offered: $\color{grey}{grey}\ \color{purple}{purple}\ \color{maroon}{maroon}\ \color{olive}{olive}\ \color{silver}{silver}\ \color{navy}{navy}\ \color{lime}{lime}$
+Color offered: $\color{grey}{grey}\ \color{purple}{purple}\ \color{maroon}{maroon}\ \color{olive}{olive}\ \color{silver}{silver}\ \color{navy}{navy}\ \color{lime}{lime} \color{teal}{teal}$
 
 Markup `\overbrace{a + \underbrace{b+c}_{1.0} + d}^{2.0}` will render below:
 
@@ -75,22 +74,22 @@ The enclose package haven’t provided…
 | $\sqrt[y]{X}$ | `\sqrt[y]`   | $\lim_{n \to \infty}$ | `\lim`       |
 | $\int$        | `\int`       | $\oint$               | `\oint`      |
 | $\sqrt{X}$    | `\sqrt`      | $\iiint$              | `\iiint`     |
+| $\propto $    | `\propto `   | $\approx$             | `\approx`    |
+| $\pmod{m}$    | `\pmod`      | $a \bmod b$           | `\bmod`      |
 
 ### Arrows
 
-| Renders                                                      | LaTeX markup        | Renders                                                      | LaTeX markup         |
-| ------------------------------------------------------------ | ------------------- | ------------------------------------------------------------ | -------------------- |
-| ![{\displaystyle \leftarrow }](https://wikimedia.org/api/rest_v1/media/math/render/svg/3c0fb4bce772117bbaf55b7ca1539ceff9ae218c) | `\leftarrow`        | ![{\displaystyle \Leftarrow }](https://wikimedia.org/api/rest_v1/media/math/render/svg/682eb97b10e06ba3d2dcc642ecd753d34dbb4ef9) | `\Leftarrow`         |
-| ![{\displaystyle \rightarrow }](https://wikimedia.org/api/rest_v1/media/math/render/svg/53e574cc3aa5b4bf5f3f5906caf121a378eef08b) | `\rightarrow`       | $\Longrightarrow$                                            | `\Longrightarrow`    |
-| ![{\displaystyle \leftrightarrow }](https://wikimedia.org/api/rest_v1/media/math/render/svg/046b918c43e05caf6624fe9b676c69ec9cd6b892) | `\leftrightarrow`   | ![{\displaystyle \rightleftharpoons }](https://wikimedia.org/api/rest_v1/media/math/render/svg/1c37b981df851b9e54e489e017b1481e37d418f3) | `\rightleftharpoons` |
-| ![{\displaystyle \uparrow }](https://wikimedia.org/api/rest_v1/media/math/render/svg/ddb20b28c74cdaa09e1f101d426441da1996072f) | `\uparrow`          | ![{\displaystyle \downarrow }](https://wikimedia.org/api/rest_v1/media/math/render/svg/4618f22b0f780805eb94bb407578d9bc9487947a) | `\downarrow`         |
-| ![{\displaystyle \Uparrow \;}](https://wikimedia.org/api/rest_v1/media/math/render/svg/ab6790d39f21b1711e5d0a4850402a03d7c04a15) | `\Uparrow`          | ![{\displaystyle \Downarrow }](https://wikimedia.org/api/rest_v1/media/math/render/svg/98d4f1eaabe2639c9eb02780fadd623acd216612) | `\Downarrow`         |
-| ![{\displaystyle \Leftrightarrow \;}](https://wikimedia.org/api/rest_v1/media/math/render/svg/3e7562bb3e33ee1b3c7baf8c24ca413a55914de2) | `\Leftrightarrow `  | ![{\displaystyle \Updownarrow }](https://wikimedia.org/api/rest_v1/media/math/render/svg/c2dfaf6c3bec677ed3666d6cd91648833837c620) | `\Updownarrow`       |
-| ![{\displaystyle \mapsto }](https://wikimedia.org/api/rest_v1/media/math/render/svg/bc09de045e7d82eef9fe078e7e7606576640c11b) | `\mapsto`           | ![{\displaystyle \longmapsto \;}](https://wikimedia.org/api/rest_v1/media/math/render/svg/ed4db1c8963b8c7bd2df2d0f919d54b0d0e0282c) | `\longmapsto`        |
-| ![{\displaystyle \nearrow }](https://wikimedia.org/api/rest_v1/media/math/render/svg/13726ca48b64be8035bbf69dedc5de51b6c59b62) | `\nearrow`          | ![{\displaystyle \searrow }](https://wikimedia.org/api/rest_v1/media/math/render/svg/c086f3b8ec7a49977877c105da5f386531d5775a) | `\searrow`           |
-| ![{\displaystyle \swarrow }](https://wikimedia.org/api/rest_v1/media/math/render/svg/b4fafa2f8a9f4c7b1c1adcf090888097ddde887d) | `\swarrow `         | ![{\displaystyle \nwarrow }](https://wikimedia.org/api/rest_v1/media/math/render/svg/8477be47a1b75007f7f62bb406e08f5405366f2a) | `\nwarrow`           |
-| ![{\displaystyle \leftharpoonup }](https://wikimedia.org/api/rest_v1/media/math/render/svg/ed5b4c2f2ab115005b72687fbe5e6584497a0b17) | `\leftharpoonup  `  | ![{\displaystyle \rightharpoonup }](https://wikimedia.org/api/rest_v1/media/math/render/svg/912c85b375886509f9bf323bab01cd1d3d0b96c1) | `\rightharpoonup`    |
-| ![{\displaystyle \leftharpoondown }](https://wikimedia.org/api/rest_v1/media/math/render/svg/8572e40b7a21ea071eac94f81458238d9f096ff8) | `\leftharpoondown ` | ![{\displaystyle \rightharpoondown }](https://wikimedia.org/api/rest_v1/media/math/render/svg/b3b850cb314e0167a03944481381f8a0401506d8) | `\rightharpoondown`  |
+| Renders                                                      | LaTeX markup           | Renders                                                      | LaTeX markup         |
+| ------------------------------------------------------------ | ---------------------- | ------------------------------------------------------------ | -------------------- |
+| $\leftarrow \Leftarrow$                                      | `\l/Leftarrow`         | $$                                                           | `\Leftarrow`         |
+| $\rightarrow\ \Longrightarrow$                               | `\rightarrow Long+X `  | $\rightleftharpoons$                                         | `\rightleftharpoons` |
+| $\uparrow \ \Uparrow$                                        | `\u/Uparrow`           | $\downarrow \ \Downarrow$                                    | `\d/Downarrow`       |
+| $\leftrightarrow\ \Leftrightarrow\ \Updownarrow$             | `\Leftright/Updown+X ` |                                                              | `\`                  |
+| ![{\displaystyle \mapsto }](https://wikimedia.org/api/rest_v1/media/math/render/svg/bc09de045e7d82eef9fe078e7e7606576640c11b) | `\mapsto Long+X`       |                                                              |                      |
+| ![{\displaystyle \nearrow }](https://wikimedia.org/api/rest_v1/media/math/render/svg/13726ca48b64be8035bbf69dedc5de51b6c59b62) | `\nearrow`             | ![{\displaystyle \searrow }](https://wikimedia.org/api/rest_v1/media/math/render/svg/c086f3b8ec7a49977877c105da5f386531d5775a) | `\searrow`           |
+| ![{\displaystyle \swarrow }](https://wikimedia.org/api/rest_v1/media/math/render/svg/b4fafa2f8a9f4c7b1c1adcf090888097ddde887d) | `\swarrow `            | ![{\displaystyle \nwarrow }](https://wikimedia.org/api/rest_v1/media/math/render/svg/8477be47a1b75007f7f62bb406e08f5405366f2a) | `\nwarrow`           |
+| ![{\displaystyle \leftharpoonup }](https://wikimedia.org/api/rest_v1/media/math/render/svg/ed5b4c2f2ab115005b72687fbe5e6584497a0b17) | `\leftharpoonup  `     | ![{\displaystyle \rightharpoonup }](https://wikimedia.org/api/rest_v1/media/math/render/svg/912c85b375886509f9bf323bab01cd1d3d0b96c1) | `\rightharpoonup`    |
+| ![{\displaystyle \leftharpoondown }](https://wikimedia.org/api/rest_v1/media/math/render/svg/8572e40b7a21ea071eac94f81458238d9f096ff8) | `\leftharpoondown `    | ![{\displaystyle \rightharpoondown }](https://wikimedia.org/api/rest_v1/media/math/render/svg/b3b850cb314e0167a03944481381f8a0401506d8) | `\rightharpoondown`  |
 
 ### Miscellaneous symbols
 

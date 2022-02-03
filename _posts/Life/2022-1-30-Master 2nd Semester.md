@@ -1,7 +1,7 @@
 ---
 layout:     post
 title:      "2nd Semester of Master"
-subtitle:   " \"How to show tex on web\""
+subtitle:   " \"New Start, New Voyage to Become Better.\""
 date:       2022-01-30 11:30:00
 author:     "Calvchen"
 header-img: "img/contact-bg.jpg"
@@ -9,7 +9,6 @@ catalog: true
 tags:
     - Life
     - Courses
-
 
 ---
 
