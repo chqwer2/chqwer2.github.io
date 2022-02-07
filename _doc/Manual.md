@@ -1,4 +1,4 @@
-Hux Blog User Manual
+Calv Blog User Manual
 ====================
 
 * Basics

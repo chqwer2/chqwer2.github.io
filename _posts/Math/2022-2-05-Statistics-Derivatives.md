@@ -4,7 +4,7 @@ title:      "Statistics Theoretical Derivation, MIT 18.6501x"
 subtitle:   " \"Welcome to the derivation of STAT Functions!\""
 date:       2022-02-08 12:00:00
 author:     "Calvin Chen"
-header-img: "img/post-bg-2015.jpg"
+header-img: "img/post-bg-universe.jpg"
 catalog: true
 tags:
     - Math
