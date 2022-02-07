@@ -25,11 +25,11 @@ He showed me his new timetable, I decide to follow as many as them. As a master 
 
 |               | Monday                    | Tuesday                              | Wednesday        | Thursday                 | Friday                                |
 | ------------- | ------------------------- | ------------------------------------ | ---------------- | ------------------------ | ------------------------------------- |
-| 09:00 ~ 10:00 | Algo & Complex (Online    | Workshop (Avon Room)                 | Algo & Complex   | Data, Algo & DB (Online) |                                       |
+| 09:00 ~ 10:00 | Algo & Complex (Online    | Workshop (Avon Room)                 | Algo & Complex   | Data, Algo & DB (Online) | EC online (Changable Time)            |
 | 10:00 ~ 11:00 | CV & Imaging (Online      |                                      |                  | Algo & Complex           |                                       |
 | 11:00 ~ 12:00 |                           |                                      | AI & ML (Online) | Workshop (Online)        |                                       |
-| 12:00 ~ 13:00 | Topics in AI & ML (Online | Topics in AI & ML / AI & ML (Y3 G31) | CV & Imaging     |                          |                                       |
-| 13:00 ~ 14:00 |                           | AI & ML (Y3 G31)                     |                  |                          |                                       |
+| 12:00 ~ 13:00 | Topics in AI & ML (Online | Topics in AI & ML / AI & ML (Y3 G31) | CV & Imaging     | EC (Y14 190)             |                                       |
+| 13:00 ~ 14:00 |                           | EC (Y14 G85)/ AI & ML (Y3 G31)       |                  |                          |                                       |
 | 14:00 ~ 15:00 |                           | Data, Algo & DB (Y3 G31)             |                  |                          |                                       |
 | 15:00 ~ 16:00 |                           | Workshop (Y3 G31)                    |                  |                          | CV & Imaging / Data, Algo & DB (Avon) |
 | 16:00 ~ 17:00 | Workshop Lab, UG04        |                                      |                  |                          |                                       |
