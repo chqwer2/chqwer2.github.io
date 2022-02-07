@@ -4,7 +4,7 @@ title:      "Statistics MIT 18.6501x"
 subtitle:   " \"STAT is Fun!\""
 date:       2022-02-08 12:00:00
 author:     "Calvchen"
-header-img: "img/post-bg-2015.jpg"
+header-img: "img/post-bg-infinity.jpg"
 catalog: true
 tags:
     - Math
@@ -98,7 +98,7 @@ Cumulative distribution function
 
 ### Exponential Distribution
 
-
+Mean and Variance: $\frac{1}{\lambda},\frac{1}{\lambda^2} $
 
 PDF :
 $$
