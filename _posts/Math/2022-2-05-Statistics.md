@@ -2,7 +2,7 @@
 layout:     post
 title:      "Statistics MIT 18.6501x"
 subtitle:   " \"STAT is Fun!\""
-date:       2022-01-29 12:00:00
+date:       2022-02-08 12:00:00
 author:     "Calvchen"
 header-img: "img/post-bg-2015.jpg"
 catalog: true
