@@ -76,6 +76,8 @@ $M_n$
 
 ### Poisson Distribution
 
+The advantage of using poisson distribution is that n or p do not need to be known! This can make assumptions much easier.
+
 Notation: $X\sim\text{Poi}(\lambda),\ \lambda \in (0, \infin)$
 
 Mean and Variance: $\lambda,\ \lambda$

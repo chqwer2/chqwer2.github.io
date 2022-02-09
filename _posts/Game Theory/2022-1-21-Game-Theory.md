@@ -4,7 +4,7 @@ title:      "Game Theory - Stanford"
 subtitle:   " \"Hello Game Theory\""
 date:       2022-01-22 00:05:00
 author:     "Calvchen"
-header-img: "img/post-bg-2015.jpg"
+header-img: "img/post-bg-re-vs-ng2.jpg"
 catalog: true
 tags:
     - Game Theory
@@ -37,38 +37,91 @@ If you would like to make better choice when playing boardgames, chest game or e
 
 # Game Theory
 
+Beyond what we call “games” in common language, such as chess, poker,  soccer, etc., 
+
+**Modern Game Theory** began with the idea of mixed-strategy equilibria in two-person zero-sum game, normally includes the modeling of conflict among what we called rational self-interested  agents, such as nations,  political campaigns, competition among firms, and trading behavior in  markets. 
+
+## What will be covered?
+
+- Definitions of Game Theory
+  - The normal form, payoffs, strategies
+  - Pure strategy Nash equilibrium
+  - Dominant strategies.
+
+- Mixed-Strategy
+
+  - Pure and mixed strategy Nash equilibria. 
+
+- Alternate Solution Concepts
+
+  - Iterative removal of strictly dominated strategies
+  - Minimax  strategies and minimax theorem for zero-sum game, correlated  equilibria.
+
+  - Extensive-Form Games
+
+- Perfect information games:
+  - Trees, players assigned to nodes and payoffs  
+  - Backward Induction
+  - Subgame perfect equilibrium
+  - Imperfect-information games 
+  - Mixed versus behavioral strategies
+
+- Repeated Games
+  - Repeated prisoners dilemma
+  - Finite and infinite repeated games
+  - Limited-average versus future-discounted reward, folk theorems
+  - Stochastic games and learning
+- Bayesian Games
+  - General definitions
+  - Ex ante/interim Bayesian Nash equilibrium.
+
+- Coalitional Games
+  - Transferable utility cooperative games
+  - Shapley value
+  - Core and applications
+
+It is time for us to play some games.
+
+## Definitions of Game Theory
+
+#### TCP Backoff Game
+
+In TCP, some computers are overwhelming that may throw messages away. Should we use TCP with backoff mechanism inside it? Or using a defective implementation (which doesn't)?
 
 
-### What will be covered?
 
-![image-20220204112734778](C:\Users\calvchen\AppData\Roaming\Typora\typora-user-images\image-20220204112734778.png)
+Thinking about how interactions should be structured in **TCP Backoff Game**?
 
-**Course Topics**
 
-**Week 1: Introduction**
 
-Introduction,  overview,  uses of game theory, some applications and examples, and formal definitions of: the normal form, payoffs, strategies, pure strategy Nash equilibrium, dominant strategies.
+This problem is an example of what we call a two-player game:
 
-**Week 2:  Mixed-Strategy Nash Equilibrium**
+- both use a correct implementation: both get 1 ms delay
+- one correct, one defective: 4 ms for correct, 0 ms for defective
+- both defective: both get a 3 ms delay.
 
-pure and mixed strategy Nash equilibria. 
+We now some questions toward this game, which will be addressed after:
 
-**Week 3:  Alternate Solution Concepts**
+- What action should a player of the game take
+- Would all users behave the same in this scenario
+- What global behavior patterns should a system designer expect?
+- For what changes to the numbers would behavior be the same?
+- What effect would communication have?
+- Repetitions? (finite? infinite?)
+- Does it matter if I believe that my opponent is rational?
 
-Iterative removal of strictly dominated strategies, minimax  strategies and the minimax theorem for zero-sum game, correlated  equilibria.
+### Component of the Game
 
-**Week 4: Extensive-Form Games**
+Each game contains multiple players or we call **Self-Interested Agents** in game theory. That is because they has their own description of the states of the outside world and act accordingly, and they not only care about themselves or want to harm others.
 
-Perfect information games: trees, players assigned to nodes,  payoffs,  backward Induction, subgame perfect equilibrium, introduction  to imperfect-information games, mixed versus behavioral strategies.
+The action-payoff mapping is called **Utility**.
 
-**Week 5:  Repeated Games**
+That is to say, agents with different preferences and utilities. And according to the Decision-theoretic rationality, they will act to maximize expected utility.
 
-Repeated prisoners dilemma, finite and infinite repeated games,  limited-average versus future-discounted reward, folk theorems,  stochastic games and learning.
 
-**Week 6:  Bayesian Games**
 
-General definitions, ex ante/interim Bayesian Nash equilibrium.
 
-**Week 7: Coalitional Games**
 
-Transferable utility cooperative games, Shapley value, Core, applications.
+
+
+and Utility Theory
