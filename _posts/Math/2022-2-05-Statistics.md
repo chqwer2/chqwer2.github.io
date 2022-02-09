@@ -106,6 +106,10 @@ PDF :
 $$
 \lambda e^{-\lambda x}
 $$
+CDF:
+$$
+1-e^{-\lambda x}
+$$
 ![image-20220205172337486](C:\Users\calvchen\AppData\Roaming\Typora\typora-user-images\image-20220205172337486.png)
 
 ![image-20220205172726369](C:\Users\calvchen\AppData\Roaming\Typora\typora-user-images\image-20220205172726369.png)
@@ -150,3 +154,23 @@ $$
 Probability mass function (Left), Cumulative distribution function(right)
 
 In other words, there are a finite amount of events in a binomial distribution, but an infinite number in a normal distribution.
+
+### Moment Generation Function (MGF)
+
+https://en.wikipedia.org/wiki/Moment-generating_function
+
+expectation of moment generating function
+
+![image-20220209101247516](C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220209101247516.png)
+
+![image-20220209101551026](C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220209101551026.png)
+
+https://online.stat.psu.edu/stat414/book/export/html/676
+
+![image-20220209101722845](C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220209101722845.png)
+
+[mixture distribution moment generating function](https://math.stackexchange.com/questions/2051583/mixture-distribution-moment-generating-function)
+
+Useful…
+
+https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&ved=2ahUKEwitz--mtvL1AhXeQEEAHSmoAI8QFnoECDwQAQ&url=https%3A%2F%2Fwww.le.ac.uk%2Fusers%2Fdsgp1%2FCOURSES%2FMATHSTAT%2F6normgf.pdf&usg=AOvVaw3QHSFjpCFrBgTFBxRwGAnK
