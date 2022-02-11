@@ -170,7 +170,6 @@ $$
 
 **For** $\mathbb V[x^2] = 2\sigma^4+4\sigma^2\mu^2$,
 
-
 $$
 \begin{aligned}
 V(x^2) &=E(x^{4})-E(x^2)^{2} \\
