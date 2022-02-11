@@ -18,17 +18,11 @@ tags:
 
 ## Just a List
 
-2022-01-21 18:00:00 Updated 
-
-[Have Fun with Emoji Unicode](https://apps.timwhitlock.info/emoji/tables/unicode#block-6c-other-additional-symbols)
-
-
+2022-01-21 18:00:00 Updated… 
 
 #### Books
 
 - How to make Friends and Influence People
-
-
 
 #### Courses
 

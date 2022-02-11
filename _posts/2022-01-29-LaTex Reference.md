@@ -17,6 +17,14 @@ tags:
 
 
 
+### Emoji
+
+🌆🌇⭐⚾⚽⚡⚠🆒🚲🚀❔❓❗❕❌
+
+🍣😉😜😱🔥🌊🌈📌💻🎸🎻🎺🎵🎶🍦🌑🌓🌔🌕
+
+[Have Fun with Emoji Unicode](https://apps.timwhitlock.info/emoji/tables/unicode#block-6c-other-additional-symbols)
+
 ### Text
 
 | Renders                                         | LaTeX markup          | Renders                   | LaTeX markup     |
