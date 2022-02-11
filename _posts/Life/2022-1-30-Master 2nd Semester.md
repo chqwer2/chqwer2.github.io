@@ -2,7 +2,7 @@
 layout:     post
 title:      "2nd Semester of Master"
 subtitle:   " \"New Start, New Voyage to Become Better.\""
-date:       2022-01-30 11:30:00
+date:       2022-02-10 11:30:00
 author:     "Calvchen"
 header-img: "img/contact-bg.jpg"
 catalog: true
@@ -23,17 +23,17 @@ Last semester, I had a great time audited his Neuron Computation course, which h
 
 He showed me his new timetable, I decide to follow as many as them. As a master student, my timetable have already very enriched, now my timetable becomes:
 
-|               | Monday                    | Tuesday                              | Wednesday        | Thursday                 | Friday                                |
-| ------------- | ------------------------- | ------------------------------------ | ---------------- | ------------------------ | ------------------------------------- |
-| 09:00 ~ 10:00 | Algo & Complex (Online    | Workshop (Avon Room)                 | Algo & Complex   | Data, Algo & DB (Online) | EC online (Changable Time)            |
-| 10:00 ~ 11:00 | CV & Imaging (Online      |                                      |                  | Algo & Complex           |                                       |
-| 11:00 ~ 12:00 |                           |                                      | AI & ML (Online) | Workshop (Online)        |                                       |
-| 12:00 ~ 13:00 | Topics in AI & ML (Online | Topics in AI & ML / AI & ML (Y3 G31) | CV & Imaging     | EC (Y14 190)             |                                       |
-| 13:00 ~ 14:00 |                           | EC (Y14 G85)/ AI & ML (Y3 G31)       |                  |                          |                                       |
-| 14:00 ~ 15:00 |                           | Data, Algo & DB (Y3 G31)             |                  |                          |                                       |
-| 15:00 ~ 16:00 |                           | Workshop (Y3 G31)                    |                  |                          | CV & Imaging / Data, Algo & DB (Avon) |
-| 16:00 ~ 17:00 | Workshop Lab, UG04        |                                      |                  |                          |                                       |
-| 17:00 ~ 18:00 | Workshop Lab, UG04        |                                      |                  |                          |                                       |
+|               | Monday                    | Tuesday                              | Wednesday                          | Thursday                 | Friday                                               |
+| ------------- | ------------------------- | ------------------------------------ | ---------------------------------- | ------------------------ | ---------------------------------------------------- |
+| 09:00 ~ 10:00 | Algo & Complex (Online    | Workshop (Avon Room)                 | Algo & Complex                     | Data, Algo & DB (Online) | EC online (Changable Time)                           |
+| 10:00 ~ 11:00 | CV & Imaging (Online      |                                      |                                    | Algo & Complex           |                                                      |
+| 11:00 ~ 12:00 |                           |                                      | AI & ML (Online)                   | Workshop (Online)        |                                                      |
+| 12:00 ~ 13:00 | Topics in AI & ML (Online | Topics in AI & ML / AI & ML (Y3 G31) | CV & Imaging (Aston Webb (C-block) | EC (Y14 190)             |                                                      |
+| 13:00 ~ 14:00 |                           | EC (Y14 G85)/ AI & ML (Y3 G31)       |                                    |                          |                                                      |
+| 14:00 ~ 15:00 |                           | Data, Algo & DB (Y3 G31)             |                                    |                          |                                                      |
+| 15:00 ~ 16:00 |                           | Workshop (Y3 G31)                    |                                    |                          | CV & Imaging (Harworth 101) / Data, Algo & DB (Avon) |
+| 16:00 ~ 17:00 | Workshop Lab, UG04        |                                      |                                    |                          |                                                      |
+| 17:00 ~ 18:00 | Workshop Lab, UG04        |                                      |                                    |                          |                                                      |
 
 Some are confilcted… but I can join online section to solve this problem.
 
