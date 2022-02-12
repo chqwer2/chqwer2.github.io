@@ -96,7 +96,6 @@ $$
 \end{array}
 $$
 
-
 **For** $\mathbb E[x^4] = 3\sigma^4 +6\mu^2\sigma^2 + \mu^4$,
 
 Patch up $x^4$,
@@ -126,6 +125,11 @@ $$
 = \small 3\sigma^4 +6\mu^2\sigma^2 + \mu^4
 
 \end{array}
+$$
+
+**For** $\mathbb E[\bar{X}_{n}] = \mathbb{E}[X_{1}]$,
+$$
+\mathbb{E}\left[\bar{X}_{n}\right]=\frac{1}{n} \sum_{i=1}^{n} \mathbb{E}\left[X_{i}\right]=\mathbb{E}\left[X_{1}\right]
 $$
 
 ### Variance of Gaussian:
@@ -181,6 +185,9 @@ V(x^2) &=E(x^{4})-E(x^2)^{2} \\
 \\
 $$
 
+
+
+$V(\bar X_n)$
 
 ### Covariance
 

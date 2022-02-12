@@ -14,13 +14,19 @@ tags:
 
 ---
 
-> “Machine Learning, Deep Learning, Data Science, etc. are all in the same nexus – which is the Statistics. ”
+> “Machine Learning, Deep Learning, Data Science, etc. are all in the same nexus – which is the bacically Probability plus Statistics. ”
 
 
 
 # Statistics, MIT 18.6501x
 
 
+
+## Where will be covered:
+
+- [Distribution](#Distribution)
+- 
+- 
 
 
 
