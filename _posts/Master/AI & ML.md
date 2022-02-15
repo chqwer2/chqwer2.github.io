@@ -34,8 +34,9 @@ AI and ML are getting more and more popular recently, the boundries between AI, 
   - t-SNE
   - PCA
 - Loss Function
-  - Sigmoid and Tanh
   - Softmax
+  - Triplet
+  - ArcFace
 
 **AI Taxonomy**
 
@@ -259,4 +260,85 @@ Repeat the E-M steps until log-likelihood value $\ln p(X|\theta)$ converges.
 - k-means can be used to search a good starting point
 
 
+
+
+
+
+
+## Loss Functions
+
+In this part, we pre-define some universal factors for below loss functions.
+
+$x_{i} \in \mathbb{R}^{d}$ denotes the deep features of the $i$-th training sample (belonging to the $y_{i}$-th class). 
+
+$W_{j,k} \in \mathbb{R}^{d\times n}$ denotes the $j$-th column of the weight, and $b_{j} \in \mathbb{R}^{n}$ is the bias term. So logits denoted as $W_j^T x_i + b_j$.
+
+$N$ and $n$ is the number of batchsize and class.
+
+$d(\cdot)$ denotes the distance on the embedding space.
+
+### Softmax
+
+The most widely used classification loss function, softmax loss, is presented as follows:
+$$
+L_{1}=-\frac{1}{N} \sum_{i=1}^{N} \log \frac{e^{W_{y_{i}}^{T} x_{i}+b_{y_{i}}}}{\sum_{j=1}^{n} e^{W_{j}^{T} x_{i}+b_{j}}}
+$$
+ 
+
+### Triplet
+
+[PDF](https://arxiv.org/abs/1503.03832), [Code-tensorflow](https://github.com/omoindrot/tensorflow-triplet-loss)
+
+**Why not just use softmax?**
+
+Softmax train network with fixed $n$ that do not satisfy the need of face recognation.
+
+**Algorithm**
+
+Given three logits from ($a, p \in y_1,\ n \in y_2$) samples, we want to minimize the distance between two positive samples ($a, p$) and maximize the distance between two negative samples ($a, n$). 
+$$
+\mathcal L = max(d(a,p) - d(a,n) + margin, 0)
+$$
+
+
+which push $d(a,p)$ to 0 and $d(a,n)$ to be greater than $d(a, p) + margin$. 
+
+##### Triplet mining
+
+Based on the definition of the loss, there are three categories of triplets:
+
+- **easy triplets:** triplets which have a loss of 0 , because $d(a, p)+$ margin $<d(a, n)$
+- **hard triplets:** triplets where the negative is closer to the anchor than the positive, i.e. $d(a, n)<d(a, p)$
+- **semi-hard triplets**: triplets where the negative is not closer to the anchor than the positive, but which still have positive loss:
+$d(a, p)<d(a, n)<d(a, p)+$ margin
+
+Each of these definitions depend on where the negative is, relatively to the anchor and positive.
+
+<img src="https://omoindrot.github.io/assets/triplet_loss/triplets.png" alt="img" style="zoom:67%;" />
+
+
+
+### ArcFace
+
+[PDF](https://arxiv.org/pdf/1801.07698v3.pdf), [Code](https://github.com/deepinsight/insightface)
+
+**Why not just use triplet?**
+
+
+
+For simplicity, we fix bias $b_j=0$, and transform
+
+$W_j^T x_i$ = $\|W_j\|\ \|x_i\|\ cos\theta_j$
+
+
+
+where $\theta_j$ is the angle between weight $W_j$ and the feature $x_i$. 
+
+we using $l_2$ normalization to fix $W=1$, and $x$, which then be re-scaled to $s$ (radius) makes the predictions only depend on the angle $\theta$.
+$$
+L=-\frac{1}{N} \sum_{i=1}^{N} \log \frac{e^{s \cos (\theta_{y_{i}}+m)}}{e^{s \cos (\theta_{y_{i}}+m)}+\sum_{j=1, j \neq y_{i}}^{n} e^{s \cos \theta_{j}}}
+$$
+
+
+where $m$ denotes the additive angular margin penalty between $x$ and $W_{y_i}$ to simultaneously enhance the compactness and discrepancy of intra-/inter-class.
 

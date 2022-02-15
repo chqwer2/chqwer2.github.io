@@ -131,6 +131,7 @@ $$
 $$
 \mathbb{E}\left[\bar{X}_{n}\right]=\frac{1}{n} \sum_{i=1}^{n} \mathbb{E}\left[X_{i}\right]=\mathbb{E}\left[X_{1}\right]
 $$
+EXY?
 
 ### Variance of Gaussian:
 
@@ -201,6 +202,10 @@ $$
 
 ![image-20220205160543840](C:\Users\calvchen\AppData\Roaming\Typora\typora-user-images\image-20220205160543840.png)
 
+![image-20220213171530998](C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220213171530998.png)
+
+[pdf](file:///C:/Users/calvchen/Downloads/408jointdiscrete(1).pdf)
+
 You should have something like:
 $$
 \begin{array}{c}
@@ -240,5 +245,8 @@ $$
 \sum^\infin_{i=1}\alpha^i=\frac{\alpha}{1-\alpha}, iff\ |\alpha|<1
 $$
 
+*Food for thought:*
 
 
+
+[What is the variance of the maximum of a sample?](https://stats.stackexchange.com/questions/15970/what-is-the-variance-of-the-maximum-of-a-sample)

@@ -42,7 +42,7 @@ Probability Density Function:
 $$
 \frac{1}{\sigma\sqrt{2\pi}}e^{-\frac{1}{2}\left( \frac{x-\mu}{\sigma}  \right)^2}
 $$
-![image-20220205100840395](C:\Users\calvchen\AppData\Roaming\Typora\typora-user-images\image-20220205100840395.png)
+![image-20220205100840395](C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220205100840395.png)
 
 Cumulative Distribution Function:
 $$
@@ -50,7 +50,7 @@ $$
 $$
 $\text{erf}(\cdot)$ is the exponential response formula.
 
-![image-20220205100857657](C:\Users\calvchen\AppData\Roaming\Typora\typora-user-images\image-20220205100857657.png)
+![image-20220205100857657](C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220205100857657.png)
 
 ##### Covariance of Gaussians
 
@@ -72,7 +72,7 @@ $$
 $$
 f the covariance,  between two random variables  is 0, then  and  are independent.??
 
-![image-20220205160241835](C:\Users\calvchen\AppData\Roaming\Typora\typora-user-images\image-20220205160241835.png)
+![image-20220205160241835](C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220205160241835.png)
 
 ##### Maximum of uniform random variables
 
@@ -90,7 +90,7 @@ Mean and Variance: $\lambda,\ \lambda$
 $$
 E(X^2) = Var(X) + E(x)^2 =  \lambda + \lambda^2
 $$
-![image-20220206111006698](C:\Users\calvchen\AppData\Roaming\Typora\typora-user-images\image-20220206111006698.png)
+![image-20220206111006698](C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220206111006698.png)
 
 0! = 1
 
@@ -98,11 +98,11 @@ Probability Mass Function:
 $$
 \mathbb{P}(x=k) = \frac{\lambda^k}{k!} e^{-\lambda}, \ k=0,1,2,\cdots \\
 $$
-![image-20220205102615493](C:\Users\calvchen\AppData\Roaming\Typora\typora-user-images\image-20220205102615493.png)
+![image-20220205102615493](C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220205102615493.png)
 
 Cumulative distribution function
 
-![image-20220205102652730](C:\Users\calvchen\AppData\Roaming\Typora\typora-user-images\image-20220205102652730.png)
+![image-20220205102652730](C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220205102652730.png)
 
 ### Exponential Distribution
 
@@ -116,9 +116,9 @@ CDF:
 $$
 1-e^{-\lambda x}
 $$
-![image-20220205172337486](C:\Users\calvchen\AppData\Roaming\Typora\typora-user-images\image-20220205172337486.png)
+![image-20220205172337486](C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220205172337486.png)
 
-![image-20220205172726369](C:\Users\calvchen\AppData\Roaming\Typora\typora-user-images\image-20220205172726369.png)
+![image-20220205172726369](C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220205172726369.png)
 
 ### Gamma Distribution
 
