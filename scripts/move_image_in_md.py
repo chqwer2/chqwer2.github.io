@@ -1,19 +1,41 @@
 import matplotlib.pyplot as plt
 from glob import glob
 import regex as re
+import os
 
-md_list = [r'C:\\Users\\calvchen\\PycharmProjects\\chqwer2.github.io\\_posts\\Math\\Statistics']
-origin_fold = r'C:\\Users\\calvchen\\AppData\\Roaming\\Typora\\typora-user-images'
-target_fold = r'C:\\Users\\calvchen\\PycharmProjects\\chqwer2.github.io\\img\\Typora'  # https://chqwer2.github.io/img/Typora/
-print(origin_fold, target_fold)
+md_list = glob('C:\\Users\\calvchen\\PycharmProjects\\chqwer2.github.io\\_posts\\*\*', recursive=True)
+md_list = list(md_list)
+print(md_list)
+
+
+origin_fold = r'C:\\Users\\calvchen\\AppData\\Roaming\\Typora\\typora-user-images\\'
+origin_fold1 = r'C:\\Users\\calvchen\\PycharmProjects\\chqwer2.github.io\\img\\Typora\\'  # https://chqwer2.github.io/img/Typora/
+target_fold = r'https://chqwer2.github.io/img/Typora/'
+
 
 img_list = []
 
 for md in md_list:
-    f = open(md+'.md','r', encoding='utf8')
-    f1 = open(md+'1.md', 'w', encoding='utf8')
+    if os.path.isdir(md):
+        continue
+    if not (md.endswith('md') or md.endswith('markdown')):
+        continue
+
+    print(md)
+    md = md.rstrip('markdown').rstrip('.')
+    try:
+        f = open(md+'.md','r', encoding='utf8')
+
+    except:
+        f = open(md + '.markdown', 'r', encoding='utf8')
+
+    f1 = open(md + '1.md', 'w', encoding='utf8')
+
     data = f.read()
     new_data = re.sub(origin_fold, target_fold, data)
+    new_data = re.sub(origin_fold1, target_fold, new_data)
+
+    print("handling:", new_data[:50])
     f1.write(new_data)
 
     group = re.findall(r"C:(.*)", data)

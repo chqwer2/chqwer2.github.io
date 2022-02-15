@@ -14,5 +14,6 @@ target_fold = r'https://chqwer2.github.io/img/Typora/'
 # print(target_fold)
 # print(re.escape(target_fold))
 # print( r'![image-20220205172337486](C:\Users\calvchen\AppData\Roaming\Typora\typora-user-images\image-20220205172337486.png)')
+
 print(re.sub(origin_fold, target_fold, data))
 

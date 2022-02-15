@@ -1,5 +1,5 @@
 ---
-layout:     post
+ayout:     post
 title:      "AI & ML - UoB 06-36404"
 subtitle:   " \"Basic AI algorithms!\""
 date:       2022-02-08 12:00:00
@@ -283,7 +283,7 @@ The most widely used classification loss function, softmax loss, is presented as
 $$
 L_{1}=-\frac{1}{N} \sum_{i=1}^{N} \log \frac{e^{W_{y_{i}}^{T} x_{i}+b_{y_{i}}}}{\sum_{j=1}^{n} e^{W_{j}^{T} x_{i}+b_{j}}}
 $$
- 
+
 
 ### Triplet
 
