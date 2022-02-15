@@ -240,7 +240,7 @@ G_y =
 -1 & -1
 \end{bmatrix}
 $$
-![image-20220209122217135](C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220209122217135.png)
+![image-20220209122217135](https://chqwer2.github.io/img/Typora/image-20220209122217135.png)
 
 **Robert**
 $$

@@ -155,9 +155,9 @@ $$
  \Bigg \langle 3x+7 \bigg \rangle
 $$
 
-![image-20220129110413636](C:\Users\calvchen\AppData\Roaming\Typora\typora-user-images\image-20220129110413636.png)
+![image-20220129110413636](https://chqwer2.github.io/img/Typora/image-20220129110413636.png)
 
-![image-20220129110431210](C:\Users\calvchen\AppData\Roaming\Typora\typora-user-images\image-20220129110431210.png)
+![image-20220129110431210](https://chqwer2.github.io/img/Typora/image-20220129110431210.png)
 
 
 

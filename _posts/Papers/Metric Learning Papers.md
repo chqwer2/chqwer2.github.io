@@ -27,7 +27,7 @@ tags:
 The proposed ArcFace has a clear geometric interpretation due to the exact
 correspondence to the geodesic distance on the hypersphere.
 
-![image-20220211172421387](C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220211172421387.png)
+![image-20220211172421387](https://chqwer2.github.io/img/Typora/image-20220211172421387.png)
 
 Based on the centre and feature normalisation, all identities are distributed on a hypersphere. To enhance intraclass compactness and inter-class discrepancy, we consider four
 kinds of Geodesic Distance (GDis) constraint. (A) Margin-Loss:

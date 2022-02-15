@@ -2,9 +2,12 @@ import matplotlib.pyplot as plt
 from glob import glob
 import regex as re
 import os
+import numpy as np
 
-md_list = glob('C:\\Users\\calvchen\\PycharmProjects\\chqwer2.github.io\\_posts\\*\*', recursive=True)
+md_list = glob('C:\\Users\\calvchen\\PycharmProjects\\chqwer2.github.io\\_posts\\*', recursive=True)
 md_list = list(md_list)
+md_list.extend(glob('C:\\Users\\calvchen\\PycharmProjects\\chqwer2.github.io\\_posts\\*\*', recursive=True))
+md_list = np.unique(md_list)
 print(md_list)
 
 
@@ -29,20 +32,22 @@ for md in md_list:
     except:
         f = open(md + '.markdown', 'r', encoding='utf8')
 
-    f1 = open(md + '1.md', 'w', encoding='utf8')
+    #
 
     data = f.read()
     new_data = re.sub(origin_fold, target_fold, data)
     new_data = re.sub(origin_fold1, target_fold, new_data)
 
-    print("handling:", new_data[:50])
+    print("handling:", md)
+    f.close()
+
+    f1 = open(md + '.md', 'w', encoding='utf8')
     f1.write(new_data)
 
     group = re.findall(r"C:(.*)", data)
     for i, j in enumerate(group):
         img_list.append(group[i].split('\\')[-1].rstrip(')'))
 
-    f.close()
     f1.close()
 
 print("successful write MD files...")

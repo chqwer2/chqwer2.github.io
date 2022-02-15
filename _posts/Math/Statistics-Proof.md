@@ -200,9 +200,9 @@ $$
 $$
 
 
-![image-20220205160543840](C:\Users\calvchen\AppData\Roaming\Typora\typora-user-images\image-20220205160543840.png)
+![image-20220205160543840](https://chqwer2.github.io/img/Typora/image-20220205160543840.png)
 
-![image-20220213171530998](C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220213171530998.png)
+![image-20220213171530998](https://chqwer2.github.io/img/Typora/image-20220213171530998.png)
 
 [pdf](file:///C:/Users/calvchen/Downloads/408jointdiscrete(1).pdf)
 
