@@ -131,6 +131,8 @@ $$
 $$
 \mathbb{E}\left[\bar{X}_{n}\right]=\frac{1}{n} \sum_{i=1}^{n} \mathbb{E}\left[X_{i}\right]=\mathbb{E}\left[X_{1}\right]
 $$
+![[eq2]](https://www.statlect.com/images/mean-estimation__10.png)
+
 EXY?
 
 ### Variance of Gaussian:
@@ -188,7 +190,9 @@ $$
 
 
 
-$V(\bar X_n)$
+$V(\bar X_n)=\large\frac{\sigma^2}{n}$
+
+![[eq3]](https://www.statlect.com/images/mean-estimation__14.png)
 
 ### Covariance
 

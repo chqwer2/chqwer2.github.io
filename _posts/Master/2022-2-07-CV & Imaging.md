@@ -311,9 +311,115 @@ I\otimes G_{2d}\otimes\mathcal L
 $$
 
 
+
 So $ G_{2d}\otimes\mathcal L$ can be a new filter called LoG
-
-
 $$
 \nabla \partial
 $$
+
+### Advanced Edge Detection
+
+What cause intensity changes?
+
+- Gemetric: 
+
+  surface orientation, depth, color and texture discontinuities
+
+- Non-geometric:
+
+  illumination, specularities (镜面反射), shadows and inter-reflections.
+
+![image-20220216121320738](C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220216121320738.png)
+
+**Edge Descriptors**
+
+Direction - perpendicular to the direction  of maximum intensity change (i.e., edge normal)
+
+Strength - related to  the local image contrast along  the normal
+
+And Position
+
+<img src="C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220216121520636.png" alt="image-20220216121520636" style="zoom:50%;" />
+
+**Main Step in ED**
+
+(1) Smoothing: suppress as much noise as possible,  without destroying true edges. 
+
+(2) Enhancement: apply differentiation to enhance the  quality of edges (i.e., sharpening)
+
+(3) Thresholding: determine which edge pixels  should be discarded as noise and which should be  retained (i.e., threshold edge magnitude).
+
+(4) Localization: determine the exact edge location. 
+
+Upsample: sub-pixel resolution might be required for some applications to  estimate the location of an edge to better than the spacing  between pixels
+
+![image-20220216121830295](C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220216121830295.png)
+
+But it is super noise..
+
+![image-20220216121941953](C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220216121941953.png)
+
+
+
+h is a Gaussian filter, but sliterly blur my edge
+
+![image-20220216122021305](C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220216122021305.png)
+
+instead conv of h and f, we can also take differentiated G which saves one operation 
+
+![image-20220216122114369](C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220216122114369.png)
+
+### Prewitt Operator
+
+$$
+G_x \begin{bmatrix}
+-1 & 0 & 1 \\
+-1 & 0 & 1 \\
+-1 & 0 & 1
+\end{bmatrix}\ G_y \begin{bmatrix}
+-1 & -1 & -1 \\
+0 & 0 & 0 \\
+1 & 1 & 1
+\end{bmatrix}
+$$
+
+![image-20220216122423103](C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220216122423103.png)
+
+##### Practical Issue
+
+Noise suppression-localization tradeoff. 
+
+– Smoothing depends on mask size (e.g., depends on σ for  Gaussian filters). 
+
+– Larger mask sizes reduce noise, but worsen localization (i.e.,  add uncertainty to the location of the edge) and vice versa
+
+![image-20220216122521720](C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220216122521720.png)
+
+We want good localzation and single response.
+
+### Canny Edge Detector
+
+![image-20220216123128065](C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220216123128065.png)
+
+![image-20220216123149604](C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220216123149604.png)
+
+<img src="C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220216123252181.png" alt="image-20220216123252181" style="zoom:50%;" />
+
+<img src="C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220216123442349.png" alt="image-20220216123442349" style="zoom:44%;" />
+
+I got a thick edge, but not I chose the local maximum of the edge gradient direction.
+
+**Non-maxima suppression**
+
+Check if gradient magnitude at pixel location (i,j) is local maximum along gradient direction
+
+
+
+### Hysteresis thresholding
+
+Standard thresholding can only select “strong” edges, does not guarantee “continuity”.
+
+![image-20220216123859997](C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220216123859997.png)
+
+![image-20220216124005724](C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220216124005724.png)
+

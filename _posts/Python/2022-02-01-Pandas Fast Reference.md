@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      "Pandas Fast Reference"
+title:      "Pandas Cheat Sheet"
 subtitle:   " \"The amazing data scientist tool\""
 date:       2022-02-01 12:00:00
 author:     "Calvchen"

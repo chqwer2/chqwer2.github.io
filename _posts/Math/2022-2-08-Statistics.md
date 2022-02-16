@@ -20,11 +20,125 @@ tags:
 
 # Statistics, MIT 18.6501x
 
+A useful [book]( https://onlinestatbook.com/2/sampling_distributions/samp_dist_mean.html).
+
 ## Where will be covered:
 
-- [Distribution](#Distribution)
-- 
-- 
+- [Theorems and Tools](#Theorems and Tools)
+
+  - LLN & CLT, CMT
+  - Hoeffding's Inequality, Chebyshev Inequality
+  - Slutsky's theorem
+  - Asymptotic normality
+
+- [Distribution Functions](#Distribution)
+
+- Estimator
+
+- Probability Redux
+
+  
+
+
+
+## Theorems and Tools
+
+**i.i.d.**  stands for **independent and identically distributed** . 
+
+### Law of Large Numbers (LLN)
+
+According to the law, the average of the results obtained from performing the same experiment a large number of times should be close to the **expectation value**, and tend to be closer when n is even greater.
+
+Let $X, X_{1}, X_{2}, \ldots, X_{n}$ be i.i.d. 
+Laws (weak and strong) of large numbers (LLN):
+$$
+\bar{X}_{n}:=\frac{1}{n} \sum_{i=1}^{n} X_{i} \underset{n \rightarrow \infty}{\stackrel{\text { P }, \text { a.s. }}{\longrightarrow}} \mu .
+$$
+
+
+### Central Limit Theorem (CLT)
+
+CLT establishes that when independent random variables summed up, their properly normalized sum tends toward a **normal distribution** even if the original variables themselves are not normally distributed. 
+$$
+\sqrt{n} \frac{\bar{X}_{n}-\mu}{\sigma} \frac{(d)}{n \rightarrow \infty} \mathcal{N}(0,1)
+$$
+
+
+where  $\stackrel{(d)}{\rightarrow}$ denotes convergence in distribution.
+
+Standard Gaussian means that this quantity will be a number between (-3, 3) with overwhelming probability, we have $|\overline X_n - \mu|=\frac{3\sigma}{\sqrt{n}}$.
+
+$\bar X_n$ is close to $\mu$ at some deviations that are of order 1 over square root of sample size  ($\sim \frac{1}{n}$).
+
+**Rule of thumb to apply CLT:** normally, we require $n\geq30$.
+
+#### Asymptotic normality
+
+Assume the sequence $\left\{X_{n}\right\}$ is an i.i.d sequence with finite mean and variance.
+Therefore, it satisfies the conditions of Central Limit Theorem.
+Hence, the sample mean $\bar X_{n}$ in the above equlity is asymptotically normal.
+In other words, the sample mean $X_{n}$ converges in distribution to a normal random variable with mean $\mu$ and variance $\frac{\sigma^{2}}{n}$.
+
+### Continuous Mapping Theorem (CMT)
+
+CMT states that continuous functions preserve limits even if their arguments are sequences of random variables. A continuous function is such a function that maps convergent sequences into another convergent sequences:
+$$
+\text{if\ } x_n \to x,\\ \text{then } g(x_n) \to g(x).
+$$
+
+
+It applies to $d,\ p$ and $a.s.$ convergence respectively.
+
+### Hoeffding's Inequality 
+
+What if $n$ is **not large enough** to apply CLT?
+
+For bounded random variable, this is still **Hoeffding’s Inequality** we can say for any n.
+Let $n$ be a positive integer and $X_i \in[a, b]\ $($a<b$ are given numbers)
+Then this holds even for small sample sizes $n$:
+$$
+\mathbb{P}\left[\left|\bar{X}_{n}-\mu\right| \geq \varepsilon\right] \leq 2 e^{\large-\frac{2 n \varepsilon^{2}}{(b-a)^{2}}} . \quad \forall \varepsilon>0
+$$
+
+
+Here I need that my random variables are actfually **almost surely bounded**, which rules out like Gaussians and Exponential Random Variables.
+
+**How to choose $\varepsilon$ ?**
+
+So let's parse this for a second… 
+
+if when $\varepsilon = \large\frac{c}{\sqrt{n}}$:
+$$
+X_i \overset{iid}{\sim}Ber(p)\\
+\mathbb{P}(| \bar{X} - \mu| \geq \frac{c}{\sqrt{n}}) \leq 2e^{-2c^2/1}
+$$
+
+
+The square root of $n$ qualitative behavior happens at any n.
+
+So the conclusion is the average is a good replacement
+
+##### Is this tight? That's the annoying thing about inequalities.
+
+The above inequality could actually be e to the minus exponential of n ($e^{-n}$), which could be much, much smaller than that, so it is loose.
+
+### Chebyshev Inequality & Markov Inequality
+
+These two inequalities guarentees that upper bounds on $\mathbf{P}(X \geq t)$ based on the mean and variance of $X$.
+**Markov inequality**
+For a random variable $X \geq 0$ with mean $\mu>0$, and any number $t>0$ :
+$$
+\mathbf{P}(X \geq t) \leq \frac{\mu}{t}
+$$
+Note that the Markov inequality is restricted to **non-negative random variables**.
+
+**Chebyshev inequality**
+For a random variable $X$ with (finite) mean $\mu$ and variance $\sigma^{2}$, and for any number $t>0$,
+$$
+\mathbf{P}(|X-\mu| \geq t) \leq \frac{\sigma^{2}}{t^{2}}
+$$
+Remark:
+When Markov inequality is applied to $(X-\mu)^{2}$, we obtain Chebyshev's inequality. Markov inequality is also used in the proof of Hoeffding's inequality.
 
 
 
@@ -104,16 +218,22 @@ Cumulative distribution function
 
 ### Exponential Distribution
 
+sample space:  $x\in [0, \infin)$
+
 Mean and Variance: $\frac{1}{\lambda},\frac{1}{\lambda^2} $
 
-PDF :
+**PDF:** 
 $$
 \lambda e^{-\lambda x}
 $$
-CDF:
+![pdf](https://upload.wikimedia.org/wikipedia/commons/0/02/Exponential_probability_density.svg)
+
+**CDF:**
 $$
 1-e^{-\lambda x}
 $$
+![cdf](https://upload.wikimedia.org/wikipedia/commons/b/ba/Exponential_cdf.svg)
+
 ![image-20220205172337486](https://chqwer2.github.io/img/Typora/image-20220205172337486.png)
 
 ![image-20220205172726369](https://chqwer2.github.io/img/Typora/image-20220205172726369.png)
@@ -185,3 +305,6 @@ Useful…
 
 https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&ved=2ahUKEwitz--mtvL1AhXeQEEAHSmoAI8QFnoECDwQAQ&url=https%3A%2F%2Fwww.le.ac.uk%2Fusers%2Fdsgp1%2FCOURSES%2FMATHSTAT%2F6normgf.pdf&usg=AOvVaw3QHSFjpCFrBgTFBxRwGAnK---
 
+
+
+## 
