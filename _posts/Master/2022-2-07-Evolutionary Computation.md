@@ -11,6 +11,8 @@ tags:
    - Python
    - Pandas
    - Data
+   - ML
+   - Evo Comp
 
 subtitle:   " \"Get familiar with the EC...\""
 

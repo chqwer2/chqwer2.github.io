@@ -45,6 +45,8 @@ A useful [book]( https://onlinestatbook.com/2/sampling_distributions/samp_dist_m
 
 **i.i.d.**  stands for **independent and identically distributed** . 
 
+**r.v.** denotes **random variable**
+
 ### Law of Large Numbers (LLN)
 
 According to the law, the average of the results obtained from performing the same experiment a large number of times should be close to the **expectation value**, and tend to be closer when n is even greater.
@@ -54,7 +56,6 @@ Laws (weak and strong) of large numbers (LLN):
 $$
 \bar{X}_{n}:=\frac{1}{n} \sum_{i=1}^{n} X_{i} \underset{n \rightarrow \infty}{\stackrel{\text { P }, \text { a.s. }}{\longrightarrow}} \mu .
 $$
-
 
 ### Central Limit Theorem (CLT)
 
@@ -105,9 +106,7 @@ Here I need that my random variables are actfually **almost surely bounded**, wh
 
 **How to choose $\varepsilon$ ?**
 
-So let's parse this for a second… 
-
-if when $\varepsilon = \large\frac{c}{\sqrt{n}}$:
+So let's parse this for a second… , if when $\varepsilon = \large\frac{c}{\sqrt{n}}$:
 $$
 X_i \overset{iid}{\sim}Ber(p)\\
 \mathbb{P}(| \bar{X} - \mu| \geq \frac{c}{\sqrt{n}}) \leq 2e^{-2c^2/1}
@@ -118,25 +117,31 @@ The square root of $n$ qualitative behavior happens at any n.
 
 So the conclusion is the average is a good replacement
 
-##### Is this tight? That's the annoying thing about inequalities.
+**Is this tight?** That's the annoying thing about inequalities.
 
 The above inequality could actually be e to the minus exponential of n ($e^{-n}$), which could be much, much smaller than that, so it is loose.
 
 ### Chebyshev Inequality & Markov Inequality
 
 These two inequalities guarentees that upper bounds on $\mathbf{P}(X \geq t)$ based on the mean and variance of $X$.
+
 **Markov inequality**
+
 For a random variable $X \geq 0$ with mean $\mu>0$, and any number $t>0$ :
 $$
 \mathbf{P}(X \geq t) \leq \frac{\mu}{t}
 $$
+
+
 Note that the Markov inequality is restricted to **non-negative random variables**.
 
 **Chebyshev inequality**
+
 For a random variable $X$ with (finite) mean $\mu$ and variance $\sigma^{2}$, and for any number $t>0$,
 $$
 \mathbf{P}(|X-\mu| \geq t) \leq \frac{\sigma^{2}}{t^{2}}
 $$
+
 Remark:
 When Markov inequality is applied to $(X-\mu)^{2}$, we obtain Chebyshev's inequality. Markov inequality is also used in the proof of Hoeffding's inequality.
 
@@ -164,34 +169,6 @@ $\text{erf}(\cdot)$ is the exponential response formula.
 
 ![image-20220205100857657](https://chqwer2.github.io/img/Typora/image-20220205100857657.png)
 
-##### Covariance of Gaussians
-
-Recall that the **covariance** of two random variables $X$ and $Y$ denoted by $\text{Cov} (X,Y)$ is defined as:
-$$
-\text{Cov} (X,Y) = \text E[\ (X-\text E[X])\ (Y-\text E[Y])\ ]\\
-\text{Cov} (X,Y) = \text E[XY]\cdot\text E[X]\text E[Y])\ ]
-$$
- **Var[X+Y] = Var[X] + Var[Y] + 2∙Cov[X,Y]** 
-
-
-$$
-\begin{aligned}
-\operatorname{Var}(X Y) &=\operatorname{Var}[\mathrm{E}(X Y \mid X)]+\mathrm{E}[\operatorname{Var}(X Y \mid X)] \\
-&=\operatorname{Var}[X \mathrm{E}(Y \mid X)]+E\left[X^{2} \operatorname{Var}(Y \mid X)\right] \\
-&=\operatorname{Var}[X \mathrm{E}(Y)]+E\left[X^{2} \operatorname{Var}(Y)\right] \\
-&=E(Y)^{2} \operatorname{Var}(X)+\operatorname{Var}(Y) E\left(X^{2}\right)
-\end{aligned}
-$$
-f the covariance,  between two random variables  is 0, then  and  are independent.??
-
-![image-20220205160241835](https://chqwer2.github.io/img/Typora/image-20220205160241835.png)
-
-##### Maximum of uniform random variables
-
-$M_n$
-
-
-
 ### Poisson Distribution
 
 The advantage of using poisson distribution is that n or p do not need to be known! This can make assumptions much easier.
@@ -204,9 +181,9 @@ E(X^2) = Var(X) + E(x)^2 =  \lambda + \lambda^2
 $$
 ![image-20220206111006698](https://chqwer2.github.io/img/Typora/image-20220206111006698.png)
 
-0! = 1
+Pr0! = 1
 
-Probability Mass Function: 
+**Probability Mass Function:** 
 $$
 \mathbb{P}(x=k) = \frac{\lambda^k}{k!} e^{-\lambda}, \ k=0,1,2,\cdots \\
 $$
@@ -220,7 +197,7 @@ Cumulative distribution function
 
 sample space:  $x\in [0, \infin)$
 
-Mean and Variance: $\frac{1}{\lambda},\frac{1}{\lambda^2} $
+Mean and Variance: $\large \frac{1}{\lambda},\frac{1}{\lambda^2} $
 
 **PDF:** 
 $$
@@ -240,9 +217,70 @@ $$
 
 ### Gamma Distribution
 
-https://zh.wikipedia.org/wiki/%E4%BC%BD%E7%8E%9B%E5%88%86%E5%B8%83
+Notation: $X\sim\text{Gamma}(\alpha,\beta)\text{ or } \Gamma(\alpha, \lambda) ,\lambda = \large \frac{1}{\beta} $
+
+Parameters: $\alpha, \lambda \in (0,\infin)$
+
+Mean and Variance: $\large \frac{\alpha}{\lambda},\ \frac{\alpha}{\lambda^2}$
+
+Gamma Function:
+$$
+\Gamma(s) = \int^\infin_0x^{s-1}e^{-x}dx
+$$
+
+$$
+\left\{\begin{array}{ll}
+\Gamma(\alpha)=(\alpha-1) ! & \text { if } \alpha \text { is } \mathbb{Z}^{+} \\
+\Gamma(\alpha)=(\alpha-1) \Gamma(\alpha-1) & \text { if } \alpha \text { is } \mathbb{R}^{+} \\
+\Gamma\left(\frac{1}{2}\right)=\sqrt{\pi} &
+\end{array}\right.
+$$
 
 
+**PDF:**
+$$
+f(x)=\frac{x^{(\alpha-1)} \lambda^{\alpha} e^{(-\lambda x)}}{\Gamma(\alpha)}=\frac{x^{(\alpha-1)} e^{\left(-\frac{1}{\beta} x\right)}}{\beta^{\alpha} \Gamma(\alpha)}, \mathrm{x}>0
+$$
+
+
+![https://upload.wikimedia.org/wikipedia/commons/f/fc/Gamma_distribution_pdf.png](https://upload.wikimedia.org/wikipedia/commons/f/fc/Gamma_distribution_pdf.png)
+
+**CDF:**
+$$
+{\frac {\gamma (\alpha,\lambda x )}{\Gamma (\alpha)}}\,\!
+$$
+
+
+![https://upload.wikimedia.org/wikipedia/commons/a/a9/Gamma_distribution_cdf.png](https://upload.wikimedia.org/wikipedia/commons/a/a9/Gamma_distribution_cdf.png)
+
+![image-20220217094728373](C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220217094728373.png)
+
+### Geometric Distribution
+
+Geometric Distribution is either one of below two distribution:
+
+- The probability distribution of the number $X$ of Bernoulli trials needed to get one success, supported on the set $\{1,2,3, \ldots\}$;
+- The probability distribution of the number $Y=X-1$ of failures before the first success, supported on the set $\{0,1,2, \ldots\}$.
+
+
+
+Notation: $X\sim\text{Gemo}(p)\ \text{ or }\ Y\sim\text{Gemo}(p)$
+
+Mean and Variance: $\large \frac{1}{p} \small\text{ or }\large \frac{1-p}{p} ,\ \frac{1-p}{p^2}$
+
+**PDF:**
+$$
+(1-p)^{k-1}p\ \text{ or }\ (1-p)^{k}p
+$$
+
+
+![Geometric pmf.svg](https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Geometric_pmf.svg/1024px-Geometric_pmf.svg.png)
+
+**CDF:**
+$$
+1-(1-p)^k\ \text{ or }\  1-(1-p)^{k+1}\
+$$
+![img](https://upload.wikimedia.org/wikipedia/commons/6/6f/Geometric_cdf.svg)
 
 ### Binomial Distribution
 
@@ -271,7 +309,6 @@ CDF:
 $$
 I_{q}(n-k, 1+k)
 $$
-
 
 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Binomial_distribution_pmf.svg/300px-Binomial_distribution_pmf.svg.png" alt="Probability mass function for the binomial distribution" style="zoom:80%;" /><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/Binomial_distribution_cdf.svg/300px-Binomial_distribution_cdf.svg.png" alt="Cumulative distribution function for the binomial distribution" style="zoom:67%;" />
 
@@ -307,4 +344,24 @@ https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&ved=2ahUKEwitz--m
 
 
 
-## 
+## Estimator
+
+How can we decide how many samples ($n$) we need to draw our conclusion? **What is the cutoff**, namely if 60 is enough, how about 59 and 58?
+
+Now we have our first estimator of $p$ of *Kissing Example*.
+
+- For $i=1, \ldots, n$, define $R\sim Ber(p)$, $R_{i}= 1$ if the $i$ th couple turns to the right RIGHT, $R_{i}=0$ otherwise.
+- The estimator of $p$ is the sample averge:
+$$
+\hat{p}=\overline{R_{n}}=\frac{1}{n} \sum^{n} R_{i}
+$$
+
+
+**What is the accuracy of this estimator?**
+
+We don’t even know the true $p$ and the observation $\hat{p}$ from random variables fluctuates. We need a method to measure its fluctuation.
+
+Modelling Assumptions:
+
+- Each r.v. and i.i.d $R_i$ is Bernoulli (p) 
+

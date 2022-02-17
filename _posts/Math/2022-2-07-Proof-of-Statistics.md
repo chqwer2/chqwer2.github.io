@@ -234,7 +234,34 @@ E\left(|X-Y|^{a}\right)=2 \iint_{x>y}(x-y)^{a} d x d y \\
 \end{array}
 $$
 
+##### Covariance of Gaussians
 
+Recall that the **covariance** of two random variables $X$ and $Y$ denoted by $\text{Cov} (X,Y)$ is defined as:
+$$
+\text{Cov} (X,Y) = \text E[\ (X-\text E[X])\ (Y-\text E[Y])\ ]\\
+\text{Cov} (X,Y) = \text E[XY]\cdot\text E[X]\text E[Y])\ ]
+$$
+
+
+ **Var[X+Y] = Var[X] + Var[Y] + 2∙Cov[X,Y]** 
+
+$$
+\begin{aligned}
+\operatorname{Var}(X Y) &=\operatorname{Var}[\mathrm{E}(X Y \mid X)]+\mathrm{E}[\operatorname{Var}(X Y \mid X)] \\
+&=\operatorname{Var}[X \mathrm{E}(Y \mid X)]+E\left[X^{2} \operatorname{Var}(Y \mid X)\right] \\
+&=\operatorname{Var}[X \mathrm{E}(Y)]+E\left[X^{2} \operatorname{Var}(Y)\right] \\
+&=E(Y)^{2} \operatorname{Var}(X)+\operatorname{Var}(Y) E\left(X^{2}\right)
+\end{aligned}
+$$
+
+
+If the covariance between two random variables is 0, then they are independent?
+
+False, the criterion for **independence** is $F(x,y)=F_X(x)F_Y(y)$
+
+**variance of ln function**
+
+![image-20220216223016542](C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220216223016542.png)
 
 
 ### Limitations
@@ -254,3 +281,13 @@ $$
 
 
 [What is the variance of the maximum of a sample?](https://stats.stackexchange.com/questions/15970/what-is-the-variance-of-the-maximum-of-a-sample)
+
+
+
+##### Maximum of uniform random variables
+
+$M_n$
+
+b = - (2*barX_n + 1.6448^2/n) 
+
+(2*barX_n + 1.6448^2/n + sqrt((2*barX_n + 1.6448^2/n) &2-4*barX_n^2) )/2

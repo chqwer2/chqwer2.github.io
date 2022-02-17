@@ -1,7 +1,7 @@
 ---
 layout:     post
 title:      "LaTex Cheat Sheet"
-subtitle:   " \"LaTex is Beautiful!\""
+subtitle:   " \"LaTex is All You Need!\""
 date:       2022-01-29 12:00:00
 author:     "Calvchen"
 header-img: "img/post-bg-2015.jpg"
@@ -19,11 +19,13 @@ tags:
 
 ### Emoji
 
-🌆🌇⭐⚾⚽⚡⚠🆒🚲🚀❔❓❗❕❌
-
-🍣😉😜😱🔥🌊🌈📌💻🎸🎻🎺🎵🎶🍦🌑🌓🌔🌕
-
 [Have Fun with Emoji Unicode](https://apps.timwhitlock.info/emoji/tables/unicode#block-6c-other-additional-symbols)
+
+To make the writing more vivid~
+
+❔❓❗❕❌💻🎸🎻🎺🎵🎶🌑🌓🌔🌕🌆🌇⭐⚾⚽⚡⚠🆒🚲🚀🍣😉😜😱🔥🌊🌈📌🍦
+
+
 
 ### Text
 
@@ -50,8 +52,7 @@ $$
 \overbrace{a+\underbrace{b+c}_{1.0}+d}^{2.0}
 $$
 
-
-The enclose package haven’t provided…
+>The enclose package haven’t provided…
 
 | $$\enclose{horizontalstrike}{a}\ \enclose{verticalstrike}{a}$$ | `\enclose{horizontalstrike}` | $\enclose{updiagonalstrike}{a} \enclose{downdiagonalstrike}{a}$ | `up/down + diagonalstrike` |
 | ------------------------------------------------------------ | ---------------------------- | ------------------------------------------------------------ | -------------------------- |
@@ -87,17 +88,16 @@ The enclose package haven’t provided…
 
 ### Arrows
 
-| Renders                                                      | LaTeX markup           | Renders                                                      | LaTeX markup         |
-| ------------------------------------------------------------ | ---------------------- | ------------------------------------------------------------ | -------------------- |
-| $\leftarrow \Leftarrow$                                      | `\l/Leftarrow`         | $$                                                           | `\Leftarrow`         |
-| $\rightarrow\ \Longrightarrow$                               | `\rightarrow Long+X `  | $\rightleftharpoons$                                         | `\rightleftharpoons` |
-| $\uparrow \ \Uparrow$                                        | `\u/Uparrow`           | $\downarrow \ \Downarrow$                                    | `\d/Downarrow`       |
-| $\leftrightarrow\ \Leftrightarrow\ \Updownarrow$             | `\Leftright/Updown+X ` |                                                              | `\`                  |
-| ![{\displaystyle \mapsto }](https://wikimedia.org/api/rest_v1/media/math/render/svg/bc09de045e7d82eef9fe078e7e7606576640c11b) | `\mapsto Long+X`       |                                                              |                      |
-| ![{\displaystyle \nearrow }](https://wikimedia.org/api/rest_v1/media/math/render/svg/13726ca48b64be8035bbf69dedc5de51b6c59b62) | `\nearrow`             | ![{\displaystyle \searrow }](https://wikimedia.org/api/rest_v1/media/math/render/svg/c086f3b8ec7a49977877c105da5f386531d5775a) | `\searrow`           |
-| ![{\displaystyle \swarrow }](https://wikimedia.org/api/rest_v1/media/math/render/svg/b4fafa2f8a9f4c7b1c1adcf090888097ddde887d) | `\swarrow `            | ![{\displaystyle \nwarrow }](https://wikimedia.org/api/rest_v1/media/math/render/svg/8477be47a1b75007f7f62bb406e08f5405366f2a) | `\nwarrow`           |
-| ![{\displaystyle \leftharpoonup }](https://wikimedia.org/api/rest_v1/media/math/render/svg/ed5b4c2f2ab115005b72687fbe5e6584497a0b17) | `\leftharpoonup  `     | ![{\displaystyle \rightharpoonup }](https://wikimedia.org/api/rest_v1/media/math/render/svg/912c85b375886509f9bf323bab01cd1d3d0b96c1) | `\rightharpoonup`    |
-| ![{\displaystyle \leftharpoondown }](https://wikimedia.org/api/rest_v1/media/math/render/svg/8572e40b7a21ea071eac94f81458238d9f096ff8) | `\leftharpoondown `    | ![{\displaystyle \rightharpoondown }](https://wikimedia.org/api/rest_v1/media/math/render/svg/b3b850cb314e0167a03944481381f8a0401506d8) | `\rightharpoondown`  |
+For saving space: $X$ is a substition of $array$ in following markup
+
+| Renders                            | LaTeX markup               | Renders                                | LaTeX markup                 |
+| ---------------------------------- | -------------------------- | -------------------------------------- | ---------------------------- |
+| $\leftarrow\  \Leftarrow$          | `\left \Left arrow`        | $\rightarrow\ \Longrightarrow$         | ``\right \Longright arrow `` |
+| $\uparrow \ \Uparrow$              | `\up \Up arrow`            | $\downarrow \ \Downarrow$              | `\down \Down arrow `         |
+| $\updownarrow\ \Updownarrow$       | `\up \Up downarrow`        | $\leftrightarrow\ \Leftrightarrow\ $   | `\Left \left rightarray `    |
+| $\rightleftharpoons$               | `\rightleftharpoons`       | $\mapsto$                              | `\mapsto`                    |
+| $\nearrow\ \swarrow$               | `\ne/sw array`             | $\nwarrow\ \searrow$                   | `\nw/se array`               |
+| $\leftharpoonup\  \rightharpoonup$ | `\left \right harpoonup  ` | $\leftharpoondown\  \rightharpoondown$ | `\left \right harpoondown`   |
 
 ### Miscellaneous symbols
 
@@ -115,24 +115,17 @@ The enclose package haven’t provided…
 
 ### Binary Operation/Relation Symbols
 
-| Renders                                                      | LaTeX markup | Renders                                                      | LaTeX markup      |
-| ------------------------------------------------------------ | ------------ | ------------------------------------------------------------ | ----------------- |
-| $\pm$                                                        | `\pm`        | $\not >$                                                     | `\not`            |
-| ![{\displaystyle \times }](https://wikimedia.org/api/rest_v1/media/math/render/svg/0ffafff1ad26cbe49045f19a67ce532116a32703) | `\times`     | $\cdot \circ \ast$                                           | `cdot circ ast`   |
-| ![{\displaystyle \div }](https://wikimedia.org/api/rest_v1/media/math/render/svg/837b35ee5d25b5ce7b07f292c27cc90533dd9fd4) | `\div`       | ![{\displaystyle \cap }](https://wikimedia.org/api/rest_v1/media/math/render/svg/9d4e886e6f5a28a33e073fb108440c152ecfe2d3) | `\cap`            |
-| $\cup\  \cap$                                                | `\cup \cap`  | ![{\displaystyle \neq \;}](https://wikimedia.org/api/rest_v1/media/math/render/svg/fdd9cfbf0e9468f24b6f9b27db3be1f8bb5d6650) | `\neq`            |
-| $\leq\ \geq$                                                 | `leq geq`    | $\ll\ \gg$                                                   | `ll gg `          |
-| ![{\displaystyle \in }](https://wikimedia.org/api/rest_v1/media/math/render/svg/6fe4d5b0a594c1da89b5e78e7dfbeed90bdcc32f) | `\in`        | ![{\displaystyle \perp \;}](https://wikimedia.org/api/rest_v1/media/math/render/svg/e359e464318097f841e700d97bdb60c5aed21cf5) | `\perp`           |
-| ![{\displaystyle \notin }](https://wikimedia.org/api/rest_v1/media/math/render/svg/33dea9a3a3f311cc734ffd570e8f697ea1560a90) | `\notin`     | $\subset$ $\supset$                                          | `\subset \supset` |
-| ![{\displaystyle \simeq }](https://wikimedia.org/api/rest_v1/media/math/render/svg/65b9738551241417d16d9843525ed52410af4dc9) | `\simeq`     | ![{\displaystyle \approx }](https://wikimedia.org/api/rest_v1/media/math/render/svg/6f58f4c2b73283ce8a5ad28fb3746f2a8c998789) | `\approx`         |
-| ![{\displaystyle \wedge }](https://wikimedia.org/api/rest_v1/media/math/render/svg/1caa4004cb216ef2930bb12fe805a76870caed94) | `\wedge`     | ![{\displaystyle \vee }](https://wikimedia.org/api/rest_v1/media/math/render/svg/7b76220c6805c9b465d6efbc7686c624f49f3023) | `\vee`            |
-| ![{\displaystyle \oplus \;}](https://wikimedia.org/api/rest_v1/media/math/render/svg/282868a7bc101b11dabe70abe1d72def8ec688c3) | `\oplus`     | ![{\displaystyle \otimes }](https://wikimedia.org/api/rest_v1/media/math/render/svg/de29098f5a34ee296a505681a0d5e875070f2aea) | `\otimes`         |
-| $\bigodot$                                                   | `\bigodot`   | $\ominus$                                                    | `\bigominus`      |
-| ![{\displaystyle \Box }](https://wikimedia.org/api/rest_v1/media/math/render/svg/029b77f09ebeaf7528fc831fe57848be51f2240b) | `\Box`       | ![{\displaystyle \boxtimes }](https://wikimedia.org/api/rest_v1/media/math/render/svg/0cfc27ef694886c0b78697df1cd69558cdf53eff) | `\boxtimes`       |
-| ![{\displaystyle \equiv }](https://wikimedia.org/api/rest_v1/media/math/render/svg/4c5c34250859b6f6d2a77b4e8a2ceaa90638076d) | `\equiv`     | ![{\displaystyle \cong }](https://wikimedia.org/api/rest_v1/media/math/render/svg/a725ebc5ab8de11d7b71a8aa5a3706c2ea467885) | `\cong`           |
-| $\sim$                                                       | `\sim`       | $\tilde{x}$                                                  | `\tilde`          |
-| $\because$                                                   | `\because`   | $\therefore$                                                 | `\therefore`      |
-| $\exists$                                                    | `\exists`    |                                                              |                   |
+| Renders            | LaTeX markup     | Renders                | LaTeX markup          |
+| ------------------ | ---------------- | ---------------------- | --------------------- |
+| $\pm$              | `\pm`            | $\not >$               | `\not`                |
+| $\times\ \div$     | `\times \div`    | $\cdot \circ \ast$     | `\cdot \circ \ast`    |
+| $\cup\ \cap$       | `\cup \cap`      | $\subset\ \supset$     | `\subset \supset`     |
+| $\leq\ \geq$       | `\leq \geq`      | $\ll\ \gg$             | `\ll \gg `            |
+| $\in\ \notin$      | `\in \notin`     | $\perp\ \exists$       | `\perp \exists`       |
+| $\oplus\ \otimes$  | `\oplus \otimes` | $\odot\ \ominus$       | `\bigodot \ominus`    |
+| $\Box \ \boxtimes$ | `\Box \boxtimes` | $\wedge\ \vee$         | `\wedge\ \vee`        |
+| $\equiv\ \neq$     | `\equiv \neq`    | $\because\ \therefore$ | `\because \therefore` |
+| $\sim\ \approx$    | `\sim \approx`   | $\simeq\ \cong$        | `\simeq \cong`        |
 
 ### Brackets and Parentheses
 
@@ -146,7 +139,7 @@ The enclose package haven’t provided…
 | Double pipes                | `\|x+y\|`             | ∥*x*+*y*∥   |
 
 - \left[ … \right]  
--  \left( … \right( 
+-  \left( … \right()
 - \Bigg \langle … \bigg \rangle
 
 $$
