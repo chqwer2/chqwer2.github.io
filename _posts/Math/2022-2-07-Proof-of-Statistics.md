@@ -40,7 +40,11 @@ $$
 \int_{-\infty}^{\infty} \frac{x-\mu}{\sqrt{2 \pi} \sigma} e^{-\frac{(x-\mu)^{2}}{2 \sigma^{2}}} d x=0
 $$
 
-### Means of Gaussian:
+### Gaussian Probability Tables and Quantiles
+
+
+
+### Means of Gaussians
 
 **For** $\mathbb E[x] = \mu$,
 
@@ -133,9 +137,11 @@ $$
 $$
 ![[eq2]](https://www.statlect.com/images/mean-estimation__10.png)
 
-EXY?
+**For** $\mathbb E[XY]$,
 
-### Variance of Gaussian:
+
+
+### Variance of Gaussians
 
 **For** $\mathbb V[x] = \sigma^2$,
 
@@ -262,6 +268,27 @@ False, the criterion for **independence** is $F(x,y)=F_X(x)F_Y(y)$
 **variance of ln function**
 
 ![image-20220216223016542](C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220216223016542.png)
+
+### The Property of Maximum
+
+**The CDF of max(X, Y)**
+
+We have $X, Y\sim \text{Uni}(-1,1)$ and $Z = \text{max}(X,Y)$.
+$$
+F_{Z}(z)=P\{Z<z\}=P\{\max (X, Y)<z\}
+$$
+
+
+We know $\max (X, Y)<z$ only if both $X$ and $Y$ are less than $z$:
+$$
+\begin{aligned}
+P\{\max (X, Y)<z\} &=P\{\{X<z\} \cap\{Y<z\}\} \\
+X \text { and } Y \text { are i.i.d}  \longrightarrow &=P\{X<z\} P\{Y<z\} \\
+&=F_{X}(z) F_{Y}(z)
+\end{aligned}
+$$
+
+
 
 
 ### Limitations

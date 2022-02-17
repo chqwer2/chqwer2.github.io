@@ -27,7 +27,13 @@ subtitle:   " \"Get familiar with the EC...\""
 
 EC provides a general method for solving ‘search for solutions’ type of problems, such as optimisation, learning, and design.
 
-### What will be covered?
+## Progress:
+
+Week 2…
+
+
+
+## What will be covered?
 
 **Algorithms** 
 

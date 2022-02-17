@@ -161,13 +161,27 @@ $$
 $$
 ![image-20220205100840395](https://chqwer2.github.io/img/Typora/image-20220205100840395.png)
 
-Cumulative Distribution Function:
+**Cumulative Distribution Function:**
 $$
-\frac{1}{2}\left[1+ \text{erf} \left(  \frac{x-\mu}{\sqrt{2}\sigma }\right)\right]
+\Phi(x) = \mathbb P(X\leq x) = \frac{1}{2}\left[1+ \text{erf} \left(  \frac{x-\mu}{\sqrt{2}\sigma }\right)\right]
 $$
+
+
 $\text{erf}(\cdot)$ is the exponential response formula.
 
 ![image-20220205100857657](https://chqwer2.github.io/img/Typora/image-20220205100857657.png)
+
+**Why we use Gaussian Distribution so frequently?**
+
+Normally, we use sample mean as our estimator. And the reason is because the Gaussian distribution is the thing that shows up as the limit of the CLT as the minute you start talking about averages.
+
+Of the universe type of results, that says that if you take average of enough things, then it's going to go to a Gaussian.
+
+**The extreme value?**
+
+The value field of a Gaussian is $(-\infin, \infin)$, but when we use it in mapping real distribution, namely the height, we will never achieve negative value, why we do Gaussian?
+
+Yes, there exists extreme value, but they never really come into play. Because of the exponential can get really, really small. The Gaussian actually almost in a bounded interval.
 
 ### Poisson Distribution
 
@@ -181,7 +195,7 @@ E(X^2) = Var(X) + E(x)^2 =  \lambda + \lambda^2
 $$
 ![image-20220206111006698](https://chqwer2.github.io/img/Typora/image-20220206111006698.png)
 
-Pr0! = 1
+Pre-require 0! = 1
 
 **Probability Mass Function:** 
 $$
@@ -286,17 +300,13 @@ $$
 
 Notation: $B(n,p)$, n is number of trials and p is success probability of each trial
 
-parameters: p, N
-
-Mean: np, 
-
-Var = $\sum^n_{k=1} \sigma^2 = np(1-p)$
-
+**Mean and Variance:** $np$, $\sum^n_{k=1} \sigma^2 = np(1-p)$
+$$
+(1-c/n)^n\rightarrow e^{-c} for \ constant\ c.
+$$
 
 
-$ (1-c/n)^n\rightarrow e^{-c} for \ constant\ c.$
-
-PMF: 
+**Probability Mass Function:** 
 $$
 P(k)= \left(\begin{array}{l}
 
@@ -305,20 +315,26 @@ k
 \end{array}\right) p^{k} q^{n-k}=\frac{n!}{k!(n-k)!}p^{k} q^{n-k}
 $$
 
-CDF:
+
+
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Binomial_distribution_pmf.svg/300px-Binomial_distribution_pmf.svg.png" alt="Probability mass function for the binomial distribution" style="zoom:100%;" />
+
+**Cumulative Distribution Function:**
 $$
 I_{q}(n-k, 1+k)
 $$
 
-<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Binomial_distribution_pmf.svg/300px-Binomial_distribution_pmf.svg.png" alt="Probability mass function for the binomial distribution" style="zoom:80%;" /><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/Binomial_distribution_cdf.svg/300px-Binomial_distribution_cdf.svg.png" alt="Cumulative distribution function for the binomial distribution" style="zoom:67%;" />
 
-Probability mass function (Left), Cumulative distribution function(right)
+
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/Binomial_distribution_cdf.svg/300px-Binomial_distribution_cdf.svg.png" alt="Cumulative distribution function for the binomial distribution" style="zoom:100%;" />
 
 In other words, there are a finite amount of events in a binomial distribution, but an infinite number in a normal distribution.
 
 ### Bernoulli Distribution
 
-Variance: p(1-p) 
+Notation: $X\sim Ber(p)$
+
+Mean and Variance: $p$, $p(1-p)$ 
 
 
 
@@ -342,24 +358,51 @@ Useful…
 
 https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&ved=2ahUKEwitz--mtvL1AhXeQEEAHSmoAI8QFnoECDwQAQ&url=https%3A%2F%2Fwww.le.ac.uk%2Fusers%2Fdsgp1%2FCOURSES%2FMATHSTAT%2F6normgf.pdf&usg=AOvVaw3QHSFjpCFrBgTFBxRwGAnK---
 
+### Property of Distribution
+
+We take Gaussian $X\sim\mathcal N(\mu, \sigma^2)$as an example.
+
+**Affine Transformation:**
+$$
+\alpha \cdot X + \beta \sim\mathcal N(\alpha\mu + \beta, \alpha^2\sigma^2)
+$$
+
+
+**Standardization:**
+
+According to CLT, we assume $Z = \frac{X-\mu}{\sigma}$
+$$
+\mathbb P(u<X<v) = \mathbb P(\frac{u-\mu}{\sigma}<Z<\frac{v-\mu}{\sigma})
+$$
+
+
+**Symmetry:**
+$$
+\mathbb P(|X|>x) = \mathbb P(X>x) + \mathbb P(-X>x)=2\mathbb P(X>x)
+$$
 
 
 ## Estimator
 
 How can we decide how many samples ($n$) we need to draw our conclusion? **What is the cutoff**, namely if 60 is enough, how about 59 and 58?
 
-Now we have our first estimator of $p$ of *Kissing Example*.
+Now we have our first estimator of $p$ of *Kissing Example*, we put a hat on everything that’s the estimator of something.
 
 - For $i=1, \ldots, n$, define $R\sim Ber(p)$, $R_{i}= 1$ if the $i$ th couple turns to the right RIGHT, $R_{i}=0$ otherwise.
-- The estimator of $p$ is the sample averge:
+- Our first estimator of $p$ is the sample averge:
 $$
 \hat{p}=\overline{R_{n}}=\frac{1}{n} \sum^{n} R_{i}
 $$
 
 
+
+And averages of random variables are essentially controlled by two major tools: They are LLN and CLT.
+
 **What is the accuracy of this estimator?**
 
-We don’t even know the true $p$ and the observation $\hat{p}$ from random variables fluctuates. We need a method to measure its fluctuation.
+**What is the probability that $\hat p$ is away from $p$ by more than 10%.**
+
+We don’t even know the true $p$ and the observation $\hat{p}$ is from random variables fluctuates. We need a method to measure its fluctuation.
 
 Modelling Assumptions:
 
