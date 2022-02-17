@@ -1,18 +1,19 @@
 ---
 ayout:     post
 title:      "Metric Learning Papers"
-subtitle:   " \"ArcFace, etc...\""
-date:       2022-02-08 12:00:00
+date:       2022-02-01 12:00:00
 author:     "Calvchen"
 header-img: "img/post-bg-infinity.jpg"
 catalog: true
 tags:
     - Paper
     - Metrics
+subtitle:   " \"ArcFace, etc...\""
+
 
 ---
 
-> “Metric is to measure the distance between instances. ”
+> Metric is to measure the distance between instances. 
 
 
 

@@ -17,6 +17,10 @@ tags:
 
 
 
+## Diagrams and visualizations 
+
+[Mermaid Cheat Sheet](https://mermaid-js.github.io/mermaid/#/flowchart)
+
 ### Emoji
 
 [Have Fun with Emoji Unicode](https://apps.timwhitlock.info/emoji/tables/unicode#block-6c-other-additional-symbols)
