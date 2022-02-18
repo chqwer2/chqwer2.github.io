@@ -100,10 +100,8 @@ service-worker: true
 # MathJax rendering for layout:page (e.g. post preview)
 page-mathjax: true
 
-
-
 # Friends
-friends: [
+friends: []
 #    {
     #     title: "Su",
     #     href: "http://su.gallery/"
@@ -132,4 +130,4 @@ friends: [
 #        title: "尹峰以为",
 #        href: "http://ingf.github.io/"
 #    }
-]
+

@@ -33,7 +33,7 @@ So the final recipe will be:
 
 The recipe is simple.
 
-- Go to your _includes/head.html in your Jekyll folder structure.
+- Go to your **_includes/head.html** in your Jekyll folder structure.
 - Put the following code snippet there (before the </head> tag).
 
 ```html

@@ -37,8 +37,9 @@ Week 2…
 
 **Algorithms** 
 
-- Randomized Search Heuristics 
-- Evolutionary Algorithms: [Genetic Algorithms](#Genetic Algorithm (GA)), Genetic Programming, Evolutionary Programming, Differential Evolution and Evolution Strategies 
+- [Randomized Search Heuristics ](#Randomised Algorithm)
+- [Local Search Algorithms](#Local Search Algorithms)
+- [**Evolutionary Algorithms:**](Evolutionary Algorithms) [Genetic Algorithms](#Genetic Algorithm (GA)), Genetic Programming, Evolutionary Programming, Differential Evolution and Evolution Strategies 
 - Game Theory (optimisation) and Evolutionary Game Theory (dynamics) 
 - Particle Swarm Optimiser & Ant Colony Optimisation 
 - Artificial Immune System
@@ -58,20 +59,46 @@ Week 2…
 ### Categories of Algorithms by by design paradigm
 
 - Divide and conquer algorithms, e.g., quicksort algorithm 
+
 - Dynamic programming algorithms 
+
 - Mathematical programming algorithms, e.g., linear programming 
+
 - Search and enumeration algorithms 
   - Brute force (exhaustive) algorithms, enumerating all possible candidate solutions and check 
+  
   - Improved brute force algorithms, e.g., branch and bound algorithms 
+  
   - **Heuristic algorithms** 
     - Local search, e.g., greedy search 
+    
     - **Randomised algorithms**, which include Evolutionary Computation, etc
+    
+      
 
+### 
 
+### Travelling salesman problem (TSP)
 
-### Start with Questions
+Given a list of cities $x_i\in\mathbb R^n$ and the distances matrix between each pair of them.
 
-**Matching one Bolt to n Distinct Sizes Nuts:**
+Seek for the shortest rout that visits each city exactly once and returns to the origin city.
+
+![image-20220217164956175](C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220217164956175.png)
+
+Solve TSP using:
+
+- Brute force $O(n!)$, or improved **branch and cut** $O(1.9999^n)$
+
+- Mathematical programming algo, e.g. **linear programming** (itself is a NP-hard problem, see [here]([Microsoft Word - Why_LP_cannot_solve_large_instances_of_NP-complete_problems_in_polynomial_time.doc (arxiv.org)](https://arxiv.org/ftp/cs/papers/0611/0611008.pdf))).
+
+- So **Heuristic algotithms**
+
+  
+
+## Randomised Algorithm
+
+Start with Question: **Matching one Bolt to n Distinct Sizes Nuts:**
 
 given one bolt and a collection of n nuts of different sizes, find a nut match the bolt
 
@@ -92,8 +119,6 @@ Trad of optimality, completness, accuracy or precision for **speed**.
 Includes determiistic (e.g. 0 or 1 results)
 
 
-
-### Randomised Algorithm
 
 makes random choices during execution,
 
@@ -141,7 +166,71 @@ avg: O(nlogn), worst: O(2nlogn)
 
 ![image-20220203123055102](C:\Users\calvchen\AppData\Roaming\Typora\typora-user-images\image-20220203123055102.png)
 
-## EA
+- 
+
+## Local Search Algorithms
+
+A heuristic algorithm for solving hard optimization problems.
+
+**Idea**: start with an initial guess at a solution and incrementally improve it until it is one 
+
+**Incremental improvement**: local changes, e.g., the algorithm iteratively moves to a neighbour solution 
+
+**Neighbour solution**: Depends on the definition of a neighbourhood relation on the search space, but generally based on similarity (distance) measure
+
+### Hill Climbing Algo
+
+> Climbing Everest in thick fog with amnesia
+
+Search for its better **Immediate neighbour solutions**, which is the most similar solutions to the current solution.
+
+Two types of hill climbing: 
+
+- **Simple hill climbing:** chooses the **first** better solution 
+- **Steepest ascent hill climbing:** compares all neighbour solutions and chooses the best solution
+
+**2-Opt Algorithm**
+
+Detailed swapping steps for swapping two edges, which result in an **immediate neighbour solutions**: 
+
+- Step 1: removal of two edges from the current route, which results in two parts of the route. 
+- Step 2: reconnect by two other edges to obtain a new solution
+
+<img src="C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220217171108568.png" alt="image-20220217171108568" style="zoom:33%;" />
+
+What is **3-Opt Algo**?
+
+
+
+#TODO How to draw fitness landscape in high dimension?
+
+**Randomised search vs Local search**
+
+- Random
+  - Good at exploration, Not good at exploitation
+  - Especially bad for problems solution only lies on narrow space.
+- Local
+  - Not good at exploration: gets stuck in local minima.
+  - Good at exploitation: capable of finding local optimum
+
+### Stochastic Local Search algorithms
+
+Main idea: escape or avoid local optima, introduce randomness into local search algo.
+
+**Escape stategies:**
+
+- **Random restart**: simply restart the local search from a random initial solution
+- Perform non-improving step: randomly move to a less fit neighbour – **Simulated Annealing (SA)** 
+
+![image-20220217172459663](C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220217172459663.png)
+
+![image-20220217172517865](C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220217172517865.png)
+
+Accepting worse solutions with a certain probability, e.g., $P:=\exp \left(\frac{e-e_{\text {new }}}{T}\right)$ if $e_{\text {new }} \geq e$, which is worse.
+
+Other: [Tabu Search]([Tabu Search: A Tutorial. (liu.se)](https://www.ida.liu.se/~zebpe83/heuristic/papers/TS_tutorial.pdf))
+
+## Evolutionary Algorithms
 
 ![image-20220217152919465](C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220217152919465.png)
 
@@ -177,7 +266,7 @@ graph LR
     New_Phenotype--Encode-->Genotype
 ```
 
-**Genetic variation Operators**: 
+#### Genetic variation Operators 
 
 - **Mutations**: changes in the DNA (Deoxyribonucleic Acid) sequence.
   - Flip each bit with a probability $p_m\in[\frac{1}{L}, \frac{1}{2}]$, called mutation rate.
@@ -205,3 +294,34 @@ $$
 For example, assume $X = \{x_1, x_2, x_2\}$ and $X\in[-5,5]$.
 
 <img src="C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220217161833485.png" alt="image-20220217161833485" style="zoom:67%;" />
+
+#### Selection
+
+Selection usually is performed before variation operators: selects better fit individuals for breeding
+
+Emphasising on exploiting better solutions in a population:
+
+- Select one or more copies of good solutions.
+- Inferior solutions will be selected but with a much less chance
+
+**Question:** Why we still select those inferior solutions?
+
+Selection schemes:
+
+- Fitness Proportional Selection
+- Ranking Selection
+- Truncate selection
+- Tournament Selection
+- $(\mu+\lambda)$ and $(\mu, \lambda)$ selection
+
+**Fitness Proportional Selection**
+
+
+
+**Ranking Selection**
+
+**Truncate selection**
+
+**Tournament Selection**
+
+**$(\mu+\lambda)$ and $(\mu, \lambda)$ selection**
