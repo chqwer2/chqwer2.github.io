@@ -53,6 +53,8 @@ According to the law, the average of the results obtained from performing the sa
 
 Let $X, X_{1}, X_{2}, \ldots, X_{n}$ be i.i.d. 
 Laws (weak and strong) of large numbers (LLN):
+
+
 $$
 \bar{X}_{n}:=\frac{1}{n} \sum_{i=1}^{n} X_{i} \underset{n \rightarrow \infty}{\stackrel{\text { P }, \text { a.s. }}{\longrightarrow}} \mu .
 $$
@@ -60,10 +62,11 @@ $$
 ### Central Limit Theorem (CLT)
 
 CLT establishes that when independent random variables summed up, their properly normalized sum tends toward a **normal distribution** even if the original variables themselves are not normally distributed. 
+
+
 $$
 \sqrt{n} \frac{\bar{X}_{n}-\mu}{\sigma} \frac{(d)}{n \rightarrow \infty} \mathcal{N}(0,1)
 $$
-
 
 where  $\stackrel{(d)}{\rightarrow}$ denotes convergence in distribution.
 
@@ -71,21 +74,21 @@ Standard Gaussian means that this quantity will be a number between (-3, 3) with
 
 $\bar X_n$ is close to $\mu$ at some deviations that are of order 1 over square root of sample size  ($\sim \frac{1}{n}$).
 
-**Rule of thumb to apply CLT:** normally, we require $n\geq30$.
+**Rule of thumb to apply CLT** - normally, we require $n\geq30$.
 
-#### Asymptotic normality
+**Asymptotic normality**
 
-Assume the sequence $\left\{X_{n}\right\}$ is an i.i.d sequence with finite mean and variance.
-Therefore, it satisfies the conditions of Central Limit Theorem.
-Hence, the sample mean $\bar X_{n}$ in the above equlity is asymptotically normal.
-In other words, the sample mean $X_{n}$ converges in distribution to a normal random variable with mean $\mu$ and variance $\frac{\sigma^{2}}{n}$.
+Assuming the sequence $\{X_{n}\}$ is an i.i.d sequence with finite mean and variance. Therefore, it satisfies the conditions of Central Limit Theorem. Hence, the sample mean $\bar X_{n}$ in the above equlity is asymptotically normal. In other words, the sample mean $X_{n}$ converges in distribution to a normal random variable with mean $\mu$ and variance $\large \frac{\sigma^{2}}{n}$.
 
 ### Continuous Mapping Theorem (CMT)
 
 CMT states that continuous functions preserve limits even if their arguments are sequences of random variables. A continuous function is such a function that maps convergent sequences into another convergent sequences:
+
+
 $$
 \text{if\ } x_n \to x,\\ \text{then } g(x_n) \to g(x).
 $$
+
 
 
 It applies to $d,\ p$ and $a.s.$ convergence respectively.
@@ -97,9 +100,12 @@ What if $n$ is **not large enough** to apply CLT?
 For bounded random variable, this is still **Hoeffding’s Inequality** we can say for any n.
 Let $n$ be a positive integer and $X_i \in[a, b]\ $($a<b$ are given numbers)
 Then this holds even for small sample sizes $n$:
+
+
 $$
 \mathbb{P}\left[\left|\bar{X}_{n}-\mu\right| \geq \varepsilon\right] \leq 2 e^{\large-\frac{2 n \varepsilon^{2}}{(b-a)^{2}}} . \quad \forall \varepsilon>0
 $$
+
 
 
 Here I need that my random variables are actfually **almost surely bounded**, which rules out like Gaussians and Exponential Random Variables.
@@ -107,10 +113,13 @@ Here I need that my random variables are actfually **almost surely bounded**, wh
 **How to choose $\varepsilon$ ?**
 
 So let's parse this for a second… , if when $\varepsilon = \large\frac{c}{\sqrt{n}}$:
+
+
 $$
 X_i \overset{iid}{\sim}Ber(p)\\
 \mathbb{P}(| \bar{X} - \mu| \geq \frac{c}{\sqrt{n}}) \leq 2e^{-2c^2/1}
 $$
+
 
 
 The square root of $n$ qualitative behavior happens at any n.
@@ -128,9 +137,12 @@ These two inequalities guarentees that upper bounds on $\mathbf{P}(X \geq t)$ ba
 **Markov inequality**
 
 For a random variable $X \geq 0$ with mean $\mu>0$, and any number $t>0$ :
+
+
 $$
 \mathbf{P}(X \geq t) \leq \frac{\mu}{t}
 $$
+
 
 
 Note that the Markov inequality is restricted to **non-negative random variables**.
@@ -138,11 +150,15 @@ Note that the Markov inequality is restricted to **non-negative random variables
 **Chebyshev inequality**
 
 For a random variable $X$ with (finite) mean $\mu$ and variance $\sigma^{2}$, and for any number $t>0$,
+
+
 $$
 \mathbf{P}(|X-\mu| \geq t) \leq \frac{\sigma^{2}}{t^{2}}
 $$
 
-Remark:
+
+
+**Remark:**
 When Markov inequality is applied to $(X-\mu)^{2}$, we obtain Chebyshev's inequality. Markov inequality is also used in the proof of Hoeffding's inequality.
 
 
@@ -156,15 +172,20 @@ Notation: $X\sim\mathcal{N}(\mu, \sigma^2) $
 Mean and Variance: $\mu,\ \sigma^2$
 
 Probability Density Function: 
+
+
 $$
 \frac{1}{\sigma\sqrt{2\pi}}e^{-\frac{1}{2}\left( \frac{x-\mu}{\sigma}  \right)^2}
 $$
 ![image-20220205100840395](https://chqwer2.github.io/img/Typora/image-20220205100840395.png)
 
 **Cumulative Distribution Function:**
+
+
 $$
 \Phi(x) = \mathbb P(X\leq x) = \frac{1}{2}\left[1+ \text{erf} \left(  \frac{x-\mu}{\sqrt{2}\sigma }\right)\right]
 $$
+
 
 
 $\text{erf}(\cdot)$ is the exponential response formula.
@@ -179,7 +200,7 @@ Of the universe type of results, that says that if you take average of enough th
 
 **The extreme value?**
 
-The value field of a Gaussian is $(-\infin, \infin)$, but when we use it in mapping real distribution, namely the height, we will never achieve negative value, why we do Gaussian?
+The value field of a Gaussian is $(-\infty, \infty)$, but when we use it in mapping real distribution, namely the height, we will never achieve negative value, why we do Gaussian?
 
 Yes, there exists extreme value, but they never really come into play. Because of the exponential can get really, really small. The Gaussian actually almost in a bounded interval.
 
@@ -187,9 +208,11 @@ Yes, there exists extreme value, but they never really come into play. Because o
 
 The advantage of using poisson distribution is that n or p do not need to be known! This can make assumptions much easier.
 
-Notation: $X\sim\text{Poi}(\lambda),\ \lambda \in (0, \infin)$
+Notation: $X\sim\text{Poi}(\lambda),\ \lambda \in (0, \inftf)$
 
 Mean and Variance: $\lambda,\ \lambda$
+
+
 $$
 E(X^2) = Var(X) + E(x)^2 =  \lambda + \lambda^2
 $$
@@ -198,14 +221,16 @@ $$
 Pre-require 0! = 1
 
 **Probability Mass Function:** 
+
+
 $$
 \mathbb{P}(x=k) = \frac{\lambda^k}{k!} e^{-\lambda}, \ k=0,1,2,\cdots \\
 $$
-![image-20220205102615493](https://chqwer2.github.io/img/Typora/image-20220205102615493.png)
+<img src="https://chqwer2.github.io/img/Typora/image-20220205102615493.png" alt="image-20220205102615493" style="zoom:50%;" />
 
-Cumulative distribution function
+**Cumulative distribution function:**
 
-![image-20220205102652730](https://chqwer2.github.io/img/Typora/image-20220205102652730.png)
+<img src="https://chqwer2.github.io/img/Typora/image-20220205102652730.png" alt="image-20220205102652730" style="zoom:50%;" />
 
 ### Exponential Distribution
 
@@ -213,31 +238,37 @@ sample space:  $x\in [0, \infin)$
 
 Mean and Variance: $\large \frac{1}{\lambda},\frac{1}{\lambda^2} $
 
-**PDF:** 
+**Probability Mass Function:** 
+
+
 $$
 \lambda e^{-\lambda x}
 $$
 ![pdf](https://upload.wikimedia.org/wikipedia/commons/0/02/Exponential_probability_density.svg)
 
-**CDF:**
+**Cumulative distribution function:**
+
+
 $$
 1-e^{-\lambda x}
 $$
 ![cdf](https://upload.wikimedia.org/wikipedia/commons/b/ba/Exponential_cdf.svg)
 
-![image-20220205172337486](https://chqwer2.github.io/img/Typora/image-20220205172337486.png)
+<img src="https://chqwer2.github.io/img/Typora/image-20220205172337486.png" alt="image-20220205172337486" style="zoom:67%;" />
 
-![image-20220205172726369](https://chqwer2.github.io/img/Typora/image-20220205172726369.png)
+<img src="https://chqwer2.github.io/img/Typora/image-20220205172726369.png" alt="image-20220205172726369" style="zoom:67%;" />
 
 ### Gamma Distribution
 
 Notation: $X\sim\text{Gamma}(\alpha,\beta)\text{ or } \Gamma(\alpha, \lambda) ,\lambda = \large \frac{1}{\beta} $
 
-Parameters: $\alpha, \lambda \in (0,\infin)$
+Parameters: $\alpha, \lambda \in (0,\infty)$
 
 Mean and Variance: $\large \frac{\alpha}{\lambda},\ \frac{\alpha}{\lambda^2}$
 
 Gamma Function:
+
+
 $$
 \Gamma(s) = \int^\infin_0x^{s-1}e^{-x}dx
 $$
@@ -250,8 +281,9 @@ $$
 \end{array}\right.
 $$
 
+**Probability Mass Function:** 
 
-**PDF:**
+
 $$
 f(x)=\frac{x^{(\alpha-1)} \lambda^{\alpha} e^{(-\lambda x)}}{\Gamma(\alpha)}=\frac{x^{(\alpha-1)} e^{\left(-\frac{1}{\beta} x\right)}}{\beta^{\alpha} \Gamma(\alpha)}, \mathrm{x}>0
 $$
@@ -259,7 +291,9 @@ $$
 
 ![https://upload.wikimedia.org/wikipedia/commons/f/fc/Gamma_distribution_pdf.png](https://upload.wikimedia.org/wikipedia/commons/f/fc/Gamma_distribution_pdf.png)
 
-**CDF:**
+**Cumulative distribution function:**
+
+
 $$
 {\frac {\gamma (\alpha,\lambda x )}{\Gamma (\alpha)}}\,\!
 $$
@@ -282,7 +316,9 @@ Notation: $X\sim\text{Gemo}(p)\ \text{ or }\ Y\sim\text{Gemo}(p)$
 
 Mean and Variance: $\large \frac{1}{p} \small\text{ or }\large \frac{1-p}{p} ,\ \frac{1-p}{p^2}$
 
-**PDF:**
+**Probability Mass Function:** 
+
+
 $$
 (1-p)^{k-1}p\ \text{ or }\ (1-p)^{k}p
 $$
@@ -290,7 +326,9 @@ $$
 
 ![Geometric pmf.svg](https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Geometric_pmf.svg/1024px-Geometric_pmf.svg.png)
 
-**CDF:**
+**Cumulative distribution function:**
+
+
 $$
 1-(1-p)^k\ \text{ or }\  1-(1-p)^{k+1}\
 $$
@@ -301,12 +339,15 @@ $$
 Notation: $B(n,p)$, n is number of trials and p is success probability of each trial
 
 **Mean and Variance:** $np$, $\sum^n_{k=1} \sigma^2 = np(1-p)$
+
+
 $$
 (1-c/n)^n\rightarrow e^{-c} for \ constant\ c.
 $$
 
-
 **Probability Mass Function:** 
+
+
 $$
 P(k)= \left(\begin{array}{l}
 
@@ -320,11 +361,11 @@ $$
 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Binomial_distribution_pmf.svg/300px-Binomial_distribution_pmf.svg.png" alt="Probability mass function for the binomial distribution" style="zoom:100%;" />
 
 **Cumulative Distribution Function:**
+
+
 $$
 I_{q}(n-k, 1+k)
 $$
-
-
 
 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/Binomial_distribution_cdf.svg/300px-Binomial_distribution_cdf.svg.png" alt="Cumulative distribution function for the binomial distribution" style="zoom:100%;" />
 
@@ -389,7 +430,10 @@ How can we decide how many samples ($n$) we need to draw our conclusion? **What 
 Now we have our first estimator of $p$ of *Kissing Example*, we put a hat on everything that’s the estimator of something.
 
 - For $i=1, \ldots, n$, define $R\sim Ber(p)$, $R_{i}= 1$ if the $i$ th couple turns to the right RIGHT, $R_{i}=0$ otherwise.
+
 - Our first estimator of $p$ is the sample averge:
+
+  
 $$
 \hat{p}=\overline{R_{n}}=\frac{1}{n} \sum^{n} R_{i}
 $$
@@ -402,7 +446,7 @@ And averages of random variables are essentially controlled by two major tools: 
 
 **What is the probability that $\hat p$ is away from $p$ by more than 10%.**
 
-We don’t even know the true $p$ and the observation $\hat{p}$ is from random variables fluctuates. We need a method to measure its fluctuation.
+We don’t even know the trueandard and the observation $\hat{p}$ is from random variables fluctuates. We need a method to measure its fluctuation.
 
 Modelling Assumptions:
 
