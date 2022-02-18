@@ -68,6 +68,8 @@ $$
 \sqrt{n} \frac{\bar{X}_{n}-\mu}{\sigma} \frac{(d)}{n \rightarrow \infty} \mathcal{N}(0,1)
 $$
 
+
+
 where  $\stackrel{(d)}{\rightarrow}$ denotes convergence in distribution.
 
 Standard Gaussian means that this quantity will be a number between (-3, 3) with overwhelming probability, we have $|\overline X_n - \mu|=\frac{3\sigma}{\sqrt{n}}$.
@@ -86,7 +88,7 @@ CMT states that continuous functions preserve limits even if their arguments are
 
 
 $$
-\text{if\ } x_n \to x,\\ \text{then } g(x_n) \to g(x).
+\text{if}\  x_n \to x,\\ \text{then } g(x_n) \to g(x).
 $$
 
 
@@ -177,7 +179,7 @@ Probability Density Function:
 $$
 \frac{1}{\sigma\sqrt{2\pi}}e^{-\frac{1}{2}\left( \frac{x-\mu}{\sigma}  \right)^2}
 $$
-![image-20220205100840395](https://chqwer2.github.io/img/Typora/image-20220205100840395.png)
+<img src="https://chqwer2.github.io/img/Typora/image-20220205100840395.png" alt="image-20220205100840395" style="zoom:67%;" />
 
 **Cumulative Distribution Function:**
 
@@ -190,7 +192,7 @@ $$
 
 $\text{erf}(\cdot)$ is the exponential response formula.
 
-![image-20220205100857657](https://chqwer2.github.io/img/Typora/image-20220205100857657.png)
+<img src="https://chqwer2.github.io/img/Typora/image-20220205100857657.png" alt="image-20220205100857657" style="zoom:67%;" />
 
 **Why we use Gaussian Distribution so frequently?**
 
@@ -208,7 +210,7 @@ Yes, there exists extreme value, but they never really come into play. Because o
 
 The advantage of using poisson distribution is that n or p do not need to be known! This can make assumptions much easier.
 
-Notation: $X\sim\text{Poi}(\lambda),\ \lambda \in (0, \inftf)$
+Notation: $X\sim\text{Poi}(\lambda),\ \lambda \in (0, \infty)$
 
 Mean and Variance: $\lambda,\ \lambda$
 
@@ -216,6 +218,8 @@ Mean and Variance: $\lambda,\ \lambda$
 $$
 E(X^2) = Var(X) + E(x)^2 =  \lambda + \lambda^2
 $$
+
+
 ![image-20220206111006698](https://chqwer2.github.io/img/Typora/image-20220206111006698.png)
 
 Pre-require 0! = 1
@@ -226,6 +230,8 @@ Pre-require 0! = 1
 $$
 \mathbb{P}(x=k) = \frac{\lambda^k}{k!} e^{-\lambda}, \ k=0,1,2,\cdots \\
 $$
+
+
 <img src="https://chqwer2.github.io/img/Typora/image-20220205102615493.png" alt="image-20220205102615493" style="zoom:50%;" />
 
 **Cumulative distribution function:**
@@ -234,7 +240,7 @@ $$
 
 ### Exponential Distribution
 
-sample space:  $x\in [0, \infin)$
+sample space:  $x\in [0, \infty)$
 
 Mean and Variance: $\large \frac{1}{\lambda},\frac{1}{\lambda^2} $
 
@@ -270,7 +276,7 @@ Gamma Function:
 
 
 $$
-\Gamma(s) = \int^\infin_0x^{s-1}e^{-x}dx
+\Gamma(s) = \int^\infty_0x^{s-1}e^{-x}dx
 $$
 
 $$
@@ -289,7 +295,8 @@ f(x)=\frac{x^{(\alpha-1)} \lambda^{\alpha} e^{(-\lambda x)}}{\Gamma(\alpha)}=\fr
 $$
 
 
-![https://upload.wikimedia.org/wikipedia/commons/f/fc/Gamma_distribution_pdf.png](https://upload.wikimedia.org/wikipedia/commons/f/fc/Gamma_distribution_pdf.png)
+
+<img src="https://upload.wikimedia.org/wikipedia/commons/f/fc/Gamma_distribution_pdf.png" alt="https://upload.wikimedia.org/wikipedia/commons/f/fc/Gamma_distribution_pdf.png" style="zoom:50%;" />
 
 **Cumulative distribution function:**
 
@@ -299,7 +306,8 @@ $$
 $$
 
 
-![https://upload.wikimedia.org/wikipedia/commons/a/a9/Gamma_distribution_cdf.png](https://upload.wikimedia.org/wikipedia/commons/a/a9/Gamma_distribution_cdf.png)
+
+<img src="https://upload.wikimedia.org/wikipedia/commons/a/a9/Gamma_distribution_cdf.png" alt="https://upload.wikimedia.org/wikipedia/commons/a/a9/Gamma_distribution_cdf.png" style="zoom:50%;" />
 
 ![image-20220217094728373](C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220217094728373.png)
 
@@ -324,6 +332,7 @@ $$
 $$
 
 
+
 ![Geometric pmf.svg](https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Geometric_pmf.svg/1024px-Geometric_pmf.svg.png)
 
 **Cumulative distribution function:**
@@ -332,6 +341,8 @@ $$
 $$
 1-(1-p)^k\ \text{ or }\  1-(1-p)^{k+1}\
 $$
+
+
 ![img](https://upload.wikimedia.org/wikipedia/commons/6/6f/Geometric_cdf.svg)
 
 ### Binomial Distribution
@@ -344,6 +355,8 @@ Notation: $B(n,p)$, n is number of trials and p is success probability of each t
 $$
 (1-c/n)^n\rightarrow e^{-c} for \ constant\ c.
 $$
+
+
 
 **Probability Mass Function:** 
 
@@ -366,6 +379,8 @@ $$
 $$
 I_{q}(n-k, 1+k)
 $$
+
+
 
 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/Binomial_distribution_cdf.svg/300px-Binomial_distribution_cdf.svg.png" alt="Cumulative distribution function for the binomial distribution" style="zoom:100%;" />
 
@@ -404,23 +419,32 @@ https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&ved=2ahUKEwitz--m
 We take Gaussian $X\sim\mathcal N(\mu, \sigma^2)$as an example.
 
 **Affine Transformation:**
+
+
 $$
 \alpha \cdot X + \beta \sim\mathcal N(\alpha\mu + \beta, \alpha^2\sigma^2)
 $$
 
 
+
 **Standardization:**
 
 According to CLT, we assume $Z = \frac{X-\mu}{\sigma}$
+
+
 $$
 \mathbb P(u<X<v) = \mathbb P(\frac{u-\mu}{\sigma}<Z<\frac{v-\mu}{\sigma})
 $$
 
 
+
 **Symmetry:**
+
+
 $$
 \mathbb P(|X|>x) = \mathbb P(X>x) + \mathbb P(-X>x)=2\mathbb P(X>x)
 $$
+
 
 
 ## Estimator
