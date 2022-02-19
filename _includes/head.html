@@ -70,8 +70,11 @@
     <script type="text/x-mathjax-config">
      MathJax.Hub.Config({
        tex2jax: {
+         displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
          inlineMath: [ ['$','$'], ["\\(","\\)"] ],
-         processEscapes: true
+         processEscapes: true,
+         processRefs: true,
+         processEnvironments: true
        }
      });
     </script>
