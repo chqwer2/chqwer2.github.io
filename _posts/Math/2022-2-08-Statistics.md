@@ -72,7 +72,11 @@ $$
 
 where  $\stackrel{(d)}{\rightarrow}$ denotes convergence in distribution.
 
-Standard Gaussian means that this quantity will be a number between (-3, 3) with overwhelming probability, we have $|\overline X_n - \mu|=\frac{3\sigma}{\sqrt{n}}$.
+
+
+Standard Gaussian means that this quantity will be a number between (-3, 3) with overwhelming probability, we have $\lvert \overline X_n - \mu\rvert =\frac{3\sigma}{\sqrt{n}}$.
+
+
 
 $\bar X_n$ is close to $\mu$ at some deviations that are of order 1 over square root of sample size  ($\sim \frac{1}{n}$).
 

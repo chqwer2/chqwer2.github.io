@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      "Evolutionary Computation Week 1"
+title:      "Evolutionary Computation"
 subtitle:   " \"Get familiar with the Evolutionary Computation.\""
 date:       2022-02-01 12:00:00
 author:     "Calvchen"
@@ -166,7 +166,7 @@ avg: O(nlogn), worst: O(2nlogn)
 
 ![image-20220203123055102](C:\Users\calvchen\AppData\Roaming\Typora\typora-user-images\image-20220203123055102.png)
 
-- 
+
 
 ## Local Search Algorithms
 
@@ -281,9 +281,14 @@ graph LR
 **Decoding Function**
 
 - We have $n$ continous variables, how to represent them using a bit of string of length $L$.
+
 - Divide $G$ into $n$ segments $s_i$ of equal length.
+
 - Decode each $s_i$ into an interger $K_i$
+
 - Apply decoding function $h(K_i)$, i.e., map the integer linearly into the interval bound $x_i\in[u_i,v_i]$
+
+  
 
 $$
 h\left(K_{i}\right)=u_{i}+K_{i} \cdot \frac{v_{i}-u_{i}}{2^{\frac{L}{n}}-1}
@@ -297,7 +302,11 @@ For example, assume $X = \{x_1, x_2, x_2\}$ and $X\in[-5,5]$.
 
 #### Selection
 
+
+
 Selection usually is performed before variation operators: selects better fit individuals for breeding
+
+
 
 Emphasising on exploiting better solutions in a population:
 
@@ -306,22 +315,114 @@ Emphasising on exploiting better solutions in a population:
 
 **Question:** Why we still select those inferior solutions?
 
-Selection schemes:
+Allows some weak individuals who may help escaping from local optima. Because super individuals normally cause low separation among individuals, lead to premature convergence to a local optimum.
 
-- Fitness Proportional Selection
-- Ranking Selection
-- Truncate selection
-- Tournament Selection
-- $(\mu+\lambda)$ and $(\mu, \lambda)$ selection
+### Selection schemes:
 
 **Fitness Proportional Selection**
 
+Selecting individual $i$ with a probability:
 
+
+$$
+p_i=\frac{f_i}{\sum^M_{j=1}f_j}
+$$
+
+
+where $f_i$ is the fitness value of $i$, $M$ is the number of individuals.
+
+- Don’t allow negative value.
+- High fitness individual will still have chances to get elimated.
+- low fitness individual can survive the selection, to add more separation.
+
+How to maintain selection pressure throughout the run?  
+
+***Linear Scaling:*** $f_i' = a+ b\cdot f_i$, 
+
+usually we set $a$ to the $\max(f)$ and $b$ to the $\min(f)/M<1$.
+
+------
 
 **Ranking Selection**
 
+Select top $\gamma$-ranked individuals with probability function $p(\gamma)$, where $\sum^{M-1}_{\gamma=0} = 1$.
+
+- linear ranking
+
+  Assume $\alpha + \beta = 2, \beta \geq1$
+
+  
+  $$
+  p(\gamma)=\frac{\alpha + (\beta-\alpha)\cdot\frac{\gamma}{M-1}}{M}
+  $$
+  
+
+  i.e. best individual $\gamma=M-1$ reproduced $\beta$ times in expectation.
+
+  <img src="C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220218231715394.png" alt="image-20220218231715394" style="zoom:40%;" />
+
+  How to set $\alpha$ and $\beta$? #TODO
+
+---
+
+- exponential ranking
+
+  $C$ is a normalising factor.
+
+  
+  $$
+  p(\gamma)=\frac{\alpha+(\beta-\alpha) \cdot\left(\frac{\gamma}{M-1}\right)^{k}}{C}
+  $$
+
+---
+
+- power ranking
+
+  
+  $$
+  p(\gamma)=\frac{\alpha \cdot(1-\alpha)^{M-1-\gamma}}{C}
+  $$
+
+---
+
+- geometric ranking
+
+  
+
+$$
+p(\gamma)=\frac{1-e^{-\gamma}}{C}
+$$
+
+***
+
 **Truncate selection**
+
+- Step 1: Rank individuals by fitness values 
+- Step 2: Select some proportion $k$
+
+---
 
 **Tournament Selection**
 
+Binary tournament selection ($k$ = 2) is the most popular selection methods in GA.
+
+- Step 1: Randomly sample a subset $P'$ of $k$ individuals from population P 
+- Step 2: Select the individual in $P'$ with highest fitness 
+- Repeat Steps 1 and 2 until enough offspring are created
+
+***
+
 **$(\mu+\lambda)$ and $(\mu, \lambda)$ selection**
+
+$(\mu+\lambda)$ selection:
+
+- Parent population of size $\mu$
+- Generate $\lambda$ offspring from randomly chosen parents
+- Next population is $\mu$ best individuals among parents and offspring
+
+$(\mu, \lambda)$ selection where $\lambda>\mu$, only choose best individuals among **offspring**
+
+---
+
+**Selection pressure** is the **degree** to which selection emphasises on the **better individuals**.
+
