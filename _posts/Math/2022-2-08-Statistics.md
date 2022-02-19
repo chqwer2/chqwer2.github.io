@@ -20,7 +20,7 @@ tags:
 
 # Statistics, MIT 18.6501x
 
-A useful [book]( https://onlinestatbook.com/2/sampling_distributions/samp_dist_mean.html).
+A useful [book]( https://onlinestatbook.com/2/sampling_distributions/samp_dist_mean.html) and a [probability refer link]([R | bookdown-demo.knit](https://bookdown.org/probability/beta/r.html)).
 
 ## Where will be covered:
 
@@ -32,6 +32,8 @@ A useful [book]( https://onlinestatbook.com/2/sampling_distributions/samp_dist_m
   - Asymptotic normality
 
 - [Distribution Functions](#Distribution)
+
+- Mode of Convergence
 
 - Estimator
 
@@ -167,7 +169,25 @@ $$
 **Remark:**
 When Markov inequality is applied to $(X-\mu)^{2}$, we obtain Chebyshev's inequality. Markov inequality is also used in the proof of Hoeffding's inequality.
 
+### Slutsky’s Theorem
 
+Slutsky's Theorem will be our main tool for **convergence in distribution**.
+Let $T_{n},U_{n}$ be two sequences of r.v., such that:
+
+
+$$
+T_{n} \stackrel{\text { (d)}}{\underset{n \rightarrow \infty}{\longrightarrow}} T \quad \text { and } \quad U_{n} \stackrel{\mathbf{P}}{\underset{n \rightarrow \infty}{\longrightarrow}} U
+$$
+
+
+
+Then,
+
+- $T_{n}+U_{n} \stackrel{(d)}{\underset{n \rightarrow \infty}{\longrightarrow}} T+U$,
+- $T_{n} U_{n} \stackrel{(d)}{\underset{n \rightarrow \infty}{\longrightarrow}} T U$
+- If in addition, $u \neq 0$, then $\large \frac{T_{n}}{U_{n}} \stackrel{(d)}{\underset{n \rightarrow \infty}{\longrightarrow}} \frac{T}{u}$.
+
+****
 
 ## Distribution
 
@@ -209,6 +229,20 @@ Of the universe type of results, that says that if you take average of enough th
 The value field of a Gaussian is $(-\infty, \infty)$, but when we use it in mapping real distribution, namely the height, we will never achieve negative value, why we do Gaussian?
 
 Yes, there exists extreme value, but they never really come into play. Because of the exponential can get really, really small. The Gaussian actually almost in a bounded interval.
+
+**Gaussian Probability Tables**
+
+A Gaussian CDF (z-score) [calculator](https://www.calculator.net/z-score-calculator.html?c1raw=400&c1mean=-33.33&c1sd=58.92556&calctype=zscore&x=99&y=20).
+
+![image-20220219230424092](C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220219230424092.png)
+
+**Quantiles**
+
+| $\alpha$   | 2.5% | 5%   | 10%  |
+| ---------- | ---- | ---- | ---- |
+| $q_\alpha$ | 1.96 | 1.65 | 1.28 |
+
+
 
 ### Poisson Distribution
 
@@ -425,6 +459,7 @@ We take Gaussian $X\sim\mathcal N(\mu, \sigma^2)$as an example.
 **Affine Transformation:**
 
 
+
 $$
 \alpha \cdot X + \beta \sim\mathcal N(\alpha\mu + \beta, \alpha^2\sigma^2)
 $$
@@ -433,7 +468,8 @@ $$
 
 **Standardization:**
 
-According to CLT, we assume $Z = \frac{X-\mu}{\sigma}$
+According to CLT, we assume $Z = \frac{X-\mu}{\sigma}$,
+
 
 
 $$
@@ -445,9 +481,78 @@ $$
 **Symmetry:**
 
 
+
 $$
 \mathbb P(|X|>x) = \mathbb P(X>x) + \mathbb P(-X>x)=2\mathbb P(X>x)
 $$
+
+
+
+## Mode of Convergence
+
+Three types of convergence, going from strong to weak.
+- $\left(T_{n}\right)_{n \geq 1}$ is a sequence of random variables
+- $T$ is a random variable ( $T$ may be deterministic).
+
+### Almost surely (a.s.) convergence
+
+So I created two sequences, and I want this to converge.
+
+
+$$
+T_{n} \stackrel{\text { a.s. }}{n \rightarrow \infty} T \quad \text { iff } \quad \mathbb{P}\left[\left\{\omega: T_{n}(\omega) \underset{n \rightarrow \infty}{\longrightarrow} T(\omega)\right\}\right]=1 .\\
+$$
+
+
+### Convergence in probability
+
+The probability that they depart from each other by something is going to be going to 0 as $n$ goes to infinity.
+
+
+$$
+T_{n} \underset{n \rightarrow \infty}{\stackrel{\mathbb{P}}{\longrightarrow}} T \quad \text { iff } \quad \mathbb{P}\left[\left|T_{n}-T\right| \geq \varepsilon\right] \underset{n \rightarrow \infty}{\longrightarrow} \mathcal{O}, \quad \forall \varepsilon>0 .
+$$
+
+
+### Convergence in distribution
+
+This just saying I'm going to measure something about this random variable, maybe it is distribution. For all continuous and bounded function $f$:
+
+
+$$
+T_{n} \stackrel{(d)}{n \rightarrow \infty} T \quad \text { iff } \quad \mathbb{E}\left[f\left(T_{n}\right)\right] \underset{n \rightarrow \infty}{\longrightarrow} \mathbb{E}[f(T)]
+$$
+
+
+I'm just saying that its distribution is converging. My random variable is going to become  the same as the probabilities for the second guy as $n$ goes to infinity.
+
+### Properties
+
+- If $\left(T_{n}\right)_{n \geq 1}$ converges **a.s.**, then it also converges in **probability**, and the two limits are equal a.s.
+
+- If $\left(T_{n}\right)_{n \geq 1}$ converges in **probability**, then it also converges in **distribution**
+
+Convergence in distribution implies convergence of probabilities if the limit has a density (e.g. Gaussian):
+$$
+T_{n} \underset{n \rightarrow \infty}{\stackrel{(d)}{\longrightarrow}} T \quad \Rightarrow \quad \mathbb{P}\left(a \leq T_{n} \leq b\right) \underset{n \rightarrow \infty}{\longrightarrow} \mathbb{P}(a \leq T \leq b)
+$$
+**Addition, Multiplication and Division**
+Assume
+
+
+$$
+T_{n} \stackrel{\text { a.s. } / \mathbf{P}}{\underset{n \rightarrow \infty}{\longrightarrow}} T \quad \text { and } \quad U_{n} \stackrel{\text { a.s. } / \mathbf{P}}{\underset{n \rightarrow \infty}{\longrightarrow}} U
+$$
+
+
+Then,
+
+- $T_{n}+U_{n} \stackrel{\text { a.s./P }}{\underset{n \rightarrow \infty}{\longrightarrow}} T+U$,
+
+- $T_{n} U_{n} \stackrel{\text { a.s. } / \mathrm{P}}{\underset{n \rightarrow \infty}{\longrightarrow}} T U$,
+- If in addition, $U \neq 0$ a.s., then $\large\frac{T_{n}}{U_{n}} \stackrel{\text { a.s. } / \mathbf{P}}{\longrightarrow} \frac{T}{U \rightarrow \infty}$.
+
+Warning: In general, these rules do not apply to convergence in distribution $(d)$.
 
 
 

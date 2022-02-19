@@ -424,5 +424,111 @@ $(\mu, \lambda)$ selection where $\lambda>\mu$, only choose best individuals amo
 
 ---
 
+### Pros and Cons of GA
+
 **Selection pressure** is the **degree** to which selection emphasises on the **better individuals**.
 
+**Scheme** is a template that identifies a subset of strings with similarities at certain string positions
+
+**Pros:**
+
+Binary GA maximises the level of **implicit parallelism**.
+
+**Implicit parallelism:**
+
+- we are not only evolving $M$ individuals but also manipulating $M · 3L$ schemata. This essentially means that binary coding requires fewer strings to construct more schemata to sample larger search space
+
+<img src="C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220219105501130.png" alt="image-20220219105501130" style="zoom:50%;" />
+
+**Drawbacks of Binary Coding **
+
+Problem in discrete search spaces
+
+- Redundancy  problem
+
+  when the variables belongs to a finite discrete set with a cardinal different from a power of two, some binary strings are redundant, which correspond infeasible solutions
+
+  Example: Suppose we have a combinatorial optimisation problem whose feasible set $\mathcal{A}$ is $\mathcal{A}=0,2,3$, the cardinal of the set is $|\mathcal{A}|=3$ but we need a binary string of length of 2.
+
+Problem in continuous search spaces
+
+- Precision of Decoding depending on $L$, might produce difficulties if the problem is large dimensional ($n$ is large), thus require great numerical precision.
+
+**Hamming cliff problem**: one-bit mutation can make a large (or a small) jump; a multi-bit mutation can make a small (or large) jump.
+
+![image-20220219105852884](C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220219105852884.png)
+
+**Solution - Gray encoding**
+
+ For $a \in\{0,1\}^{L}$ and $b \in\{0,1\}^{L}$ where $a$ is the standard binary encoded, and $b$ is Gray encoded, then:
+
+
+$$
+b_{i}=\left\{\begin{array}{ll}
+a_{i} & \text { if } i=1 \\
+a_{i-1} \oplus a_{i} & \text { if } i>1
+\end{array}\right.
+$$
+
+
+![image-20220219110319880](C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220219110319880.png)
+
+**Mutation**
+
+randomly select a parent with $p_m$, then randomly select a gene $c_i$ and apply mutation operator.
+
+- Uniform Mutation
+
+  replace $c_i$ with random (uniform) number $c_i'$.
+
+- Non-uniform Mutation
+
+  replace $c_i$ with random $c_i'$ generated from the bounded inerval $x_i \in [u_i, v_i]$.
+
+- Gaussian Mutation
+
+  replace $c_i$ with $c_i'$ which is calculater by:
+  $$
+  c_{i}^{\prime}=\min \left(\max \left(N\left(c_{i}, \sigma_{i}^2\right), u_{i}\right), v_{i}\right)
+  $$
+  typically, the $\sigma$ is $(v_i-u_i)/10$.
+
+**Crossover**
+
+Randomly select two parents $x_{1}=\left\{x_{1}^{[1]}, x_{2}^{[1]}, \cdots, x_{n}^{[1]}\right\}$ and $x_{2}=\left\{x_{1}^{[2]}, x_{2}^{[2]}, \cdots, x_{n}^{[2]}\right\}$, then apply a crossover operator.
+
+- Flat crossover
+
+  offspring $h_i$ is a randomly chosen value in the interval $[x_i^{[1]}, x_i^{[2]}]$.
+
+- Simple crossover
+
+  a cross value point $i$ is randomly chosen for swap.
+
+- Whole arithmetical crossover
+
+  $h_i^{[1]}= \alpha x_i^{[1]} + (1-\alpha) x_i^{[2]}$, $\alpha \in [0,1]$
+
+- Single **arithmetical crossover**
+
+  choose a gene and then replace it with the arithmetic average of genes at the position of two parents, other genes are copied from the parents.
+
+- **BLX- $\alpha$ crossover**
+
+  $h_{i}$ is a randomly (uniformly) generated number of the interval $\left[h_{\min }-I \cdot \alpha, h_{\max }+I \cdot \alpha\right], h_{\max }=\max \left(x_{i}^{[1]}, x_{i}^{[2]}\right)$
+  $h_{\min }=\min \left(x_{i}^{[1]}, x_{i}^{[2]}\right)$ and $I=h_{\max }-h_{\min }$
+
+<img src="C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220219123427145.png" alt="image-20220219123427145" style="zoom:50%;" />
+
+
+
+### GA Example Problem
+
+- A company is evaluating 4 projects which each run for 3 years and have the following characteristics.
+- Decision problem: Which projects should be selected to maximize the total profits?
+
+![image-20220219123706019](C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220219123706019.png)
+
+- Once a project has been selected, all yearly capital requirement (investments) and capital (budget) must be met.
+
+<img src="C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220219124007068.png" alt="image-20220219124007068" style="zoom:80%;" />

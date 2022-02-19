@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      "2nd Semester of Master"
+title:      "Second Semester of Master"
 subtitle:   " \"New Start, New Voyage to Become Better.\""
 date:       2022-02-10 11:30:00
 author:     "Calvchen"
