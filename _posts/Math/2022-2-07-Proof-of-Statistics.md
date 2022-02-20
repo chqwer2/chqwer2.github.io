@@ -290,9 +290,9 @@ $$
 
 
 
-
 ### Limitations
 
+for  anyconstant $c$:  
 $$
 \lim_{n\to\infin}\left( 1-\frac{c}{n} \right)^n \to e^{-c}
 $$
@@ -318,3 +318,83 @@ $M_n$
 b = - (2*barX_n + 1.6448^2/n) 
 
 (2*barX_n + 1.6448^2/n + sqrt((2*barX_n + 1.6448^2/n) &2-4*barX_n^2) )/2
+
+### Mode of Convergence Examples
+
+**Example of a.s.** 
+
+Let $U\sim \text{Uni}(0,1)$, $X_n = U + U^n$ (raised to the power of $n$)
+
+Claim: $X_n\overset{\text{a.s}} \longrightarrow U$
+
+Proof:
+
+With law of total probability, for any event $A$,  
+$$
+P(A)=P\left(A \mid S_{1}\right) P\left(S_{1}\right)+P\left(A \mid S_{2}\right) P\left(S_{2}\right)
+$$
+
+$$
+\left\{\begin{array}{ll}
+X_n \underset{n \rightarrow \infty}{\longrightarrow} U   & \text { if } U\in(0,1) \\
+X_n \underset{n \rightarrow \infty}{\longrightarrow} 2  & \text { if } U=1
+\end{array}\right.
+$$
+
+So we have  
+$$
+P(X_n \underset{n \rightarrow \infty}{\longrightarrow} U )=P(X_n \longrightarrow U ) P(U<1) +0 = 1
+$$
+
+**Example 1 of $\mathbb P$ ,**
+
+Let $X_n \overset{iid}\sim Ber(\frac{1}{n})$ and $\epsilon \in (0,1)$, we have   
+$$
+\mathbb P(X_n>\epsilon)=\mathbb P(X_n=1)=\frac{1}{n}\underset{n\to\infty}\longrightarrow 0
+$$
+
+**Example 2 of $\mathbb P$ ,**
+
+Let $U\sim \text{Uni}(0,1)$, $X_i = \min X_i$ 
+
+Claim:$X_{(1)} \stackrel{p}{\rightarrow} O$,
+
+**Proof:**
+
+Fix $\varepsilon>0$,  
+$$
+\begin{aligned}
+P\left(\left|X_{(1)}-0\right|>\varepsilon\right) &=P\left(X_{(1)}>\varepsilon\right) \\
+&=P\left(X_{i}>\varepsilon, \forall i\right) \\
+&=\left(P\left(X_{1}>\varepsilon\right)\right)^{n} \\
+&=\left(S_{\varepsilon}^{1} \mid  d x\right)^{n} \\
+&=(1-\varepsilon)^{n} \underset{n \rightarrow \infty}{\rightarrow} 0
+\end{aligned}
+$$
+
+**Example of complying $\mathbb P$ but not with a.s.**
+
+Let $U\sim \text{Uni}(0,1)$, $x$ is more and more subdivided segmentation functions between [0, 1]:
+$$
+\require{cancel}
+\require{enclose}
+\begin{array}{l}
+x_{1}=U+\mathbb{1}(U \in[0,1])=U+1 \\
+x_{2}=U+\mathbb 1\left(U \in\left[0, 1/2\right]\right) \\
+x_{3}=U+\mathbb{1}(U \in[1 / 2,1]) \\
+x_{4}=U+\mathbb1(U \in[0,1 / 3]) \\
+x_{5}=U+\mathbb{1}(U \in[1 / 3,2 / 3]) \\
+x_{6}=U+\mathbb{1}(U \in[2 / 3,1])
+\end{array}
+$$
+Claim 1: $x_{n} \stackrel{p}{\rightarrow} U: \text{Fix}\  0<\varepsilon<1$
+$$
+\begin{array}{l}
+P\left(\left|x_{n}-U\right|>\varepsilon \right)&=P\left(U \in\left[a_{n}, b_{n}\right]\right)\\
+&=b_n - a_n \underset{n \rightarrow \infty}{\rightarrow} 0
+\end{array}
+$$
+Claim 2: $x_{n}  \enclose{downdiagonalstrike} {\stackrel{\text{a.s.}}{\rightarrow}} U$:
+$$
+P\left(x_{n} \rightarrow x\right) \neq 1 \text {, } x_{n} {\text { has not limis}}
+$$

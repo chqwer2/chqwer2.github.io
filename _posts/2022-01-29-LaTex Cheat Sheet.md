@@ -42,10 +42,10 @@ To make the writing more vivid~
 | $\ell\ \Re\ \mho$                               | `\ell \Re \mho`       | $\log \lg \ln$            | `\log \lg \ln`   |
 | $\ldots  \cdots$                                | `\ldots cdots`        | $\vdots \ddots$           | `\vdots ddots`   |
 | $\bar a\ \vec a\ \hat a$                        | `\bar \vec \hat`      | $\tilde{a} \widetilde{a}$ | `\tilde \wide+X` |
-| $$                                              | ``                    | $\acute{a}\  \grave{a}$   | `\acute \grave`  |
+|| $$                                              | ``                    | $\acute{a}\  \grave{a}$   | `\acute \grave`  ||
 | $\check a \  \breve a$                          | `\check \breve`       | $\dot a \ \ddot a$        | `\dot \ddot`     |
 | $\overline{a+b}$                                | `\overline`           | $\underline{a+b}$         | `\underline`     |
-| $\underset {\theta }{X}\ \overset{\theta }{X} $ | `\underset \overset ` | $$                        | `\overset`       |
+| $\underset {\theta }{X}\ \overset{\theta }{X} $ | `\underset \overset{}{X} ` | $$                        | `\overset`       |
 
 Color offered: $\color{grey}{grey}\ \color{purple}{purple}\ \color{maroon}{maroon}\ \color{olive}{olive}\ \color{silver}{silver}\ \color{navy}{navy}\ \color{lime}{lime} \color{teal}{teal}$
 

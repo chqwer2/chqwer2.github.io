@@ -20,16 +20,17 @@ tags:
 
 # Statistics, MIT 18.6501x
 
-A useful [book]( https://onlinestatbook.com/2/sampling_distributions/samp_dist_mean.html) and a [probability refer link]([R | bookdown-demo.knit](https://bookdown.org/probability/beta/r.html)).
+A useful [book]( https://onlinestatbook.com/2/sampling_distributions/samp_dist_mean.html) and a [probability refer link](https://bookdown.org/probability/beta/r.html).
 
 ## Where will be covered:
 
 - [Theorems and Tools](#Theorems and Tools)
 
-  - LLN & CLT, CMT
+  - [LLN](#Law of Large Numbers (LLN)) & [CLT](#Central Limit Theorem (CLT)), [CMT](#Continuous Mapping Theorem (CMT))
   - Hoeffding's Inequality, Chebyshev Inequality
-  - Slutsky's theorem
+  - [Slutsky's theorem](#Slutsky’s theorem)
   - Asymptotic normality
+  - Delta ($\Delta$) method
 
 - [Distribution Functions](#Distribution)
 
@@ -56,29 +57,22 @@ According to the law, the average of the results obtained from performing the sa
 Let $X, X_{1}, X_{2}, \ldots, X_{n}$ be i.i.d. 
 Laws (weak and strong) of large numbers (LLN):
 
-
 $$
 \bar{X}_{n}:=\frac{1}{n} \sum_{i=1}^{n} X_{i} \underset{n \rightarrow \infty}{\stackrel{\text { P }, \text { a.s. }}{\longrightarrow}} \mu .
 $$
 
 ### Central Limit Theorem (CLT)
 
-CLT establishes that when independent random variables summed up, their properly normalized sum tends toward a **normal distribution** even if the original variables themselves are not normally distributed. 
+CLT establishes that when independent random variables summed up, their properly normalized sum tends toward a **normal distribution** even if the original variables themselves are not normally distributed,
 
 
 $$
-\sqrt{n} \frac{\bar{X}_{n}-\mu}{\sigma} \frac{(d)}{n \rightarrow \infty} \mathcal{N}(0,1)
+\sqrt{n} \frac{\bar{X}_{n}-\mu}{\sigma} \underset{n \rightarrow \infty}{\xrightarrow{ {(d)}}} \mathcal{N}(0,1)
 $$
 
+where  $\stackrel{(d)}{\rightarrow}$ denotes convergence in distribution. 
 
-
-where  $\stackrel{(d)}{\rightarrow}$ denotes convergence in distribution.
-
-
-
-Standard Gaussian means that this quantity will be a number between (-3, 3) with overwhelming probability, we have $\lvert \overline X_n - \mu\rvert =\frac{3\sigma}{\sqrt{n}}$.
-
-
+Standard Gaussian means that this quantity will be a number between (-3, 3) with overwhelming probability, we have $\lvert \overline X_n - \mu\rvert =\frac{3\sigma}{\sqrt{n}}$. 
 
 $\bar X_n$ is close to $\mu$ at some deviations that are of order 1 over square root of sample size  ($\sim \frac{1}{n}$).
 
@@ -90,31 +84,27 @@ Assuming the sequence $\{X_{n}\}$ is an i.i.d sequence with finite mean and vari
 
 ### Continuous Mapping Theorem (CMT)
 
-CMT states that continuous functions preserve limits even if their arguments are sequences of random variables. A continuous function is such a function that maps convergent sequences into another convergent sequences:
-
+CMT states that continuous functions preserve limits even if their arguments are sequences of random variables. A continuous function $f(\cdot)$​ is such a function that maps convergent sequences into another convergent sequen,
 
 $$
-\text{if}\  x_n \to x,\\ \text{then } g(x_n) \to g(x).
+T_{n}  \underset{n \rightarrow \infty}{\xrightarrow{ {\text { a.s. } / \mathbf{P} /(d)}} }   T \Rightarrow f\left(T_{n}\right) \underset{n \rightarrow \infty}{\xrightarrow{\text { a.s. } / \mathbf{P} /(d)}} f(T)
 $$
-
-
 
 It applies to $d,\ p$ and $a.s.$ convergence respectively.
 
-### Hoeffding's Inequality 
+But how close is $f(T_n)$ to $f(T)$? The Delta ($\Delta$) method.
+
+### Hoeffding's Inequality
 
 What if $n$ is **not large enough** to apply CLT?
 
 For bounded random variable, this is still **Hoeffding’s Inequality** we can say for any n.
 Let $n$ be a positive integer and $X_i \in[a, b]\ $($a<b$ are given numbers)
-Then this holds even for small sample sizes $n$:
-
+Then this holds even for small sample sizes $n$:  
 
 $$
 \mathbb{P}\left[\left|\bar{X}_{n}-\mu\right| \geq \varepsilon\right] \leq 2 e^{\large-\frac{2 n \varepsilon^{2}}{(b-a)^{2}}} . \quad \forall \varepsilon>0
 $$
-
-
 
 Here I need that my random variables are actfually **almost surely bounded**, which rules out like Gaussians and Exponential Random Variables.
 
@@ -127,8 +117,6 @@ $$
 X_i \overset{iid}{\sim}Ber(p)\\
 \mathbb{P}(| \bar{X} - \mu| \geq \frac{c}{\sqrt{n}}) \leq 2e^{-2c^2/1}
 $$
-
-
 
 The square root of $n$ qualitative behavior happens at any n.
 
@@ -151,20 +139,16 @@ $$
 \mathbf{P}(X \geq t) \leq \frac{\mu}{t}
 $$
 
-
-
 Note that the Markov inequality is restricted to **non-negative random variables**.
 
 **Chebyshev inequality**
 
-For a random variable $X$ with (finite) mean $\mu$ and variance $\sigma^{2}$, and for any number $t>0$,
+For a random variable $X$ with (finite) mean $\mu$ and variance $\sigma^{2}$, and for any number $t>0$,  
 
 
 $$
 \mathbf{P}(|X-\mu| \geq t) \leq \frac{\sigma^{2}}{t^{2}}
 $$
-
-
 
 **Remark:**
 When Markov inequality is applied to $(X-\mu)^{2}$, we obtain Chebyshev's inequality. Markov inequality is also used in the proof of Hoeffding's inequality.
@@ -172,22 +156,17 @@ When Markov inequality is applied to $(X-\mu)^{2}$, we obtain Chebyshev's inequa
 ### Slutsky’s Theorem
 
 Slutsky's Theorem will be our main tool for **convergence in distribution**.
-Let $T_{n},U_{n}$ be two sequences of r.v., such that:
 
-
+Let $T_{n},U_{n}$​ be two sequences of r.v., such that:   
 $$
 T_{n} \stackrel{\text { (d)}}{\underset{n \rightarrow \infty}{\longrightarrow}} T \quad \text { and } \quad U_{n} \stackrel{\mathbf{P}}{\underset{n \rightarrow \infty}{\longrightarrow}} U
 $$
-
-
 
 Then,
 
 - $T_{n}+U_{n} \stackrel{(d)}{\underset{n \rightarrow \infty}{\longrightarrow}} T+U$,
 - $T_{n} U_{n} \stackrel{(d)}{\underset{n \rightarrow \infty}{\longrightarrow}} T U$
-- If in addition, $u \neq 0$, then $\large \frac{T_{n}}{U_{n}} \stackrel{(d)}{\underset{n \rightarrow \infty}{\longrightarrow}} \frac{T}{u}$.
-
-****
+- If in addition, $u \neq 0$, then $\large \frac{T_{n}}{U_{n}} \stackrel{(d)}{\underset{n \rightarrow \infty}{\longrightarrow}} \frac{T}{U}$.
 
 ## Distribution
 
@@ -203,16 +182,14 @@ Probability Density Function:
 $$
 \frac{1}{\sigma\sqrt{2\pi}}e^{-\frac{1}{2}\left( \frac{x-\mu}{\sigma}  \right)^2}
 $$
+
 <img src="https://chqwer2.github.io/img/Typora/image-20220205100840395.png" alt="image-20220205100840395" style="zoom:67%;" />
 
 **Cumulative Distribution Function:**
 
-
 $$
 \Phi(x) = \mathbb P(X\leq x) = \frac{1}{2}\left[1+ \text{erf} \left(  \frac{x-\mu}{\sqrt{2}\sigma }\right)\right]
 $$
-
-
 
 $\text{erf}(\cdot)$ is the exponential response formula.
 
@@ -250,8 +227,7 @@ The advantage of using poisson distribution is that n or p do not need to be kno
 
 Notation: $X\sim\text{Poi}(\lambda),\ \lambda \in (0, \infty)$
 
-Mean and Variance: $\lambda,\ \lambda$
-
+Mean and Variance: $\lambda,\ \lambda$:  
 
 $$
 E(X^2) = Var(X) + E(x)^2 =  \lambda + \lambda^2
@@ -262,13 +238,11 @@ $$
 
 Pre-require 0! = 1
 
-**Probability Mass Function:** 
-
+**Probability Mass Function:**   
 
 $$
 \mathbb{P}(x=k) = \frac{\lambda^k}{k!} e^{-\lambda}, \ k=0,1,2,\cdots \\
 $$
-
 
 <img src="https://chqwer2.github.io/img/Typora/image-20220205102615493.png" alt="image-20220205102615493" style="zoom:50%;" />
 
@@ -282,25 +256,23 @@ sample space:  $x\in [0, \infty)$
 
 Mean and Variance: $\large \frac{1}{\lambda},\frac{1}{\lambda^2} $
 
-**Probability Mass Function:** 
-
+**Probability Mass Function:**   
 
 $$
 \lambda e^{-\lambda x}
 $$
 ![pdf](https://upload.wikimedia.org/wikipedia/commons/0/02/Exponential_probability_density.svg)
 
-**Cumulative distribution function:**
-
+**Cumulative distribution function:**  
 
 $$
 1-e^{-\lambda x}
 $$
 ![cdf](https://upload.wikimedia.org/wikipedia/commons/b/ba/Exponential_cdf.svg)
 
-<img src="https://chqwer2.github.io/img/Typora/image-20220205172337486.png" alt="image-20220205172337486" style="zoom:67%;" />
+<img src="https://chqwer2.github.io/img/Typora/image-20220205172337486.png" alt="image-20220205172337486" style="zoom: 50%;" />
 
-<img src="https://chqwer2.github.io/img/Typora/image-20220205172726369.png" alt="image-20220205172726369" style="zoom:67%;" />
+<img src="https://chqwer2.github.io/img/Typora/image-20220205172726369.png" alt="image-20220205172726369" style="zoom: 50%;" />
 
 ### Gamma Distribution
 
@@ -310,8 +282,7 @@ Parameters: $\alpha, \lambda \in (0,\infty)$
 
 Mean and Variance: $\large \frac{\alpha}{\lambda},\ \frac{\alpha}{\lambda^2}$
 
-Gamma Function:
-
+**Gamma Function:**  
 
 $$
 \Gamma(s) = \int^\infty_0x^{s-1}e^{-x}dx
@@ -325,8 +296,7 @@ $$
 \end{array}\right.
 $$
 
-**Probability Mass Function:** 
-
+**Probability Mass Function:**   
 
 $$
 f(x)=\frac{x^{(\alpha-1)} \lambda^{\alpha} e^{(-\lambda x)}}{\Gamma(\alpha)}=\frac{x^{(\alpha-1)} e^{\left(-\frac{1}{\beta} x\right)}}{\beta^{\alpha} \Gamma(\alpha)}, \mathrm{x}>0
@@ -336,14 +306,11 @@ $$
 
 <img src="https://upload.wikimedia.org/wikipedia/commons/f/fc/Gamma_distribution_pdf.png" alt="https://upload.wikimedia.org/wikipedia/commons/f/fc/Gamma_distribution_pdf.png" style="zoom:50%;" />
 
-**Cumulative distribution function:**
-
+**Cumulative distribution function: ** 
 
 $$
 {\frac {\gamma (\alpha,\lambda x )}{\Gamma (\alpha)}}\,\!
 $$
-
-
 
 <img src="https://upload.wikimedia.org/wikipedia/commons/a/a9/Gamma_distribution_cdf.png" alt="https://upload.wikimedia.org/wikipedia/commons/a/a9/Gamma_distribution_cdf.png" style="zoom:50%;" />
 
@@ -362,22 +329,18 @@ Notation: $X\sim\text{Gemo}(p)\ \text{ or }\ Y\sim\text{Gemo}(p)$
 
 Mean and Variance: $\large \frac{1}{p} \small\text{ or }\large \frac{1-p}{p} ,\ \frac{1-p}{p^2}$
 
-**Probability Mass Function:** 
-
+**Probability Mass Function:**   
 
 $$
 (1-p)^{k-1}p\ \text{ or }\ (1-p)^{k}p
 $$
 
-
-
 ![Geometric pmf.svg](https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Geometric_pmf.svg/1024px-Geometric_pmf.svg.png)
 
-**Cumulative distribution function:**
-
+**Cumulative distribution function:**    
 
 $$
-1-(1-p)^k\ \text{ or }\  1-(1-p)^{k+1}\
+1-(1-p)^k\ \text{ or }\  1-(1-p)^{k+1}
 $$
 
 
@@ -389,15 +352,7 @@ Notation: $B(n,p)$, n is number of trials and p is success probability of each t
 
 **Mean and Variance:** $np$, $\sum^n_{k=1} \sigma^2 = np(1-p)$
 
-
-$$
-(1-c/n)^n\rightarrow e^{-c} for \ constant\ c.
-$$
-
-
-
-**Probability Mass Function:** 
-
+**Probability Mass Function:**    
 
 $$
 P(k)= \left(\begin{array}{l}
@@ -407,18 +362,13 @@ k
 \end{array}\right) p^{k} q^{n-k}=\frac{n!}{k!(n-k)!}p^{k} q^{n-k}
 $$
 
-
-
 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Binomial_distribution_pmf.svg/300px-Binomial_distribution_pmf.svg.png" alt="Probability mass function for the binomial distribution" style="zoom:100%;" />
 
-**Cumulative Distribution Function:**
-
+**Cumulative Distribution Function:**  
 
 $$
 I_{q}(n-k, 1+k)
 $$
-
-
 
 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/Binomial_distribution_cdf.svg/300px-Binomial_distribution_cdf.svg.png" alt="Cumulative distribution function for the binomial distribution" style="zoom:100%;" />
 
@@ -456,73 +406,56 @@ https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&ved=2ahUKEwitz--m
 
 We take Gaussian $X\sim\mathcal N(\mu, \sigma^2)$as an example.
 
-**Affine Transformation:**
-
-
+**Affine Transformation:**  
 
 $$
 \alpha \cdot X + \beta \sim\mathcal N(\alpha\mu + \beta, \alpha^2\sigma^2)
 $$
 
-
-
 **Standardization:**
 
-According to CLT, we assume $Z = \frac{X-\mu}{\sigma}$,
-
-
+According to CLT, we assume $Z = \frac{X-\mu}{\sigma}$,   
 
 $$
 \mathbb P(u<X<v) = \mathbb P(\frac{u-\mu}{\sigma}<Z<\frac{v-\mu}{\sigma})
 $$
 
-
-
-**Symmetry:**
-
-
+**Symmetry:**  
 
 $$
 \mathbb P(|X|>x) = \mathbb P(X>x) + \mathbb P(-X>x)=2\mathbb P(X>x)
 $$
-
-
 
 ## Mode of Convergence
 
 Three types of convergence, going from strong to weak.
 - $\left(T_{n}\right)_{n \geq 1}$ is a sequence of random variables
 - $T$ is a random variable ( $T$ may be deterministic).
+- Some examples are shown [here]
 
 ### Almost surely (a.s.) convergence
 
-So I created two sequences, and I want this to converge.
-
+So I created two sequences, and I want this to converge.   
 
 $$
-T_{n} \stackrel{\text { a.s. }}{n \rightarrow \infty} T \quad \text { iff } \quad \mathbb{P}\left[\left\{\omega: T_{n}(\omega) \underset{n \rightarrow \infty}{\longrightarrow} T(\omega)\right\}\right]=1 .\\
+T_{n} \underset{n \rightarrow \infty}{
+\overset{\text{ a.s. }}{\longrightarrow} } T \quad \text { iff } \quad \mathbb{P}\left[\left\{\omega: T_{n}(\omega) \underset{n \rightarrow \infty}{\longrightarrow} T(\omega)\right\}\right]=1
 $$
-
 
 ### Convergence in probability
 
-The probability that they depart from each other by something is going to be going to 0 as $n$ goes to infinity.
-
+The probability that they depart from each other by something is going to be going to 0 as $n$  goes to infinity.  
 
 $$
 T_{n} \underset{n \rightarrow \infty}{\stackrel{\mathbb{P}}{\longrightarrow}} T \quad \text { iff } \quad \mathbb{P}\left[\left|T_{n}-T\right| \geq \varepsilon\right] \underset{n \rightarrow \infty}{\longrightarrow} \mathcal{O}, \quad \forall \varepsilon>0 .
 $$
 
-
 ### Convergence in distribution
 
-This just saying I'm going to measure something about this random variable, maybe it is distribution. For all continuous and bounded function $f$:
-
-
+This just saying I'm going to measure something about this random variable, maybe it is distribution. For all continuous and bounded function $f$, using **CLT**:  
 $$
 T_{n} \stackrel{(d)}{n \rightarrow \infty} T \quad \text { iff } \quad \mathbb{E}\left[f\left(T_{n}\right)\right] \underset{n \rightarrow \infty}{\longrightarrow} \mathbb{E}[f(T)]
 $$
-
 
 I'm just saying that its distribution is converging. My random variable is going to become  the same as the probabilities for the second guy as $n$ goes to infinity.
 
@@ -532,20 +465,18 @@ I'm just saying that its distribution is converging. My random variable is going
 
 - If $\left(T_{n}\right)_{n \geq 1}$ converges in **probability**, then it also converges in **distribution**
 
-Convergence in distribution implies convergence of probabilities if the limit has a density (e.g. Gaussian):
+Convergence in distribution implies convergence of probabilities if the limit has a density (e.g. Gaussian):  
 $$
 T_{n} \underset{n \rightarrow \infty}{\stackrel{(d)}{\longrightarrow}} T \quad \Rightarrow \quad \mathbb{P}\left(a \leq T_{n} \leq b\right) \underset{n \rightarrow \infty}{\longrightarrow} \mathbb{P}(a \leq T \leq b)
 $$
+
 **Addition, Multiplication and Division**
-Assume
-
-
+Assume,  
 $$
 T_{n} \stackrel{\text { a.s. } / \mathbf{P}}{\underset{n \rightarrow \infty}{\longrightarrow}} T \quad \text { and } \quad U_{n} \stackrel{\text { a.s. } / \mathbf{P}}{\underset{n \rightarrow \infty}{\longrightarrow}} U
 $$
 
-
-Then,
+Then,  
 
 - $T_{n}+U_{n} \stackrel{\text { a.s./P }}{\underset{n \rightarrow \infty}{\longrightarrow}} T+U$,
 
@@ -564,14 +495,11 @@ Now we have our first estimator of $p$ of *Kissing Example*, we put a hat on eve
 
 - For $i=1, \ldots, n$, define $R\sim Ber(p)$, $R_{i}= 1$ if the $i$ th couple turns to the right RIGHT, $R_{i}=0$ otherwise.
 
-- Our first estimator of $p$ is the sample averge:
+- Our first estimator of $p$ is the sample averge:  
 
-  
 $$
 \hat{p}=\overline{R_{n}}=\frac{1}{n} \sum^{n} R_{i}
 $$
-
-
 
 And averages of random variables are essentially controlled by two major tools: They are LLN and CLT.
 
