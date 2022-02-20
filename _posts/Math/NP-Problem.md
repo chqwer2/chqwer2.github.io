@@ -16,7 +16,7 @@ See [Richard Karp's 21 NP-complete problems]([Karp's 21 NP-complete problems - W
 
 - Note: NP-hard problems do not have to be in NP, and they do not have to be decision problems.
 
-![image-20220219150649332](C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220219150649332.png)
+![image-20220219150649332](https://chqwer2.github.io/img/Typora/image-20220219150649332.png)
 
 ### How to solve the problem?
 

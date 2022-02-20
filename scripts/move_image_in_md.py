@@ -7,6 +7,7 @@ import numpy as np
 md_list = glob('C:\\Users\\calvchen\\PycharmProjects\\chqwer2.github.io\\_posts\\*', recursive=True)
 md_list = list(md_list)
 md_list.extend(glob('C:\\Users\\calvchen\\PycharmProjects\\chqwer2.github.io\\_posts\\*\*', recursive=True))
+md_list.extend(glob('C:\\Users\\calvchen\\PycharmProjects\\chqwer2.github.io\\_posts\\*\*\*', recursive=True))
 md_list = np.unique(md_list)
 print(md_list)
 

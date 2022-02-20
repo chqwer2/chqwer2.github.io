@@ -37,4 +37,4 @@ df.itertuples([index, name])   # column-wise
 
 ### Apply
 
-![image-20220203164413966](C:\Users\calvchen\AppData\Roaming\Typora\typora-user-images\image-20220203164413966.png)
+![image-20220203164413966](https://chqwer2.github.io/img/Typora/image-20220203164413966.png)

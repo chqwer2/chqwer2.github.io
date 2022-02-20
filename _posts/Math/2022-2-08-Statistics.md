@@ -211,7 +211,7 @@ Yes, there exists extreme value, but they never really come into play. Because o
 
 A Gaussian CDF (z-score) [calculator](https://www.calculator.net/z-score-calculator.html?c1raw=400&c1mean=-33.33&c1sd=58.92556&calctype=zscore&x=99&y=20).
 
-![image-20220219230424092](C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220219230424092.png)
+![image-20220219230424092](https://chqwer2.github.io/img/Typora/image-20220219230424092.png)
 
 **Quantiles**
 
@@ -314,7 +314,7 @@ $$
 
 <img src="https://upload.wikimedia.org/wikipedia/commons/a/a9/Gamma_distribution_cdf.png" alt="https://upload.wikimedia.org/wikipedia/commons/a/a9/Gamma_distribution_cdf.png" style="zoom:50%;" />
 
-![image-20220217094728373](C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220217094728373.png)
+![image-20220217094728373](https://chqwer2.github.io/img/Typora/image-20220217094728373.png)
 
 ### Geometric Distribution
 

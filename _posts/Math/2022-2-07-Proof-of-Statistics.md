@@ -267,7 +267,7 @@ False, the criterion for **independence** is $F(x,y)=F_X(x)F_Y(y)$
 
 **variance of ln function**
 
-![image-20220216223016542](C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220216223016542.png)
+![image-20220216223016542](https://chqwer2.github.io/img/Typora/image-20220216223016542.png)
 
 ### The Property of Maximum
 

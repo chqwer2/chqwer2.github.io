@@ -84,7 +84,7 @@ Given a list of cities $x_i\in\mathbb R^n$ and the distances matrix between each
 
 Seek for the shortest rout that visits each city exactly once and returns to the origin city.
 
-![image-20220217164956175](C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220217164956175.png)
+![image-20220217164956175](https://chqwer2.github.io/img/Typora/image-20220217164956175.png)
 
 Solve TSP using:
 
@@ -164,7 +164,7 @@ Use random number to help find and improve the solutions.
 
 avg: O(nlogn), worst: O(2nlogn)
 
-![image-20220203123055102](C:\Users\calvchen\AppData\Roaming\Typora\typora-user-images\image-20220203123055102.png)
+![image-20220203123055102](https://chqwer2.github.io/img/Typora/image-20220203123055102.png)
 
 
 
@@ -196,7 +196,7 @@ Detailed swapping steps for swapping two edges, which result in an **immediate n
 - Step 1: removal of two edges from the current route, which results in two parts of the route. 
 - Step 2: reconnect by two other edges to obtain a new solution
 
-<img src="C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220217171108568.png" alt="image-20220217171108568" style="zoom:33%;" />
+<img src="https://chqwer2.github.io/img/Typora/image-20220217171108568.png" alt="image-20220217171108568" style="zoom:33%;" />
 
 What is **3-Opt Algo**?
 
@@ -222,9 +222,9 @@ Main idea: escape or avoid local optima, introduce randomness into local search 
 - **Random restart**: simply restart the local search from a random initial solution
 - Perform non-improving step: randomly move to a less fit neighbour – **Simulated Annealing (SA)** 
 
-![image-20220217172459663](C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220217172459663.png)
+![image-20220217172459663](https://chqwer2.github.io/img/Typora/image-20220217172459663.png)
 
-![image-20220217172517865](C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220217172517865.png)
+![image-20220217172517865](https://chqwer2.github.io/img/Typora/image-20220217172517865.png)
 
 Accepting worse solutions with a certain probability, e.g., $P:=\exp \left(\frac{e-e_{\text {new }}}{T}\right)$ if $e_{\text {new }} \geq e$, which is worse.
 
@@ -232,15 +232,15 @@ Other: [Tabu Search]([Tabu Search: A Tutorial. (liu.se)](https://www.ida.liu.se/
 
 ## Evolutionary Algorithms
 
-![image-20220217152919465](C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220217152919465.png)
+![image-20220217152919465](https://chqwer2.github.io/img/Typora/image-20220217152919465.png)
 
 An Evolutionary Algorithms consists of: representation: each solution is called an individual fitness (objective) function: to evaluate solutions variation operators: mutation and crossover selection and reproduction : survival of the fittest
 
-![image-20220217153808942](C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220217153808942.png)
+![image-20220217153808942](https://chqwer2.github.io/img/Typora/image-20220217153808942.png)
 
-![image-20220217153830477](C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220217153830477.png)
+![image-20220217153830477](https://chqwer2.github.io/img/Typora/image-20220217153830477.png)
 
-![image-20220217160836329](C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220217160836329.png)
+![image-20220217160836329](https://chqwer2.github.io/img/Typora/image-20220217160836329.png)
 
 
 
@@ -298,7 +298,7 @@ $$
 
 For example, assume $X = \{x_1, x_2, x_2\}$ and $X\in[-5,5]$.
 
-<img src="C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220217161833485.png" alt="image-20220217161833485" style="zoom:67%;" />
+<img src="https://chqwer2.github.io/img/Typora/image-20220217161833485.png" alt="image-20220217161833485" style="zoom:67%;" />
 
 #### Selection
 
@@ -359,7 +359,7 @@ Select top $\gamma$-ranked individuals with probability function $p(\gamma)$, wh
 
   i.e. best individual $\gamma=M-1$ reproduced $\beta$ times in expectation.
 
-  <img src="C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220218231715394.png" alt="image-20220218231715394" style="zoom:40%;" />
+  <img src="https://chqwer2.github.io/img/Typora/image-20220218231715394.png" alt="image-20220218231715394" style="zoom:40%;" />
 
   How to set $\alpha$ and $\beta$? #TODO
 
@@ -438,7 +438,7 @@ Binary GA maximises the level of **implicit parallelism**.
 
 - we are not only evolving $M$ individuals but also manipulating $M · 3L$ schemata. This essentially means that binary coding requires fewer strings to construct more schemata to sample larger search space
 
-<img src="C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220219105501130.png" alt="image-20220219105501130" style="zoom:50%;" />
+<img src="https://chqwer2.github.io/img/Typora/image-20220219105501130.png" alt="image-20220219105501130" style="zoom:50%;" />
 
 **Drawbacks of Binary Coding **
 
@@ -456,7 +456,7 @@ Problem in continuous search spaces
 
 **Hamming cliff problem**: one-bit mutation can make a large (or a small) jump; a multi-bit mutation can make a small (or large) jump.
 
-![image-20220219105852884](C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220219105852884.png)
+![image-20220219105852884](https://chqwer2.github.io/img/Typora/image-20220219105852884.png)
 
 **Solution - Gray encoding**
 
@@ -471,7 +471,7 @@ a_{i-1} \oplus a_{i} & \text { if } i>1
 $$
 
 
-![image-20220219110319880](C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220219110319880.png)
+![image-20220219110319880](https://chqwer2.github.io/img/Typora/image-20220219110319880.png)
 
 **Mutation**
 
@@ -518,7 +518,7 @@ Randomly select two parents $x_{1}=\left\{x_{1}^{[1]}, x_{2}^{[1]}, \cdots, x_{n
   $h_{i}$ is a randomly (uniformly) generated number of the interval $\left[h_{\min }-I \cdot \alpha, h_{\max }+I \cdot \alpha\right], h_{\max }=\max \left(x_{i}^{[1]}, x_{i}^{[2]}\right)$
   $h_{\min }=\min \left(x_{i}^{[1]}, x_{i}^{[2]}\right)$ and $I=h_{\max }-h_{\min }$
 
-<img src="C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220219123427145.png" alt="image-20220219123427145" style="zoom:50%;" />
+<img src="https://chqwer2.github.io/img/Typora/image-20220219123427145.png" alt="image-20220219123427145" style="zoom:50%;" />
 
 
 
@@ -527,8 +527,8 @@ Randomly select two parents $x_{1}=\left\{x_{1}^{[1]}, x_{2}^{[1]}, \cdots, x_{n
 - A company is evaluating 4 projects which each run for 3 years and have the following characteristics.
 - Decision problem: Which projects should be selected to maximize the total profits?
 
-![image-20220219123706019](C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220219123706019.png)
+![image-20220219123706019](https://chqwer2.github.io/img/Typora/image-20220219123706019.png)
 
 - Once a project has been selected, all yearly capital requirement (investments) and capital (budget) must be met.
 
-<img src="C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220219124007068.png" alt="image-20220219124007068" style="zoom:80%;" />
+<img src="https://chqwer2.github.io/img/Typora/image-20220219124007068.png" alt="image-20220219124007068" style="zoom:80%;" />
