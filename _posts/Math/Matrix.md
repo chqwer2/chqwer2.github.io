@@ -62,6 +62,42 @@ The set of all eigenvalues of an *n*×*n*
 
  matrix *A* is denoted by *σ*(*A*) and is referred to as the **spectrum** of *A*.
 
+
+
+### Haven’t Handled
+
+
+
+### Matrix
+
+Understand the concept of **eigenvalues**  and **eigenvectors**  of an  matrix. 
+
+**inner product**  (also called the **dot product** ) 
+
+![image-20220206124808639](https://chqwer2.github.io/img/Typora/image-20220206124808639.png)
+
+![image-20220206124837016](https://chqwer2.github.io/img/Typora/image-20220206124837016.png)
+
+![image-20220206125013763](https://chqwer2.github.io/img/Typora/image-20220206125013763.png)
+
+**row rank** , column rank and normal rank
+
+![image-20220206130007716](https://chqwer2.github.io/img/Typora/image-20220206130007716.png)
+
+![image-20220206130132279](https://chqwer2.github.io/img/Typora/image-20220206130132279.png)
+
+
+
+![image-20220206130125471](https://chqwer2.github.io/img/Typora/image-20220206130125471.png)
+
+
+
+
+
+
+
+
+
 ### Geometric Interpretation of Eigenvalues and Eigenvectors
 
 

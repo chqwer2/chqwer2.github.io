@@ -15,8 +15,6 @@ Bert from **transformers** library and **Huggingface**
 
 RoBERTa, 
 
-
-
 1. 用正则或NLTK对句子分句然后分词，另外根据需求涉及stopwords，词型还原等.
 2. 用sklearn的*Tfidf*Transformer及CountVectorizer或keras的一些工具将句子向量化，再加上一些其他统计特征.
 3. 使用NB,GBDT,FM,LR,NN等方法模型建模,融合.

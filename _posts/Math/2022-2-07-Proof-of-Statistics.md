@@ -271,23 +271,24 @@ False, the criterion for **independence** is $F(x,y)=F_X(x)F_Y(y)$
 
 ### The Property of Maximum
 
-**The CDF of max(X, Y)**
+Given the IID r.v. $X\sim \text{Uni}(0,1)$, we have $M_n=\max(x_1,\cdots,x_n)$,
 
-We have $X, Y\sim \text{Uni}(-1,1)$ and $Z = \text{max}(X,Y)$.
+Then, because $X_n$ are i.i.d. :
+
 $$
-F_{Z}(z)=P\{Z<z\}=P\{\max (X, Y)<z\}
+P(M_n<t) = P(\cap^n_{i=1}\{x_i \leq t \})=\prod^n_{i=q}P(x_i \leq t)  \longrightarrow F_X(t)^n 
 $$
 
+where$F_X(\cdot)$ is the CDF of distribution.
 
-We know $\max (X, Y)<z$ only if both $X$ and $Y$ are less than $z$:
 $$
 \begin{aligned}
-P\{\max (X, Y)<z\} &=P\{\{X<z\} \cap\{Y<z\}\} \\
-X \text { and } Y \text { are i.i.d}  \longrightarrow &=P\{X<z\} P\{Y<z\} \\
-&=F_{X}(z) F_{Y}(z)
+P\left(n\left(1-M_{n}\right) \leq t\right) &={P}\left(1-M_{n} \leq \frac{t}{n}\right)\\
+&={P}\left(M_{n} \geq 1-\frac{t}{n}\right) \\
+&=1-{P}\left(M_{n}<1-\frac{t}{n}\right)\\
+&=1-\left(1-\frac{t}{n}\right)^{n} \stackrel{n \rightarrow \infty}{\longrightarrow} 1-\mathbf{e}^{-t} .
 \end{aligned}
 $$
-
 
 
 ### Limitations
