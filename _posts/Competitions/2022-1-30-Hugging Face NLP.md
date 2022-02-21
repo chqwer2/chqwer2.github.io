@@ -2,13 +2,14 @@
 layout:     post
 title:      "Hugging Face NLP"
 subtitle:   " \"NLP never been so easy to implement.\""
-date:       2022-01-29 00:10:00
+date:       2022-02-20 00:10:00
 author:     "Calvchen"
 header-img: "img/post-bg-2015.jpg"
 catalog: true
 tags:
-    - Life
-    - Solving
+    - NLP
+    - AI 
+    - ML
 
 
 ---
@@ -821,7 +822,7 @@ This generic task encompasses any problem that can be formulated as “attributi
 - **Part-of-speech tagging (POS)**: Mark each word in a sentence as corresponding to a particular part of speech (such as noun, verb, adjective, etc.).
 - **Chunking**: Find the tokens that belong to the same entity. This task (which can be combined with POS or NER) can be formulated as attributing one label (usually `B-`) to any tokens that are at the **beginning** of a chunk, another label (usually `I-`) to tokens that are **inside a chunk**, and a third label (usually `O`) to tokens that don’t belong to any chunk.
 
-<img src="https://chqwer2.github.io/img/Typora/image-20220221122540065.png" alt="image-20220221122540065" style="zoom:50%;" />
+![img]<img src="https://chqwer2.github.io/img/Typora/image-20220221122540065.png" alt="image-20220221122540065" style="zoom:50%;" />
 
 Take The CoNLL-2003 dataset For Instance.
 
