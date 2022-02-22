@@ -17,13 +17,22 @@ subtitle:   " \"ArcFace, etc...\""
 
 
 
-# Metric Learning Papers
+### Metric Learning
 
-### ArcFace
+```mermaid
+graph TD
+   A[Triplet]-->C[ArcFace]
+```
 
-**Additive Angular Margin Loss for Deep Face Recognition**
 
-[[PDF]](https://arxiv.org/pdf/1801.07698v3.pdf), [[Code]](https://github.com/deepinsight/insightface)
+
+
+
+- **ArcFace** - Additive Angular Margin Loss for Deep Face Recognition
+
+
+
+[PDF](https://arxiv.org/pdf/1801.07698v3.pdf), [Code](https://github.com/deepinsight/insightface), [ArcFace.pdf](file:///C:/PaperSet/ArcFace.pdf), (citation)
 
 The proposed ArcFace has a clear geometric interpretation due to the exact
 correspondence to the geodesic distance on the hypersphere.
