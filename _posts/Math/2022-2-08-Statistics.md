@@ -80,7 +80,13 @@ $\bar X_n$ is close to $\mu$ at some deviations that are of order 1 over square 
 
 **Asymptotic normality**
 
-Assuming the sequence $\{X_{n}\}$ is an i.i.d sequence with finite mean and variance. Therefore, it satisfies the conditions of Central Limit Theorem. Hence, the sample mean $\bar X_{n}$ in the above equlity is asymptotically normal. In other words, the sample mean $X_{n}$ converges in distribution to a normal random variable with mean $\mu$ and variance $\large \frac{\sigma^{2}}{n}$.
+Assuming the sequence $\{X_{n}\}$ is an i.i.d sequence with finite mean and variance. Therefore, it satisfies the conditions of Central Limit Theorem. 
+
+Hence, the sample mean $\bar X_{n}$ in the above equlity is asymptotically normal. In other words, the sample mean $X_{n}$ converges in distribution to a normal random variable with mean $\mu$ and variance $\large \frac{\sigma^{2}}{n}$.
+$$
+\sqrt(n)\left(\frac{\bar X_n-\mu}{\sigma}\right) \overset d\to Z
+$$
+
 
 ### Continuous Mapping Theorem (CMT)
 
@@ -153,6 +159,12 @@ $$
 **Remark:**
 When Markov inequality is applied to $(X-\mu)^{2}$, we obtain Chebyshev's inequality. Markov inequality is also used in the proof of Hoeffding's inequality.
 
+**Triangle Inequality**
+$$
+|\alpha\ \pm\ \beta| \leq |\alpha| + |\beta|
+$$
+
+
 ### Slutsky’s Theorem
 
 Slutsky's Theorem will be our main tool for **convergence in distribution**.
@@ -167,6 +179,10 @@ Then,
 - $T_{n}+U_{n} \stackrel{(d)}{\underset{n \rightarrow \infty}{\longrightarrow}} T+U$,
 - $T_{n} U_{n} \stackrel{(d)}{\underset{n \rightarrow \infty}{\longrightarrow}} T U$
 - If in addition, $u \neq 0$, then $\large \frac{T_{n}}{U_{n}} \stackrel{(d)}{\underset{n \rightarrow \infty}{\longrightarrow}} \frac{T}{U}$.
+
+### Delta ($\Delta$) method
+
+https://en.wikipedia.org/wiki/Delta_method
 
 ## Distribution
 
@@ -380,7 +396,27 @@ Notation: $X\sim Ber(p)$
 
 Mean and Variance: $p$, $p(1-p)$ 
 
+### Indicator Function
 
+The indicator function of a subset $A$ of a set $X$ is a function
+$$
+{\mathbf{1}}_{A}: X \rightarrow\{0,1\}
+$$
+defined as
+$$
+\mathbf{1}_{A}(x):=\left\{\begin{array}{ll}
+1 & \text { if } x \in A \\
+0 & \text { if } x \notin A
+\end{array}\right.
+$$
+**Derivative of indicator function**
+
+I have an indicator function $I(D\leq Q)$,
+
+$$
+\pdv DI(D\leq Q) = -\delta(D-Q)
+$$
+*δ* is symmetric.  *δ* can be thought of as the derivative of the Heaviside function *H*(*x*)=1 for *x*>0, 0 for *x*<0. 
 
 ### Moment Generation Function (MGF)
 
@@ -489,6 +525,11 @@ Warning: In general, these rules do not apply to convergence in distribution $(d
 
 ## Estimator
 
+Normally, we have two estimator:
+
+- Compute the expectation of your random variable
+- Using Delta method
+
 How can we decide how many samples ($n$) we need to draw our conclusion? **What is the cutoff**, namely if 60 is enough, how about 59 and 58?
 
 Now we have our first estimator of $p$ of *Kissing Example*, we put a hat on everything that’s the estimator of something.
@@ -512,4 +553,13 @@ We don’t even know the trueandard and the observation $\hat{p}$ is from random
 Modelling Assumptions:
 
 - Each r.v. and i.i.d $R_i$ is Bernoulli (p) 
+- 
+
+### Measures of Distance
+
+If we want to estimate **mean** of a Gaussian and we can compute the expectation, but not it doesn’t work for the the variance.
+
+You can go into example and compute the variance, which is actually coming from the method of moments.
+
+But it turns our we have a much more powerful method called the maximum likelihood method, but it is far non-trivial.
 

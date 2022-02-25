@@ -17,3 +17,4 @@ target_fold = r'https://chqwer2.github.io/img/Typora/'
 
 print(re.sub(origin_fold, target_fold, data))
 
+from datasets import load_dataset, DatasetDict, Dataset

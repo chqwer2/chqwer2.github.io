@@ -269,6 +269,31 @@ False, the criterion for **independence** is $F(x,y)=F_X(x)F_Y(y)$
 
 ![image-20220216223016542](https://chqwer2.github.io/img/Typora/image-20220216223016542.png)
 
+**Var[X] is known, how to calculate Var[$\frac{1}{x}$]:**
+
+Using Delta Method,
+
+You can use [Taylor series](https://en.wikipedia.org/wiki/Taylor_expansions_for_the_moments_of_functions_of_random_variables) to get an approximation of the low order  moments of a transformed random variable. If the distribution is fairly  'tight' around the mean (in a particular sense), the approximation can  be pretty good.
+$$
+g(X)=g(μ)+(X−μ)g′(μ)+(X−μ)22g′′(μ)+…
+$$
+SO
+$$
+\begin{aligned}
+\operatorname{Var}[g(X)]=& \operatorname{Var}\left[g(\mu)+(X-\mu) g^{\prime}(\mu)+\frac{(X-\mu)^{2}}{2} g^{\prime \prime}(\mu)+\ldots\right] \\
+=& \operatorname{Var}\left[(X-\mu) g^{\prime}(\mu)+\frac{(X-\mu)^{2}}{2} g^{\prime \prime}(\mu)+\ldots\right] \\
+=& g^{\prime}(\mu)^{2} \operatorname{Var}[(X-\mu)]+2 g^{\prime}(\mu) \operatorname{Cov}\left[(X-\mu), \frac{(X-\mu)^{2}}{2} g^{\prime \prime}(\mu)+\ldots\right] \\
+&+\operatorname{Var}\left[\frac{(X-\mu)^{2}}{2} g^{\prime \prime}(\mu)+\ldots\right]
+\end{aligned}
+$$
+often only the first term is taken
+$$
+\operatorname{Var}[g(X)] \approx g^{\prime}(\mu)^{2} \operatorname{Var}(X)
+$$
+In this case (assuming I didn't make a mistake), with $g(X)=\frac{1}{X}, \operatorname{Var}\left[\frac{1}{X}\right] \approx \frac{1}{\mu^{4}} \operatorname{Var}(X)$.
+
+
+
 ### The Property of Maximum
 
 Given the IID r.v. $X\sim \text{Uni}(0,1)$, we have $M_n=\max(x_1,\cdots,x_n)$,

@@ -65,8 +65,8 @@ def trans(origin_loc, target_loc):
         plt.imsave(target_loc, img)
         print("succeed save:", target_loc)
     except:
-        print("defeat: ", origin_loc)
-
+        # print("defeat: ", origin_loc)
+        pass
 for img in img_list:
     trans(origin_fold  + '/' + img, target_fold  + '/' + img)
 

@@ -1,1 +1,0 @@
-*有放回*抽样. 1.sampling with replacement. “*放回*抽样”的*英文*. 1.sampling with replacement. “无*放回*抽样”的*英文*. 1.sampling without replacemen
