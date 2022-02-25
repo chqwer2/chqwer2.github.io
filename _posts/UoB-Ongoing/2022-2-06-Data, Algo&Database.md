@@ -7,8 +7,9 @@ author:     "Calvchen"
 header-img: "img/post-bg-infinity.jpg"
 catalog: true
 tags:
-    - Math
-    - Statistics
+    - Algo
+    - Data
+    - Database
     - Course
 
 
