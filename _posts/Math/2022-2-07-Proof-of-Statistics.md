@@ -139,6 +139,8 @@ $$
 
 **For** $\mathbb E[XY]$,
 
+The expectation of the product of X and Y is the product of the individual expectations: **E(XY ) = E(X)E(Y )**. 
+
 
 
 ### Variance of Gaussians
@@ -199,6 +201,14 @@ $$
 $V(\bar X_n)=\large\frac{\sigma^2}{n}$
 
 ![[eq3]](https://www.statlect.com/images/mean-estimation__14.png)
+
+Var(XY)
+
+![image-20220301113018384](C:\Users\calvchen\PycharmProjects\chqwer2.github.io\_posts\Math\image-20220301113018384.png)
+
+![image-20220301113212523](C:\Users\calvchen\PycharmProjects\chqwer2.github.io\_posts\Math\image-20220301113212523.png)
+
+
 
 ### Covariance
 

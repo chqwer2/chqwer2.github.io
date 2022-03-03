@@ -186,6 +186,10 @@ https://en.wikipedia.org/wiki/Delta_method
 
 ## Distribution
 
+Discrete: Probability mass function
+
+- Bernoulli, Uniform, Binomial, Geometric
+
 ### Gaussian Distribution
 
 Notation: $X\sim\mathcal{N}(\mu, \sigma^2) $
@@ -334,6 +338,8 @@ $$
 
 ### Geometric Distribution
 
+Such as : number of trials until a success
+
 Geometric Distribution is either one of below two distribution:
 
 - The probability distribution of the number $X$ of Bernoulli trials needed to get one success, supported on the set $\{1,2,3, \ldots\}$;
@@ -361,6 +367,8 @@ $$
 
 
 ![img](https://upload.wikimedia.org/wikipedia/commons/6/6f/Geometric_cdf.svg)
+
+![image-20220228105357946](C:\Users\calvchen\PycharmProjects\chqwer2.github.io\_posts\Math\image-20220228105357946.png)
 
 ### Binomial Distribution
 
@@ -395,6 +403,12 @@ In other words, there are a finite amount of events in a binomial distribution, 
 Notation: $X\sim Ber(p)$
 
 Mean and Variance: $p$, $p(1-p)$ 
+
+PMF pmfs
+
+![{\displaystyle p^{k}(1-p)^{1-k}}](https://wikimedia.org/api/rest_v1/media/math/render/svg/834d4502075ca9a13696f56681b53edfa0cf2a6e)
+
+
 
 ### Indicator Function
 

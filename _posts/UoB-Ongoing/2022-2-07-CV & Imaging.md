@@ -423,3 +423,217 @@ Standard thresholding can only select “strong” edges, does not guarantee “
 
 ![image-20220216124005724](https://chqwer2.github.io/img/Typora/image-20220216124005724.png)
 
+
+
+### Scale Invariant Feature Transform (SIFT)
+
+Given the noisy image, design the best suitable  algorithm to detect  edges.
+
+Given the calculated edges, how would you quantify accuracy?
+
+**Why we want to match features？**
+
+Tasks like Object Recognition, Tracking…
+
+- Good features should be robust to all sorts of  nastiness that can occur between images.
+
+Types of invariance:
+
+- illumination
+- Scale
+- Rotation
+- Affine
+- Full Perspective 
+
+<img src="C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220303142343127.png" alt="image-20220303142343127" style="zoom:23%;" /><img src="C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220303142237212.png" alt="image-20220303142237212" style="zoom:33%;" /><img src="C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220303142250380.png" alt="image-20220303142250380" style="zoom:28%;" />
+
+How to achieve illumination invariance?
+
+- The easy way (normalized) - histogram
+- Difference based metrics (sift)
+
+How to achieve scale invariance?
+
+- Pyramids
+  - Down Sampling
+  - Repeat until image is tiny
+  - Run filter over each size image and hope its robust
+
+<img src="C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220303143403986.png" alt="image-20220303143403986" style="zoom:50%;" />
+
+- Scale Space (**Different Of Gaussian** (DOG) method) ?# Todo
+  - Pyramid but fill gaps with blurred images
+  - not down sampling, but blurring it..
+  -  Like having a nice linear scaling without the  expense
+  - Take features from differences of these images
+  - If the feature is repeatably present in between  Difference of Gaussians it is Scale Invariant and  we should keep it.
+
+<img src="C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220303143703743.png" alt="image-20220303143703743" style="zoom:50%;" />
+
+### Rotation Invariance
+
+- Rotate all features to go the same way in a  determined manner 
+- Take histogram of Gradient directions  
+- Rotate to most dominant (maybe second if its  good enough
+
+If rotation, looking at the **histogram**: will be same distribution but offset.
+
+
+
+### Handout 4.2 
+
+Hough Transform
+
+Polar Space and Cartesian Space
+
+coordinaties
+
+Distance from the origin
+
+<img src="C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220225151010677.png" alt="image-20220225151010677" style="zoom:33%;" />
+
+![image-20220225151137606](C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220225151137606.png)
+
+
+
+The Hough transform is a common  approach to finding  parameterised line segments  (here straight lines
+
+**The basic idea:**
+
+Each straight line in image can be described by an equation ($\mathbf w, \phi$), $\phi$ for the angle.
+
+Each isolated point can lie on an infinite number of straight lines.
+
+In the Hough transform each point votes for  every line it could be on. 
+
+The lines with the most votes win.
+
+**Hough Space **
+
+($\mathbf w, \phi$)
+
+![image-20220225152551399](C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220225152551399.png)
+
+It also conduct NMS to gain the best edge.
+
+We need to set a threshold $A$, which is the minPoint to create a line.
+
+A hough map
+
+![image-20220225153059790](C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220225153059790.png)
+
+There are generalised versions for ellipses, circles 
+
+For the straight line transform we need to supress non-local maxima 
+
+The input image could also benefit from edge thinning 
+
+Single line segments not isolated 
+
+Will still fail in the face of certain textures
+
+
+
+### Circle Hough Transform
+
+![image-20220225153622056](C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220225153622056.png)
+
+Hough transform technique is that it is **tolerant of gaps in feature boundary descriptions and is relatively unaﬀected by image noise**, unlike edge detecto
+
+### Lecture 5. Image Registration
+
+Segmentation of Ageing brain
+
+<img src="C:\Users\calvchen\PycharmProjects\chqwer2.github.io\_posts\UoB-Ongoing\image-20220302120932875.png" alt="image-20220302120932875" style="zoom:33%;" />
+
+atlas 地图集
+
+
+
+- Geometric (and Photometric) alignment of  one image with another 
+
+- Implemented as the process of estimating an  optimal transformation between two images.
+
+- Images may be of same or different types  (MR, CT, visible, fluorescence, ...)
+
+  
+
+Co-register the image
+
+![image-20220302121040053](C:\Users\calvchen\PycharmProjects\chqwer2.github.io\_posts\UoB-Ongoing\image-20220302121040053.png)
+
+
+
+![image-20220302121317303](C:\Users\calvchen\PycharmProjects\chqwer2.github.io\_posts\UoB-Ongoing\image-20220302121317303.png)
+
+![image-20220302121454461](C:\Users\calvchen\PycharmProjects\chqwer2.github.io\_posts\UoB-Ongoing\image-20220302121454461.png)
+
+![image-20220302121739243](C:\Users\calvchen\PycharmProjects\chqwer2.github.io\_posts\UoB-Ongoing\image-20220302121739243.png)
+
+Landmarks: eyes, ears etc. or curve of features
+
+Image values: conservation of intensity
+
+![image-20220302122100956](C:\Users\calvchen\PycharmProjects\chqwer2.github.io\_posts\UoB-Ongoing\image-20220302122100956.png)
+
+need same dimension of resolution
+
+hard to handle different features
+
+![image-20220302122258805](C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220302122258805.png)
+
+different pixels value are more likely to belong to different group.
+
+**The joint histogram**
+
+![image-20220302122501565](C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220302122501565.png)
+
+![image-20220302122544856](C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220302122544856.png)
+
+Class of Transforms:
+
+- Rigid, not scaling (6-dimension)
+
+  ![image-20220302122920286](C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220302122920286.png)
+
+  ![image-20220302122931772](C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220302122931772.png)
+
+- Affine
+
+  ![image-20220302123024721](C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220302123024721.png)
+
+- Piecewise Affine
+
+  Typically use different affine transformation for  different parts of the image
+
+  <img src="C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220302123139995.png" alt="image-20220302123139995" style="zoom:50%;" />
+
+- Non-rigid (Elastic)
+
+  some shrinking, some expanding or deforming
+
+  External forces drive transformation, Internal forces provide constraints.
+
+  ![image-20220302123354950](C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220302123354950.png)
+
+**What similarity criterion to use?**
+
+![image-20220302123531184](C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220302123531184.png)
+
+maintain the distances between features.
+
+![image-20220302123611968](C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220302123611968.png)
+
+1. RMS
+
+2. Mutual Info
+
+   ![image-20220302123714703](C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220302123714703.png)
+
+   maximize the possibility of the location given the pixel.
+
+   what is $p_{i,j}$ ?
+
+   <img src="C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220302123743633.png" alt="image-20220302123743633" style="zoom:50%;" />
+
+3. What is **Normalised  cross-correlation**?

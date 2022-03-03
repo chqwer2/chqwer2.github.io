@@ -13,7 +13,6 @@ tags:
     - Course
 
 
-
 ---
 
 > “Basic data courses. ”
@@ -53,9 +52,7 @@ Find an interge $y=i \text{ (for index)}$ if found, **-1** if not found.
 
 **What if more than one found?**
 
-We can return the first one found.
-
-
+- We can return the first one found.
 
 
 
@@ -64,13 +61,13 @@ We can return the first one found.
 **Binary search** assume the $a$ is sorted (predcondition), normally is $O(log\ n)$.
 
 - Does it really get faster? Significantly so?
-  - Yes the worst case of *BS* is $log_2\ n$.
+  - Yes the worst case of perfect *BS* is $log_2\ n$.
 
 
 
 ![image-20220221213340922](https://chqwer2.github.io/img/Typora/image-20220221213340922.png)
 
-Because of BSInvariant 
+Because of BS Invariant 
 
 
 
@@ -212,7 +209,7 @@ graph TD
 
 Adelson-Velski and Lzudis Trees or called **self-balancing Binary Search Tree**
 
-BST tend to grow unbalanced, we then lose the $O(log\ n)$ good time behaviour.
+BST tend to grow unbalanced, we then lose the $O(log\ n)$ good time behavior. Can we assume extra conditions to make sure that the height of the tree is under control?
 
 **Why we will lose it?**
 
@@ -237,11 +234,19 @@ Equal to the height of the subtree at that node.
 
 **Concept #2** **Balance at the node**
 
-(Height of left subtree) - (Height of right subtree)
+(Height of left subtree) - (Height of right subtree) 
+
+perfectly balanced, that is, the balance of each node is 0.
 
 <img src="https://chqwer2.github.io/img/Typora/image-20220221232406993.png" alt="image-20220221232406993" style="zoom:50%;" />
 
 <img src="https://chqwer2.github.io/img/Typora/image-20220221232502057.png" alt="image-20220221232502057" style="zoom:60%;" />
+
+![image-20220225104427945](C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220225104427945.png)
+
+height of empty tree is -1, 
+
+Then height of subtree at that node will be height of left subtree + 1 (for the node itself). Same is true if node has only right subtree.
 
 **Concept #3** AVL tree
 
@@ -310,6 +315,8 @@ Need to fix the resulting tree…
 
 Four Result Cases:
 
+![image-20220225105002079](C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220225105002079.png)
+
 ![image-20220222100825348](https://chqwer2.github.io/img/Typora/image-20220222100825348.png)
 
 AVL insert Case LL:
@@ -329,3 +336,20 @@ AVL insert Case RL:
 ![image-20220222101213262](https://chqwer2.github.io/img/Typora/image-20220222101213262.png)
 
 **AVL Tree Deletion**
+
+- Delete using the BST algo
+- Rebalance as necessary as before.
+
+### Fibonacci Trees
+
+$$
+T_{-1},T_0, T_1,\dots
+$$
+
+T−1 is the empty tree • 
+
+T0 is the one element tree • 
+
+Th+2 is obtained by making Th and Th+1 children of the root node (as shown in the picture on the previous slide)
+
+![image-20220225105231512](C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220225105231512.png)
