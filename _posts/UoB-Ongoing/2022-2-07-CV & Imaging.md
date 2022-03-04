@@ -637,3 +637,90 @@ maintain the distances between features.
    <img src="C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220302123743633.png" alt="image-20220302123743633" style="zoom:50%;" />
 
 3. What is **Normalised  cross-correlation**?
+
+
+
+### Computational Vision
+
+- Spatial resolution: Pixel Size
+- Intensity resolution: Bits per pixel
+- Time resolution: Frames per sec.
+- **Spectral** resolution: Number of bands + bandwidth
+
+
+
+### Characterising images as signals
+
+**Image Statistics**
+
+- Mean, standard deviation
+- Histogram: **frequency distribution** graph
+
+Signal-to-noise (SNR)
+
+![image-20220304151507565](C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220304151507565.png)
+
+![image-20220304151808754](C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220304151808754.png)
+
+Non-automated: taking 5~6 and average through.
+
+**Histogram-based segmentation**
+
+![image-20220304150556638](C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220304150556638.png)
+
+Thresholding challenges
+
+![image-20220304152402554](C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220304152402554.png)
+
+How do we determine the threshold ? 
+
+Different regions / image areas may need  different levels of threshold.
+
+Many approaches possible 
+
+- Interactive threshold 
+- Adaptive threshold 
+- Variance minimisation method (Otsu threshold  selection algorithm)
+
+**What is the OTSU?** #TODO
+
+
+
+### Mathematical Morphology
+
+![image-20220304152821808](C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220304152821808.png)
+
+![image-20220304152834298](C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220304152834298.png)
+
+**Dilation**
+
+- adding a “layer” of pixels to the periphery of object
+
+**Erosion**
+
+- removing a “layer” of pixels all round an object
+
+### Two advanced segmentation methods
+
+- Active contours (snakes) 
+- Watershed 
+- Level-set methods  # TODO
+- Active shape model segmentation # TODO
+
+
+
+**Active contours (snakes)** 
+
+![image-20220304153144897](C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220304153144897.png)
+
+![image-20220304153154094](C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220304153154094.png)
+
+<img src="C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220304153213040.png" alt="image-20220304153213040" style="zoom:33%;" />
+
+**Watershed Segmentation**
+
+![image-20220304153501783](C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220304153501783.png)
+
+![image-20220304153513547](C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220304153513547.png)
+
+<img src="C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220304153849584.png" alt="image-20220304153849584" style="zoom:33%;" />
