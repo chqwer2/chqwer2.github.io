@@ -13,7 +13,7 @@ tags:
 
 ---
 
-> “Computer Vision algorithms enable machine to indentify and classify objects, then react accordingly. ”
+> “页眉不知道写什么好，就给大家拜个早年吧~ 祝大家新的一年多多读书！ ”
 
 ### 关于读书，精神与物质
 
