@@ -11,3 +11,6 @@ With Probability
 s.t.
 
 ![image-20220228103902227](C:\Users\calvchen\PycharmProjects\chqwer2.github.io\_posts\Math\image-20220228103902227.png)
+
+common denominator 公分母
+

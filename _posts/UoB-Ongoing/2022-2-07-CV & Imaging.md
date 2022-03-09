@@ -445,7 +445,7 @@ Types of invariance:
 - Affine
 - Full Perspective 
 
-<img src="C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220303142343127.png" alt="image-20220303142343127" style="zoom:23%;" /><img src="C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220303142237212.png" alt="image-20220303142237212" style="zoom:33%;" /><img src="C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220303142250380.png" alt="image-20220303142250380" style="zoom:28%;" />
+<img src="https://chqwer2.github.io/img/Typora/image-20220303142343127.png" alt="image-20220303142343127" style="zoom:23%;" /><img src="https://chqwer2.github.io/img/Typora/image-20220303142237212.png" alt="image-20220303142237212" style="zoom:33%;" /><img src="https://chqwer2.github.io/img/Typora/image-20220303142250380.png" alt="image-20220303142250380" style="zoom:28%;" />
 
 How to achieve illumination invariance?
 
@@ -459,7 +459,7 @@ How to achieve scale invariance?
   - Repeat until image is tiny
   - Run filter over each size image and hope its robust
 
-<img src="C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220303143403986.png" alt="image-20220303143403986" style="zoom:50%;" />
+<img src="https://chqwer2.github.io/img/Typora/image-20220303143403986.png" alt="image-20220303143403986" style="zoom:50%;" />
 
 - Scale Space (**Different Of Gaussian** (DOG) method) ?# Todo
   - Pyramid but fill gaps with blurred images
@@ -468,7 +468,7 @@ How to achieve scale invariance?
   - Take features from differences of these images
   - If the feature is repeatably present in between  Difference of Gaussians it is Scale Invariant and  we should keep it.
 
-<img src="C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220303143703743.png" alt="image-20220303143703743" style="zoom:50%;" />
+<img src="https://chqwer2.github.io/img/Typora/image-20220303143703743.png" alt="image-20220303143703743" style="zoom:50%;" />
 
 ### Rotation Invariance
 
@@ -490,9 +490,9 @@ coordinaties
 
 Distance from the origin
 
-<img src="C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220225151010677.png" alt="image-20220225151010677" style="zoom:33%;" />
+<img src="https://chqwer2.github.io/img/Typora/image-20220225151010677.png" alt="image-20220225151010677" style="zoom:33%;" />
 
-![image-20220225151137606](C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220225151137606.png)
+![image-20220225151137606](https://chqwer2.github.io/img/Typora/image-20220225151137606.png)
 
 
 
@@ -512,7 +512,7 @@ The lines with the most votes win.
 
 ($\mathbf w, \phi$)
 
-![image-20220225152551399](C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220225152551399.png)
+![image-20220225152551399](https://chqwer2.github.io/img/Typora/image-20220225152551399.png)
 
 It also conduct NMS to gain the best edge.
 
@@ -520,7 +520,7 @@ We need to set a threshold $A$, which is the minPoint to create a line.
 
 A hough map
 
-![image-20220225153059790](C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220225153059790.png)
+![image-20220225153059790](https://chqwer2.github.io/img/Typora/image-20220225153059790.png)
 
 There are generalised versions for ellipses, circles 
 
@@ -536,7 +536,7 @@ Will still fail in the face of certain textures
 
 ### Circle Hough Transform
 
-![image-20220225153622056](C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220225153622056.png)
+![image-20220225153622056](https://chqwer2.github.io/img/Typora/image-20220225153622056.png)
 
 Hough transform technique is that it is **tolerant of gaps in feature boundary descriptions and is relatively unaﬀected by image noise**, unlike edge detecto
 
@@ -580,33 +580,33 @@ need same dimension of resolution
 
 hard to handle different features
 
-![image-20220302122258805](C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220302122258805.png)
+![image-20220302122258805](https://chqwer2.github.io/img/Typora/image-20220302122258805.png)
 
 different pixels value are more likely to belong to different group.
 
 **The joint histogram**
 
-![image-20220302122501565](C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220302122501565.png)
+![image-20220302122501565](https://chqwer2.github.io/img/Typora/image-20220302122501565.png)
 
-![image-20220302122544856](C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220302122544856.png)
+![image-20220302122544856](https://chqwer2.github.io/img/Typora/image-20220302122544856.png)
 
 Class of Transforms:
 
 - Rigid, not scaling (6-dimension)
 
-  ![image-20220302122920286](C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220302122920286.png)
+  ![image-20220302122920286](https://chqwer2.github.io/img/Typora/image-20220302122920286.png)
 
-  ![image-20220302122931772](C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220302122931772.png)
+  ![image-20220302122931772](https://chqwer2.github.io/img/Typora/image-20220302122931772.png)
 
 - Affine
 
-  ![image-20220302123024721](C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220302123024721.png)
+  ![image-20220302123024721](https://chqwer2.github.io/img/Typora/image-20220302123024721.png)
 
 - Piecewise Affine
 
   Typically use different affine transformation for  different parts of the image
 
-  <img src="C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220302123139995.png" alt="image-20220302123139995" style="zoom:50%;" />
+  <img src="https://chqwer2.github.io/img/Typora/image-20220302123139995.png" alt="image-20220302123139995" style="zoom:50%;" />
 
 - Non-rigid (Elastic)
 
@@ -614,27 +614,27 @@ Class of Transforms:
 
   External forces drive transformation, Internal forces provide constraints.
 
-  ![image-20220302123354950](C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220302123354950.png)
+  ![image-20220302123354950](https://chqwer2.github.io/img/Typora/image-20220302123354950.png)
 
 **What similarity criterion to use?**
 
-![image-20220302123531184](C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220302123531184.png)
+![image-20220302123531184](https://chqwer2.github.io/img/Typora/image-20220302123531184.png)
 
 maintain the distances between features.
 
-![image-20220302123611968](C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220302123611968.png)
+![image-20220302123611968](https://chqwer2.github.io/img/Typora/image-20220302123611968.png)
 
 1. RMS
 
 2. Mutual Info
 
-   ![image-20220302123714703](C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220302123714703.png)
+   ![image-20220302123714703](https://chqwer2.github.io/img/Typora/image-20220302123714703.png)
 
    maximize the possibility of the location given the pixel.
 
    what is $p_{i,j}$ ?
 
-   <img src="C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220302123743633.png" alt="image-20220302123743633" style="zoom:50%;" />
+   <img src="https://chqwer2.github.io/img/Typora/image-20220302123743633.png" alt="image-20220302123743633" style="zoom:50%;" />
 
 3. What is **Normalised  cross-correlation**?
 
@@ -658,19 +658,19 @@ maintain the distances between features.
 
 Signal-to-noise (SNR)
 
-![image-20220304151507565](C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220304151507565.png)
+![image-20220304151507565](https://chqwer2.github.io/img/Typora/image-20220304151507565.png)
 
-![image-20220304151808754](C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220304151808754.png)
+![image-20220304151808754](https://chqwer2.github.io/img/Typora/image-20220304151808754.png)
 
 Non-automated: taking 5~6 and average through.
 
 **Histogram-based segmentation**
 
-![image-20220304150556638](C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220304150556638.png)
+![image-20220304150556638](https://chqwer2.github.io/img/Typora/image-20220304150556638.png)
 
 Thresholding challenges
 
-![image-20220304152402554](C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220304152402554.png)
+![image-20220304152402554](https://chqwer2.github.io/img/Typora/image-20220304152402554.png)
 
 How do we determine the threshold ? 
 
@@ -688,9 +688,9 @@ Many approaches possible
 
 ### Mathematical Morphology
 
-![image-20220304152821808](C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220304152821808.png)
+![image-20220304152821808](https://chqwer2.github.io/img/Typora/image-20220304152821808.png)
 
-![image-20220304152834298](C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220304152834298.png)
+![image-20220304152834298](https://chqwer2.github.io/img/Typora/image-20220304152834298.png)
 
 **Dilation**
 
@@ -711,16 +711,16 @@ Many approaches possible
 
 **Active contours (snakes)** 
 
-![image-20220304153144897](C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220304153144897.png)
+![image-20220304153144897](https://chqwer2.github.io/img/Typora/image-20220304153144897.png)
 
-![image-20220304153154094](C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220304153154094.png)
+![image-20220304153154094](https://chqwer2.github.io/img/Typora/image-20220304153154094.png)
 
-<img src="C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220304153213040.png" alt="image-20220304153213040" style="zoom:33%;" />
+<img src="https://chqwer2.github.io/img/Typora/image-20220304153213040.png" alt="image-20220304153213040" style="zoom:33%;" />
 
 **Watershed Segmentation**
 
-![image-20220304153501783](C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220304153501783.png)
+![image-20220304153501783](https://chqwer2.github.io/img/Typora/image-20220304153501783.png)
 
-![image-20220304153513547](C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220304153513547.png)
+![image-20220304153513547](https://chqwer2.github.io/img/Typora/image-20220304153513547.png)
 
-<img src="C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220304153849584.png" alt="image-20220304153849584" style="zoom:33%;" />
+<img src="https://chqwer2.github.io/img/Typora/image-20220304153849584.png" alt="image-20220304153849584" style="zoom:33%;" />

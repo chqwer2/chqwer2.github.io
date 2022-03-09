@@ -184,7 +184,7 @@ Then,
 
 https://en.wikipedia.org/wiki/Delta_method
 
-## Distribution
+##  Distribution
 
 Discrete: Probability mass function
 
@@ -436,6 +436,8 @@ $$
 
 https://en.wikipedia.org/wiki/Moment-generating_function
 
+
+
 expectation of moment generating function
 
 ![image-20220209101247516](https://chqwer2.github.io/img/Typora/image-20220209101247516.png)
@@ -451,6 +453,10 @@ https://online.stat.psu.edu/stat414/book/export/html/676
 Useful…
 
 https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&ved=2ahUKEwitz--mtvL1AhXeQEEAHSmoAI8QFnoECDwQAQ&url=https%3A%2F%2Fwww.le.ac.uk%2Fusers%2Fdsgp1%2FCOURSES%2FMATHSTAT%2F6normgf.pdf&usg=AOvVaw3QHSFjpCFrBgTFBxRwGAnK---
+
+
+
+
 
 ### Property of Distribution
 

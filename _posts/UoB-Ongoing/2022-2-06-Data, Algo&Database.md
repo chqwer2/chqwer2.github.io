@@ -242,7 +242,7 @@ perfectly balanced, that is, the balance of each node is 0.
 
 <img src="https://chqwer2.github.io/img/Typora/image-20220221232502057.png" alt="image-20220221232502057" style="zoom:60%;" />
 
-![image-20220225104427945](C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220225104427945.png)
+![image-20220225104427945](https://chqwer2.github.io/img/Typora/image-20220225104427945.png)
 
 height of empty tree is -1, 
 
@@ -315,7 +315,7 @@ Need to fix the resulting tree…
 
 Four Result Cases:
 
-![image-20220225105002079](C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220225105002079.png)
+![image-20220225105002079](https://chqwer2.github.io/img/Typora/image-20220225105002079.png)
 
 ![image-20220222100825348](https://chqwer2.github.io/img/Typora/image-20220222100825348.png)
 
@@ -352,4 +352,4 @@ T0 is the one element tree •
 
 Th+2 is obtained by making Th and Th+1 children of the root node (as shown in the picture on the previous slide)
 
-![image-20220225105231512](C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220225105231512.png)
+![image-20220225105231512](https://chqwer2.github.io/img/Typora/image-20220225105231512.png)

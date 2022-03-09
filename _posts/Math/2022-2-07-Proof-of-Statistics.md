@@ -434,3 +434,6 @@ Claim 2: $x_{n}  \enclose{downdiagonalstrike} {\stackrel{\text{a.s.}}{\rightarro
 $$
 P\left(x_{n} \rightarrow x\right) \neq 1 \text {, } x_{n} {\text { has not limis}}
 $$
+Quadratic equation
+
+![image-20220307210646804](https://chqwer2.github.io/img/Typora/image-20220307210646804.png)

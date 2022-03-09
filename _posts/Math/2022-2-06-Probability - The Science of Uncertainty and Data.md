@@ -155,7 +155,8 @@ $$
 
 P\left(\left(A_{1} \cap A_{2}\right)^{c}\right)= 1-P(A_1\cap A_2) \\
 
-P\left(A_{1}^{c}\right)+P\left(A_{2}^{c}\right) = 1-P(A_1)+1-P(A_2)
+P\left(A_{1}^{c}\right)+P\left(A_{2}^{c}\right) = 1-P(A_1)+1-P(A_2)
+
 $$
 
 ### Bayes’ Rule
