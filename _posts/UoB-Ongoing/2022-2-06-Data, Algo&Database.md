@@ -353,3 +353,885 @@ T0 is the one element tree •
 Th+2 is obtained by making Th and Th+1 children of the root node (as shown in the picture on the previous slide)
 
 ![image-20220225105231512](https://chqwer2.github.io/img/Typora/image-20220225105231512.png)
+
+
+
+## Dataset
+
+### Entity-relationship concepts
+
+**What is a database?**
+
+•It is a large collection of persistent data
+
+•Typically stored on a **server** somewhere on the **net**
+
+•Accessible from multiple applications on client computers
+
+•Concurrently accessible and modifiable
+
+•Expected to be secure and efficient
+
+•Expected to be fault-tolerant (can recover from crashes). No data losses!
+
+**Why we need database?**
+
+Meant to suggest the “base of data” on which all the applications run.
+
+Or internal data of organizations/ businesses
+
+
+
+### Relational Databases
+
+Built as a relational database management system (DBMS or RDBMS)
+
+is a collection of tables (relations)
+
+**Inside a Table**
+
+Columns (attributes, felds)， Rows (records, tuples)
+
+Null (marked as “-‘)
+
+**Tables/Relations**
+
+**Attributes/Columns/Fields**
+
+**Records/Rows/Tuples**
+
+**Schema** = Names of relations, attributes and their types
+
+**Key** = Any attribute(s) that is unique across all the rows
+
+**Primary key** = A designated key that is meant to uniquely identify the records.
+
+### Entity-relationship (ER) modelling 
+
+All the “things” for which data needs to be kept are **entities**.
+
+In addition, there are also **relationships** between entities can described in one-sentence description.
+
+We depict entities by **rectangles** and relationships by **diamond boxes**, attributes are **oval** boxes (not a must element).
+
+<img src="https://chqwer2.github.io/img/Typora/image-20220313163303254.png" alt="image-20220313163303254" style="zoom:50%;" />
+
+**Attributes** (for both entities and relationships)
+
+**Book**: Author(s), Title, Publisher, Year of publication
+
+**Member**: Membership number, Name, Address, Date of joining
+
+**borrowed**: Date of borrowing, Due date, Return date, Fine (if any)
+
+### Multiplicities
+
+Number of times the entity can **participate** in the relationship
+
+For example,
+
+- A book may or may not be borrowed. If it is borrowed, there is only one borrowing.
+- So, minimum = 0, maximum = 1.
+
+![image-20220313163949090](https://chqwer2.github.io/img/Typora/image-20220313163949090.png)
+
+Here the Book class is an **entity set** contains of many book **entities**.
+
+**(1,1)** is a special case that defining a constraint.
+
+Example:
+
+- (0, 1) :The **instance** appears at most once in the relationship. An employee may or may not be supervised
+- (1, 1) : The **instance** must and will appear exactly once in the relationship.
+- (0, n) : the **instance** may appear more than once. Such as a customer may have placed many or no order in a given time interval.
+- (1, n) : The **instance** appears at least once but can appear many times.
+
+[ER Graph Example](#ER Examples)
+
+### The design and creation
+
+By **default,** every entity and relationship in our ER model becomes a **table** in the database, written in **schema** notation.
+
+**Constraint**: Also we have unique identifiers for each entity, the relationship table table must necessarily occur in this field.
+
+### Table design
+
+The 3-table design for this model:
+
+- Book (<u>book id</u>, authors, title, publisher, year)
+
+- Member (<u>member id</u>, last name, first name, address, date of joining)
+
+- Borrow (<u>book id, member id</u>, borrow date, due date, ~~return date, fine~~)
+
+> We can also use tables for this model, if we ignore **fines**
+>
+> 1. We can add the Borrow fields to the Member table
+>
+>     (book id, borrow date, due date, return date, fine)
+>
+> 2. Or to the Book table 
+>
+>    (member num, borrow date, due date)
+
+**The issue after optimisation 1** 
+
+We must allow some attributes can be **null^o^**. 
+
+And it won’t work if we permit multi-borrowing.
+
+It is not a good idea to hard-wire business policies into the database design! 
+
+**The issue after optimisation 2**
+
+We must allow some attributes can be **null^o^**. 
+
+we cannot represent the **fines** (charge) satisfactorily in this design.
+
+- Perhaps we can add the Borrow fields to both the Book table and the Member table?
+  - It would introduce redundancy in the design
+
+**Summary:**
+
+- If a **relationship** has (0, 1) or (1, 1) multiplicity with an entity, its table can be merged with that of the entity. 
+- (0, 1) should allow null.
+
+
+
+### Weak entities
+
+Suppose our library has **multiple copies** of some of the books.
+
+Suppose our library allows **family memberships**.
+
+How do we deal with it?
+
+> **Weak entities**: depend on some other entity for its identity.
+
+A weak entity’s **primary key** consists of the primary key of its main entity (owner entity) and some additional attributes.
+
+- Copy dependent on Book.
+- Borrower dependent on Member.
+
+![image-20220313171215500](https://chqwer2.github.io/img/Typora/image-20220313171215500.png)
+
+What happen if just one copy or the member itself want to borrow books?
+
+#### Table for weak entities
+
+<img src="https://chqwer2.github.io/img/Typora/image-20220313171520785.png" alt="image-20220313171520785" style="zoom:50%;" />
+
+**Other examples**
+
+```mermaid
+graph RL
+  employee -->|"(0,1)"| e[\supervised by\]
+  e --> employee
+```
+
+### Hierarchies
+
+Represent **is-a** relationship.
+
+> UG student is a student.
+
+**Example – Customer hierarchy**
+
+![image-20220313173544497](https://chqwer2.github.io/img/Typora/image-20220313173544497.png)
+
+Two features need to be specified.
+
+- Coverage (**t/p**)
+  - Do subclasses **totally** cover all of the superclass? Or **partially**?
+- Overlap (**o/e**)
+  - Are the subclasses **overlapping**? Or **exclusive**?
+
+### **Table for Hierarchy**
+
+```mermaid
+graph BT
+B -->|"(c,x)"| A
+C -->|"(c,x)"| A 
+```
+
+Three possible ways:
+
+- Keep all three 
+
+  - simplest and always applicable
+  - superclass (common attributes) inherited by B and C subclasses (additional attributes)
+
+- Keep A, and omit B and C (Only superclass)
+
+  - need to add a **variant** attribute specifying the subclass type
+  - the attributes corresponding to other types will be null
+  - always possible
+
+- Keep B and C, and omit A (Only subclasses)
+
+  - respect to superclass table which is not stored 
+  - some attributes are duplicated
+  - only possible if the coverage is **total**, and overlap is **exclusive** (redundancy).
+
+  
+
+**redundancy** makes it confusing that don’t know where to find the data
+
+
+
+### Relational DBMS (SQL)
+
+A database management system (DBMS) is a software system (made by providers like IBM, Oracle, Postgres, MySQL).
+
+- Creating tables.
+- Querying tables for finding information.
+- Adding, deleting or modifying records in tables.
+- **Ensuring that constraints** continue to be satisfied during modifications.
+
+#### SQL
+
+**SQL command to create the entity**
+
+<img src="https://chqwer2.github.io/img/Typora/image-20220313165405779.png" alt="image-20220313165405779" style="zoom:50%;" />
+
+- **unique** and **“not null”** keyword. All fields can be null by default (a bad feature of SQL!)
+
+- The **primary key** declaration says that the bookid field can be used for uniquely identying records. (It is redundant in this case.)
+
+- **varying** defined the maximum length of attributes.
+
+  
+
+**SQL command to create the relationship**
+
+<img src="https://chqwer2.github.io/img/Typora/image-20220313165631448.png" alt="image-20220313165631448" style="zoom:70%;" />
+
+- **reference**: declare that the corresponding entity id fields, cannot be **null**
+
+- The id fields *together* uniquely identify a **record** in this table.
+
+  
+
+**SQL query examples**
+
+- This query finds the id number of Jane Austen’s *Pride and Prejudice*.
+
+```sql
+select bookid
+from book
+where authors = 'Jane Austen'
+	and title = 'Pride and Prejudice';
+```
+
+- With a minor variation, we can ask it to tell us **whether the book is available** or it has been issued out to somebody.
+
+```sql
+select 'not available';
+from book, borrow
+where book.bookid = borrow.bookid
+   and authors = 'Jane Austen'
+   and title = 'Pride and Prejudice';
+```
+
+### Some questions you might think about
+
+- Our table has a single field for all the authors of a book. Can we list each author individually, somehow?
+
+- If we have multiple copies of books in the library, what can we do?
+
+- If we want to allow a member to borrow to multiple books (say 4 books max), what changes do we need in the design?
+
+- If membership is actually “family membership” so that anybody in the family can borrow, do we need to change the design in anyway?
+
+- The “primary key” of the borrow table consists of two fields. Do we need two? Can we make do with one field only?
+
+Learn some SQL!
+
+### SQL data types
+
+- INT (or INTEGER), DECIMAL(n, m) with length of n and m digits
+- BOOLEAN, CHAR(n), VARCHAR(n)
+- TEXT, DATE, TIME
+
+### SQL commands for tables
+
+![image-20220313203147546](https://chqwer2.github.io/img/Typora/image-20220313203147546.png)
+
+- **not null**: not designated as possibly null in the schema
+- **references**: constraint for all references into other tables (including superclass)
+
+**How to generate ID number?**
+
+In standard SQL, we can declare
+
+```sql
+create sequence staffid_seq;
+
+create table Tech(staffid integer DEFAULT nextval(staffid_seq); ... )
+
+create table Admin(staffid integer DEFAULT nextval(staffid_seq); ... )
+
+```
+
+This creates a sequence generator in the database and generate a new integer value each time.
+
+**Foreign key** 
+
+Fields with “references” constraints are called foreign keys.
+
+The DBMS ensures that, whenever we insert a record with a foreign key value, that value is *actually present* in the **referenced table** (Synchronization)
+
+**But what happened when deleted?**
+
+- Then the foreign key constraint would be violated!
+- So blocked by DBMS (ON DELETE NO ACTION)
+
+### Constraint
+
+They allow us to **detect errors** and make sure that the data in the system is consistent and valid.
+
+- **Field constraints** – constraint on the value of a field (e.g., NOT NULL)
+- **Record constraints** – constraints on an entire record (e.g., you might check that the due_date is greater than the borrow_date)
+- **Table constraints** – constraints on the entire table (e.g., PRIMARY KEY or UNIQUE).
+- **Database constraints** – constraints that span multiple tables (e.g., REFERENCES)
+- **referential integrity constraint**
+
+
+
+
+
+**ON DELETE constraint**
+
+- ON DELETE NO ACTION – default, no need to declare
+- ON DELETE SET NULL
+  - This **sets the foreign key to null**, if possible.
+  - If null is not allowed, we get an error.
+- ON DELETE CASCADE (串联)
+  - The record with the foreign key gets deleted automatically.
+
+Think of what the effect of these declarations would be when a library member quits and we try to delete their record.
+
+What should happen to a borrow record that might still be referencing that member?
+
+### 
+
+
+
+### Exercise
+
+Identify entities, relations
+
+We need to:
+
+- Keep our model as simple as possible.
+
+##### Exercise from notes (Paragraph 16(a)):
+
+**Identifying entites**
+
+![image-20220313175510455](https://chqwer2.github.io/img/Typora/image-20220313175510455.png)
+
+**Which of them are really needed?**
+
+<img src="https://chqwer2.github.io/img/Typora/image-20220313174827172.png" alt="image-20220313174827172" style="zoom:50%;" />
+
+**Identifying relationship**
+
+![image-20220313175522768](https://chqwer2.github.io/img/Typora/image-20220313175522768.png)
+
+**Which of them are really needed?**
+
+<img src="https://chqwer2.github.io/img/Typora/image-20220313174838683.png" alt="image-20220313174838683" style="zoom:50%;" />
+
+Attempt exercises in Paragraph 39.
+
+But the Exercise Sheet 1 is higher priority. We will have a quiz on it!
+
+## Relational Algebra
+
+Note:  that **SQL** is based on what are called "multisets" or "bags" and so does  **allow duplicates** whereas **Relational Algebra** is based on sets and so does **NOT allow duplicates**. 
+
+**Database** = A Collection of relations (Tables)
+
+**Relations** = Consist of **Attributes** (Columns)
+
+Data consists of **Tuples** (Rows) and each tuple has a value associated with each attribute. 
+
+Each Attribute has a **Domain** (Type) 
+
+The **Schema** is the structure of the database and includes the Name, Attributes and  the Type of each Attribute associated with every relation in a  database. 
+
+The **Instance** is the CONTENTS of the tables at a given point in time. 
+
+All values have a type, but there is a special value that is part of all types - **NULL** (Undefined, unknown)
+
+A **Key** is an Attribute of a relation the value of which is unique for each tuple.
+
+Relational Algebra provides operators to **Query**:
+
+- Filter relations
+- Slice relations 
+- Combine relations 
+
+
+
+Through this session we will make use of the following tables: 
+
+**Students:** 
+
+| sID  | sName | sFirstDegree | sFDMarks |
+| ---- | ----- | ------------ | -------- |
+| 1    | Alice | English      | 77       |
+| 2    | Bob   | Fine Art     | 80       |
+
+**Modules:**
+
+| mID  | mName       | mLecturer |
+| ---- | ----------- | --------- |
+| 1    | Intro to CS | BoB       |
+| 2    | Databases   | Harish    |
+| 3    | AI and ML   | Harish    |
+
+**Marks**
+
+| sID  | mID  | assignMarks | examMarks |
+| ---- | ---- | ----------- | --------- |
+| 1    | 1    | 15          | 80        |
+| 1    | 2    | 18          | 70        |
+| 2    | 1    | 12          | 81        |
+| 2    | 2    | 18          | 66        |
+
+AND operator: ∧ (Caret)  
+
+#### Select Operator $\sigma$
+
+To pick a subset of the **rows** from a relation. 
+
+The symbol for the Select Operator is: **σ (sigma)**
+$$
+\sigma_{(condition\ ∧\ condition ...)} <Table Name>
+$$
+For example:
+$$
+σ_{sFDMarks\ >\ 77\ ∧\ sID\ >\ 1} Students
+$$
+**SQL Equivalent**: 
+
+```sql
+SELECT * FROM Students WHERE sFDMarks > 77 AND sID > 1
+```
+
+Time complixity: *O(n)*
+
+#### Projection Operator $\pi$
+
+While the select operator picks a subset of rows, the project operator **picks a subset of columns**
+
+For example:
+$$
+\pi_\text{A1,A2,...,An}\text R
+$$
+
+$$
+π_{sID,\ examMarks}\ Marks
+$$
+SQL Equivalent:
+
+```sql
+SELECT sID, examMarks from Marks;
+```
+
+Time complixity: *O(n)*
+
+**Making expressions** 
+
+Since every operator returns a relation we can combine operators as follows:
+$$
+π_\text{sID,\ examMarks}\ ( σ_\text{examMarks > 70}\ \text{Marks} )
+$$
+SQL Equivalent:
+
+```sql
+SELECT sID, examMarks FROM ( 
+    SELECT * FROM Marks WHERE examMarks > 70 ) 
+
+SELECT sID, examMarks FROM Marks WHERE examMarks > 70
+```
+
+#### Cross-Product or Cartesian Product Operator $\times$
+
+This is an operator that is used to combine two relations. 
+
+As a notational requirement, when the **same column name exists in both the relations** then the columns in the result are **prefixed** by the name of the relation they come from. 
+$$
+\text{Student}\ \times\ \text{Marks}
+$$
+SQL Equivalent
+
+```sql
+SELECT 
+    Students.sID, sName, sFirstDegree, sFDMarks, mID, 
+    Marks.sID, assignMarks, examMarks  
+FROM Students, Marks;
+```
+
+**WARNING**: sID from students is named students.sID and that from Marks  is called Marks.sID which requires explicitly stating this in SQL
+
+ 
+
+So it is not useful in SQL, unless we filter it first (equal to **join**):
+$$
+\sigma_\text{(students.sID = Marks.sID)}\ \text{Student}\ \times\ \text{Marks}
+$$
+SQL:
+
+```sql
+SELECT 
+    Students.sID, sName, sFirstDegree, sFDMarks, mID, 
+    Marks.sID, assignMarks, examMarks  
+FROM Students, Marks 
+WHERE Students.sID = Marks.sID
+```
+
+Time complixity: *$O(n^2)$,* highly **inefficient**.
+
+#### Natural Join  **⋈ (bowtie)**
+
+Or just **Join**, *is the **most important** operation in the DBMS.
+
+It can be rewritten using a combination of projection, selection and cross-product. 
+
+Performing cross-product and additionally:
+
+1. Enforces the **equality** on all attributes with the **same name**
+2. Eliminates one copy of the duplicate attribute
+
+Students ⋈ Marks allow us to write the following as equal: 
+$$
+\sigma_\text{(students.sID = Marks.sID)}\ \text{Student}\ \times\ \text{Marks}
+$$
+simply SQL
+
+```sql
+SELECT * FROM Students NATURAL JOIN Marks 
+```
+
+Time complixity: $O(n)$ if tables are sorted by the join column, $O(n^2)$ otherwise.
+
+**EXERCISE**: Write the equivalent Relational Algebraic expression for the Natural Join above, without using a Natural Join. 
+
+
+
+#### Theta Join $⋈_\theta$
+
+The Theta Join operator while additionally implementing a condition. 
+$$
+\text{Exp1} ⋈_{<condition>} \text{Exp2}
+$$
+SQL:
+
+```
+SELECT * FROM EXP1 JOIN EXP2 ON( <condition> );
+```
+
+is equivalent to:
+$$
+\sigma_{\theta}\ (\text{Exp1} \times \text{Exp2} )
+$$
+**Making expressions** 
+
+List the names of the students who secured a **score of more than 80** in the final exam i**n modules taught by Bob**. 
+$$
+π_\text{sName} ( σ_\text{examMarks > 80 ∧ mLecturer = 'Bob'} ( (\text{Students} ⋈ \text{Marks}) ⋈ \text{Modules}) )
+$$
+SQL Equivalent: 
+
+```
+SELECT sName 
+FROM (Students Natural Join Marks) Natural Join Modules
+WHERE examMarks > 80 and mLecturer = 'Bob'
+```
+
+#### **Rename Operator** $\rho$
+
+ Rename the Attributes but not the relation:
+$$
+ρ_\text{R( A1, A2, ... An)}\ (\text E)
+$$
+Or rename the relation:
+$$
+ρ_\text R (\text E)
+$$
+SQL Equivalent: 
+
+```
+SELECT EA1 AS A1, EA2 AS A2 ... EAn AS An 
+FROM E AS R
+```
+
+#### Self Joins
+
+While the rename operator is used for various kinds of queries, the most important is the self join which would not be possible without this. 
+
+
+
+Example: List the pairs of modules taught by the same lecturer. 
+
+The only way to do this is to use a **self join**. 
+$$
+σ_\text{( mLecturer = mLecturer)}\text{ (Modules × Modules)}
+$$
+Since this does not clearly tell us **which mName to equate to which**, we  must rename the two relations and the corresponding attributes. 
+$$
+ρ_\text{M1( M1.mID, M1.mName, mLecturer )}\text{(Modules)} \\⋈\\
+ρ_\text{M2( M2.mID, M2.mName, mLecturer )}\text{(Modules)}
+$$
+Of course, to avoid duplicates and **A, B; B, A** we must have: 
+$$
+π_\text{( M1.mName , M2.mName )} (\\
+
+σ_\text{( M1.mName < M2.mName )} (ρ_\text{M1} ⋈ ρ_\text{M2}
+
+)\
+
+)
+$$
+
+#### Combing Results using Set Operators
+
+The three set operators are:
+
+Union: $\cup$, Difference: $-$, Intersection: $\cap$
+
+Notes: In relational Algebra these three set operators MUST be applied on the **SAME schema**. This means that if you want to find the union of lecture names and student names you MUST first **rename them**. 
+$$
+\text{E1} ∩ \text{E2}\ \text{  is equivalent to }
+\
+\text{E1 - ( E1 - E2 )}
+$$
+
+$$
+\text{E1} \cap \text{E2}\ \text{  is equivalent to }
+\
+\text{E1}\bowtie \text{E2}
+$$
+
+### Examples
+
+<img src="https://chqwer2.github.io/img/Typora/image-20220313220511808.png" alt="image-20220313220511808" style="zoom:67%;" />
+
+**Outer Join**
+
+<img src="https://chqwer2.github.io/img/Typora/image-20220313220536773.png" alt="image-20220313220536773" style="zoom: 67%;" />
+
+**Left Outer Join**
+
+<img src="https://chqwer2.github.io/img/Typora/image-20220313220627569.png" alt="image-20220313220627569" style="zoom:67%;" />
+
+**Rename** operator examples:
+
+<img src="https://chqwer2.github.io/img/Typora/image-20220313220755549.png" alt="image-20220313220755549" style="zoom:67%;" />
+
+<img src="https://chqwer2.github.io/img/Typora/image-20220313220837487.png" alt="image-20220313220837487" style="zoom:67%;" />
+
+**Self Join** will get same table back, but with **renaming**
+
+<img src="https://chqwer2.github.io/img/Typora/image-20220313220936681.png" alt="image-20220313220936681" style="zoom:67%;" />
+
+![image-20220313220953923](https://chqwer2.github.io/img/Typora/image-20220313220953923.png)
+
+Then to get rid of the useless records
+$$
+σ_\text{ m1ID < m2ID}
+$$
+<img src="https://chqwer2.github.io/img/Typora/image-20220313221140972.png" alt="image-20220313221140972" style="zoom:67%;" />
+
+Will be efficient if tables are sorted on the **primary key**.
+
+#### Sortedness in databases
+
+- To achieve sorted order, database tables are stored in a **search tree data** structure. (**B-tree**)
+- Data records are stored in the **leaf nodes**. The internal nodes only have **search keys** for navigation.
+- The trees can be traversed in sorted order in O(n) time.
+- **Multiple sort keys** can be accommodated by building multiple B-tree indexes for the same table.
+
+**Semi-efficiently**: If the join column is sorted in one table R (of size n), and not sorted in the other table S (also of size n)
+
+- We can traverse the S table in linear order and search for each key value in R.
+- Since searching can be done in log n time,
+
+- The overall time complexity is $O\text{(n logn)}$.
+
+**Inefficient:** $O\text{(n)}$
+
+More: Efficiency also depends on doing the operations in the right order.
+
+> For example, consider (M⋈B)⋈C versus M⋈(B⋈C).
+>
+> If M is a large table, but B and C are small, the second form may be better.
+>
+> But if we are joining on the primary key of M, it doesn’t matter because M⋈B would be of the same size as B.
+
+The selection operator σ should be done as early as possible, because it reduces the size of the table.
+
+### Decomposition
+
+Split large table into small ones
+
+We use decomposition to produce tables in “**normal form**”, which do have unwanted “**functional dependencies**”.
+
+![image-20220313222716579](https://chqwer2.github.io/img/Typora/image-20220313222716579.png)
+
+Normally if we change the manger name, it will need to process multiple times,  but after decomposition we only need to do it once.
+
+**How do we know to decompose this way?**
+
+Functional dependencies:
+
+```mermaid
+graph LR
+empID --> Name
+empID --> Dept --> Manager
+```
+
+Since **Dept** is **not the primary key** of the table, a **functional dependency on it** is a candidate for decomposition.
+
+**functional dependency** 
+
+We have $A_1, A_2, \dots, A_n \to B$, read as A determine the B.
+
+B is the functional dependency on A,
+
+>if any two rows in the table have the same values for A1, A2,… An,
+>
+>then they have the same value for B.
+
+
+
+
+
+querying the database
+
+A row is also called an entry or tuple or record
+
+
+
+### Some SQL example
+
+Create Table
+
+```sql
+CREATE TABLE staff (
+    	sid SERIAL PRIMARY KEY,
+        title VARCHAR(6) NOT NULL,
+        firstname VARCHAR(15) UNIQUE,
+        lastname VARCHAR(20),
+        email VARCHAR(40),
+        office INT,
+        phone INT REFERENCES courses(cid),
+);
+
+# PRIMARY KEY (cid, sid, year)
+```
+
+Create Table 2
+
+```sql
+CREATE TABLE children (
+    first_name CHAR(10) NOT NULL,
+    dob DATE NOT NULL,
+    employeeID INT NOT NULL
+        REFERENCES employee(employeeID)
+        ON DELETE CASCADE,
+    PRIMARY KEY (first_name, employeeID)
+);
+```
+
+Create Table 3
+
+```sql
+CREATE TABLE staff(
+    salary DECIMAL(10,2) NOT NULL
+   		CHECK(salary >= 0),
+    ...
+    CHECK(rental_start <= rental_end)
+);
+```
+
+
+
+```sql
+SELECT price * 1.42 AS "Price in Euros", productname FROM productlist;
+```
+
+
+
+```sql
+SELECT * FROM staff WHERE phone = 44774;
+```
+
+The resulting strings can be concatenated together using the operator “||”.
+
+```sql
+SELECT ’0121 41’ || phone AS "National phone number" FROM staff;
+```
+
+<> for “not equal”, which is different from Java’s !=
+
+Apart from the test for equality (denoted by “=”) it also offers the operator “LIKE”.
+
+```sql
+<some string> LIKE <some pattern>
+```
+
+Finally, we point out the operator “iLIKE”, which behaves like “LIKE” except that it likes to ignore case.
+
+Below will find all Ann’s, all Anne’s, all Anna’s and all Annemarie’s.
+
+```sql
+SELECT name FROM staff WHERE firstname LIKE ’Ann%’;
+```
+
+start up: psql -h mod-fund-databses
+
+Leave the program psql by typing \q. \? help.
+
+
+
+How to determine relationship?
+
+Often, relationships are expressed by *verbs*.
+
+```sql
+
+```
+
+
+
+```sql
+
+```
+
+
+
+```sql
+
+```
+
+![image-20220316172359548](https://chqwer2.github.io/img/Typora/image-20220316172359548.png)
+
+Please record these assumptions in your answer.
+
+
+
+##### ER Examples
+
+![image-20220317153816143](https://chqwer2.github.io/img/Typora/image-20220317153816143.png)
+
+![image-20220317154741602](https://chqwer2.github.io/img/Typora/image-20220317154741602.png)
+
+![image-20220317154811082](https://chqwer2.github.io/img/Typora/image-20220317154811082.png)
+
+![image-20220317154823799](https://chqwer2.github.io/img/Typora/image-20220317154823799.png)
+
+[Multiplicities](#Multiplicities)

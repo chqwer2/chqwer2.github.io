@@ -724,3 +724,293 @@ Many approaches possible
 ![image-20220304153513547](https://chqwer2.github.io/img/Typora/image-20220304153513547.png)
 
 <img src="https://chqwer2.github.io/img/Typora/image-20220304153849584.png" alt="image-20220304153849584" style="zoom:33%;" />
+
+### (Active) 3D Imaging and 3D
+
+About touching the world…
+
+<img src="https://chqwer2.github.io/img/Typora/image-20220309120343092.png" alt="image-20220309120343092" style="zoom:33%;" />
+
+Robotic Manipulation
+
+https://www.cs.bham.ac.uk/research/groupings/robotics
+
+![image-20220309121543037](https://chqwer2.github.io/img/Typora/image-20220309121543037.png)
+
+### 3D Imaging
+
+It is hard for people to interpret the first image.
+
+We can use both of them at the same time.
+
+![image-20220309121832515](https://chqwer2.github.io/img/Typora/image-20220309121832515.png)
+
+Depth versus distance
+
+<img src="https://chqwer2.github.io/img/Typora/image-20220309121928432.png" alt="image-20220309121928432" style="zoom:33%;" />
+
+How to measure depth and distance?
+
+<img src="https://chqwer2.github.io/img/Typora/image-20220309122022691.png" alt="image-20220309122022691" style="zoom:50%;" />
+
+**Passive**
+
+- Stereophotogrammetry
+- Structure from motion
+- Dapth from focus
+
+**Active**
+
+- TOF
+- Structured light imaging
+- Photometric stereo
+
+#### Stereophotogrammetry
+
+But hard to process related image (i.e. find the matching pixels)
+
+<img src="https://chqwer2.github.io/img/Typora/image-20220309122405711.png" alt="image-20220309122405711" style="zoom:33%;" />
+
+
+
+<img src="https://chqwer2.github.io/img/Typora/image-20220309122300870.png" alt="image-20220309122300870" style="zoom: 50%;" />
+
+![image-20220309122432980](https://chqwer2.github.io/img/Typora/image-20220309122432980.png)
+
+#### Structure from motion
+
+we have one camera, but moving…
+
+![image-20220309122630153](https://chqwer2.github.io/img/Typora/image-20220309122630153.png)
+
+![image-20220309123452117](https://chqwer2.github.io/img/Typora/image-20220309123452117.png)
+
+predict where the canvas is, and needs more prior knowledge like the location of the camera.
+
+
+
+#### Depth from focus
+
+move the lens that focus..
+
+looking for sharp edges, but not any time that emerges.
+
+![image-20220309122845623](https://chqwer2.github.io/img/Typora/image-20220309122845623.png)
+
+It is possible but it is quite noisy.
+
+
+
+### Passive
+
+![image-20220309123813432](https://chqwer2.github.io/img/Typora/image-20220309123813432.png)
+
+
+
+**Active Stereophotogrammetry**
+
+R200 Camera
+
+- Can project surface features
+- Multiple camera still do not interfere with each other
+
+Holes if you don’t find correspondence.
+
+![image-20220309124338528](https://chqwer2.github.io/img/Typora/image-20220309124338528.png)
+
+### TOF
+
+noisy when multiple objects, so we only look at one direction at once.
+
+![image-20220309124701611](https://chqwer2.github.io/img/Typora/image-20220309124701611.png)
+
+We now have a wave, so a wave bouncing back..
+
+collect different pixel at different time..
+
+![image-20220309125313247](https://chqwer2.github.io/img/Typora/image-20220309125313247.png)
+
+
+
+
+
+Dmitry..
+
+### Structured Light
+
+![image-20220312171222797](https://chqwer2.github.io/img/Typora/image-20220312171222797.png)
+
+![image-20220312171458132](https://chqwer2.github.io/img/Typora/image-20220312171458132.png)
+
+![image-20220312173308429](https://chqwer2.github.io/img/Typora/image-20220312173308429.png)
+
+![image-20220312173934967](https://chqwer2.github.io/img/Typora/image-20220312173934967.png)
+
+Phase wrapping and unwrapping
+
+![image-20220312174401909](https://chqwer2.github.io/img/Typora/image-20220312174401909.png)
+
+![image-20220312174427902](https://chqwer2.github.io/img/Typora/image-20220312174427902.png)
+
+### Photometric stereo
+
+goal is not the depth, but the surfaces…
+
+<img src="https://chqwer2.github.io/img/Typora/image-20220312174813723.png" alt="image-20220312174813723" style="zoom:80%;" />
+
+![image-20220312174948739](https://chqwer2.github.io/img/Typora/image-20220312174948739.png)
+
+![image-20220312175026363](https://chqwer2.github.io/img/Typora/image-20220312175026363.png)
+
+![image-20220312175131814](https://chqwer2.github.io/img/Typora/image-20220312175131814.png)
+
+### 3D Structure Data
+
+convert depth data into point cloud
+
+![image-20220312175228990](https://chqwer2.github.io/img/Typora/image-20220312175228990.png)
+
+![image-20220312175236959](https://chqwer2.github.io/img/Typora/image-20220312175236959.png)
+
+![image-20220312175248254](https://chqwer2.github.io/img/Typora/image-20220312175248254.png)
+
+Try to find the function to build surfaces (gradient)
+
+![image-20220312175347447](https://chqwer2.github.io/img/Typora/image-20220312175347447.png)
+
+Representations: Untextured mesh and textured mesh
+
+![image-20220312175510489](https://chqwer2.github.io/img/Typora/image-20220312175510489.png)
+
+![image-20220312175521335](https://chqwer2.github.io/img/Typora/image-20220312175521335.png)
+
+### Collecting multiple views of a scene (world  coordinates)
+
+Robot coordinates
+
+<img src="https://chqwer2.github.io/img/Typora/image-20220312175607060.png" alt="image-20220312175607060" style="zoom:33%;" />
+
+![image-20220312175636834](https://chqwer2.github.io/img/Typora/image-20220312175636834.png)
+
+### How to combine point cloud?
+
+![image-20220312175750995](https://chqwer2.github.io/img/Typora/image-20220312175750995.png)
+
+![image-20220312175807276](https://chqwer2.github.io/img/Typora/image-20220312175807276.png)
+
+![image-20220312175823028](https://chqwer2.github.io/img/Typora/image-20220312175823028.png)
+
+<img src="https://chqwer2.github.io/img/Typora/image-20220312175831685.png" alt="image-20220312175831685" style="zoom:50%;" />
+
+![image-20220312175850854](https://chqwer2.github.io/img/Typora/image-20220312175850854.png)
+
+![image-20220312175859645](https://chqwer2.github.io/img/Typora/image-20220312175859645.png)
+
+ICP algorithm
+
+![image-20220312175930891](https://chqwer2.github.io/img/Typora/image-20220312175930891.png)
+
+![image-20220312175939080](https://chqwer2.github.io/img/Typora/image-20220312175939080.png)
+
+Multi-steps…
+
+<img src="https://chqwer2.github.io/img/Typora/image-20220312180016880.png" alt="image-20220312180016880" style="zoom:25%;" /><img src="https://chqwer2.github.io/img/Typora/image-20220312180030879.png" alt="image-20220312180030879" style="zoom:25%;" /><img src="https://chqwer2.github.io/img/Typora/image-20220312180041720.png" alt="image-20220312180041720" style="zoom:25%;" /><img src="https://chqwer2.github.io/img/Typora/image-20220312180055579.png" alt="image-20220312180055579" style="zoom:25%;" /><img src="https://chqwer2.github.io/img/Typora/image-20220312180103211.png" alt="image-20220312180103211" style="zoom:25%;" />
+
+![image-20220312180120023](https://chqwer2.github.io/img/Typora/image-20220312180120023.png)
+
+ICP…
+
+
+
+Others
+
+![image-20220312180143578](https://chqwer2.github.io/img/Typora/image-20220312180143578.png)
+
+
+
+### Principal Components Analysis (PCA)
+
+**Covariance** 
+
+measure of how much each of the dimensions vary from the mean with  respect to each other
+
+Covariance Matrix
+
+![image-20220316120808560](https://chqwer2.github.io/img/Typora/image-20220316120808560.png)
+
+- Diagonal is the variances of x, y and z 
+
+- $cov(x,y) = cov(y,x)$ hence matrix is symmetrical about the  diagonal 
+- N-dimensional data will result in NxN covariance matrix
+
+
+
+**How to interpret covariance?**
+
+The value itself that it doesn’t mean anything, but can use to determine the correlation and its **sign**.
+
+If it is 0: they are independent.
+
+### PCA
+
+It can simplify a dataset $\in R^d$
+
+- A linear transformation that chooses a new coordinate system for  the data set such that: 
+- greatest variance by any projection of the data set comes to lie on  the first axis (then called the first principal component), 
+- the second greatest variance on the second axis, 
+- and so on 
+
+It eliminates the later components for reducing dimensianlity.
+
+The dimensions in PCA will be orthonal.
+
+
+
+
+
+What is the principal component. 
+
+- By finding the **eigenvalues and eigenvectors** of the covariance  matrix, we find that the eigenvectors with the **largest eigenvalues**  correspond to the dimensions that have the **strongest correlation** in  the dataset. 
+
+PCA is a useful statistical technique that has found  application in: 
+
+- fields such as face recognition and image compression 
+- finding patterns in data of high dimension
+
+### Basic Theory
+
+![image-20220316122431185](https://chqwer2.github.io/img/Typora/image-20220316122431185.png)
+
+Then, we gain the covariance matrix:
+
+![image-20220316122548399](https://chqwer2.github.io/img/Typora/image-20220316122548399.png)
+
+N can be the number of pixels in an image.
+
+![image-20220316122939584](https://chqwer2.github.io/img/Typora/image-20220316122939584.png)
+
+How much that features contribute, and choose the top-k features.
+
+![image-20220316123256574](https://chqwer2.github.io/img/Typora/image-20220316123256574.png)
+
+
+
+##### **Example**
+
+![image-20220316123601511](https://chqwer2.github.io/img/Typora/image-20220316123601511.png)
+
+![image-20220316123616267](https://chqwer2.github.io/img/Typora/image-20220316123616267.png)
+
+![image-20220316123637101](https://chqwer2.github.io/img/Typora/image-20220316123637101.png)
+
+![image-20220316123738019](https://chqwer2.github.io/img/Typora/image-20220316123738019.png)
+
+![image-20220316123748143](https://chqwer2.github.io/img/Typora/image-20220316123748143.png)
+
+
+
+### Singular Value Decomposition (SVD)
+
+![image-20220316124228097](https://chqwer2.github.io/img/Typora/image-20220316124228097.png)
+
+![image-20220316124238188](https://chqwer2.github.io/img/Typora/image-20220316124238188.png)

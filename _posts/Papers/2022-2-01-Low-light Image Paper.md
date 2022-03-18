@@ -33,35 +33,43 @@ graph TD
    NAS+LIE-->24,44,14-->A[lack of principled prior knowledge]
 ```
 
+Conf:
+
+CVPR/ICCV/ECCV (B)
+
+NIPS, ICML, ICLR (open review, no rank..)
+
+AAAI, IJCAI, SIGGRAPH, ACM MM
+
+**Journal**: TPAMI, IJCV, TIP
 
 
 
+**RUAS : Retinex-Inspired Unrolling With Cooperative Prior Architecture Search for Low-Light Image Enhancement, CVPR 2021** 
 
-- ## Retinex-Inspired Unrolling With Cooperative Prior Architecture Search for Low-Light Image Enhancement, CVPR 2021 
+[[local](file:///C:/PaperSet/Liu_Retinex-Inspired_Unrolling_With_Cooperative_Prior_Architecture_Search_for_Low-Light_Image_CVPR_2021_paper.pdf)] [[pdf](https://openaccess.thecvf.com/content/CVPR2021/papers/Liu_Retinex-Inspired_Unrolling_With_Cooperative_Prior_Architecture_Search_for_Low-Light_Image_CVPR_2021_paper.pdf)] [[supp](https://openaccess.thecvf.com/content/CVPR2021/supplemental/Liu_Retinex-Inspired_Unrolling_With_CVPR_2021_supplemental.pdf)] [[arXiv](http://arxiv.org/abs/2012.05609)]
 
-  [[local](file:///C:/PaperSet/Liu_Retinex-Inspired_Unrolling_With_Cooperative_Prior_Architecture_Search_for_Low-Light_Image_CVPR_2021_paper.pdf)] [[pdf](https://openaccess.thecvf.com/content/CVPR2021/papers/Liu_Retinex-Inspired_Unrolling_With_Cooperative_Prior_Architecture_Search_for_Low-Light_Image_CVPR_2021_paper.pdf)] [[supp](https://openaccess.thecvf.com/content/CVPR2021/supplemental/Liu_Retinex-Inspired_Unrolling_With_CVPR_2021_supplemental.pdf)] [[arXiv](http://arxiv.org/abs/2012.05609)]
 
-  Retinex-inspired Unrolling with Architecture Search (RUAS)
 
-  **Step:**
-  
-  1. Characterize the **latent structure** from low-light image in the real-world noisy scenario
-  2. Then by unrolling the corresponding optimization processes, we establish the h**olistic propagation structure** of our enhancement network.
-  3. Provide a reference-free bilevel learning strategy to cooperatively **search prior architectures** for
-     the illumination map and desired image.
-  
-  **Contribution:**
-  
-  1. RUAS first provides a **principled manner** to build our fundamental network structure and
-     then automatically discover the embedded atomic prior architectures.
-  
-  2. Develop a cooperative bilevel search strategy is able to simultaneously discover architectures
-     from a compact search space for both illumination estimation and noise removal.
-  
-  
-  **Enhancement Network**
-  
-  - unrolling the optimization process of Retinex-inspired models.
+**Step:**
+
+1. Characterize the **latent structure** from low-light image in the real-world noisy scenario
+2. Then by unrolling the corresponding optimization processes, we establish the h**olistic propagation structure** of our enhancement network.
+3. Provide a reference-free bilevel learning strategy to cooperatively **search prior architectures** for
+   the illumination map and desired image.
+
+**Contribution:**
+
+1. RUAS first provides a **principled manner** to build our fundamental network structure and
+   then automatically discover the embedded atomic prior architectures.
+
+2. Develop a cooperative bilevel search strategy is able to simultaneously discover architectures
+   from a compact search space for both illumination estimation and noise removal.
+
+
+**Enhancement Network**
+
+- unrolling the optimization process of Retinex-inspired models.
 
 Imply Retinex rule:
 $$
@@ -132,29 +140,27 @@ They focus on engage important light enhancement factors (e.g., illuminations an
 
 
 
-- ### LLNet: A deep autoencoder approach to natural low-light image enhancement
+**LLNet: A deep autoencoder approach to natural low-light image enhancement**
 
-  [[LLNet.pdf](file:///C:/PaperSet/LLNet.pdf)] [[download](https://www.sciencedirect.com/science/article/pii/S003132031630125X/pdfft?isDTMRedir=true&download=true)] [Citation: 489]
+[[LLNet.pdf](file:///C:/PaperSet/LLNet.pdf)] [[download](https://www.sciencedirect.com/science/article/pii/S003132031630125X/pdfft?isDTMRedir=true&download=true)] [Citation: 489]
 
-  LLNet use one AE for contrast enhance & denoise
+LLNet use one AE for contrast enhance & denoise
 
-  S-LLNet use two AE trained on **sythetic dark images** and noisy images only, respectively.
+S-LLNet use two AE trained on **sythetic dark images** and noisy images only, respectively.
 
-  Loss = MSE + KL_Divergence + Regularization
+Loss = MSE + KL_Divergence + Regularization
 
-  The sparsity regularized reconstruction loss as described in Xie et al. [25]:
-  $$
-  \begin{aligned}
-  \mathcal{L}_{\mathrm{DA}}(\mathcal{D} ; \theta)=& \frac{1}{N} \sum_{i=1}^{N} \frac{1}{2}\left\|y_{i}-\hat{y}\left(x_{i}\right)\right\|_{2}^{2}+\beta \sum_{j=1}^{K} \operatorname{KL}\left(\hat{\rho}_{j} \| \rho\right) \\
-  &+\frac{\lambda}{2}\left(\|W\|_{F}^{2}+\left\|W^{\prime}\right\|_{F}^{2}\right)
-  \end{aligned}
-  $$
-  where $N$ is the number of patches, $\theta=\left\{W, b, W^{\prime}, b^{\prime}\right\}$ are the parameters of the model, $\operatorname{KL}\left(\hat{\rho}_{j} \| \rho\right)$ is the Kullback-Leibler divergence between $\rho$ (target activation) and $\hat{\rho}_{j}$ (empirical average activation of the $j$ th hidden unit) which induces sparsity in the hidden layers:
-  $$
-  \operatorname{KL}\left(\hat{\rho}_{j} \| \rho\right)=\rho \log \frac{\rho}{\hat{\rho}_{j}}+(1-\rho) \log \frac{1-\rho}{1-\hat{\rho}_{j}}
-  $$
-  
-
+The sparsity regularized reconstruction loss as described in Xie et al. [25]:
+$$
+\begin{aligned}
+\mathcal{L}_{\mathrm{DA}}(\mathcal{D} ; \theta)=& \frac{1}{N} \sum_{i=1}^{N} \frac{1}{2}\left\|y_{i}-\hat{y}\left(x_{i}\right)\right\|_{2}^{2}+\beta \sum_{j=1}^{K} \operatorname{KL}\left(\hat{\rho}_{j} \| \rho\right) \\
+&+\frac{\lambda}{2}\left(\|W\|_{F}^{2}+\left\|W^{\prime}\right\|_{F}^{2}\right)
+\end{aligned}
+$$
+where $N$ is the number of patches, $\theta=\left\{W, b, W^{\prime}, b^{\prime}\right\}$ are the parameters of the model, $\operatorname{KL}\left(\hat{\rho}_{j} \| \rho\right)$ is the Kullback-Leibler divergence between $\rho$ (target activation) and $\hat{\rho}_{j}$ (empirical average activation of the $j$ th hidden unit) which induces sparsity in the hidden layers:
+$$
+\operatorname{KL}\left(\hat{\rho}_{j} \| \rho\right)=\rho \log \frac{\rho}{\hat{\rho}_{j}}+(1-\rho) \log \frac{1-\rho}{1-\hat{\rho}_{j}}
+$$
 
 
 - Attention Guided Low-Light Image Enhancement with a Large Scale Low-Light Simulation Dataset, 2019 
@@ -164,6 +170,10 @@ They focus on engage important light enhancement factors (e.g., illuminations an
   这篇论文提出了一个attention指导的多分支网络，使用ue-attention map和noise map进行指导
 
   合成新数据方法
+
+
+
+**Attention Guided LLIE, IJCV 2021**
 
 
 

@@ -294,6 +294,12 @@ $$
 
 <img src="https://chqwer2.github.io/img/Typora/image-20220205172726369.png" alt="image-20220205172726369" style="zoom: 50%;" />
 
+
+
+
+
+
+
 ### Gamma Distribution
 
 Notation: $X\sim\text{Gamma}(\alpha,\beta)\text{ or } \Gamma(\alpha, \lambda) ,\lambda = \large \frac{1}{\beta} $

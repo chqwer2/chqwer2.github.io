@@ -69,8 +69,6 @@ tags:
 
 - Feedback Prize
 
-
-
 #### Study Link
 
 - [Data Science Specialization](http://datasciencespecialization.github.io/)
@@ -79,4 +77,21 @@ tags:
 
 - [How to train NN](http://karpathy.github.io/2019/04/25/recipe/)
 - https://datacentricai.org/
-- 
+
+#### Github 
+
+Paper reading
+
+- https://github.com/rockeyben/Low-Light
+- https://github.com/hindupuravinash/the-gan-zoo
+
+Notes
+
+- https://github.com/handong1587/handong1587.github.io
+- https://github.com/Yolanda-HT/MIT_18.6501x
+- https://github.com/cs231n/cs231n.github.io
+- https://github.com/TraceMyers/mitx-stats-notes
+
+Competitions
+
+- https://github.com/mathislucka/kaggle_clrp_1st_place_solution

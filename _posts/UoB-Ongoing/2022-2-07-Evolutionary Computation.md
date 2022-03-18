@@ -532,3 +532,17 @@ Randomly select two parents $x_{1}=\left\{x_{1}^{[1]}, x_{2}^{[1]}, \cdots, x_{n
 - Once a project has been selected, all yearly capital requirement (investments) and capital (budget) must be met.
 
 <img src="https://chqwer2.github.io/img/Typora/image-20220219124007068.png" alt="image-20220219124007068" style="zoom:80%;" />
+
+### Constraint Handling in Evolutionary Algorithms
+
+Below is a benchmark which can be used to test the constraint optimization algorithm:
+
+![image-20220314110411029](https://chqwer2.github.io/img/Typora/image-20220314110411029.png)
+
+So we want to minimize:
+$$
+f(X) = (x_3 +2)x_2x_1^2
+$$
+Subject to
+
+<img src="https://chqwer2.github.io/img/Typora/image-20220314110711347.png" alt="image-20220314110711347" style="zoom:50%;" />
