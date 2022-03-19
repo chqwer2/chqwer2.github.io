@@ -1,0 +1,10 @@
+![img](https://img-blog.csdnimg.cn/img_convert/032d69d879051cc8467d9847136834d1.png)
+
+[Transformer](https://so.csdn.net/so/search?q=Transformer&spm=1001.2101.3001.7020)编码器-解码器架构的目标检测transformers (DETR)
+
+**受预训练transformer在自然语言处理中取得的巨大成功的启发，我们提出了一种基于随机查询补丁检测的无监督预训练目标检测任务。**
+
+具体地说，我们从给定的图像中随机裁剪小块，然后将它们作为查询输入解码器。该模型经过预训练，从原始图像中检测出这些查询补丁。在预训练，我们解决了两个关键问题:多任务学习和多查询定位。(1)为了权衡在前置任务中分类和定位的多任务学习，我们冻结CNN骨干，提出一个与patch检测联合优化的patch特征重构分支。(2)为实现多查询定位，我们引入了单查询补丁的UP-DETR ，并将其扩展为具有对象查询洗牌和注意掩码的多查询补丁。在我们的实验中，UP-DETR算法在PASCAL  VOC和COCO数据集上具有更快的收敛速度和更高的精度，显著提高了DETR算法的性能。代码很快就会发布。
+
+![img](https://img-blog.csdnimg.cn/img_convert/c840c972668f3869296b90cb8d596f7f.png)
+

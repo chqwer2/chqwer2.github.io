@@ -805,6 +805,12 @@ AND operator: ∧ (Caret)
 
 #### Select Operator $\sigma$
 
+ρ_\text{M1( M1.mID, M1.mName, mLecturer )}\text{(Modules)
+$$
+ \pi_{cid, sid}(\sigma_{year=2020}lecturing)
+\\⋈\\
+\pi_{cid, sid}(\sigma_{year=2021}lecturing)
+$$
 To pick a subset of the **rows** from a relation. 
 
 The symbol for the Select Operator is: **σ (sigma)**
@@ -1113,6 +1119,61 @@ B is the functional dependency on A,
 querying the database
 
 A row is also called an entry or tuple or record
+
+```sql
+CREATE TABLE technicians (
+    	tid SERIAL PRIMARY KEY UNIQUE
+    		REFERENCES staff(staffid),
+    	firstname VARCHAR(15) UNIQUE,
+        lastname VARCHAR(20),
+    	phone VARCHAR(20) Not NULL,
+   		address VARCHAR(20) Not NULL,
+        test VARCHAR(15) 
+    		REFERENCES test(testid) 
+    		ON DELETE  SET NULL,,
+        expert_model VARCHAR(15) NOT NULL 
+    		REFERENCES model(modelid)
+    		ON DELETE  SET NULL,, 
+    
+);
+```
+
+
+
+```sql
+CREATE TABLE airplane (
+    	aid SERIAL PRIMARY KEY  UNIQUE,
+      
+        belong_model VARCHAR(15) NOT NULL 
+    		REFERENCES model(modelid) 
+    		ON DELETE  SET NULL,
+        test VARCHAR(15)  
+    		REFERENCES test(testid)
+    		ON DELETE  SET NULL, 
+    	airport VARCHAR(15) Not NULL 
+    		REFERENCES airport(airportid) 
+    		ON DELETE  SET NULL,
+    
+);
+```
+
+
+
+
+
+```sql
+CREATE TABLE belongto (
+    	bid SERIAL PRIMARY KEY  UNIQUE
+        belong_model VARCHAR(15) NOT NULL 
+    		REFERENCES model(modelid) 
+        	ON DELETE CASCADE,
+    		
+    	airport VARCHAR(15) Not NULL 
+    		REFERENCES airport(airportid) 
+        	ON DELETE CASCADE,
+    	
+);
+```
 
 
 

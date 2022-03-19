@@ -1014,3 +1014,53 @@ How much that features contribute, and choose the top-k features.
 ![image-20220316124228097](https://chqwer2.github.io/img/Typora/image-20220316124228097.png)
 
 ![image-20220316124238188](https://chqwer2.github.io/img/Typora/image-20220316124238188.png)
+
+### Face Recognition (Not Detection)
+
+**Ideas:**
+
+- Eigenfaces: the idea 
+- Eigenvectors and Eigenvalues 
+- Co-variance 
+- Learning Eigenfaces from training sets of faces 
+- Recognition and reconstruction
+
+**Eigenfaces**
+
+Think face as a combination of some **components** of faces.
+
+These basis faces can be differently weighted to represent any faces
+
+So we can use different vectors of weights to represent faces.
+
+![image-20220318150856393](C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220318150856393.png)
+
+**How do we pick the set of basis faces?**
+
+**Statistical criterion** for measuring the notion of “best representation of the differences between the training faces”
+
+**How to learn?**
+
+<img src="C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220318151322938.png" alt="image-20220318151322938" style="zoom:50%;" />
+
+1. training set rearrange into **2Dmatrix**…
+   - Rows: Each value, Columns: Each pixel value
+2. Calculate Co-variance matrix
+3. Then find the **eigenvectors** of that covariance matrix.
+4. Sort by **eigenvalues** and find the top-features.
+5. Get the principal components $v_k$
+
+**Image space to face space.**
+
+![image-20220318151950175](C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220318151950175.png)
+
+**Recognition in face space**
+
+![image-20220318152127939](C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220318152127939.png)
+
+The cloest face in the face space is the chosen match.
+
+But if with hat or glasses ???
+
+**Image registration**
+

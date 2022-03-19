@@ -1,0 +1,71 @@
+### Data
+
+
+
+### 1st Solution
+
+[page](https://www.kaggle.com/c/siim-isic-melanoma-classification/discussion/175412), [code](https://github.com/haqishen/SIIM-ISIC-Melanoma-Classification-1st-Place-Solution)
+
+ resized jpg images and triple stratified leak-free folds. attributes to [Cdeotte](https://www.kaggle.com/cdeotte).
+
+##### Survive the shake
+
+we used 2018+2019+2020's data for both train and **validation**. We track two cv scores, `cv_all` and `cv_2020`. 
+
+All scores above are 5 fold, **TTAx8**
+
+#### Models
+
+Our ensembles consists of
+
+**EfficientNet B3-B7, se_resnext101,  resnest101.** 
+
+There are models with or without meta data. Input size  ranges from 384 to 896. (All input are from Chris's resized jpgs. For example, for 896 input we read 1024 jpgs and resize to 896.) 
+
+#### Meta data
+
+![img](https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-attachments/o/inbox%2F1120704%2Fae8a6c8597a1f1ab4649fc72627c9378%2Fmeta_NN.png?generation=1597734243315450&alt=media)
+
+[xgb notebook](https://www.kaggle.com/awsaf49/xgboost-tabular-data-ml-cv-85-lb-787#Image-Size)
+
+We find that using diagnosis as targets with cross entropy loss instead  of binary target with BCE loss can boost score by ~0.01. 
+
+## Augmentations
+
+```
+transforms_train = A.Compose([
+    A.Transpose(p=0.5),
+    A.VerticalFlip(p=0.5),
+    A.HorizontalFlip(p=0.5),
+    A.RandomBrightness(limit=0.2, p=0.75),
+    A.RandomContrast(limit=0.2, p=0.75),
+    A.OneOf([
+        A.MotionBlur(blur_limit=5),
+        A.MedianBlur(blur_limit=5),
+        A.GaussianBlur(blur_limit=5),
+        A.GaussNoise(var_limit=(5.0, 30.0)),
+    ], p=0.7),
+
+    A.OneOf([
+        A.OpticalDistortion(distort_limit=1.0),
+        A.GridDistortion(num_steps=5, distort_limit=1.),
+        A.ElasticTransform(alpha=3),
+    ], p=0.7),
+
+    A.CLAHE(clip_limit=4.0, p=0.7),
+    A.HueSaturationValue(hue_shift_limit=10, sat_shift_limit=20, val_shift_limit=10, p=0.5),
+    A.ShiftScaleRotate(shift_limit=0.1, scale_limit=0.1, rotate_limit=15, border_mode=0, p=0.85),
+    A.Resize(image_size, image_size),
+    A.Cutout(max_h_size=int(image_size * 0.375), max_w_size=int(image_size * 0.375), num_holes=1, p=0.7),    
+    A.Normalize()
+])
+
+transforms_val = A.Compose([
+    A.Resize(image_size, image_size),
+    A.Normalize()
+])
+```
+
+### Post processing
+
+When ensembling different folds, or different models, we first rank  all the probabilities of each model/fold, to ensure they are evenly  distributed. In pandas, it can be done by `df['pred'] = df['pred'].rank(pct=True)`

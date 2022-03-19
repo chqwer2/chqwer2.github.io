@@ -1,0 +1,71 @@
+# Vector Space Model
+
+![image-20220116212730940](C:\Users\calvchen\AppData\Roaming\Typora\typora-user-images\image-20220116212730940.png)
+
+Also help us learn the dependencies between the words
+
+![image-20220116212921893](C:\Users\calvchen\AppData\Roaming\Typora\typora-user-images\image-20220116212921893.png)
+
+
+
+“You shall know a word by the company it keeps”, Firth 1957
+
+#### Word by Word Design
+
+Number of times they *occur together* with a certain distance k
+
+**building the co-occurrence matrix**
+
+![image-20220116213416623](C:\Users\calvchen\AppData\Roaming\Typora\typora-user-images\image-20220116213416623.png)
+
+#### Word by Document Design
+
+![image-20220116213520129](C:\Users\calvchen\AppData\Roaming\Typora\typora-user-images\image-20220116213520129.png)
+
+![image-20220116213611547](C:\Users\calvchen\AppData\Roaming\Typora\typora-user-images\image-20220116213611547.png)
+
+### Euclidean Distance = Square Distance
+
+```python
+ np.linalg.norm(a-b)
+```
+
+$𝑛𝑜𝑟𝑚(𝑎)=||a||=\sqrt{∑_{𝑖=1}^𝑛𝑎^2_𝑖}$
+
+##### The dot product between arrays: All the flavors
+
+*𝑎*⃗ ⋅*𝑏*⃗ $ =∑_{𝑖=1}^𝑛𝑎_i𝑏_𝑖$
+
+### Cosine Similarity: Intuition
+
+Cos of the angle between vectors
+
+![image-20220116221842321](C:\Users\calvchen\AppData\Roaming\Typora\typora-user-images\image-20220116221842321.png)
+
+Can be a better proxy of similarity between these vector representations
+
+It also not dependant on the size of the corpuses, not like Euclidean D.
+
+[^WHY?]: Remember that the main advantage of this metric over the Euclidean distance is that it isn't biased by the size difference between the representations.
+
+![image-20220116222555611](C:\Users\calvchen\AppData\Roaming\Typora\typora-user-images\image-20220116222555611.png)
+
+Values from 0 and 1…
+
+### Vector Space
+
+![image-20220116223233503](C:\Users\calvchen\AppData\Roaming\Typora\typora-user-images\image-20220116223233503.png)
+
+### Visualization and PCA
+
+More than 2-D !!  $\to$  Find a projection panel  $\to$  to 2-D 
+
+![image-20220116223741660](C:\Users\calvchen\AppData\Roaming\Typora\typora-user-images\image-20220116223741660.png)
+
+![image-20220116224353138](C:\Users\calvchen\AppData\Roaming\Typora\typora-user-images\image-20220116224353138.png)
+
+![image-20220116224423944](C:\Users\calvchen\AppData\Roaming\Typora\typora-user-images\image-20220116224423944.png)
+
+![image-20220116224532424](C:\Users\calvchen\AppData\Roaming\Typora\typora-user-images\image-20220116224532424.png)
+
+![image-20220116224602354](C:\Users\calvchen\AppData\Roaming\Typora\typora-user-images\image-20220116224602354.png)

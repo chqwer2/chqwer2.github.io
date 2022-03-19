@@ -1,0 +1,106 @@
+# Week2
+
+![image-20220108175145984](C:\Users\calvchen\AppData\Roaming\Typora\typora-user-images\image-20220108175145984.png)
+
+### Anatomy of a Computer System
+
+Memory + Control  Unit + ALU + I/O Unit
+
+![image-20211015164641026](C:\Users\calvchen\AppData\Roaming\Typora\typora-user-images\image-20211015164641026.png)
+
+![image-20220106134620351](C:\Users\calvchen\AppData\Roaming\Typora\typora-user-images\image-20220106134620351.png)
+
+### **Instructions, Assembly Language and Machine Code**
+
+<img src="C:\Users\calvchen\AppData\Roaming\Typora\typora-user-images\image-20211015165142224.png" alt="image-20211015165142224" style="zoom:67%;" />
+
+<img src="C:\Users\calvchen\AppData\Roaming\Typora\typora-user-images\image-20211015165459168.png" alt="image-20211015165459168" style="zoom:50%;" />
+
+<img src="C:\Users\calvchen\AppData\Roaming\Typora\typora-user-images\image-20211015165522296.png" alt="image-20211015165522296" style="zoom:50%;" />
+
+![image-20211015165602768](C:\Users\calvchen\AppData\Roaming\Typora\typora-user-images\image-20211015165602768.png)
+
+
+
+
+
+**Exercise Questions:**
+
+\1. In The von Neumann Architecture the CPU contains some registers.  What is the main purposes of having these registers? What will happen if the CPU had to rely on the RAM instead of these registers?
+
+
+
+\2. Why is it not quite true to say that 1,000 instructions are executed in 1,000 ticks? 
+
+
+
+\3. What is the main difference between the von Neumann Architecture and the Harvard Architecture? 
+
+
+
+**Exercise Questions:**
+
+**\1. How is the R4000 pipeline different from the general MIPS pipeline?**
+
+<img src="C:\Users\calvchen\AppData\Roaming\Typora\typora-user-images\image-20211015170359757.png" alt="image-20211015170359757" style="zoom:50%;" />
+
+<img src="C:\Users\calvchen\AppData\Roaming\Typora\typora-user-images\image-20211015170557052.png" alt="image-20211015170557052" style="zoom:50%;" />
+
+<img src="C:\Users\calvchen\AppData\Roaming\Typora\typora-user-images\image-20211015170610185.png" alt="image-20211015170610185" style="zoom:50%;" />
+
+<img src="C:\Users\calvchen\AppData\Roaming\Typora\typora-user-images\image-20211015170642243.png" alt="image-20211015170642243" style="zoom:50%;" />
+
+**\2. Which registers should not be used and why?**
+
+$0 always store 000...000 and $31 is the link register used by Jump and Link instructions
+
+
+
+#### Register 
+
+32 x 32-bit / 64-bit registers, denoted $0-$31 (or r0-r31)
+
+![image-20220106134524474](C:\Users\calvchen\AppData\Roaming\Typora\typora-user-images\image-20220106134524474.png)
+
+**R0** holds only zeroes : 000000000000....
+
+**R31** is the link R for Jump and Link 
+
+#### Assembly Language
+
+SLT: Set If Less Than <
+
+BLT: Branch on less than) <
+
+BGT: Branch on greater than >
+
+![image-20220106140011927](C:\Users\calvchen\AppData\Roaming\Typora\typora-user-images\image-20220106140011927.png)
+
+jnz = jne = jump if not zero// equal
+
+![image-20211015171133349](C:\Users\calvchen\AppData\Roaming\Typora\typora-user-images\image-20211015171133349.png)
+
+![image-20211015171159446](C:\Users\calvchen\AppData\Roaming\Typora\typora-user-images\image-20211015171159446.png)
+
+![image-20220108174311308](C:\Users\calvchen\AppData\Roaming\Typora\typora-user-images\image-20220108174311308.png)
+
+https://cupola.gettysburg.edu/cgi/viewcontent.cgi?article=1001&context=oer
+
+http://www.c-jump.com/bcc/c262c/MIPSAssembly/MIPSAssembly.html
+
+Fetch data in B[4] : 16(\$4) when B is held at \$4, each element in the array is 4-byte long, 16 is the offset.
+
+To access the i-th element of an array, we need to use (base address
+of that array + offset).
+
+<img src="C:\Users\calvchen\AppData\Roaming\Typora\typora-user-images\image-20211015171050671.png" alt="image-20211015171050671" style="zoom:50%;" />
+
+<img src="C:\Users\calvchen\AppData\Roaming\Typora\typora-user-images\image-20211015171428951.png" alt="image-20211015171428951" style="zoom: 50%;" />
+
+<img src="C:\Users\calvchen\AppData\Roaming\Typora\typora-user-images\image-20211015171621097.png" alt="image-20211015171621097" style="zoom:50%;" />
+
+<img src="C:\Users\calvchen\AppData\Roaming\Typora\typora-user-images\image-20211015171700904.png" alt="image-20211015171700904" style="zoom:50%;" />
+
+![image-20211015170803167](C:\Users\calvchen\AppData\Roaming\Typora\typora-user-images\image-20211015170803167.png)
+
+![image-20211015163800444](C:\Users\calvchen\AppData\Roaming\Typora\typora-user-images\image-20211015163800444.png)
