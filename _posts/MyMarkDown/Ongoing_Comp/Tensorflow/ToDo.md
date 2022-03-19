@@ -39,7 +39,7 @@
 
      return (x[:, :4] * w).sum(1)
 
-  ![image-20220119175541082](C:\Users\calvchen\AppData\Roaming\Typora\typora-user-images\image-20220119175541082.png)
+  ![image-20220119175541082](https://chqwer2.github.io/img/Typora/image-20220119175541082.png)
 
 - [x] 
 
@@ -55,7 +55,7 @@
 
 - [x] Shuffle = False…
 
-![image-20220121105329821](C:\Users\calvchen\AppData\Roaming\Typora\typora-user-images\image-20220121105329821.png)
+![image-20220121105329821](https://chqwer2.github.io/img/Typora/image-20220121105329821.png)
 
 - [x] Metric Fitness
 

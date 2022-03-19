@@ -11,7 +11,7 @@ AE cannot work on unseen vacancy in feature space
 
 VAE: Sampling from this model, able to generate new data
 
-![image-20211126132648586](C:\Users\calvchen\AppData\Roaming\Typora\typora-user-images\image-20211126132648586.png)
+![image-20211126132648586](https://chqwer2.github.io/img/Typora/image-20211126132648586.png)
 
 
 
@@ -29,13 +29,13 @@ VAE try to in a space (area), predict a distribution
 
 two z (two neuron per dimension) of the G distribution: mean & sigma vectors       (4 neurons totally)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             
 
-![image-20211126133632863](C:\Users\calvchen\AppData\Roaming\Typora\typora-user-images\image-20211126133632863.png)
+![image-20211126133632863](https://chqwer2.github.io/img/Typora/image-20211126133632863.png)
 
 
 
 
 
-![image-20211126133735767](C:\Users\calvchen\AppData\Roaming\Typora\typora-user-images\image-20211126133735767.png)
+![image-20211126133735767](https://chqwer2.github.io/img/Typora/image-20211126133735767.png)
 
 ### How to train?
 
@@ -43,7 +43,7 @@ Overlaps: how to avoid or **interrupt?**?
 
 -> Learn parameters that predict **small** **standard deviations**.
 
-![image-20211126133847053](C:\Users\calvchen\AppData\Roaming\Typora\typora-user-images\image-20211126133847053.png)
+![image-20211126133847053](https://chqwer2.github.io/img/Typora/image-20211126133847053.png)
 
 Confuse: move the mean away from each other, and reduce the variance
 
@@ -51,11 +51,11 @@ If we would train a VAE only with the Reconstruction loss, its learned parameter
 
 So, the “probabilistic encoder” architecture is not sufficient! We need the **Regularizer**
 
-![image-20211126134001219](C:\Users\calvchen\AppData\Roaming\Typora\typora-user-images\image-20211126134001219.png)
+![image-20211126134001219](https://chqwer2.github.io/img/Typora/image-20211126134001219.png)
 
 
 
-![image-20211126134035773](C:\Users\calvchen\AppData\Roaming\Typora\typora-user-images\image-20211126134035773.png)
+![image-20211126134035773](https://chqwer2.github.io/img/Typora/image-20211126134035773.png)
 
 
 
@@ -100,17 +100,17 @@ To draw from Normal(mu, sigma) you can draw from Normal(1, 0), multiply by sigma
 $$
 \mu_\phi(x) + \delta_\phi(x) * \epsilon
 $$
-![image-20211126134156403](C:\Users\calvchen\AppData\Roaming\Typora\typora-user-images\image-20211126134156403.png)
+![image-20211126134156403](https://chqwer2.github.io/img/Typora/image-20211126134156403.png)
 
 ### Gaps of New Data
 
-![image-20211126132736171](C:\Users\calvchen\AppData\Roaming\Typora\typora-user-images\image-20211126132736171.png)
+![image-20211126132736171](https://chqwer2.github.io/img/Typora/image-20211126132736171.png)
 
-![image-20211126132757230](C:\Users\calvchen\AppData\Roaming\Typora\typora-user-images\image-20211126132757230.png)
+![image-20211126132757230](https://chqwer2.github.io/img/Typora/image-20211126132757230.png)
 
-![image-20211126132826956](C:\Users\calvchen\AppData\Roaming\Typora\typora-user-images\image-20211126132826956.png)
+![image-20211126132826956](https://chqwer2.github.io/img/Typora/image-20211126132826956.png)
 
-![image-20211126132934814](C:\Users\calvchen\AppData\Roaming\Typora\typora-user-images\image-20211126132934814.png)
+![image-20211126132934814](https://chqwer2.github.io/img/Typora/image-20211126132934814.png)
 
 
 

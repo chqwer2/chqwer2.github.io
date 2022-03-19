@@ -72,7 +72,7 @@ Stacking OOF
 
 我一直觉得特征选择是那种烂大街的知识。可问题是，这些方法都要用吗？哪个好用？哪个效率最高？[https://t.zsxq.com/IMfe2vB](https://link.zhihu.com/?target=https%3A//t.zsxq.com/IMfe2vB)
 
-![image-20211201104038018](C:\Users\calvchen\AppData\Roaming\Typora\typora-user-images\image-20211201104038018.png)
+![image-20211201104038018](https://chqwer2.github.io/img/Typora/image-20211201104038018.png)
 
 ![img](https://pic2.zhimg.com/80/v2-dae4b683311800c0722e8a81aa6526d9_720w.jpg)
 

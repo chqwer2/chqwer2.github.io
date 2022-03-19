@@ -1,6 +1,6 @@
 ### Paralleling
 
-![image-20220104145135839](C:\Users\calvchen\AppData\Roaming\Typora\typora-user-images\image-20220104145135839.png)
+![image-20220104145135839](https://chqwer2.github.io/img/Typora/image-20220104145135839.png)
 
 ### CS 162
 
@@ -40,14 +40,14 @@ We did not give credit for saying that threads give you concurrency, since proce
 
 **Changing State **\ref(cs162_fa99_mt1_sol)
 
-![image-20220111223447097](C:\Users\calvchen\AppData\Roaming\Typora\typora-user-images\image-20220111223447097.png)
+![image-20220111223447097](https://chqwer2.github.io/img/Typora/image-20220111223447097.png)
 
 
 
 List two reasons why **overuse of threads** is bad (i.e., using too many threads for different tasks). Be explicit in your answers.
-![image-20220111222001350](C:\Users\calvchen\AppData\Roaming\Typora\typora-user-images\image-20220111222001350.png)
+![image-20220111222001350](https://chqwer2.github.io/img/Typora/image-20220111222001350.png)
 
-![image-20220111222045484](C:\Users\calvchen\AppData\Roaming\Typora\typora-user-images\image-20220111222045484.png)
+![image-20220111222045484](https://chqwer2.github.io/img/Typora/image-20220111222045484.png)
 
 
 
@@ -110,7 +110,7 @@ The main reason performance degrades when a process trashes is due to frequent p
 
 SRTF can starve if many small jobs run, preventing large jobs from running.
 
-![image-20220111155543301](C:\Users\calvchen\AppData\Roaming\Typora\typora-user-images\image-20220111155543301.png)
+![image-20220111155543301](https://chqwer2.github.io/img/Typora/image-20220111155543301.png)
 
 **I/O**
 
@@ -136,7 +136,7 @@ RR is the fairest scheduler with regards to wait time for CPU.
 
 FCFS has throughput at least as good as RR.
 
-![image-20220111170034525](C:\Users\calvchen\AppData\Roaming\Typora\typora-user-images\image-20220111170034525.png)
+![image-20220111170034525](https://chqwer2.github.io/img/Typora/image-20220111170034525.png)
 
 Questions:
 
@@ -189,11 +189,11 @@ system into memory and start executing it.
 
 Kernel runtime and User Runtime
 
-![image-20220111173505398](C:\Users\calvchen\AppData\Roaming\Typora\typora-user-images\image-20220111173505398.png)
+![image-20220111173505398](https://chqwer2.github.io/img/Typora/image-20220111173505398.png)
 
 Process waiting for a **lock** to be released, busy waiting better than blocking
 
-![image-20220111173918324](C:\Users\calvchen\AppData\Roaming\Typora\typora-user-images\image-20220111173918324.png)
+![image-20220111173918324](https://chqwer2.github.io/img/Typora/image-20220111173918324.png)
 
 **CPU efficiency** and Speedup
 
@@ -203,7 +203,7 @@ Program B is best because its sequential overhead is not growing, and therefore 
 
 Question 5. A parallel program is run on 1, 2, 4, 8, 16 and 32 cores, and we get the following speedups
 and efficiency.
-![image-20220111182515318](C:\Users\calvchen\AppData\Roaming\Typora\typora-user-images\image-20220111182515318.png)
+![image-20220111182515318](https://chqwer2.github.io/img/Typora/image-20220111182515318.png)
 The speedup for 4 processors is greater than 4, and the efficiency is greater than 1. The amount of
 computation is the same as in the sequential version. We can conclude that the super-linear speedup is
 the result of (circle the correct answer.)
@@ -219,7 +219,7 @@ Speedup = P + (1-P) s
 = 20 ? 19 * 0.01 = 19.81
 Full credit was given for setting up the problem.
 
-![image-20220111212229085](C:\Users\calvchen\AppData\Roaming\Typora\typora-user-images\image-20220111212229085.png)
+![image-20220111212229085](https://chqwer2.github.io/img/Typora/image-20220111212229085.png)
 
 CPU executes, multiple **Processors**
 
@@ -243,9 +243,9 @@ have been faster.
 
 **TTL, Isoefficiency**
 
-![image-20220111181559146](C:\Users\calvchen\AppData\Roaming\Typora\typora-user-images\image-20220111181559146.png)
+![image-20220111181559146](https://chqwer2.github.io/img/Typora/image-20220111181559146.png)
 
-![image-20220111182226819](C:\Users\calvchen\AppData\Roaming\Typora\typora-user-images\image-20220111182226819.png)
+![image-20220111182226819](https://chqwer2.github.io/img/Typora/image-20220111182226819.png)
 
 its sequential **overhead**  == time
 

@@ -10,11 +10,11 @@
 
 trained after Validation Separate
 
-![image-20220115171417191](C:\Users\calvchen\AppData\Roaming\Typora\typora-user-images\image-20220115171417191.png)
+![image-20220115171417191](https://chqwer2.github.io/img/Typora/image-20220115171417191.png)
 
-![image-20220115172511144](C:\Users\calvchen\AppData\Roaming\Typora\typora-user-images\image-20220115172511144.png)
+![image-20220115172511144](https://chqwer2.github.io/img/Typora/image-20220115172511144.png)
 
-![image-20220115172532702](C:\Users\calvchen\AppData\Roaming\Typora\typora-user-images\image-20220115172532702.png)
+![image-20220115172532702](https://chqwer2.github.io/img/Typora/image-20220115172532702.png)
 
 **Cross-Validation (CV) Strategy **
 
@@ -95,4 +95,4 @@ Use Hyperopt to find the optimal hyperparameter set
 
 ### Others
 
-![image-20220115171914703](C:\Users\calvchen\AppData\Roaming\Typora\typora-user-images\image-20220115171914703.png)
+![image-20220115171914703](https://chqwer2.github.io/img/Typora/image-20220115171914703.png)

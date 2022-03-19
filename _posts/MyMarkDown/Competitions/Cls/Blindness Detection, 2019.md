@@ -8,13 +8,13 @@ DA: ***Perspective Transformation***, HorizontalFlip、VerticalFlip、Randomrota
 
 Train and Test distribution difference: **Remove black-edged**
 
-![image-20211012203635026](C:\Users\calvchen\AppData\Roaming\Typora\typora-user-images\image-20211012203635026.png)
+![image-20211012203635026](https://chqwer2.github.io/img/Typora/image-20211012203635026.png)
 
 ## Training
 
 1. Freeze backbone with FC trained for 5 epochs，
 
-   ![image-20211012204025918](C:\Users\calvchen\AppData\Roaming\Typora\typora-user-images\image-20211012204025918.png)
+   ![image-20211012204025918](https://chqwer2.github.io/img/Typora/image-20211012204025918.png)
 
 2. lrs=[5e-4, 1e-4, 1e-5, 1e-6]，lr decay in [10, 14, 18]，for 20 epochs
 3. Ensemble E0 and E3
@@ -29,4 +29,4 @@ Train and Test distribution difference: **Remove black-edged**
 
    900 + from test
 
-![image-20211012204153498](C:\Users\calvchen\AppData\Roaming\Typora\typora-user-images\image-20211012204153498.png)
+![image-20211012204153498](https://chqwer2.github.io/img/Typora/image-20211012204153498.png)

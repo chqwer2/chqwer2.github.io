@@ -67,7 +67,7 @@ https://arxiv.org/pdf/1804.06655.pdf
 
 ### Model Details
 
-![image-20211013080831793](C:\Users\calvchen\AppData\Roaming\Typora\typora-user-images\image-20211013080831793.png)
+![image-20211013080831793](https://chqwer2.github.io/img/Typora/image-20211013080831793.png)
 
 ```
 class ArcFaceLoss(nn.modules.Module):

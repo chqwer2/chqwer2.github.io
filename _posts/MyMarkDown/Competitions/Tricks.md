@@ -47,7 +47,7 @@ Pytorch SWA: https://github.com/timgaripov/swa
    loss(source, target)
    ```
 
-   <img src="C:\Users\calvchen\AppData\Roaming\Typora\typora-user-images\image-20211013144108127.png" alt="image-20211013144108127" style="zoom: 67%;" />
+   <img src="https://chqwer2.github.io/img/Typora/image-20211013144108127.png" alt="image-20211013144108127" style="zoom: 67%;" />
 
 2. 
 
@@ -67,5 +67,5 @@ Pytorch SWA: https://github.com/timgaripov/swa
 
 ROC 曲线？ 
 
-![image-20211201164516557](C:\Users\calvchen\AppData\Roaming\Typora\typora-user-images\image-20211201164516557.png)
+![image-20211201164516557](https://chqwer2.github.io/img/Typora/image-20211201164516557.png)
 

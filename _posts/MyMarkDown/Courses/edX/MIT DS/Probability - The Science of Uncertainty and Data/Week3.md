@@ -4,13 +4,13 @@
 
 Discrete Uniform Law
 
-![image-20220214135840393](C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220214135840393.png)
+![image-20220214135840393](https://chqwer2.github.io/img/Typora/image-20220214135840393.png)
 
 0! = 1 convention
 
 
 
-![image-20220214140254489](C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220214140254489.png)
+![image-20220214140254489](https://chqwer2.github.io/img/Typora/image-20220214140254489.png)
 
 So we're counting zero-element subsets, one-element subsets,
 
@@ -40,11 +40,11 @@ Sequence, which slots contain heads
 
 chose k slots out of n slots : n-choose-k
 
-![image-20220214140737132](C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220214140737132.png)
+![image-20220214140737132](https://chqwer2.github.io/img/Typora/image-20220214140737132.png)
 
-![image-20220214141223447](C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220214141223447.png)
+![image-20220214141223447](https://chqwer2.github.io/img/Typora/image-20220214141223447.png)
 
-![image-20220214141607330](C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220214141607330.png)
+![image-20220214141607330](https://chqwer2.github.io/img/Typora/image-20220214141607330.png)
 
 The reason that this approach worked was that the
 
@@ -54,11 +54,11 @@ probability law on it.
 
 ### Partitions
 
-![image-20220214141937137](C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220214141937137.png)
+![image-20220214141937137](https://chqwer2.github.io/img/Typora/image-20220214141937137.png)
 
-![image-20220214142015867](C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220214142015867.png)
+![image-20220214142015867](https://chqwer2.github.io/img/Typora/image-20220214142015867.png)
 
-![image-20220215234609238](C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220215234609238.png)
+![image-20220215234609238](https://chqwer2.github.io/img/Typora/image-20220215234609238.png)
 
 
 
@@ -66,9 +66,9 @@ probability law on it.
 
 multinomial coefficient cases
 
-![image-20220216000417948](C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220216000417948.png)
+![image-20220216000417948](https://chqwer2.github.io/img/Typora/image-20220216000417948.png)
 
-![image-20220216000730834](C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220216000730834.png)
+![image-20220216000730834](https://chqwer2.github.io/img/Typora/image-20220216000730834.png)
 
 You've learned about permutations, you've learned
 
@@ -78,12 +78,12 @@ and you've learned about partitions.
 
 ### Rooks on a chessboard 
 
-![image-20220216001207965](C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220216001207965.png)
+![image-20220216001207965](https://chqwer2.github.io/img/Typora/image-20220216001207965.png)
 
 ### Multinomial probabilities
 
-![image-20220216001413752](C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220216001413752.png)
+![image-20220216001413752](https://chqwer2.github.io/img/Typora/image-20220216001413752.png)
 
-![image-20220216001808108](C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220216001808108.png)
+![image-20220216001808108](https://chqwer2.github.io/img/Typora/image-20220216001808108.png)
 
-![image-20220216001826117](C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220216001826117.png)
+![image-20220216001826117](https://chqwer2.github.io/img/Typora/image-20220216001826117.png)

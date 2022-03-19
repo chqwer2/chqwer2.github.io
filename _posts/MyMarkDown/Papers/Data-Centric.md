@@ -22,7 +22,7 @@ Can also be used for identify incorrectly labeled and image that are not roman n
 
 1. Generate a vary large set of randomly augmented images from the training data.
 
-   ![image-20220317103458048](C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220317103458048.png)
+   ![image-20220317103458048](https://chqwer2.github.io/img/Typora/image-20220317103458048.png)
 
 ![img](https://miro.medium.com/max/737/1*1QPDr6yH0nW73FH3FOYuPQ.jpeg)
 

@@ -26,16 +26,16 @@ Let E(X) denote the expectation of X. Then X and Y are independent if and only i
 
 ### Wrong Answer
 
-![image-20220317231431700](C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220317231431700.png)
+![image-20220317231431700](https://chqwer2.github.io/img/Typora/image-20220317231431700.png)
 
-<img src="C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220317231551895.png" alt="image-20220317231551895" style="zoom:67%;" />
+<img src="https://chqwer2.github.io/img/Typora/image-20220317231551895.png" alt="image-20220317231551895" style="zoom:67%;" />
 
-![image-20220317231443686](C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220317231443686.png)
+![image-20220317231443686](https://chqwer2.github.io/img/Typora/image-20220317231443686.png)
 
-![image-20220317231530852](C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220317231530852.png)
+![image-20220317231530852](https://chqwer2.github.io/img/Typora/image-20220317231530852.png)
 
 
 
-![image-20220317231630261](C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220317231630261.png)
+![image-20220317231630261](https://chqwer2.github.io/img/Typora/image-20220317231630261.png)
 
-![image-20220317231653334](C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220317231653334.png)
+![image-20220317231653334](https://chqwer2.github.io/img/Typora/image-20220317231653334.png)

@@ -12,5 +12,5 @@ Aims to solve CTR (Click-Through Rate) estimate.
 
 ​           Self-adapt **Dice** activation - learn the split point dynamically according to different data : Normalization + Sigmoid          
 
-![image-20211013142356428](C:\Users\calvchen\AppData\Roaming\Typora\typora-user-images\image-20211013142356428.png)
+![image-20211013142356428](https://chqwer2.github.io/img/Typora/image-20211013142356428.png)
 

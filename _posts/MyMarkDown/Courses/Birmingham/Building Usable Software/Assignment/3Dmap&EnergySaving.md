@@ -17,7 +17,7 @@ dynamic optimisation techniques to change users’ behaviours on campus
 
 Better optimise operations on campus to reach Governmental NetZero emissions targets; and to provide opportunities for raising public awareness etc.
 
-![image-20211122161748278](C:\Users\calvchen\AppData\Roaming\Typora\typora-user-images\image-20211122161748278.png)
+![image-20211122161748278](https://chqwer2.github.io/img/Typora/image-20211122161748278.png)
 
 More References that relate to Challenge 1 brief description:
 Ref1.https://www.birmingham.ac.uk/university/building/smart-campus/index.aspx
@@ -38,25 +38,25 @@ sensible phrasing, grouping and prioritisation as discussed in the sessions.
 
 Use UML to document the analysis and design of your system to a professional level.
 
-![image-20211122162250394](C:\Users\calvchen\AppData\Roaming\Typora\typora-user-images\image-20211122162250394.png)
+![image-20211122162250394](https://chqwer2.github.io/img/Typora/image-20211122162250394.png)
 
-![image-20211122162300747](C:\Users\calvchen\AppData\Roaming\Typora\typora-user-images\image-20211122162300747.png)
+![image-20211122162300747](https://chqwer2.github.io/img/Typora/image-20211122162300747.png)
 
-![image-20211122162307619](C:\Users\calvchen\AppData\Roaming\Typora\typora-user-images\image-20211122162307619.png)
+![image-20211122162307619](https://chqwer2.github.io/img/Typora/image-20211122162307619.png)
 
 #### C. Software Architecture Style, Modelling and Evaluation
 
-![image-20211122162332132](C:\Users\calvchen\AppData\Roaming\Typora\typora-user-images\image-20211122162332132.png)
+![image-20211122162332132](https://chqwer2.github.io/img/Typora/image-20211122162332132.png)
 
 #### D. Software Testing
 
-![image-20211122162353520](C:\Users\calvchen\AppData\Roaming\Typora\typora-user-images\image-20211122162353520.png)
+![image-20211122162353520](https://chqwer2.github.io/img/Typora/image-20211122162353520.png)
 
 #### E. Usability and Prototyping (Unit 6)
 
-![image-20211122162415686](C:\Users\calvchen\AppData\Roaming\Typora\typora-user-images\image-20211122162415686.png)
+![image-20211122162415686](https://chqwer2.github.io/img/Typora/image-20211122162415686.png)
 
-![image-20211122162420355](C:\Users\calvchen\AppData\Roaming\Typora\typora-user-images\image-20211122162420355.png)
+![image-20211122162420355](https://chqwer2.github.io/img/Typora/image-20211122162420355.png)
 
 #### F. Ethics and Professional Practice – (Unit 8) – self-reading:
 
@@ -82,7 +82,7 @@ The system is much of based on the 3D map that can rotate 360 degree horizontall
 
 View: The four views: A) overhead, B) first-person, C) third- person-high, D) third-person-low [link](https://www.researchgate.net/figure/The-four-views-A-overhead-B-first-person-C-third-person-high-D-third-person-low_fig1_221474898)
 
-<img src="C:\Users\calvchen\AppData\Roaming\Typora\typora-user-images\image-20211122164519781.png" alt="image-20211122164519781" style="zoom:25%;" />
+<img src="https://chqwer2.github.io/img/Typora/image-20211122164519781.png" alt="image-20211122164519781" style="zoom:25%;" />
 
 
 
@@ -126,7 +126,7 @@ The system will base on the optimization algorithms to give some advice for redu
 
 REQ. Concurrency
 
-![image-20211122171531424](C:\Users\calvchen\AppData\Roaming\Typora\typora-user-images\image-20211122171531424.png)
+![image-20211122171531424](https://chqwer2.github.io/img/Typora/image-20211122171531424.png)
 
 
 

@@ -8,7 +8,7 @@ HPGM model,
 
 作者还收集了一个新的数据集用以检验语言信息生成三维场景的模型效果
 
-![image-20211113155156331](C:\Users\calvchen\AppData\Roaming\Typora\typora-user-images\image-20211113155156331.png)
+![image-20211113155156331](https://chqwer2.github.io/img/Typora/image-20211113155156331.png)
 
 
 
@@ -16,7 +16,7 @@ HPGM model,
 
 [pdf](https://openaccess.thecvf.com/content_CVPR_2020/html/Jin_Geometric_Structure_Based_and_Regularized_Depth_Estimation_From_360_Indoor_CVPR_2020_paper) [data](https://cove.thecvf.com/datasets/334)
 
-![image-20211114112418779](C:\Users\calvchen\AppData\Roaming\Typora\typora-user-images\image-20211114112418779.png)
+![image-20211114112418779](https://chqwer2.github.io/img/Typora/image-20211114112418779.png)
 
 
 

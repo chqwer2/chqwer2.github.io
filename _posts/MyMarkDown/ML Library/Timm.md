@@ -11,4 +11,4 @@ import timm
 timm.list_models(pretrained=True)[:10]
 ```
 
-![image-20211130164703842](C:\Users\calvchen\AppData\Roaming\Typora\typora-user-images\image-20211130164703842.png)
+![image-20211130164703842](https://chqwer2.github.io/img/Typora/image-20211130164703842.png)

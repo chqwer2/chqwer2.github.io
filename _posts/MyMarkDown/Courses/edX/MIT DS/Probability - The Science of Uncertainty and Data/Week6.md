@@ -6,15 +6,15 @@ Let us look at an interval that starts at some a and goes
 
 up to some number a plus delta.
 
-![image-20220311174959351](C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220311174959351.png)
+![image-20220311174959351](https://chqwer2.github.io/img/Typora/image-20220311174959351.png)
 
-![image-20220311175122922](C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220311175122922.png)
+![image-20220311175122922](https://chqwer2.github.io/img/Typora/image-20220311175122922.png)
 
 $\delta$ is very small.
 
 ### Conditional PDFs
 
-![image-20220311224654734](C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220311224654734.png)
+![image-20220311224654734](https://chqwer2.github.io/img/Typora/image-20220311224654734.png)
 
 
 
@@ -22,7 +22,7 @@ $\delta$ is very small.
 
 ### Memorylessness of the exponential PDF
 
-![image-20220311225317011](C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220311225317011.png)
+![image-20220311225317011](https://chqwer2.github.io/img/Typora/image-20220311225317011.png)
 
 So new and used light bulbs are described by the same
 
@@ -36,23 +36,23 @@ And from this, we can calculate the probability that
 
 T lies in a small interval.
 
-![image-20220311225149739](C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220311225149739.png)
+![image-20220311225149739](https://chqwer2.github.io/img/Typora/image-20220311225149739.png)
 
-![image-20220311225428609](C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220311225428609.png)
+![image-20220311225428609](https://chqwer2.github.io/img/Typora/image-20220311225428609.png)
 
 ### Total probability and expectation theorems
 
 Converted into **pdf** and **cdf** version
 
-![image-20220311230018268](C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220311230018268.png)
+![image-20220311230018268](https://chqwer2.github.io/img/Typora/image-20220311230018268.png)
 
 ### Joint PDFs
 
 where we use f to indicate that we're dealing with a density. p for probability.
 
-![image-20220311230944093](C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220311230944093.png)
+![image-20220311230944093](https://chqwer2.github.io/img/Typora/image-20220311230944093.png)
 
-![image-20220311231314671](C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220311231314671.png)
+![image-20220311231314671](https://chqwer2.github.io/img/Typora/image-20220311231314671.png)
 
 Special case:
 
@@ -88,7 +88,7 @@ continuous.
 
 Joint density
 
-![image-20220311231837590](C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220311231837590.png)
+![image-20220311231837590](https://chqwer2.github.io/img/Typora/image-20220311231837590.png)
 
 
 
@@ -96,7 +96,7 @@ Joint density
 
 Joint CDFs
 
-![image-20220312113057554](C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220312113057554.png)
+![image-20220312113057554](https://chqwer2.github.io/img/Typora/image-20220312113057554.png)
 
 ### Conditional PDFs
 
@@ -104,7 +104,7 @@ this is problematic, because this
 
 event does not have positive probability.
 
-![image-20220312114229282](C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220312114229282.png)
+![image-20220312114229282](https://chqwer2.github.io/img/Typora/image-20220312114229282.png)
 
 However, because we are conditioning on Y being
 
@@ -114,17 +114,17 @@ a corresponding conditional PDF, where the conditional PDF
 
 is defined this way.
 
-![image-20220312114709851](C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220312114709851.png)
+![image-20220312114709851](https://chqwer2.github.io/img/Typora/image-20220312114709851.png)
 
 ### Total probability and total expectation theorems
 
-![image-20220312140912470](C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220312140912470.png)
+![image-20220312140912470](https://chqwer2.github.io/img/Typora/image-20220312140912470.png)
 
 
 
-<img src="C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220312151502909.png" alt="image-20220312151502909" style="zoom:50%;" />
+<img src="https://chqwer2.github.io/img/Typora/image-20220312151502909.png" alt="image-20220312151502909" style="zoom:50%;" />
 
-<img src="C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220312151518505.png" alt="image-20220312151518505" style="zoom:50%;" />
+<img src="https://chqwer2.github.io/img/Typora/image-20220312151518505.png" alt="image-20220312151518505" style="zoom:50%;" />
 
 7 False. Given that Y, we need to somehow take into account the **conditional distribution of X,** whereas the right-hand side **is determined by the unconditional PDF of** **X** .
 
@@ -132,11 +132,11 @@ The difference is random variable Y can take any value defined in the sample dom
 
 ### Independence
 
-![image-20220312141313858](C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220312141313858.png)
+![image-20220312141313858](https://chqwer2.github.io/img/Typora/image-20220312141313858.png)
 
 ### Stick-breaking example
 
-![image-20220312141507667](C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220312141507667.png)
+![image-20220312141507667](https://chqwer2.github.io/img/Typora/image-20220312141507667.png)
 
 Not independece…
 
@@ -146,9 +146,9 @@ this gives you lots of information about Y. It tells
 
 you that Y has to be less than or equal to 0.5.
 
-![image-20220312141803956](C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220312141803956.png)
+![image-20220312141803956](https://chqwer2.github.io/img/Typora/image-20220312141803956.png)
 
-![image-20220312142136489](C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220312142136489.png)
+![image-20220312142136489](https://chqwer2.github.io/img/Typora/image-20220312142136489.png)
 
 Finally we can break it makes it easier.
 
@@ -172,11 +172,11 @@ is from 0 to l.
 
 Independence of normal distribution
 
-![image-20220312144255597](C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220312144255597.png)
+![image-20220312144255597](https://chqwer2.github.io/img/Typora/image-20220312144255597.png)
 
 On each contour the joint PDF is a constant.
 
-![image-20220312144643983](C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220312144643983.png)
+![image-20220312144643983](https://chqwer2.github.io/img/Typora/image-20220312144643983.png)
 
 If you wanted a bell that stretches in some diagonal
 
@@ -196,21 +196,21 @@ marginal PMF.
 $$
 P_Y(y)
 $$
-![image-20220312160048952](C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220312160048952.png)
+![image-20220312160048952](https://chqwer2.github.io/img/Typora/image-20220312160048952.png)
 
 ### Mixed Bayes rule
 
-![image-20220312161757900](C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220312161757900.png)
+![image-20220312161757900](https://chqwer2.github.io/img/Typora/image-20220312161757900.png)
 
 The final is total probability theory
 
 ### Detection of a binary signal
 
-![image-20220312162740107](C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220312162740107.png)
+![image-20220312162740107](https://chqwer2.github.io/img/Typora/image-20220312162740107.png)
 
 ### Inference of the bias of a coin
 
-![image-20220312164036173](C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220312164036173.png)
+![image-20220312164036173](https://chqwer2.github.io/img/Typora/image-20220312164036173.png)
 
 ### **Buffon's needle and Monte Carlo simulation.** 
 
@@ -218,18 +218,18 @@ A surface is ruled with parallel lines, which are at distance  from each other. 
 
 the length of needle $l$ is less than $d$:
 
-<img src="C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220314210902016.png" alt="image-20220314210902016" style="zoom:33%;" />
+<img src="https://chqwer2.github.io/img/Typora/image-20220314210902016.png" alt="image-20220314210902016" style="zoom:33%;" />
 
 Model:
 
-![image-20220314211340090](C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220314211340090.png)
+![image-20220314211340090](https://chqwer2.github.io/img/Typora/image-20220314211340090.png)
 
-![image-20220314211456036](C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220314211456036.png)
+![image-20220314211456036](https://chqwer2.github.io/img/Typora/image-20220314211456036.png)
 
 Monte Carlo simulation:
 
 Some hyper-space volume cannot be calculated by integral etc. so we can uniformly sample the space and get the volume (with probability)
 
-![image-20220314221502114](C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220314221502114.png)
+![image-20220314221502114](https://chqwer2.github.io/img/Typora/image-20220314221502114.png)
 
 ??

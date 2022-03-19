@@ -10,10 +10,10 @@ What is the shape of the data in high dimensional geometric space.
 
 Global structure?
 
-![image-20220215100704546](C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220215100704546.png)
+![image-20220215100704546](https://chqwer2.github.io/img/Typora/image-20220215100704546.png)
 
-![image-20220215101311222](C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220215101311222.png)
+![image-20220215101311222](https://chqwer2.github.io/img/Typora/image-20220215101311222.png)
 
-![image-20220215101837889](C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220215101837889.png)
+![image-20220215101837889](https://chqwer2.github.io/img/Typora/image-20220215101837889.png)
 
-![image-20220215102438223](C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220215102438223.png)
+![image-20220215102438223](https://chqwer2.github.io/img/Typora/image-20220215102438223.png)

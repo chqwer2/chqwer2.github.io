@@ -42,7 +42,7 @@ tokenizer = TweetTokenizer(preserve_case=False, strip_handles=True, reduce_len=T
 tweet_tokens = tokenizer.tokenize(tweet2)
 ```
 
-![image-20220116111149913](C:\Users\calvchen\AppData\Roaming\Typora\typora-user-images\image-20220116111149913.png)
+![image-20220116111149913](https://chqwer2.github.io/img/Typora/image-20220116111149913.png)
 
 ### Re Lib
 
@@ -69,7 +69,7 @@ tweet2 = re.sub(r'#', '', tweet2)
 print(tweet2)
 ```
 
-![image-20220116110841532](C:\Users\calvchen\AppData\Roaming\Typora\typora-user-images\image-20220116110841532.png)
+![image-20220116110841532](https://chqwer2.github.io/img/Typora/image-20220116110841532.png)
 
 ### Stemming
 

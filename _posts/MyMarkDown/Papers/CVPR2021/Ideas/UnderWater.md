@@ -2,11 +2,11 @@
 
 ### RUIG: Realistic Underwater Image Generation Towards Restoration, CVPR2021
 
-![image-20211030095241511](C:\Users\calvchen\AppData\Roaming\Typora\typora-user-images\image-20211030095241511.png)
+![image-20211030095241511](https://chqwer2.github.io/img/Typora/image-20211030095241511.png)
 
 attenuation coefficients 衰减系数
 
-<img src="C:\Users\calvchen\AppData\Roaming\Typora\typora-user-images\image-20211030095558291.png" alt="image-20211030095558291" style="zoom:50%;" /><img src="C:\Users\calvchen\AppData\Roaming\Typora\typora-user-images\image-20211030100037966.png" alt="image-20211030100037966" style="zoom:40%;" />
+<img src="https://chqwer2.github.io/img/Typora/image-20211030095558291.png" alt="image-20211030095558291" style="zoom:50%;" /><img src="https://chqwer2.github.io/img/Typora/image-20211030100037966.png" alt="image-20211030100037966" style="zoom:40%;" />
 
 
 
@@ -61,13 +61,13 @@ LCF-15 + UWA video
 GMM is an unsupervised machine learning algorithm to learn first
 and second order statistics of input data
 
-<img src="C:\Users\calvchen\AppData\Roaming\Typora\typora-user-images\image-20211029151502493.png" alt="image-20211029151502493" style="zoom:33%;" />
+<img src="https://chqwer2.github.io/img/Typora/image-20211029151502493.png" alt="image-20211029151502493" style="zoom:33%;" />
 
 ### All-in-One *Underwater* Image Enhancement Using Domain-Adversarial Learning， 2019 CVPR
 
-![image-20211029151811598](C:\Users\calvchen\AppData\Roaming\Typora\typora-user-images\image-20211029151811598.png)
+![image-20211029151811598](https://chqwer2.github.io/img/Typora/image-20211029151811598.png)
 
-<img src="C:\Users\calvchen\AppData\Roaming\Typora\typora-user-images\image-20211029152145661.png" alt="image-20211029152145661" style="zoom: 
+<img src="https://chqwer2.github.io/img/Typora/image-20211029152145661.png" alt="image-20211029152145661" style="zoom: 
 
 67%;" />
 

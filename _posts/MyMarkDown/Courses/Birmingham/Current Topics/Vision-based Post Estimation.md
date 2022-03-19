@@ -4,11 +4,11 @@ Dr. Hyung Jin Chang
 
 UoB research group
 
-![image-20220222090518821](C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220222090518821.png)
+![image-20220222090518821](https://chqwer2.github.io/img/Typora/image-20220222090518821.png)
 
  Focus on Human-robot Interaction.
 
-![image-20220222090810364](C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220222090810364.png)
+![image-20220222090810364](https://chqwer2.github.io/img/Typora/image-20220222090810364.png)
 
 Learn from human body
 

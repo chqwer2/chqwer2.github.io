@@ -8,7 +8,7 @@ Classify tweets: Positive or Negative?
 
 A Sparse Representations of text as a vector
 
-![image-20220114215432658](C:\Users\calvchen\AppData\Roaming\Typora\typora-user-images\image-20220114215432658.png)
+![image-20220114215432658](https://chqwer2.github.io/img/Typora/image-20220114215432658.png)
 
 Problems:
 
@@ -18,15 +18,15 @@ Large feature space will need large training time and storage
 
 **Map Vectors from (word, class) to Frequency**
 
-![image-20220114215924345](C:\Users\calvchen\AppData\Roaming\Typora\typora-user-images\image-20220114215924345.png)
+![image-20220114215924345](https://chqwer2.github.io/img/Typora/image-20220114215924345.png)
 
 How many times it shows up.
 
 ##### Preprocessing: Stemming, Lowercasing, Punctuation and Stop words
 
-![image-20220114220747126](C:\Users\calvchen\AppData\Roaming\Typora\typora-user-images\image-20220114220747126.png)
+![image-20220114220747126](https://chqwer2.github.io/img/Typora/image-20220114220747126.png)
 
-![image-20220114220908902](C:\Users\calvchen\AppData\Roaming\Typora\typora-user-images\image-20220114220908902.png)
+![image-20220114220908902](https://chqwer2.github.io/img/Typora/image-20220114220908902.png)
 
 1. Eliminate handles and URLs
 2. Tokenize the string into words. 
@@ -36,19 +36,19 @@ How many times it shows up.
 
 Processed Results:
 
-![image-20220114221136062](C:\Users\calvchen\AppData\Roaming\Typora\typora-user-images\image-20220114221136062.png)
+![image-20220114221136062](https://chqwer2.github.io/img/Typora/image-20220114221136062.png)
 
-![image-20220114221244449](C:\Users\calvchen\AppData\Roaming\Typora\typora-user-images\image-20220114221244449.png)
+![image-20220114221244449](https://chqwer2.github.io/img/Typora/image-20220114221244449.png)
 
 ### Logistic Regression
 
 using Sigmoid
 
-![image-20220114221429148](C:\Users\calvchen\AppData\Roaming\Typora\typora-user-images\image-20220114221429148.png)
+![image-20220114221429148](https://chqwer2.github.io/img/Typora/image-20220114221429148.png)
 
 ### Cost Function
 
-![image-20220116105412681](C:\Users\calvchen\AppData\Roaming\Typora\typora-user-images\image-20220116105412681.png)
+![image-20220116105412681](https://chqwer2.github.io/img/Typora/image-20220116105412681.png)
 
 Calc the Gradient: [link](https://www.coursera.org/learn/classification-vector-spaces-in-nlp/supplement/afcaR/optional-logistic-regression-gradient)
 
@@ -56,15 +56,15 @@ Calc the Gradient: [link](https://www.coursera.org/learn/classification-vector-s
 
 ##### Probability and Bayes’ Rule
 
-![image-20220116115935915](C:\Users\calvchen\AppData\Roaming\Typora\typora-user-images\image-20220116115935915.png)
+![image-20220116115935915](https://chqwer2.github.io/img/Typora/image-20220116115935915.png)
 
-![image-20220116120000597](C:\Users\calvchen\AppData\Roaming\Typora\typora-user-images\image-20220116120000597.png)
+![image-20220116120000597](https://chqwer2.github.io/img/Typora/image-20220116120000597.png)
 
 ### Naïve Bayes Introduction
 
 Frequency:
 
-![image-20220116122907250](C:\Users\calvchen\AppData\Roaming\Typora\typora-user-images\image-20220116122907250.png)
+![image-20220116122907250](https://chqwer2.github.io/img/Typora/image-20220116122907250.png)
 
 Neg = 0 Influence the Calculation:
 
@@ -84,9 +84,9 @@ $N_{class}$: frequency of all words in class
 
 $V$: number of unique words in vocabulary
 
-![image-20220116123938962](C:\Users\calvchen\AppData\Roaming\Typora\typora-user-images\image-20220116123938962.png)
+![image-20220116123938962](https://chqwer2.github.io/img/Typora/image-20220116123938962.png)
 
-![image-20220116143456774](C:\Users\calvchen\AppData\Roaming\Typora\typora-user-images\image-20220116143456774.png)
+![image-20220116143456774](https://chqwer2.github.io/img/Typora/image-20220116143456774.png)
 
 ### Log Likelihood
 
@@ -94,17 +94,17 @@ $V$: number of unique words in vocabulary
 
 more convenient to work with and they appeared throughout deep learning and NLP
 
-![image-20220116143540060](C:\Users\calvchen\AppData\Roaming\Typora\typora-user-images\image-20220116143540060.png)
+![image-20220116143540060](https://chqwer2.github.io/img/Typora/image-20220116143540060.png)
 $$
 \lambda(w)=log\frac{P(w|pos)}{P(w|neg)}, logprior = los\frac{P(pos)}{P(neg)}
 $$
-![image-20220116144226781](C:\Users\calvchen\AppData\Roaming\Typora\typora-user-images\image-20220116144226781.png)
+![image-20220116144226781](https://chqwer2.github.io/img/Typora/image-20220116144226781.png)
 
 ### Application of Naïve Bayes
 
-![image-20220116210841774](C:\Users\calvchen\AppData\Roaming\Typora\typora-user-images\image-20220116210841774.png)
+![image-20220116210841774](https://chqwer2.github.io/img/Typora/image-20220116210841774.png)
 
-![image-20220116210929197](C:\Users\calvchen\AppData\Roaming\Typora\typora-user-images\image-20220116210929197.png)
+![image-20220116210929197](https://chqwer2.github.io/img/Typora/image-20220116210929197.png)
 
 ### Naïve Bayes Assumptions
 
@@ -118,15 +118,15 @@ It is relative to the frequencies in corpus.
 
 What can cause errors:
 
-![image-20220116211634892](C:\Users\calvchen\AppData\Roaming\Typora\typora-user-images\image-20220116211634892.png)
+![image-20220116211634892](https://chqwer2.github.io/img/Typora/image-20220116211634892.png)
 
-![image-20220116211702407](C:\Users\calvchen\AppData\Roaming\Typora\typora-user-images\image-20220116211702407.png)
+![image-20220116211702407](https://chqwer2.github.io/img/Typora/image-20220116211702407.png)
 
-![image-20220116211928496](C:\Users\calvchen\AppData\Roaming\Typora\typora-user-images\image-20220116211928496.png)
+![image-20220116211928496](https://chqwer2.github.io/img/Typora/image-20220116211928496.png)
 
 Recap: Not is a neutral word??
 
-![image-20220116212054560](C:\Users\calvchen\AppData\Roaming\Typora\typora-user-images\image-20220116212054560.png)
+![image-20220116212054560](https://chqwer2.github.io/img/Typora/image-20220116212054560.png)
 
 ### Adversarial Attack
 
@@ -134,4 +134,4 @@ Sarcasm, Irony and Euphemisms
 
 挖苦,讽刺和委婉语气
 
-![image-20220116212240884](C:\Users\calvchen\AppData\Roaming\Typora\typora-user-images\image-20220116212240884.png)
+![image-20220116212240884](https://chqwer2.github.io/img/Typora/image-20220116212240884.png)

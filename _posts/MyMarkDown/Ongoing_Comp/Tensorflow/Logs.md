@@ -18,7 +18,7 @@ Adamw with LR 1e-3
 
 mixup = 0.2, mosaic = 1.0, scale = 0.3, 
 
-![image-20220119223206193](C:\Users\calvchen\AppData\Roaming\Typora\typora-user-images\image-20220119223206193.png)
+![image-20220119223206193](https://chqwer2.github.io/img/Typora/image-20220119223206193.png)
 
 
 
@@ -52,7 +52,7 @@ PB@conf 0.4 = 0.449, TTA > 0.460
 
 PB@conf 0.5 = 0.430
 
-![image-20220121154713301](C:\Users\calvchen\AppData\Roaming\Typora\typora-user-images\image-20220121154713301.png)
+![image-20220121154713301](https://chqwer2.github.io/img/Typora/image-20220121154713301.png)
 
 epoch = 15
 
@@ -64,7 +64,7 @@ Video - Sequence
 
 Shuffle = False
 
-![image-20220122094235336](C:\Users\calvchen\AppData\Roaming\Typora\typora-user-images\image-20220122094235336.png)
+![image-20220122094235336](https://chqwer2.github.io/img/Typora/image-20220122094235336.png)
 
 PB@conf 0.4 = 0.524
 

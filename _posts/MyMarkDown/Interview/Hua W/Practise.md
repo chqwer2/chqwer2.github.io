@@ -98,5 +98,5 @@ Hash Table
 
 
 
-![image-20220118095143894](C:\Users\calvchen\AppData\Roaming\Typora\typora-user-images\image-20220118095143894.png)
+![image-20220118095143894](https://chqwer2.github.io/img/Typora/image-20220118095143894.png)
 

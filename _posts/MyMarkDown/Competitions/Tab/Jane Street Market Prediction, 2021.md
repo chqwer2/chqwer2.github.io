@@ -8,7 +8,7 @@ Code base: https://www.kaggle.com/aimind/bottleneck-encoder-mlp-keras-tuner-8601
 
 Model: MLP + XGBoost
 
-<img src="C:\Users\calvchen\AppData\Roaming\Typora\typora-user-images\image-20211013084231915.png" alt="image-20211013084231915" style="zoom:50%;" />
+<img src="https://chqwer2.github.io/img/Typora/image-20211013084231915.png" alt="image-20211013084231915" style="zoom:50%;" />
 
 
 

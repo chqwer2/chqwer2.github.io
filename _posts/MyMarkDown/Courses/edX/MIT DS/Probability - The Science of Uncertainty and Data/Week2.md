@@ -8,7 +8,7 @@
 
 ### Bayes' Rule
 
-![image-20220207220907291](C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220207220907291.png)
+![image-20220207220907291](https://chqwer2.github.io/img/Typora/image-20220207220907291.png)
 
 
 
@@ -40,19 +40,19 @@ Independence of two events
 
 did not affect the probabilities of the second event
 
-![image-20220207225210168](C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220207225210168.png)
+![image-20220207225210168](https://chqwer2.github.io/img/Typora/image-20220207225210168.png)
 
 
 
 So this definition is indeed more general, and this alsomakes it more elegant.
 
-![image-20220207230221107](C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220207230221107.png)
+![image-20220207230221107](https://chqwer2.github.io/img/Typora/image-20220207230221107.png)
 
 ##### Independence of event complements
 
 A and B are independent,  then A and $B^c$ are also independent
 
-![image-20220207232805300](C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220207232805300.png)
+![image-20220207232805300](https://chqwer2.github.io/img/Typora/image-20220207232805300.png)
 
 ### Conditional independence
 
@@ -60,7 +60,7 @@ Well, in the new universe where C has happened, events A and B have no intersect
 
 As we discussed earlier this means that events A and B are extremely dependent.
 
-![image-20220207233716560](C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220207233716560.png)
+![image-20220207233716560](https://chqwer2.github.io/img/Typora/image-20220207233716560.png)
 
 The conclusion from this example is that independence
 
@@ -72,7 +72,7 @@ answer here is no.
 
 Given C, A and B are not independent.
 
-![image-20220207234505488](C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220207234505488.png)
+![image-20220207234505488](https://chqwer2.github.io/img/Typora/image-20220207234505488.png)
 
 This may be true in some special cases, e.g., if  and  both have zero probability. However, it is in general false. Suppose, for example, that events  and  have nonempty intersection inside , and are conditionally independent, but have empty intersection inside , which would make them dependent (given ).
 
@@ -80,7 +80,7 @@ This may be true in some special cases, e.g., if  and  both have zero probabilit
 
 ##### Conditioning may affect independence
 
-![image-20220208163744435](C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220208163744435.png)
+![image-20220208163744435](https://chqwer2.github.io/img/Typora/image-20220208163744435.png)
 
 And therefore, information on the first 10 tosses
 
@@ -96,15 +96,15 @@ We will say that a family of events are independent if
 
 knowledge about some of the events doesn't change my beliefs, my probability model, for the remaining events.
 
-![image-20220208164716591](C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220208164716591.png)
+![image-20220208164716591](https://chqwer2.github.io/img/Typora/image-20220208164716591.png)
 
-![image-20220208164727816](C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220208164727816.png)
+![image-20220208164727816](https://chqwer2.github.io/img/Typora/image-20220208164727816.png)
 
-![image-20220208164823226](C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220208164823226.png)
+![image-20220208164823226](https://chqwer2.github.io/img/Typora/image-20220208164823226.png)
 
 ##### Independence versus pairwise independence
 
-![image-20220208165658622](C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220208165658622.png)
+![image-20220208165658622](https://chqwer2.github.io/img/Typora/image-20220208165658622.png)
 
 
 
@@ -136,7 +136,7 @@ One approach would be to be formal and start from the
 
 definition of independence of the U events.
 
-![image-20220210155324986](C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220210155324986.png)
+![image-20220210155324986](https://chqwer2.github.io/img/Typora/image-20220210155324986.png)
 
 And in the notation that we have introduced this is just
 
@@ -276,7 +276,7 @@ And let's see how that actually
 
 plays out in this problem.
 
-![image-20220210162754836](C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220210162754836.png)
+![image-20220210162754836](https://chqwer2.github.io/img/Typora/image-20220210162754836.png)
 
 But by switching, you're actually banking on your first
 

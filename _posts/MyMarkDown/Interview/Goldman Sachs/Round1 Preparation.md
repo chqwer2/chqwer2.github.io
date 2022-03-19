@@ -60,6 +60,6 @@ Whats a project you completed where you demonstrated good communication and team
 
 BFS: 
 
-![image-20211206211028993](C:\Users\calvchen\AppData\Roaming\Typora\typora-user-images\image-20211206211028993.png)
+![image-20211206211028993](https://chqwer2.github.io/img/Typora/image-20211206211028993.png)
 
-![image-20211206211102388](C:\Users\calvchen\AppData\Roaming\Typora\typora-user-images\image-20211206211102388.png)
+![image-20211206211102388](https://chqwer2.github.io/img/Typora/image-20211206211102388.png)

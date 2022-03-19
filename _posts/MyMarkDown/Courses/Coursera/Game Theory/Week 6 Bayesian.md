@@ -10,23 +10,23 @@ Bayesian is used to model this kind of uncertainty.
 
 **Before**: know a lot o information belows...
 
-![image-20220108234645549](C:\Users\calvchen\AppData\Roaming\Typora\typora-user-images\image-20220108234645549.png)
+![image-20220108234645549](https://chqwer2.github.io/img/Typora/image-20220108234645549.png)
 
 Know what they doing...
 
 Imperfect information game: You don't know others' play, but know the payoff of each possible action
 
-![image-20220113214602563](C:\Users\calvchen\AppData\Roaming\Typora\typora-user-images\image-20220113214602563.png)
+![image-20220113214602563](https://chqwer2.github.io/img/Typora/image-20220113214602563.png)
 
 conditioning a common prior on individual private signals.
 
-![image-20220113214857156](C:\Users\calvchen\AppData\Roaming\Typora\typora-user-images\image-20220113214857156.png)
+![image-20220113214857156](https://chqwer2.github.io/img/Typora/image-20220113214857156.png)
 
 ### Example
 
 4 Games Combination:
 
-![image-20220113215105190](C:\Users\calvchen\AppData\Roaming\Typora\typora-user-images\image-20220113215105190.png)
+![image-20220113215105190](https://chqwer2.github.io/img/Typora/image-20220113215105190.png)
 
 Why players are deciding what action is being take, they have to play an action without fully knowing what game is.
 
@@ -38,9 +38,9 @@ And they have to reason about what they opponent is doing without fully knowing 
 
 The introduction of **Type** 
 
-![image-20220113220158012](C:\Users\calvchen\AppData\Roaming\Typora\typora-user-images\image-20220113220158012.png)
+![image-20220113220158012](https://chqwer2.github.io/img/Typora/image-20220113220158012.png)
 
-![image-20220113220357080](C:\Users\calvchen\AppData\Roaming\Typora\typora-user-images\image-20220113220357080.png)
+![image-20220113220357080](https://chqwer2.github.io/img/Typora/image-20220113220357080.png)
 
 ### 6-4 Analyzing Bayesian Games 
 
@@ -49,7 +49,7 @@ The introduction of **Type**
 1. expecting over the actions of other players
 2. expecting over the types of other players
 
-![image-20220113223202570](C:\Users\calvchen\AppData\Roaming\Typora\typora-user-images\image-20220113223202570.png)
+![image-20220113223202570](https://chqwer2.github.io/img/Typora/image-20220113223202570.png)
 
 
 
@@ -68,7 +68,7 @@ Three standard notions of expected utility:
 
 Given a Bayesian game, $i$'s IEU with respect to type $\theta_i$ and a mixed strategy profile $s$ is ..
 
-![image-20220114110807724](C:\Users\calvchen\AppData\Roaming\Typora\typora-user-images\image-20220114110807724.png)
+![image-20220114110807724](https://chqwer2.github.io/img/Typora/image-20220114110807724.png)
 
 ### 6-5 Analyzing Bayesian Games: Another Example 
 
@@ -78,7 +78,7 @@ Look to Some Auctions Later..
 
 **A sheriff's Dilemma**
 
-![image-20220114111804486](C:\Users\calvchen\AppData\Roaming\Typora\typora-user-images\image-20220114111804486.png)
+![image-20220114111804486](https://chqwer2.github.io/img/Typora/image-20220114111804486.png)
 
 Shoot or not?
 
@@ -89,7 +89,7 @@ Shoot or not?
 
 Two different types of players: the Suspects and Innocents
 
-![image-20220114112513848](C:\Users\calvchen\AppData\Roaming\Typora\typora-user-images\image-20220114112513848.png)
+![image-20220114112513848](https://chqwer2.github.io/img/Typora/image-20220114112513848.png)
 
 **What is going to happened?**
 

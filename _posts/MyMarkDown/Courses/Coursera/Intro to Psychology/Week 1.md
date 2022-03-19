@@ -108,7 +108,7 @@ or pains, and everything else?
 
 It is the brain.
 
-![image-20220130235249716](C:\Users\calvchen\AppData\Roaming\Typora\typora-user-images\image-20220130235249716.png)
+![image-20220130235249716](https://chqwer2.github.io/img/Typora/image-20220130235249716.png)
 
 Here's a diagram that depicts a typical neuron. So, what you see is the dendrites, and dendrites receive signals from other neurons. Either excitatory, like pluses, or inhibitory, minuses. Then they get to the cell body, which sums up these pluses and minuses. When you reach a certain threshold, a certain amount of pluses, there's neural firing.
 

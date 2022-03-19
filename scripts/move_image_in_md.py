@@ -1,15 +1,14 @@
 import matplotlib.pyplot as plt
-from glob import glob
+from glob import glob, iglob
 import regex as re
 import os
 import numpy as np
 
-md_list = glob('C:\\Users\\calvchen\\PycharmProjects\\chqwer2.github.io\\_posts\\*', recursive=True)
-md_list = list(md_list)
-md_list.extend(glob('C:\\Users\\calvchen\\PycharmProjects\\chqwer2.github.io\\_posts\\*\*', recursive=True))
-md_list.extend(glob('C:\\Users\\calvchen\\PycharmProjects\\chqwer2.github.io\\_posts\\*\*\*', recursive=True))
-md_list = np.unique(md_list)
-print(md_list)
+path = 'C:\\Users\\calvchen\\PycharmProjects\\chqwer2.github.io\\_posts\\'
+
+md_list = [os.path.join(dirpath, f)
+    for dirpath, dirnames, files in os.walk(path)
+    for f in files if f.lower().endswith('.md') or f.lower().endswith('.markdown')]
 
 
 origin_fold = r'C:\\Users\\calvchen\\AppData\\Roaming\\Typora\\typora-user-images\\'
@@ -32,8 +31,6 @@ for md in md_list:
 
     except:
         f = open(md + '.markdown', 'r', encoding='utf8')
-
-    #
 
     data = f.read()
     new_data = re.sub(origin_fold, target_fold, data)

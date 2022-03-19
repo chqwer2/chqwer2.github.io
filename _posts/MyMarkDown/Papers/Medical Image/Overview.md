@@ -2,9 +2,9 @@
 
 N2V unsupervised. Mask out the center pixel, because the image signal contains statistical dependency
 
-<img src="C:\Users\calvchen\AppData\Roaming\Typora\typora-user-images\image-20211105101556673.png" alt="image-20211105101556673" style="zoom:50%;" />
+<img src="https://chqwer2.github.io/img/Typora/image-20211105101556673.png" alt="image-20211105101556673" style="zoom:50%;" />
 
-![image-20211105102237843](C:\Users\calvchen\AppData\Roaming\Typora\typora-user-images\image-20211105102237843.png)
+![image-20211105102237843](https://chqwer2.github.io/img/Typora/image-20211105102237843.png)
 
 N2N: Noisy Image Pairs from same distribution
 
@@ -14,11 +14,11 @@ N2V: w/o noisy pairs, replace the central pixel from the vicinity.
 
 PN2V, not strict Gaussian Distribution
 
-![image-20211105124014938](C:\Users\calvchen\AppData\Roaming\Typora\typora-user-images\image-20211105124014938.png)
+![image-20211105124014938](https://chqwer2.github.io/img/Typora/image-20211105124014938.png)
 
 Self-supervised,
 
-![image-20211105123711208](C:\Users\calvchen\AppData\Roaming\Typora\typora-user-images\image-20211105123711208.png)= maximum the likelihood
+![image-20211105123711208](https://chqwer2.github.io/img/Typora/image-20211105123711208.png)= maximum the likelihood
 
 
 

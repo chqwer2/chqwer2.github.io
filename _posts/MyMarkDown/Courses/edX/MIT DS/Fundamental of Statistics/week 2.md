@@ -12,7 +12,7 @@ And finally, will lay the foundations of statistical hypothesis testing, which i
 
 A **statistic**  is any measurable function of the sample. An **estimator**  of  is a statistic  whose expression **does not** depend on . 
 
-![image-20220211212442595](C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220211212442595.png)
+![image-20220211212442595](https://chqwer2.github.io/img/Typora/image-20220211212442595.png)
 
 
 
@@ -26,7 +26,7 @@ get data, the three types of questions that you may ask.
 
 ##### Trinity of Statistical Inference
 
-![image-20220204204242267](C:\Users\calvchen\AppData\Roaming\Typora\typora-user-images\image-20220204204242267.png)
+![image-20220204204242267](https://chqwer2.github.io/img/Typora/image-20220204204242267.png)
 
 **Estimation:** If I knew this, if I have a good estimator,
 
@@ -48,7 +48,7 @@ some error bars around the number that you get.
 
 So that's version 2.0 of the estimator.
 
-![image-20220204204711989](C:\Users\calvchen\AppData\Roaming\Typora\typora-user-images\image-20220204204711989.png)
+![image-20220204204711989](https://chqwer2.github.io/img/Typora/image-20220204204711989.png)
 
 'm going to give you a range just to make sure that you understand that I'm not entirely sure about the number
 
@@ -74,7 +74,7 @@ People want to have this to understand.
 
 ### An example of a statistical modeling
 
-![image-20220204210842717](C:\Users\calvchen\AppData\Roaming\Typora\typora-user-images\image-20220204210842717.png)
+![image-20220204210842717](https://chqwer2.github.io/img/Typora/image-20220204210842717.png)
 
 all x are IID distributed according to some distribution.
 
@@ -92,7 +92,7 @@ can model integer numbers between zero and infinity, say.
 
 **Poission**
 
-![image-20220204211809218](C:\Users\calvchen\AppData\Roaming\Typora\typora-user-images\image-20220204211809218.png)
+![image-20220204211809218](https://chqwer2.github.io/img/Typora/image-20220204211809218.png)
 
 $X - 1 \~ Poiss(\lambda)$, now we have to learn one parameter
 
@@ -132,7 +132,7 @@ my PDF by a particular statistical model, which was
 
 in this case a Poisson model.
 
-![image-20220206205709144](C:\Users\calvchen\AppData\Roaming\Typora\typora-user-images\image-20220206205709144.png)
+![image-20220206205709144](https://chqwer2.github.io/img/Typora/image-20220206205709144.png)
 
 So keep in mind that when I ask you
 
@@ -250,7 +250,7 @@ that you want to learn.
 
 ##### Examples of parametric and nonparametric models
 
-![image-20220206224549145](C:\Users\calvchen\AppData\Roaming\Typora\typora-user-images\image-20220206224549145.png)
+![image-20220206224549145](https://chqwer2.github.io/img/Typora/image-20220206224549145.png)
 
 left is sample space, right is distribution.
 
@@ -274,21 +274,21 @@ useful In particular, modeling in the case
 
 when we have subpopulations, heterogeneous subpopulations.
 
-![image-20220206224858196](C:\Users\calvchen\AppData\Roaming\Typora\typora-user-images\image-20220206224858196.png)
+![image-20220206224858196](https://chqwer2.github.io/img/Typora/image-20220206224858196.png)
 
-![image-20220206225047442](C:\Users\calvchen\AppData\Roaming\Typora\typora-user-images\image-20220206225047442.png)
+![image-20220206225047442](https://chqwer2.github.io/img/Typora/image-20220206225047442.png)
 
 ![image-20220206225416673](C:\Users\calvchen\PycharmProjects\chqwer2.github.io\_posts\image-20220206225416673.png)
 
 It is not symmetric.
 
-![image-20220206225651611](C:\Users\calvchen\AppData\Roaming\Typora\typora-user-images\image-20220206225651611.png)
+![image-20220206225651611](https://chqwer2.github.io/img/Typora/image-20220206225651611.png)
 
 It is unimode, This is to be compared with multimodal or bimodal
 
 or trimodal.
 
-![image-20220206225728836](C:\Users\calvchen\AppData\Roaming\Typora\typora-user-images\image-20220206225728836.png)
+![image-20220206225728836](https://chqwer2.github.io/img/Typora/image-20220206225728836.png)
 
 So we can, of course, make multimodal distributions
 
@@ -300,17 +300,17 @@ And the way to do this is simply to spread the means more,
 
 compared to the size of the variances.
 
-![image-20220206225857878](C:\Users\calvchen\AppData\Roaming\Typora\typora-user-images\image-20220206225857878.png)
+![image-20220206225857878](https://chqwer2.github.io/img/Typora/image-20220206225857878.png)
 
 ##### Another representation of Gaussian Mixtures
 
-![image-20220206213426538](C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220206213426538.png)
+![image-20220206213426538](https://chqwer2.github.io/img/Typora/image-20220206213426538.png)
 
 First, I'm going to draw what is called a latent variable. So latent here means that I don't get to observe it. And it's going to be called z.
 
 ### Mixture of Gaussians Model
 
-![image-20220208195832406](C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220208195832406.png)
+![image-20220208195832406](https://chqwer2.github.io/img/Typora/image-20220208195832406.png)
 
 Often we say, well there's almost too
 
@@ -326,7 +326,7 @@ So if we fix, for example, the variances to be equal to 1, then we can see that 
 
 the two means, u1 and u2.
 
-![image-20220209095347521](C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220209095347521.png)
+![image-20220209095347521](https://chqwer2.github.io/img/Typora/image-20220209095347521.png)
 
 or the above computations, do you have to assume that X1 is independent of X2? 
 
@@ -338,7 +338,7 @@ Using these formulae, , the variance can be written
 
 Var(*f*)=*μ*(2)−(*μ*(1))2=∑*i**p**i**μ*(2)*i*−(∑*i**p**i**μ*(1)*i*)2.
 
-![image-20220209095736384](C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220209095736384.png)
+![image-20220209095736384](https://chqwer2.github.io/img/Typora/image-20220209095736384.png)
 
   This allows us to understand the formula as stating **the variance of the mixture is the mixture of the variances \*plus\* a non-negative term accounting for the (weighted) dispersion of the means.**
 
@@ -346,11 +346,11 @@ Var(*f*)=*μ*(2)−(*μ*(1))2=∑*i**p**i**μ*(2)*i*−(∑*i**p**i**μ*(1)*i*)2
 
 ##### Examples of nonparametric models
 
-![image-20220209085645486](C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220209085645486.png)
+![image-20220209085645486](https://chqwer2.github.io/img/Typora/image-20220209085645486.png)
 
 But if I start telling you something specific shape of the distribution…
 
-![image-20220209090205712](C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220209090205712.png)
+![image-20220209090205712](https://chqwer2.github.io/img/Typora/image-20220209090205712.png)
 
 But all I'm telling you is that there's just two pieces.
 
@@ -362,11 +362,11 @@ One is going up, the other one's going down. ??
 
 Desmos?
 
-![image-20220209092624152](C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220209092624152.png)
+![image-20220209092624152](https://chqwer2.github.io/img/Typora/image-20220209092624152.png)
 
 
 
-<img src="C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220209092925117.png" alt="image-20220209092925117" style="zoom:67%;" />
+<img src="https://chqwer2.github.io/img/Typora/image-20220209092925117.png" alt="image-20220209092925117" style="zoom:67%;" />
 
 Note that the sample space of  is *not unique*. For example, if , then both  and  can serve as a sample space. However, in general, we associate a random variable with its smallest possible sample space (which would be  if ). 
 
@@ -376,9 +376,9 @@ Note that the sample space of  is *not unique*. For example, if , then both  and
 
  m entries of the vector  theta ? m-dimensions? 
 
-![image-20220209111444548](C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220209111444548.png)
+![image-20220209111444548](https://chqwer2.github.io/img/Typora/image-20220209111444548.png)
 
-![image-20220209111455200](C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220209111455200.png)
+![image-20220209111455200](https://chqwer2.github.io/img/Typora/image-20220209111455200.png)
 
 ### Identifiability
 
@@ -394,9 +394,9 @@ going to end up with two distributions that
 
 are different.
 
-![image-20220209112356329](C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220209112356329.png)
+![image-20220209112356329](https://chqwer2.github.io/img/Typora/image-20220209112356329.png)
 
-![image-20220209112506215](C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220209112506215.png)
+![image-20220209112506215](https://chqwer2.github.io/img/Typora/image-20220209112506215.png)
 
 Cuz we have:
 $$
@@ -404,7 +404,7 @@ $$
 $$
 and it is empirical porpotion
 
-![image-20220209113518647](C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220209113518647.png)
+![image-20220209113518647](https://chqwer2.github.io/img/Typora/image-20220209113518647.png)
 
 
 
@@ -422,7 +422,7 @@ Alternatively: a function is injective if we can **uniquely** recover some input
 
 
 
-![image-20220209113837866](C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220209113837866.png)
+![image-20220209113837866](https://chqwer2.github.io/img/Typora/image-20220209113837866.png)
 
 The notation  denotes that  is a function, also called a **map** , defined on all of a set  and whose outputs lie in a set . A function  is **injective**  if for all ,  implies that . 
 
@@ -474,7 +474,7 @@ and how good of an estimator it is.
 
 
 
-![image-20220209154925211](C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220209154925211.png)
+![image-20220209154925211](https://chqwer2.github.io/img/Typora/image-20220209154925211.png)
 
 So I decide to use the word "asymptotic variance" (渐近的)
 
@@ -488,7 +488,7 @@ and not always equal to 0.
 
 
 
-![image-20220213172924705](C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220213172924705.png)
+![image-20220213172924705](https://chqwer2.github.io/img/Typora/image-20220213172924705.png)
 
 ?
 
@@ -505,7 +505,7 @@ From the previous question, the first and last choice, $\theta$ and $\frac{1}{n}
 
 For *asymptotically normal*
 
-![image-20220211215002233](C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220211215002233.png)
+![image-20220211215002233](https://chqwer2.github.io/img/Typora/image-20220211215002233.png)
 
 Let $\sigma=\sqrt{p}(1-p)$ denote the common standard deviation of $X_{1}, \ldots, X_{n} .$ By the central limit theorem,
 $$
@@ -533,7 +533,7 @@ How close is it to theta?
 
 theta is what you want to find.
 
-![image-20220211222602955](C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220211222602955.png)
+![image-20220211222602955](https://chqwer2.github.io/img/Typora/image-20220211222602955.png)
 
 Here's one way to measure this. What I want to know is how close theta hat n is from theta in expectation.
 
@@ -543,9 +543,9 @@ This difference, which is the expectation of theta hat n minus theta, will be ca
 $$
 bias(\hat \theta) = \mathbb E[\hat \theta] - \theta
 $$
-![image-20220211221758223](C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220211221758223.png)
+![image-20220211221758223](https://chqwer2.github.io/img/Typora/image-20220211221758223.png)
 
-![image-20220213165154957](C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220213165154957.png)
+![image-20220213165154957](https://chqwer2.github.io/img/Typora/image-20220213165154957.png)
 
 
 
@@ -555,11 +555,11 @@ $$
 
 But sometimes we prefer biased distribution because it's going to consistently give you values that are much closer to theta than this unbiased estimator, theta hat.
 
-![image-20220210102117858](C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220210102117858.png)
+![image-20220210102117858](https://chqwer2.github.io/img/Typora/image-20220210102117858.png)
 
 
 
-![image-20220213164346206](C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220213164346206.png)
+![image-20220213164346206](https://chqwer2.github.io/img/Typora/image-20220213164346206.png)
 
 hint: rescale
 
@@ -591,9 +591,9 @@ $f(\cdot)$ is convex, or concave
 $$
 E f(x)\geq f(E(x))
 $$
-![image-20220210103728712](C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220210103728712.png)
+![image-20220210103728712](https://chqwer2.github.io/img/Typora/image-20220210103728712.png)
 
-![image-20220211223616612](C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220211223616612.png)
+![image-20220211223616612](https://chqwer2.github.io/img/Typora/image-20220211223616612.png)
 
 It could be that those two are actually equal.
 
@@ -607,7 +607,7 @@ concave, meaning that at no point is it flat like this.
 
 
 
-![image-20220210103938170](C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220210103938170.png)
+![image-20220210103938170](https://chqwer2.github.io/img/Typora/image-20220210103938170.png)
 
 The way I remember which way Jensen goes
 
@@ -643,7 +643,7 @@ An unbiased estimator is a special kind of estimator; an estimator is a  special
 
 ### Variance of Estimators
 
-![image-20220210150836145](C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220210150836145.png)
+![image-20220210150836145](https://chqwer2.github.io/img/Typora/image-20220210150836145.png)
 
 **Video Note** :
 
@@ -657,7 +657,7 @@ You can think of the variance of the sum, which
 
 is the sum of the variance. So three unbiased estimators, but three different variances.
 
-![image-20220210151233772](C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220210151233772.png)
+![image-20220210151233772](https://chqwer2.github.io/img/Typora/image-20220210151233772.png)
 
 ### Quadratic Risk of Estimators
 
@@ -693,7 +693,7 @@ I'm just going to take the square of this distance
 
 
 
-![image-20220210152253383](C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220210152253383.png)
+![image-20220210152253383](https://chqwer2.github.io/img/Typora/image-20220210152253383.png)
 
 First is variance, second is expectation of deterministic square of bias. 
 
@@ -709,23 +709,23 @@ So this is equal to 1/12 n.
 $$
 Var(\bar X_n) = \frac{Var(X_1)}{n}
 $$
-![image-20220210153005617](C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220210153005617.png)
+![image-20220210153005617](https://chqwer2.github.io/img/Typora/image-20220210153005617.png)
 
  I want you to think a little bit about the meaning
 
 of the quadratic risk.
 
-![image-20220212201213335](C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220212201213335.png)
+![image-20220212201213335](https://chqwer2.github.io/img/Typora/image-20220212201213335.png)
 
 All right, so this is close and it's getting closer
 
 as my sample size increases.
 
-![image-20220212201540950](C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220212201540950.png)
+![image-20220212201540950](https://chqwer2.github.io/img/Typora/image-20220212201540950.png)
 
-![image-20220212201929805](C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220212201929805.png)
+![image-20220212201929805](https://chqwer2.github.io/img/Typora/image-20220212201929805.png)
 
-![image-20220212201940860](C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220212201940860.png)
+![image-20220212201940860](https://chqwer2.github.io/img/Typora/image-20220212201940860.png)
 
 
 
@@ -753,7 +753,7 @@ error bars will be at least 1 minus alpha,
 
 will be at least 95%.
 
-![image-20220211210656255](C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220211210656255.png)
+![image-20220211210656255](https://chqwer2.github.io/img/Typora/image-20220211210656255.png)
 
 So now, of course, everything typically
 
@@ -773,9 +773,9 @@ the central limit theorem.
 
 you say, the probability that my random interval contains theta,
 
-![image-20220211210756289](C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220211210756289.png)
+![image-20220211210756289](https://chqwer2.github.io/img/Typora/image-20220211210756289.png)
 
-![image-20220211211026822](C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220211211026822.png)
+![image-20220211211026822](https://chqwer2.github.io/img/Typora/image-20220211211026822.png)
 
 And from the central limit theorem,
 
@@ -827,19 +827,19 @@ then I have myself error bars, which are of the form Rn bar
 
 plus/minus this little x.
 
-![image-20220211211546323](C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220211211546323.png)
+![image-20220211211546323](https://chqwer2.github.io/img/Typora/image-20220211211546323.png)
 
-![image-20220211211727757](C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220211211727757.png)
+![image-20220211211727757](https://chqwer2.github.io/img/Typora/image-20220211211727757.png)
 
 12mins…
 
-![image-20220212175111236](C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220212175111236.png)
+![image-20220212175111236](https://chqwer2.github.io/img/Typora/image-20220212175111236.png)
 
 Well, technically, it's the quantile of order 1 minus alpha
 
 over 2, but we denote it only with alpha over 2,
 
-![image-20220212175406225](C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220212175406225.png)
+![image-20220212175406225](https://chqwer2.github.io/img/Typora/image-20220212175406225.png)
 
 Because it depends on p, or p factorial,
 
@@ -855,9 +855,9 @@ So what do I do?
 
 Well, good news-- there's three ways to fix this.
 
-![image-20220212181030515](C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220212181030515.png)
+![image-20220212181030515](https://chqwer2.github.io/img/Typora/image-20220212181030515.png)
 
-![image-20220212180801501](C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220212180801501.png)
+![image-20220212180801501](https://chqwer2.github.io/img/Typora/image-20220212180801501.png)
 
 And the thing is that the widest confidence interval
 
@@ -889,9 +889,9 @@ but it's at least larger than or equal to 1 minus alpha.
 
 ##### I Solve
 
-![image-20220212182355339](C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220212182355339.png)
+![image-20220212182355339](https://chqwer2.github.io/img/Typora/image-20220212182355339.png)
 
-![image-20220212233920162](C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220212233920162.png)
+![image-20220212233920162](https://chqwer2.github.io/img/Typora/image-20220212233920162.png)
 
 So what happens is when I actually
 
@@ -911,7 +911,7 @@ Now let me collect my terms in p squared.
 
 OK, and this is a bona fide quadratic inequality, OK?
 
-![image-20220212182227487](C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220212182227487.png)
+![image-20220212182227487](https://chqwer2.github.io/img/Typora/image-20220212182227487.png)
 
 ##### Using Slutsky Theorem: Plug-in
 
@@ -927,13 +927,13 @@ But this one is actually valid, we call it a plug-in confidence
 
 interval
 
-![image-20220213110202581](C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220213110202581.png)
+![image-20220213110202581](https://chqwer2.github.io/img/Typora/image-20220213110202581.png)
 
 
 
 
 
-![image-20220212183113773](C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220212183113773.png)
+![image-20220212183113773](https://chqwer2.github.io/img/Typora/image-20220212183113773.png)
 
 The third one is to say, OK, I don't know p,
 
@@ -953,7 +953,7 @@ Continuous mapping theorem -? CMT
 
 
 
-![image-20220212182946376](C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220212182946376.png)
+![image-20220212182946376](https://chqwer2.github.io/img/Typora/image-20220212182946376.png)
 
 **by Slutsky,** that if I have
 
@@ -965,7 +965,7 @@ of distribution to a deterministic number,
 
 I can actually multiply the limits.
 
-![image-20220213190437279](C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220213190437279.png)
+![image-20220213190437279](https://chqwer2.github.io/img/Typora/image-20220213190437279.png)
 
 And somehow, we have the sense that we've done something
 
@@ -989,7 +989,7 @@ And if you don't want to do this,
 
 you might want to stick to I solve.
 
-![image-20220216155815949](C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220216155815949.png)
+![image-20220216155815949](https://chqwer2.github.io/img/Typora/image-20220216155815949.png)
 
 
 
@@ -1005,7 +1005,7 @@ to our kiss example.
 
 So in the kiss example,
 
-![image-20220212183825230](C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220212183825230.png)
+![image-20220212183825230](https://chqwer2.github.io/img/Typora/image-20220212183825230.png)
 
 p hat, which we denoted by Rn bar,
 
@@ -1025,7 +1025,7 @@ is actually fairly close to 1/2.
 
 ### Two sided versus one sided confidence interval of Gaussians
 
-![image-20220213112035455](C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220213112035455.png)
+![image-20220213112035455](https://chqwer2.github.io/img/Typora/image-20220213112035455.png)
 
 
 
@@ -1043,7 +1043,7 @@ multivariate Gaussian.
 
 
 
-![image-20220213113736225](C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220213113736225.png)
+![image-20220213113736225](https://chqwer2.github.io/img/Typora/image-20220213113736225.png)
 
 This way of standardizing it-- this way of taking an estimator
 
@@ -1065,7 +1065,7 @@ a pivot for your data.
 
 ##### Two-sided confidence interval
 
-![image-20220213114547617](C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220213114547617.png)
+![image-20220213114547617](https://chqwer2.github.io/img/Typora/image-20220213114547617.png)
 
 ##### One-sided confidence interval
 
@@ -1079,8 +1079,8 @@ None..
 
  A model is **identifiable** if it is theoretically possible to learn the true values of this model's underlying parameters after obtaining  an infinite number of observations from it.
 
-![image-20220213122526620](C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220213122526620.png)
+![image-20220213122526620](https://chqwer2.github.io/img/Typora/image-20220213122526620.png)
 
  confidence interval of asymptotic level 95%? what does it means? 
 
-![image-20220213181323122](C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220213181323122.png)
+![image-20220213181323122](https://chqwer2.github.io/img/Typora/image-20220213181323122.png)

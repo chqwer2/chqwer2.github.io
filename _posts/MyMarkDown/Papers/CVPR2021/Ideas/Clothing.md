@@ -4,9 +4,9 @@ investigates clothing match rules based on semantic attributes
 
 Attributed-GAN
 
-![image-20211113190338640](C:\Users\calvchen\AppData\Roaming\Typora\typora-user-images\image-20211113190338640.png)
+![image-20211113190338640](https://chqwer2.github.io/img/Typora/image-20211113190338640.png)
 
-![image-20211113205028487](C:\Users\calvchen\AppData\Roaming\Typora\typora-user-images\image-20211113205028487.png)
+![image-20211113205028487](https://chqwer2.github.io/img/Typora/image-20211113205028487.png)
 
 
 
@@ -25,7 +25,7 @@ we train an Inception-v3 classification model to evaluate the authenticity of sy
 regression scoring VGG model to measure the compatibility degree of the generated image pairs and a deep attentional multimodal
 similarity model to evaluate the semantic similarity between generated images and ground truth text descriptions.
 
-![image-20211113185113176](C:\Users\calvchen\AppData\Roaming\Typora\typora-user-images\image-20211113185113176.png)
+![image-20211113185113176](https://chqwer2.github.io/img/Typora/image-20211113185113176.png)
 
 
 
@@ -37,7 +37,7 @@ similarity model to evaluate the semantic similarity between generated images an
 
 [pdf](https://www.tandfonline.com/doi/epub/10.1080/09540091.2020.1822780?needAccess=true)
 
-![image-20211113205752691](C:\Users\calvchen\AppData\Roaming\Typora\typora-user-images\image-20211113205752691.png)
+![image-20211113205752691](https://chqwer2.github.io/img/Typora/image-20211113205752691.png)
 
 
 
@@ -49,7 +49,7 @@ similarity model to evaluate the semantic similarity between generated images an
 
 2 conditional model on the resulting segments that creates realistic images. 
 
-<img src="C:\Users\calvchen\AppData\Roaming\Typora\typora-user-images\image-20211113210633389.png" alt="image-20211113210633389" style="zoom:50%;" /><img src="C:\Users\calvchen\AppData\Roaming\Typora\typora-user-images\image-20211113210641483.png" alt="image-20211113210641483" style="zoom:50%;" />
+<img src="https://chqwer2.github.io/img/Typora/image-20211113210633389.png" alt="image-20211113210633389" style="zoom:50%;" /><img src="https://chqwer2.github.io/img/Typora/image-20211113210641483.png" alt="image-20211113210641483" style="zoom:50%;" />
 
 
 
@@ -65,7 +65,7 @@ Mano + Style + Scene
 4. Dall.e Demo
 5. Dalle 的精确度和精细化，语言的模糊描述
 
-![image-20211116082353697](C:\Users\calvchen\AppData\Roaming\Typora\typora-user-images\image-20211116082353697.png)
+![image-20211116082353697](https://chqwer2.github.io/img/Typora/image-20211116082353697.png)
 
 [8:44 AM] Chloe Huang A **thin** woman in a **STYLE\* coat** **running** in the rain
 
@@ -80,4 +80,4 @@ Mano + Style + Scene
 
 TPU trained Dall.e, 
 
-![image-20211116083824254](C:\Users\calvchen\AppData\Roaming\Typora\typora-user-images\image-20211116083824254.png)
+![image-20211116083824254](https://chqwer2.github.io/img/Typora/image-20211116083824254.png)

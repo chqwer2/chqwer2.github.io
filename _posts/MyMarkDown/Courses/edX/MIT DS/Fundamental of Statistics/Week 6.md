@@ -60,7 +60,7 @@ It is a nice simmetric function, right? We can use median as the $\rho$.
 
 We can have $C_\alpha$ and a **Quantile Estimator**
 
-![image-20220306120905777](C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220306120905777.png)
+![image-20220306120905777](https://chqwer2.github.io/img/Typora/image-20220306120905777.png)
 
 **Quantile Estimator Definition**
 $$
@@ -138,25 +138,25 @@ $$
 
 $J$ and $K$.
 
-![image-20220306144636267](C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220306144636267.png)
+![image-20220306144636267](https://chqwer2.github.io/img/Typora/image-20220306144636267.png)
 
 
 
-![image-20220306144746389](C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220306144746389.png)
+![image-20220306144746389](https://chqwer2.github.io/img/Typora/image-20220306144746389.png)
 
-![image-20220306144910145](C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220306144910145.png)
+![image-20220306144910145](https://chqwer2.github.io/img/Typora/image-20220306144910145.png)
 
-![image-20220308132836777](C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220308132836777.png)
+![image-20220308132836777](https://chqwer2.github.io/img/Typora/image-20220308132836777.png)
 
 ### Asymptotic Normality of M-estimators
 
 
 
-![image-20220306145227499](C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220306145227499.png)
+![image-20220306145227499](https://chqwer2.github.io/img/Typora/image-20220306145227499.png)
 
 should be mu star
 
-![image-20220306145252685](C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220306145252685.png)
+![image-20220306145252685](https://chqwer2.github.io/img/Typora/image-20220306145252685.png)
 
 So if I want to build a confidence interval,
 
@@ -188,7 +188,7 @@ So the Cauchy distribution is statisticians' favorite example
 
 of a heavy tail distribution.
 
-![image-20220307164607958](C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220307164607958.png)
+![image-20220307164607958](https://chqwer2.github.io/img/Typora/image-20220307164607958.png)
 
 Of course it cannot be 1 over x, because I want this function
 
@@ -315,7 +315,7 @@ $$
 $$
 
 
-![image-20220307171254426](C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220307171254426.png)
+![image-20220307171254426](https://chqwer2.github.io/img/Typora/image-20220307171254426.png)
 
 
 
@@ -325,7 +325,7 @@ I just try to find relationships between my parameter
 
 and my moments.
 
-![image-20220307171652695](C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220307171652695.png)
+![image-20220307171652695](https://chqwer2.github.io/img/Typora/image-20220307171652695.png)
 
 ### Asymptotic Normality of the Method of Moments Estimator
 
@@ -337,11 +337,11 @@ And once it has an impact on my asymptotic covariance matrix,
 
 I want it to be as small as possible.
 
-![image-20220311151325346](C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220311151325346.png)
+![image-20220311151325346](https://chqwer2.github.io/img/Typora/image-20220311151325346.png)
 
-![image-20220311152001442](C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220311152001442.png)
+![image-20220311152001442](https://chqwer2.github.io/img/Typora/image-20220311152001442.png)
 
-![image-20220311152011312](C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220311152011312.png)
+![image-20220311152011312](https://chqwer2.github.io/img/Typora/image-20220311152011312.png)
 
 
 
@@ -367,13 +367,13 @@ That's what JPEG 2000 is doing for you.
 
 The actual JPEG is using cosine and a few extra tricks.
 
-![image-20220307172132951](C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220307172132951.png)
+![image-20220307172132951](https://chqwer2.github.io/img/Typora/image-20220307172132951.png)
 
-![image-20220307172409582](C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220307172409582.png)
+![image-20220307172409582](https://chqwer2.github.io/img/Typora/image-20220307172409582.png)
 
 Cov..
 
-![image-20220307172436186](C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220307172436186.png)
+![image-20220307172436186](https://chqwer2.github.io/img/Typora/image-20220307172436186.png)
 
 So as you can see here, we may not
 
@@ -403,7 +403,7 @@ But here this is not very likely to happen.
 
 ### Conclusions
 
-![image-20220307172741591](C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220307172741591.png)
+![image-20220307172741591](https://chqwer2.github.io/img/Typora/image-20220307172741591.png)
 
 
 
@@ -417,21 +417,21 @@ But here this is not very likely to happen.
 
 # Method of Moments
 
-![image-20220304232655126](C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220304232655126.png)
+![image-20220304232655126](https://chqwer2.github.io/img/Typora/image-20220304232655126.png)
 
 
 
 Moment Generating Fun
 
-![image-20220304233247913](C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220304233247913.png)
+![image-20220304233247913](https://chqwer2.github.io/img/Typora/image-20220304233247913.png)
 
 
 
-![image-20220304235157190](C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220304235157190.png)
+![image-20220304235157190](https://chqwer2.github.io/img/Typora/image-20220304235157190.png)
 
 Finally plug-in.
 
-![image-20220305001319289](C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220305001319289.png)
+![image-20220305001319289](https://chqwer2.github.io/img/Typora/image-20220305001319289.png)
 
 M-estimation is the process of estimating
 
@@ -463,7 +463,7 @@ avar for **asymtotic variance**
 
 ### sample median to the asymptotic variance
 
-![image-20220306091826948](C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220306091826948.png)
+![image-20220306091826948](https://chqwer2.github.io/img/Typora/image-20220306091826948.png)
 
 
 
@@ -477,7 +477,7 @@ distribution will depend on the parameter n.
 
 
 
-![image-20220306092556112](C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220306092556112.png)
+![image-20220306092556112](https://chqwer2.github.io/img/Typora/image-20220306092556112.png)
 
 
 
@@ -485,7 +485,7 @@ And you'll notice that this is actually just the definition
 
 of the derivative of f, right?
 
-![image-20220306093445838](C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220306093445838.png)
+![image-20220306093445838](https://chqwer2.github.io/img/Typora/image-20220306093445838.png)
 
 In the next part, let's compare
 
@@ -497,7 +497,7 @@ found for the sample median to the asymptotic variance we would get for the samp
 
 $m_n$ is the median
 
-![image-20220306094734777](C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220306094734777.png)
+![image-20220306094734777](https://chqwer2.github.io/img/Typora/image-20220306094734777.png)
 
 And this would give you some evidence
 
@@ -531,7 +531,7 @@ is actually 1/2.
 
 median = mean in this situation
 
-![image-20220306095538235](C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220306095538235.png)
+![image-20220306095538235](https://chqwer2.github.io/img/Typora/image-20220306095538235.png)
 
 whereas the asymptotic variance of the sample mean,
 
@@ -547,19 +547,19 @@ estimator.
 
 ### Huber estimator 
 
-![image-20220306095659568](C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220306095659568.png)
+![image-20220306095659568](https://chqwer2.github.io/img/Typora/image-20220306095659568.png)
 
 differentiable
 
 
 
-![image-20220306100353894](C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220306100353894.png)
+![image-20220306100353894](https://chqwer2.github.io/img/Typora/image-20220306100353894.png)
 
 secant squared of x.
 
 
 
-![image-20220306100847499](C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220306100847499.png)
+![image-20220306100847499](https://chqwer2.github.io/img/Typora/image-20220306100847499.png)
 
 you think, OK, let's try to use a little b L'Hopital's rule, which you can actually do. 
 
@@ -577,7 +577,7 @@ we showed earlier.
 
 
 
-![image-20220306101616570](C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220306101616570.png)
+![image-20220306101616570](https://chqwer2.github.io/img/Typora/image-20220306101616570.png)
 
 Sometimes the M-estimators have asymptotic variance
 

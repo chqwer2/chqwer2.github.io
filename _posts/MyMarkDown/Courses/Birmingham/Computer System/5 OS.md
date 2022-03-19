@@ -16,7 +16,7 @@ Trade off between Speed and Capacity
 
 [PDF]([Multilevel_Cache.pdf: Computer Systems (bham.ac.uk)](https://canvas.bham.ac.uk/courses/56091/files/11929478?wrap=1))
 
-<img src="C:\Users\calvchen\AppData\Roaming\Typora\typora-user-images\image-20211028205045939.png" alt="image-20211028205045939" style="zoom:50%;" />
+<img src="https://chqwer2.github.io/img/Typora/image-20211028205045939.png" alt="image-20211028205045939" style="zoom:50%;" />
 
 2. What is the difference between device drivers and device controllers?
 
@@ -88,9 +88,9 @@ Each Byte has its own address
 
 Disks (Programs sored and loaded from here)
 
-![image-20211028172713267](C:\Users\calvchen\AppData\Roaming\Typora\typora-user-images\image-20211028172713267.png)
+![image-20211028172713267](https://chqwer2.github.io/img/Typora/image-20211028172713267.png)
 
-<img src="C:\Users\calvchen\AppData\Roaming\Typora\typora-user-images\image-20211028172736247.png" alt="image-20211028172736247" style="zoom: 50%;" />
+<img src="https://chqwer2.github.io/img/Typora/image-20211028172736247.png" alt="image-20211028172736247" style="zoom: 50%;" />
 
 
 
@@ -100,7 +100,7 @@ Disks (Programs sored and loaded from here)
 
 system BUS and I/O controller
 
-<img src="C:\Users\calvchen\AppData\Roaming\Typora\typora-user-images\image-20211028172949463.png" alt="image-20211028172949463" style="zoom:33%;" />
+<img src="https://chqwer2.github.io/img/Typora/image-20211028172949463.png" alt="image-20211028172949463" style="zoom:33%;" />
 
 ##### How it works?
 
@@ -112,7 +112,7 @@ SCSI Bus (Small Computer-Systems Interface)
 
 ##### Programmed I/O (Polling)
 
-![image-20211028192829716](C:\Users\calvchen\AppData\Roaming\Typora\typora-user-images\image-20211028192829716.png)
+![image-20211028192829716](https://chqwer2.github.io/img/Typora/image-20211028192829716.png)
 
 ### **Time wasting of CPU**
 
@@ -120,17 +120,17 @@ SCSI Bus (Small Computer-Systems Interface)
 
 Fine for moving small amount of data
 
-![image-20211028193026828](C:\Users\calvchen\AppData\Roaming\Typora\typora-user-images\image-20211028193026828.png)
+![image-20211028193026828](https://chqwer2.github.io/img/Typora/image-20211028193026828.png)
 
 ##### Direct Memory Access (DMA)
 
 Deal with bulk data
 
-![image-20211028193243174](C:\Users\calvchen\AppData\Roaming\Typora\typora-user-images\image-20211028193243174.png)
+![image-20211028193243174](https://chqwer2.github.io/img/Typora/image-20211028193243174.png)
 
 Trigger only one Interrupt, CPU is freed
 
-![image-20211028193356950](C:\Users\calvchen\AppData\Roaming\Typora\typora-user-images\image-20211028193356950.png)
+![image-20211028193356950](https://chqwer2.github.io/img/Typora/image-20211028193356950.png)
 
 ### Some General System Arch
 
@@ -142,39 +142,39 @@ Cost less - shared storage and power
 
 Reliable: a failed processor will not stop the sys
 
-![image-20211028193848278](C:\Users\calvchen\AppData\Roaming\Typora\typora-user-images\image-20211028193848278.png)
+![image-20211028193848278](https://chqwer2.github.io/img/Typora/image-20211028193848278.png)
 
-![image-20211028193813888](C:\Users\calvchen\AppData\Roaming\Typora\typora-user-images\image-20211028193813888.png)
+![image-20211028193813888](https://chqwer2.github.io/img/Typora/image-20211028193813888.png)
 
 ##### Clustered System
 
-![image-20211028194219696](C:\Users\calvchen\AppData\Roaming\Typora\typora-user-images\image-20211028194219696.png)
+![image-20211028194219696](https://chqwer2.github.io/img/Typora/image-20211028194219696.png)
 
 ### Operating System 
 
-![image-20211028202416768](C:\Users\calvchen\AppData\Roaming\Typora\typora-user-images\image-20211028202416768.png)
+![image-20211028202416768](https://chqwer2.github.io/img/Typora/image-20211028202416768.png)
 
 ##### System Calls
 
-![image-20211028202849904](C:\Users\calvchen\AppData\Roaming\Typora\typora-user-images\image-20211028202849904.png)
+![image-20211028202849904](https://chqwer2.github.io/img/Typora/image-20211028202849904.png)
 
 Emulation 仿真
 
 ### Structure
 
-![image-20211028203337374](C:\Users\calvchen\AppData\Roaming\Typora\typora-user-images\image-20211028203337374.png)
+![image-20211028203337374](https://chqwer2.github.io/img/Typora/image-20211028203337374.png)
 
 Windows XP
 
-![image-20211028203758681](C:\Users\calvchen\AppData\Roaming\Typora\typora-user-images\image-20211028203758681.png)
+![image-20211028203758681](https://chqwer2.github.io/img/Typora/image-20211028203758681.png)
 
-![image-20211028203732126](C:\Users\calvchen\AppData\Roaming\Typora\typora-user-images\image-20211028203732126.png)
+![image-20211028203732126](https://chqwer2.github.io/img/Typora/image-20211028203732126.png)
 
 Mac
 
-![image-20211028204041576](C:\Users\calvchen\AppData\Roaming\Typora\typora-user-images\image-20211028204041576.png)
+![image-20211028204041576](https://chqwer2.github.io/img/Typora/image-20211028204041576.png)
 
-![image-20211028204125178](C:\Users\calvchen\AppData\Roaming\Typora\typora-user-images\image-20211028204125178.png)
+![image-20211028204125178](https://chqwer2.github.io/img/Typora/image-20211028204125178.png)
 
 ### User Interfaces
 
@@ -184,7 +184,7 @@ Batch Interface
 
 Graphical User Interface (GUI)
 
-![image-20211028204410204](C:\Users\calvchen\AppData\Roaming\Typora\typora-user-images\image-20211028204410204.png)
+![image-20211028204410204](https://chqwer2.github.io/img/Typora/image-20211028204410204.png)
 
 
 
@@ -271,7 +271,7 @@ A device driver is a software  program that is used for running and operating th
 
  **Question #10:** Suppose that the processor has access to two levels of memory. **Level 1 contains 1000 bytes and has an access time of 0.1µs; level 2 contains 100,000 bytes and has an access time of 1µs.** Assume that if a byte to be accessed is in level 1, then the processor accesses it directly. If it is in level 2, then the byte i**s first transferred to level 1** and then accessed by the processor. For simplicity, we ignore the time required for the processor to determine whether the byte is in level 1 or level 2. Such a two-level memory can be shown as in the figure below:
 
-![image-20211028211224738](C:\Users\calvchen\AppData\Roaming\Typora\typora-user-images\image-20211028211224738.png)
+![image-20211028211224738](https://chqwer2.github.io/img/Typora/image-20211028211224738.png)
 
 We can define hit-ratio H, as the fraction of all memory **accesses that are found** in the faster memory e.g. the cache memory. T1 is the access time to level 1 (cache) and T2 is the access time to level 2 (main memory). Now **suppose 95% of the memory accesses are found in the cache (H=0.95).** Then what would be the average time to access **a byte** from such a two-level memory sub-system? Hint, the graph below shows the average access time to a two-level memory **as a function of the hit-ratio H.**
 
@@ -279,7 +279,7 @@ We can define hit-ratio H, as the fraction of all memory **accesses that are fou
 
 
 
- ![image-20211028211242584](C:\Users\calvchen\AppData\Roaming\Typora\typora-user-images\image-20211028211242584.png)
+ ![image-20211028211242584](https://chqwer2.github.io/img/Typora/image-20211028211242584.png)
 
 
 
@@ -299,11 +299,11 @@ T = T1 * 0.95 + 0.05 * 1.1 = 0.95 * 0.1 + 1.1 * 0.05 = 0.15 muS
 
 **Exercise Question: How does the distinction between kernel mode and user mode function as a rudimentary form of protection (security) system?**
 
-<img src="C:\Users\calvchen\AppData\Roaming\Typora\typora-user-images\image-20211028211904417.png" alt="image-20211028211904417" style="zoom:40%;" />
+<img src="https://chqwer2.github.io/img/Typora/image-20211028211904417.png" alt="image-20211028211904417" style="zoom:40%;" />
 
 ### OS
 
-<img src="C:\Users\calvchen\AppData\Roaming\Typora\typora-user-images\image-20211028212447768.png" alt="image-20211028212447768" style="zoom:50%;" />
+<img src="https://chqwer2.github.io/img/Typora/image-20211028212447768.png" alt="image-20211028212447768" style="zoom:50%;" />
 
 Monitor control the sequence of the events
 

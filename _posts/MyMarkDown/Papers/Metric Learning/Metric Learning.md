@@ -12,7 +12,7 @@ Whale identification competition https://www.kaggle.com/c/human-protein-atlas-im
 
 **Find the nearest samples to compare**
 
-![image-20211013144448871](C:\Users\calvchen\AppData\Roaming\Typora\typora-user-images\image-20211013144448871.png)
+![image-20211013144448871](https://chqwer2.github.io/img/Typora/image-20211013144448871.png)
 
 
 
@@ -30,7 +30,7 @@ Whale identification competition https://www.kaggle.com/c/human-protein-atlas-im
 
 # 对比学习论文综述【论文精读】
 
-![image-20220317094716424](C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220317094716424.png)
+![image-20220317094716424](https://chqwer2.github.io/img/Typora/image-20220317094716424.png)
 
 用于无监督..
 
@@ -51,7 +51,7 @@ memory bank store every feature
 
 Image2vec separate each instance
 
-![image-20220316112548089](C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220316112548089.png)
+![image-20220316112548089](https://chqwer2.github.io/img/Typora/image-20220316112548089.png)
 
 
 
@@ -63,7 +63,7 @@ Image2vec separate each instance
 
 但是字典要足够大(负样本够多),所以效果差于simCLR 
 
-![image-20220316112521750](C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220316112521750.png)
+![image-20220316112521750](https://chqwer2.github.io/img/Typora/image-20220316112521750.png)
 
 
 
@@ -73,7 +73,7 @@ CPC
 
 生成式的代理任务
 
-![image-20220316112829168](C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220316112829168.png)
+![image-20220316112829168](https://chqwer2.github.io/img/Typora/image-20220316112829168.png)
 
 未来的序列是正样本，其他生成的序列是负样本
 
@@ -87,7 +87,7 @@ CMC
 
 想学习到一个视角不变性的特征
 
-![image-20220316113103176](C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220316113103176.png)
+![image-20220316113103176](https://chqwer2.github.io/img/Typora/image-20220316113103176.png)
 
 4个视角(多模态)，互为正样本
 
@@ -126,19 +126,19 @@ simCLR
 
 normalised-temperature scale (L2+ *tao) ~ Intro NCE
 
-![image-20220316114722683](C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220316114722683.png)
+![image-20220316114722683](https://chqwer2.github.io/img/Typora/image-20220316114722683.png)
 
-<img src="C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220316235332270.png" alt="image-20220316235332270" style="zoom:33%;" />
+<img src="https://chqwer2.github.io/img/Typora/image-20220316235332270.png" alt="image-20220316235332270" style="zoom:33%;" />
 
 对比学习需要很强的增强技术..
 
-<img src="C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220316114848888.png" alt="image-20220316114848888" style="zoom:67%;" />
+<img src="https://chqwer2.github.io/img/Typora/image-20220316114848888.png" alt="image-20220316114848888" style="zoom:67%;" />
 
-![image-20220316115000682](C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220316115000682.png)
+![image-20220316115000682](https://chqwer2.github.io/img/Typora/image-20220316115000682.png)
 
 那些有用, 那些没用 -> 数据消融…
 
-<img src="C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220316115054816.png" alt="image-20220316115054816" style="zoom:50%;" />
+<img src="https://chqwer2.github.io/img/Typora/image-20220316115054816.png" alt="image-20220316115054816" style="zoom:50%;" />
 
 
 
@@ -158,7 +158,7 @@ simCLR v2
 
 如何做半监督?
 
-![image-20220316143128747](C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220316143128747.png)
+![image-20220316143128747](https://chqwer2.github.io/img/Typora/image-20220316143128747.png)
 
 自监督-大模型，小数据labeled 做fine-tune
 
@@ -178,7 +178,7 @@ MLP 两层效果最好
 
 SwAV (Swap Assignment Views) 换位预测..
 
-![image-20220316143817005](C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220316143817005.png)
+![image-20220316143817005](https://chqwer2.github.io/img/Typora/image-20220316143817005.png)
 
 不去跟负样本比， 而是更一些更简洁的东西比？
 
@@ -204,7 +204,7 @@ Trick:
 
 没用负样本, 以前会模型坍塌 (全输出为0)
 
-![image-20220316234735668](C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220316234735668.png)
+![image-20220316234735668](https://chqwer2.github.io/img/Typora/image-20220316234735668.png)
 
 view: 不一样的增广
 
@@ -214,7 +214,7 @@ view: 不一样的增广
 
 很小的细节：BN很重要… 
 
-![image-20220316235432032](C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220316235432032.png)
+![image-20220316235432032](https://chqwer2.github.io/img/Typora/image-20220316235432032.png)
 
 running mean, running variance…. 信息泄漏(隐式的负样本)， 但是故事讲不圆了。
 
@@ -232,15 +232,15 @@ Group norm & weight standardization ….
 
 SimSiam, Kaiming
 
-<img src="C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220317000527027.png" alt="image-20220317000527027" style="zoom:67%;" />
+<img src="https://chqwer2.github.io/img/Typora/image-20220317000527027.png" alt="image-20220317000527027" style="zoom:67%;" />
 
-<img src="C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220317000544660.png" alt="image-20220317000544660" style="zoom:67%;" />
+<img src="https://chqwer2.github.io/img/Typora/image-20220317000544660.png" alt="image-20220317000544660" style="zoom:67%;" />
 
 Stop Gradient ( 可以被理解为EM？)
 
-![image-20220317093446039](C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220317093446039.png)
+![image-20220317093446039](https://chqwer2.github.io/img/Typora/image-20220317093446039.png)
 
-![image-20220317093602516](C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220317093602516.png)
+![image-20220317093602516](https://chqwer2.github.io/img/Typora/image-20220317093602516.png)
 
 
 
@@ -250,7 +250,7 @@ Stop Gradient ( 可以被理解为EM？)
 
 MoCo v3，用ViT
 
-<img src="C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220317094000542.png" alt="image-20220317094000542" style="zoom:50%;" />
+<img src="https://chqwer2.github.io/img/Typora/image-20220317094000542.png" alt="image-20220317094000542" style="zoom:50%;" />
 
  = MoCo v2 + SimSaim
 
@@ -272,7 +272,7 @@ A Trick for Improving Stability:
 
 Self-distillation with no labels.. 
 
-<img src="C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220317094540490.png" alt="image-20220317094540490" style="zoom:67%;" />
+<img src="https://chqwer2.github.io/img/Typora/image-20220317094540490.png" alt="image-20220317094540490" style="zoom:67%;" />
 
 ema?
 

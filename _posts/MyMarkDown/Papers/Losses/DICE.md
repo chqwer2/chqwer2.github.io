@@ -12,4 +12,4 @@ s = Intersection / Totality
 
 Add 1 to both the numerator and denominator of the s
 
-![image-20211013143120074](C:\Users\calvchen\AppData\Roaming\Typora\typora-user-images\image-20211013143120074.png)
+![image-20211013143120074](https://chqwer2.github.io/img/Typora/image-20211013143120074.png)

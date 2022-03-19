@@ -233,13 +233,13 @@ And that's basically what justified this entire process
 
 in the first place.
 
-![image-20220304104907445](C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220304104907445.png)
+![image-20220304104907445](https://chqwer2.github.io/img/Typora/image-20220304104907445.png)
 
-![image-20220304104920720](C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220304104920720.png)
+![image-20220304104920720](https://chqwer2.github.io/img/Typora/image-20220304104920720.png)
 
 shifted by a constant
 
-![image-20220304105037332](C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220304105037332.png)
+![image-20220304105037332](https://chqwer2.github.io/img/Typora/image-20220304105037332.png)
 
 Now, what I'm actually telling you is that in the y-axis, those two things become the same.
 
@@ -255,7 +255,7 @@ to an x-axis convergence.
 
 And hopefully, this should work. (The last sentence in the pic)
 
-![image-20220304105120081](C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220304105120081.png)
+![image-20220304105120081](https://chqwer2.github.io/img/Typora/image-20220304105120081.png)
 
 And you know, things can go wrong when you have,
 
@@ -265,17 +265,17 @@ have weird things happening. But in general, it's actually fine
 
 when you have nice, smooth functions.
 
-![image-20220306150501540](C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220306150501540.png)
+![image-20220306150501540](https://chqwer2.github.io/img/Typora/image-20220306150501540.png)
 
-![image-20220306150524254](C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220306150524254.png)
+![image-20220306150524254](https://chqwer2.github.io/img/Typora/image-20220306150524254.png)
 
 Maximum likelihood estimators are often consistent estimators of the  unknown parameter provided some regularity conditions are met. Here, one such regularity condition does not hold; notably the support of the  distribution depends on the parameter. So we are resorting to the  definitions to prove consistency
 
 https://stats.stackexchange.com/questions/370725/showing-maxx-i-is-the-consistent-estimator-for-pdf-fx%CE%B8-2x-%CE%B82
 
-![image-20220306151912148](C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220306151912148.png)
+![image-20220306151912148](https://chqwer2.github.io/img/Typora/image-20220306151912148.png)
 
-![image-20220306151925988](C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220306151925988.png)
+![image-20220306151925988](https://chqwer2.github.io/img/Typora/image-20220306151925988.png)
 
 
 
@@ -297,15 +297,15 @@ is a consistent estimator of the negative KL
 
 divergence of two constants.
 
-![image-20220304105556180](C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220304105556180.png)
+![image-20220304105556180](https://chqwer2.github.io/img/Typora/image-20220304105556180.png)
 
 defined in two possible ways.
 
-![image-20220304105743160](C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220304105743160.png)
+![image-20220304105743160](https://chqwer2.github.io/img/Typora/image-20220304105743160.png)
 
 needed to be twice differentiable.
 
-![image-20220306160241005](C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220306160241005.png)
+![image-20220306160241005](https://chqwer2.github.io/img/Typora/image-20220306160241005.png)
 
 quadratic means $\bar X_n^2$
 
@@ -319,21 +319,21 @@ Well, it's just integrating this quantity here
 
 against the density.
 
-![image-20220304110648429](C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220304110648429.png)
+![image-20220304110648429](https://chqwer2.github.io/img/Typora/image-20220304110648429.png)
 
-![image-20220304110956651](C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220304110956651.png)
+![image-20220304110956651](https://chqwer2.github.io/img/Typora/image-20220304110956651.png)
 
-![image-20220304111742729](C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220304111742729.png)
+![image-20220304111742729](https://chqwer2.github.io/img/Typora/image-20220304111742729.png)
 
 and missing a lecture video here..
 
 ### Fisher Information of the Bernoulli Random Variable
 
-![image-20220304111852470](C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220304111852470.png)
+![image-20220304111852470](https://chqwer2.github.io/img/Typora/image-20220304111852470.png)
 
 but I can promise you that procrastination does not pay.
 
-![image-20220304112332418](C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220304112332418.png)
+![image-20220304112332418](https://chqwer2.github.io/img/Typora/image-20220304112332418.png)
 
 So the first thing that I can do is
 
@@ -349,9 +349,9 @@ which is p 1 minus p.
 
 
 
-![image-20220304112912702](C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220304112912702.png)
+![image-20220304112912702](https://chqwer2.github.io/img/Typora/image-20220304112912702.png)
 
-![image-20220304113216620](C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220304113216620.png)
+![image-20220304113216620](https://chqwer2.github.io/img/Typora/image-20220304113216620.png)
 
 So I have two ways of computing it.
 
@@ -371,17 +371,17 @@ you want.
 
 **Fisher Info of Binomial**
 
-![image-20220306161612022](C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220306161612022.png)
+![image-20220306161612022](https://chqwer2.github.io/img/Typora/image-20220306161612022.png)
 
-![image-20220306162336970](C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220306162336970.png)
+![image-20220306162336970](https://chqwer2.github.io/img/Typora/image-20220306162336970.png)
 
-![image-20220306162325274](C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220306162325274.png)
+![image-20220306162325274](https://chqwer2.github.io/img/Typora/image-20220306162325274.png)
 
 ### Asymptotic normality of the maximum likelihood estimator
 
-![image-20220304113426157](C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220304113426157.png)
+![image-20220304113426157](https://chqwer2.github.io/img/Typora/image-20220304113426157.png)
 
-![image-20220304113452935](C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220304113452935.png)
+![image-20220304113452935](https://chqwer2.github.io/img/Typora/image-20220304113452935.png)
 
 
 
@@ -403,7 +403,7 @@ And, in that case, we typically have a n rate of convergence,
 
 so an order of magnitude better.
 
-![image-20220304113946650](C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220304113946650.png)
+![image-20220304113946650](https://chqwer2.github.io/img/Typora/image-20220304113946650.png)
 
 For a large collection of distributions
 
@@ -501,11 +501,11 @@ information end up being the asymptotic variance
 
 of the maximum likelihood?
 
-![image-20220304114929591](C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220304114929591.png)
+![image-20220304114929591](https://chqwer2.github.io/img/Typora/image-20220304114929591.png)
 
-![image-20220304115448863](C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220304115448863.png)
+![image-20220304115448863](https://chqwer2.github.io/img/Typora/image-20220304115448863.png)
 
-![image-20220304115822535](C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220304115822535.png)
+![image-20220304115822535](https://chqwer2.github.io/img/Typora/image-20220304115822535.png)
 
 ### Recitation
 
@@ -519,7 +519,7 @@ observe x1 to xn, which are random variables that
 
 
 
-![image-20220304161213268](C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220304161213268.png)
+![image-20220304161213268](https://chqwer2.github.io/img/Typora/image-20220304161213268.png)
 
 And the main idea is that you see this decomposition of mean squared error into variance and bias.
 
@@ -551,17 +551,17 @@ for a little bit of bias and make my mean squared error even smaller than my unb
 
 $\alpha$ is an unbiased estimator
 
-![image-20220304162108493](C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220304162108493.png)
+![image-20220304162108493](https://chqwer2.github.io/img/Typora/image-20220304162108493.png)
 
 ### Comparing Two Estimators for the Upper Limit of the Uniform Distribution I 
 
-![image-20220304162657406](C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220304162657406.png)
+![image-20220304162657406](https://chqwer2.github.io/img/Typora/image-20220304162657406.png)
 
 b estimator is biased, because its expectation is not equal to $\theta$
 
 ### Comparing Two Estimators for the Upper Limit of the Uniform Distribution I 
 
-![image-20220304163645346](C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220304163645346.png)
+![image-20220304163645346](https://chqwer2.github.io/img/Typora/image-20220304163645346.png)
 
 OK, you see that, even though the maximum of the x's is
 
@@ -579,7 +579,7 @@ Now, something we use to compare the MSEs of unbiased estimators
 
 it's called the relative efficiency.
 
-![image-20220304163959831](C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220304163959831.png)
+![image-20220304163959831](https://chqwer2.github.io/img/Typora/image-20220304163959831.png)
 
 One thing you can do with biased estimator.
 
@@ -587,7 +587,7 @@ You might have to scale it a little bit to find an unbiased estimator,
 
 ### shrinkage estimators
 
-![image-20220304164757118](C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220304164757118.png)
+![image-20220304164757118](https://chqwer2.github.io/img/Typora/image-20220304164757118.png)
 
 So what we see is that the MSE of this a xn bar
 
@@ -651,14 +651,14 @@ considered the standard sort of unbiased estimators.
 
 only takes 3 values (1,2,3)
 
-![image-20220311170352651](C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220311170352651.png)
+![image-20220311170352651](https://chqwer2.github.io/img/Typora/image-20220311170352651.png)
 
 Estep output the probability
 
-![image-20220311171724834](C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220311171724834.png)
+![image-20220311171724834](https://chqwer2.github.io/img/Typora/image-20220311171724834.png)
 
 M-step
 
-![image-20220311171553453](C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220311171553453.png)
+![image-20220311171553453](https://chqwer2.github.io/img/Typora/image-20220311171553453.png)
 
-![image-20220311223647262](C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220311223647262.png)
+![image-20220311223647262](https://chqwer2.github.io/img/Typora/image-20220311223647262.png)

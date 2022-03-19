@@ -2,4 +2,4 @@
 
 Paper:
 
-![image-20211013115131395](C:\Users\calvchen\AppData\Roaming\Typora\typora-user-images\image-20211013115131395.png)
+![image-20211013115131395](https://chqwer2.github.io/img/Typora/image-20211013115131395.png)

@@ -52,9 +52,9 @@ I believe the increase in memory might not be related to amp, but is probably ca
 If you leave the default settings as use_amp = False, clean_opt = False, you will see a constant memory usage during the training and an increase after switching to the next optimizer.
 Setting clean_opt=True will delete the optimizers and thus clean the additional memory.
 However, this cleanup doesn’t seem to work properly using amp at the moment.
-![image-20211015090955329](C:\Users\calvchen\AppData\Roaming\Typora\typora-user-images\image-20211015090955329.png)
+![image-20211015090955329](https://chqwer2.github.io/img/Typora/image-20211015090955329.png)
 
-![image-20211015091127262](C:\Users\calvchen\AppData\Roaming\Typora\typora-user-images\image-20211015091127262.png)
+![image-20211015091127262](https://chqwer2.github.io/img/Typora/image-20211015091127262.png)
 
 
 

@@ -6,7 +6,7 @@
 
 ### **Concurrency & Threads**
 
-![image-20211208161254798](C:\Users\calvchen\AppData\Roaming\Typora\typora-user-images\image-20211208161254798.png)
+![image-20211208161254798](https://chqwer2.github.io/img/Typora/image-20211208161254798.png)
 
 Threads have their own stack.
 
@@ -16,7 +16,7 @@ Threads have their own stack.
 
 ### Deadlock
 
-![image-20211208201512629](C:\Users\calvchen\AppData\Roaming\Typora\typora-user-images\image-20211208201512629.png)
+![image-20211208201512629](https://chqwer2.github.io/img/Typora/image-20211208201512629.png)
 
 A process is perpetually denied necessary resources: Starvation
 

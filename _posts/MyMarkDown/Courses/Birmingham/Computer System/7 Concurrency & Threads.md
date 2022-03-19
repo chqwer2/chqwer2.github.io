@@ -10,7 +10,7 @@ Token System:
 
 Some Quizs: http://wiki.dreamrunner.org/public_html/Misc/Train/InterviewPreparation/Multi-ThreadingQuestions.html
 
-![image-20211111151621484](C:\Users\calvchen\AppData\Roaming\Typora\typora-user-images\image-20211111151621484.png)
+![image-20211111151621484](https://chqwer2.github.io/img/Typora/image-20211111151621484.png)
 
 [**Concurrency Problems:**](http://www.myreadingroom.co.in/notes-and-studymaterial/65-dbms/532-concurrency-problems.html)
 
@@ -64,7 +64,7 @@ However, not everything about threads is perfect. Whenever you’re dealing with
 
    我们可以通过一个标识synchronized来解决这类问题,具体怎么用如下：
 
-   ![image-20220109165448757](C:\Users\calvchen\AppData\Roaming\Typora\typora-user-images\image-20220109165448757.png)
+   ![image-20220109165448757](https://chqwer2.github.io/img/Typora/image-20220109165448757.png)
 
    那么什么是synchronized标识呢？synchronized标识的是一代码段或者方法，即为“对象互斥锁”锁住的部分，那到底通过这个标识是怎么使得上述代码不再出现-1呢？其实是这样，上述代码中t1和t2两个线程启动后不断run，那么通过这个标识后，就会使得同一时间只能由一个线程来执行该代码段或者方法，通过如此，就能解决线程中的冲突问题了。
    
@@ -87,7 +87,7 @@ However, not everything about threads is perfect. Whenever you’re dealing with
 
 如果大家经常看MSDN或者VS帮助中的.NET类库参考的话，就不难发现几乎所有的类型都有这么一句话的描述：“此类型的任何公共 static
 
-![image-20220109164432593](C:\Users\calvchen\AppData\Roaming\Typora\typora-user-images\image-20220109164432593.png)
+![image-20220109164432593](https://chqwer2.github.io/img/Typora/image-20220109164432593.png)
 
 如果现在有两个线程t1、t2，并且这两个线程中的run方法同时操作同一数据
 
@@ -125,7 +125,7 @@ The **GETLOCK** command is used when a user wants to perform a series of I/O ope
 
       It is an actual thread that is capable of being scheduled and  executed by the processor. 
 
-      ![image-20220109172911256](C:\Users\calvchen\AppData\Roaming\Typora\typora-user-images\image-20220109172911256.png)
+      ![image-20220109172911256](https://chqwer2.github.io/img/Typora/image-20220109172911256.png)
 
       
 
@@ -134,43 +134,43 @@ The **GETLOCK** command is used when a user wants to perform a series of I/O ope
 2. Your friend Jane needs to run a simulation for her thesis and her  adviser wants her to run it for a fixed problem size. Jane can make 90%  of the program parallel, with 10% of it being sequential.
    1. What speedup can Jane expect on 10 processors?
    2. What would be the maximum speedup on an infinite number of processors?
-   2. ![image-20211209173141384](C:\Users\calvchen\AppData\Roaming\Typora\typora-user-images\image-20211209173141384.png)
+   2. ![image-20211209173141384](https://chqwer2.github.io/img/Typora/image-20211209173141384.png)
 
-![image-20211109150826677](C:\Users\calvchen\AppData\Roaming\Typora\typora-user-images\image-20211109150826677.png)
+![image-20211109150826677](https://chqwer2.github.io/img/Typora/image-20211109150826677.png)
 
 ## Concurrency
 
 Deadlock
 
-![image-20211109153302756](C:\Users\calvchen\AppData\Roaming\Typora\typora-user-images\image-20211109153302756.png)
+![image-20211109153302756](https://chqwer2.github.io/img/Typora/image-20211109153302756.png)
 
-![image-20211109153522650](C:\Users\calvchen\AppData\Roaming\Typora\typora-user-images\image-20211109153522650.png)
+![image-20211109153522650](https://chqwer2.github.io/img/Typora/image-20211109153522650.png)
 
-![image-20211109153641473](C:\Users\calvchen\AppData\Roaming\Typora\typora-user-images\image-20211109153641473.png)
+![image-20211109153641473](https://chqwer2.github.io/img/Typora/image-20211109153641473.png)
 
-![image-20211109154116331](C:\Users\calvchen\AppData\Roaming\Typora\typora-user-images\image-20211109154116331.png)
+![image-20211109154116331](https://chqwer2.github.io/img/Typora/image-20211109154116331.png)
 
 ### Limited Resources
 
-![image-20211111133153523](C:\Users\calvchen\AppData\Roaming\Typora\typora-user-images\image-20211111133153523.png)
+![image-20211111133153523](https://chqwer2.github.io/img/Typora/image-20211111133153523.png)
 
 **Race condition**: muti-process or threads compete to write and write shared data items
 
 How to avoid?
 
-![image-20211209173926186](C:\Users\calvchen\AppData\Roaming\Typora\typora-user-images\image-20211209173926186.png) 快速单元运算
+![image-20211209173926186](https://chqwer2.github.io/img/Typora/image-20211209173926186.png) 快速单元运算
 
-![image-20220110194414569](C:\Users\calvchen\AppData\Roaming\Typora\typora-user-images\image-20220110194414569.png)
+![image-20220110194414569](https://chqwer2.github.io/img/Typora/image-20220110194414569.png)
 
 Wrong when running concurrently
 
-![image-20220110194445237](C:\Users\calvchen\AppData\Roaming\Typora\typora-user-images\image-20220110194445237.png)
+![image-20220110194445237](https://chqwer2.github.io/img/Typora/image-20220110194445237.png)
 
 **Context switches may occur at any time....**
 
-![image-20220110194546055](C:\Users\calvchen\AppData\Roaming\Typora\typora-user-images\image-20220110194546055.png)
+![image-20220110194546055](https://chqwer2.github.io/img/Typora/image-20220110194546055.png)
 
-![image-20220110194622176](C:\Users\calvchen\AppData\Roaming\Typora\typora-user-images\image-20220110194622176.png)
+![image-20220110194622176](https://chqwer2.github.io/img/Typora/image-20220110194622176.png)
 
 ##### How to avoid?
 
@@ -178,17 +178,17 @@ We need to control the concurrent execution of the **critical sections** (Do the
 
 Strict Serialization : **Mutual Exclusion**  
 
-![image-20220110195037796](C:\Users\calvchen\AppData\Roaming\Typora\typora-user-images\image-20220110195037796.png)
+![image-20220110195037796](https://chqwer2.github.io/img/Typora/image-20220110195037796.png)
 
 Mutual : Do now interact each other, not longer correct
 
-![image-20211111134121875](C:\Users\calvchen\AppData\Roaming\Typora\typora-user-images\image-20211111134121875.png)
+![image-20211111134121875](https://chqwer2.github.io/img/Typora/image-20211111134121875.png)
 
-![image-20211111135006771](C:\Users\calvchen\AppData\Roaming\Typora\typora-user-images\image-20211111135006771.png)
+![image-20211111135006771](https://chqwer2.github.io/img/Typora/image-20211111135006771.png)
 
 Problems .... 
 
-![image-20220110195903848](C:\Users\calvchen\AppData\Roaming\Typora\typora-user-images\image-20220110195903848.png)
+![image-20220110195903848](https://chqwer2.github.io/img/Typora/image-20220110195903848.png)
 
 Both of them think they have got access to the logs, will still compete the lock
 
@@ -196,15 +196,15 @@ what we have to do is to use **atomic operations**?
 
 Atomic operations in concurrent programming are **program operations that run completely independently of any other processes**. Atomic operations are used in many modern operating systems and parallel processing systems.
 
-![image-20220109171351480](C:\Users\calvchen\AppData\Roaming\Typora\typora-user-images\image-20220109171351480.png)
+![image-20220109171351480](https://chqwer2.github.io/img/Typora/image-20220109171351480.png)
 
-![image-20220110195114274](C:\Users\calvchen\AppData\Roaming\Typora\typora-user-images\image-20220110195114274.png)
+![image-20220110195114274](https://chqwer2.github.io/img/Typora/image-20220110195114274.png)
 
 Process A has X, Process B has Y, unable to complete this tasks - Deadlock
 
 Process spending a long time fininsh the critical section - Starvation
 
-![image-20220110195628563](C:\Users\calvchen\AppData\Roaming\Typora\typora-user-images\image-20220110195628563.png)
+![image-20220110195628563](https://chqwer2.github.io/img/Typora/image-20220110195628563.png)
 
 `
 
@@ -212,41 +212,41 @@ Process spending a long time fininsh the critical section - Starvation
 
 ### Use a token
 
-![image-20211111135423434](C:\Users\calvchen\AppData\Roaming\Typora\typora-user-images\image-20211111135423434.png)
+![image-20211111135423434](https://chqwer2.github.io/img/Typora/image-20211111135423434.png)
 
-![image-20211111135841128](C:\Users\calvchen\AppData\Roaming\Typora\typora-user-images\image-20211111135841128.png)
+![image-20211111135841128](https://chqwer2.github.io/img/Typora/image-20211111135841128.png)
 
 ### Hardware
 
-![image-20211111135955174](C:\Users\calvchen\AppData\Roaming\Typora\typora-user-images\image-20211111135955174.png)
+![image-20211111135955174](https://chqwer2.github.io/img/Typora/image-20211111135955174.png)
 
-![image-20211111141150811](C:\Users\calvchen\AppData\Roaming\Typora\typora-user-images\image-20211111141150811.png)
+![image-20211111141150811](https://chqwer2.github.io/img/Typora/image-20211111141150811.png)
 
 If interuppted in Critical Zone, undo anything just done in critical area.
 
-![image-20211111140945677](C:\Users\calvchen\AppData\Roaming\Typora\typora-user-images\image-20211111140945677.png)
+![image-20211111140945677](https://chqwer2.github.io/img/Typora/image-20211111140945677.png)
 
 ## Threads
 
-![image-20211111145925723](C:\Users\calvchen\AppData\Roaming\Typora\typora-user-images\image-20211111145925723.png)
+![image-20211111145925723](https://chqwer2.github.io/img/Typora/image-20211111145925723.png)
 
-![image-20211111150050979](C:\Users\calvchen\AppData\Roaming\Typora\typora-user-images\image-20211111150050979.png)
+![image-20211111150050979](https://chqwer2.github.io/img/Typora/image-20211111150050979.png)
 
-![image-20211111150250948](C:\Users\calvchen\AppData\Roaming\Typora\typora-user-images\image-20211111150250948.png)
+![image-20211111150250948](https://chqwer2.github.io/img/Typora/image-20211111150250948.png)
 
 ##### Difference between User Level thread and Kernel Level thread
 
-![image-20211209172530465](C:\Users\calvchen\AppData\Roaming\Typora\typora-user-images\image-20211209172530465.png)
+![image-20211209172530465](https://chqwer2.github.io/img/Typora/image-20211209172530465.png)
 
 Benefits of Threads
 
-![image-20211111150741855](C:\Users\calvchen\AppData\Roaming\Typora\typora-user-images\image-20211111150741855.png)
+![image-20211111150741855](https://chqwer2.github.io/img/Typora/image-20211111150741855.png)
 
-![image-20211111151332705](C:\Users\calvchen\AppData\Roaming\Typora\typora-user-images\image-20211111151332705.png)
+![image-20211111151332705](https://chqwer2.github.io/img/Typora/image-20211111151332705.png)
 
-![image-20211111151514022](C:\Users\calvchen\AppData\Roaming\Typora\typora-user-images\image-20211111151514022.png)
+![image-20211111151514022](https://chqwer2.github.io/img/Typora/image-20211111151514022.png)
 
-![image-20211111151621484](C:\Users\calvchen\AppData\Roaming\Typora\typora-user-images\image-20211111151621484.png)
+![image-20211111151621484](https://chqwer2.github.io/img/Typora/image-20211111151621484.png)
 
 N, f: parallel co
 
@@ -256,13 +256,13 @@ A *kernel thread* is a thread object maintained by the operating  system.
 
 It is an actual thread that is capable of being scheduled and  executed by the processor. 
 
-![image-20211111152750019](C:\Users\calvchen\AppData\Roaming\Typora\typora-user-images\image-20211111152750019.png)
+![image-20211111152750019](https://chqwer2.github.io/img/Typora/image-20211111152750019.png)
 
 ### Multithreading Models
 
 [ref](https://cs.brown.edu/research/thmon/thmon2a.html)
 
-![image-20211111153143617](C:\Users\calvchen\AppData\Roaming\Typora\typora-user-images\image-20211111153143617.png)
+![image-20211111153143617](https://chqwer2.github.io/img/Typora/image-20211111153143617.png)
 
 One process has more than one threads
 
@@ -272,22 +272,22 @@ Cuz the threads mapping into one kernel thread
 
 For kernels that do not support multiple threads of control, multithreading can be implemented entirely as a user-level library. These libraries, without the kernel's knowledge, schedule multiple threads of control onto the process's single kernel thread. Thus, just as a uniprocessor provides the illusion of parallelism by multiplexing multiple processes on a single CPU, user-level threads packages provide the illusion of parallelism by multiplexing multiple user threads on a single kernel thread; this is referred to as the *many-to-one* model [Kleiman et al. 1996].
 
-![image-20211111153229845](C:\Users\calvchen\AppData\Roaming\Typora\typora-user-images\image-20211111153229845.png)
+![image-20211111153229845](https://chqwer2.github.io/img/Typora/image-20211111153229845.png)
 
 For multi-core or processors for run in parallel
 
-![image-20220104155902224](C:\Users\calvchen\AppData\Roaming\Typora\typora-user-images\image-20220104155902224.png)
+![image-20220104155902224](https://chqwer2.github.io/img/Typora/image-20220104155902224.png)
 
 Costly and too heavy for the system
 
 kernel is associated with the cores
 
-![image-20211111153315920](C:\Users\calvchen\AppData\Roaming\Typora\typora-user-images\image-20211111153315920.png)
+![image-20211111153315920](https://chqwer2.github.io/img/Typora/image-20211111153315920.png)
 
 
 
-![image-20211111153619628](C:\Users\calvchen\AppData\Roaming\Typora\typora-user-images\image-20211111153619628.png)
+![image-20211111153619628](https://chqwer2.github.io/img/Typora/image-20211111153619628.png)
 
-**Locking** Machanism![image-20211111154609121](C:\Users\calvchen\AppData\Roaming\Typora\typora-user-images\image-20211111154609121.png)
+**Locking** Machanism![image-20211111154609121](https://chqwer2.github.io/img/Typora/image-20211111154609121.png)
 
-![image-20211111154634981](C:\Users\calvchen\AppData\Roaming\Typora\typora-user-images\image-20211111154634981.png)
+![image-20211111154634981](https://chqwer2.github.io/img/Typora/image-20211111154634981.png)

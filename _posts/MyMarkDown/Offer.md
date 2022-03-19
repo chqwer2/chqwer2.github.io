@@ -12,4 +12,4 @@ $$
 $$
 
 
-![image-20220223082946141](C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220223082946141.png)
+![image-20220223082946141](https://chqwer2.github.io/img/Typora/image-20220223082946141.png)

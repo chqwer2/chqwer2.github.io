@@ -6,11 +6,11 @@ Confidence Intervals Concept Checks Continued
 
 
 
-![image-20220214093714487](C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220214093714487.png)
+![image-20220214093714487](https://chqwer2.github.io/img/Typora/image-20220214093714487.png)
 
 ### Modeling Inter-arrival Times of a Subway System
 
-![image-20220214100343476](C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220214100343476.png)
+![image-20220214100343476](https://chqwer2.github.io/img/Typora/image-20220214100343476.png)
 
 what is the probability that T exceeds T plus S given
 
@@ -22,7 +22,7 @@ what is the probability that I need
 
 to wait an extra S minutes?
 
-![image-20220214100321581](C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220214100321581.png)
+![image-20220214100321581](https://chqwer2.github.io/img/Typora/image-20220214100321581.png)
 
 
 
@@ -46,7 +46,7 @@ for five minutes from scratch.
 
 So it's biased, but it's still consistent.
 
-![image-20220214101829791](C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220214101829791.png)
+![image-20220214101829791](https://chqwer2.github.io/img/Typora/image-20220214101829791.png)
 
 So it is not an unbiased estimator
 
@@ -78,23 +78,23 @@ which is lambda.
 
 So it's biased, but it's still consistent.
 
-![image-20220214101850358](C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220214101850358.png)
+![image-20220214101850358](https://chqwer2.github.io/img/Typora/image-20220214101850358.png)
 
 ### The One-Dimensional Delta Method
 
 I want to see:
 
-![image-20220214102316726](C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220214102316726.png)
+![image-20220214102316726](https://chqwer2.github.io/img/Typora/image-20220214102316726.png)
 
 But I get:
 
-![image-20220214102443720](C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220214102443720.png)
+![image-20220214102443720](https://chqwer2.github.io/img/Typora/image-20220214102443720.png)
 
 So the **delta method**
 
 Now we have g($\cdot$), under the assumption than g’(theta) is continuous, means continuously differentiable.
 
-![image-20220216113459796](C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220216113459796.png)
+![image-20220216113459796](https://chqwer2.github.io/img/Typora/image-20220216113459796.png)
 
 Is 1/x^2 continuously differentiable function?
 
@@ -106,7 +106,7 @@ So let's see what could be the asymptotic variance.
 
 So just the Taylor expansion after.
 
-![image-20220214103133901](C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220214103133901.png)
+![image-20220214103133901](https://chqwer2.github.io/img/Typora/image-20220214103133901.png)
 
 
 
@@ -116,9 +116,9 @@ minus theta from the first line that you see up there?
 
 Roughly?  1/n
 
-![image-20220214103435419](C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220214103435419.png)
+![image-20220214103435419](https://chqwer2.github.io/img/Typora/image-20220214103435419.png)
 
-![image-20220214103502507](C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220214103502507.png)
+![image-20220214103502507](https://chqwer2.github.io/img/Typora/image-20220214103502507.png)
 
 ### Applying the Delta Method
 
@@ -132,9 +132,9 @@ It is the function of the parameter
 
 that we're trying to actually infer.
 
-![image-20220214105427841](C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220214105427841.png)
+![image-20220214105427841](https://chqwer2.github.io/img/Typora/image-20220214105427841.png)
 
-![image-20220214105449124](C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220214105449124.png)
+![image-20220214105449124](https://chqwer2.github.io/img/Typora/image-20220214105449124.png)
 
 There's going to be one caveat, which
 
@@ -144,21 +144,21 @@ my variance depends on my unknown parameter.
 
 So we will have to also solve this.
 
-![image-20220214105848507](C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220214105848507.png)
+![image-20220214105848507](https://chqwer2.github.io/img/Typora/image-20220214105848507.png)
 
-![image-20220214110105147](C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220214110105147.png)
+![image-20220214110105147](https://chqwer2.github.io/img/Typora/image-20220214110105147.png)
 
-Plug-in ![image-20220214110340321](C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220214110340321.png)
+Plug-in ![image-20220214110340321](https://chqwer2.github.io/img/Typora/image-20220214110340321.png)
 
 ### Frequentist Interpretation of a Confidence Interval
 
-![image-20220214110605795](C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220214110605795.png)
+![image-20220214110605795](https://chqwer2.github.io/img/Typora/image-20220214110605795.png)
 
 Lambda is the reciprocal of the expected waiting time,
 
 not the waiting time but the expected waiting time itself.
 
-![image-20220214110817142](C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220214110817142.png)
+![image-20220214110817142](https://chqwer2.github.io/img/Typora/image-20220214110817142.png)
 
 5: The frequentist approach is often contrasted with the bayesian approach
 
@@ -207,11 +207,11 @@ That means we'll be content with having results
 
 that need large sample sizing.
 
-![image-20220216164221922](C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220216164221922.png)
+![image-20220216164221922](https://chqwer2.github.io/img/Typora/image-20220216164221922.png)
 
-![image-20220216164746629](C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220216164746629.png)
+![image-20220216164746629](https://chqwer2.github.io/img/Typora/image-20220216164746629.png)
 
-![image-20220216165255698](C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220216165255698.png)
+![image-20220216165255698](https://chqwer2.github.io/img/Typora/image-20220216165255698.png)
 
 Another idea of estimator for a
 
@@ -239,7 +239,7 @@ and let that be my estimator?
 
 
 
-![image-20220216211059576](C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220216211059576.png)
+![image-20220216211059576](https://chqwer2.github.io/img/Typora/image-20220216211059576.png)
 
 This is much faster than the one over square root of n
 
@@ -281,7 +281,7 @@ Estimator 2 Because this estimator can be very non-robust against
 
 outliers.
 
-![image-20220216211729257](C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220216211729257.png)
+![image-20220216211729257](https://chqwer2.github.io/img/Typora/image-20220216211729257.png)
 
 ### Exercise
 
@@ -293,12 +293,12 @@ Confidence Intervals for Curved Gaussian Family
 
 indicator functions
 
-![image-20220216224832949](C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220216224832949.png)
+![image-20220216224832949](https://chqwer2.github.io/img/Typora/image-20220216224832949.png)
 
 
 
 Var[g(x)]=g’(mu)Var(x)
 
-![image-20220216231221004](C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220216231221004.png)
+![image-20220216231221004](https://chqwer2.github.io/img/Typora/image-20220216231221004.png)
 
-![image-20220216231346596](C:\Users\calvchen\PycharmProjects\chqwer2.github.io\img\Typora\image-20220216231346596.png)
+![image-20220216231346596](https://chqwer2.github.io/img/Typora/image-20220216231346596.png)
