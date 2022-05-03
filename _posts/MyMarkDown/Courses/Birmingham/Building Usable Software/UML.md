@@ -1,8 +1,0 @@
-# Unified Model Language (UML)
-
-
-
-
-
-
-

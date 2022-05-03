@@ -1064,3 +1064,55 @@ But if with hat or glasses ???
 
 **Image registration**
 
+Some Books
+
+<img src="/Users/haochen/Desktop/Python%20Project/chqwer2.github.io/img/Typora/image-20220427121459236.png" alt="image-20220427121459236" style="zoom:33%;" />
+
+
+
+Image Matting Problem
+
+<img src="/Users/haochen/Desktop/Python%20Project/chqwer2.github.io/img/Typora/image-20220427122141989.png" alt="image-20220427122141989" style="zoom:50%;" />
+
+
+
+![image-20220429150059601](/Users/haochen/Desktop/Python%20Project/chqwer2.github.io/img/Typora/image-20220429150059601.png)
+
+<img src="/Users/haochen/Desktop/Python%20Project/chqwer2.github.io/img/Typora/image-20220429150532191.png" alt="image-20220429150532191" style="zoom:50%;" />
+
+<img src="/Users/haochen/Desktop/Python%20Project/chqwer2.github.io/img/Typora/image-20220429150614080.png" alt="image-20220429150614080" style="zoom:50%;" />
+
+
+
+![image-20220429151321024](/Users/haochen/Desktop/Python%20Project/chqwer2.github.io/img/Typora/image-20220429151321024.png)
+
+
+
+<img src="/Users/haochen/Desktop/Python%20Project/chqwer2.github.io/img/Typora/image-20220429152721881.png" alt="image-20220429152721881" style="zoom:50%;" />
+
+Open Source **Detectron2** based on PyTorch
+
+<img src="/Users/haochen/Desktop/Python%20Project/chqwer2.github.io/img/Typora/image-20220429154132544.png" alt="image-20220429154132544" style="zoom:50%;" />
+
+Temporal superresolution
+
+![](/Users/haochen/Desktop/Python%20Project/chqwer2.github.io/img/Typora/image-20220429154239642.png)
+
+![image-20220429154342730](/Users/haochen/Desktop/Python%20Project/chqwer2.github.io/img/Typora/image-20220429154342730.png)
+
+![image-20220429154441083](/Users/haochen/Desktop/Python%20Project/chqwer2.github.io/img/Typora/image-20220429154441083.png)
+
+![image-20220429154600358](/Users/haochen/Desktop/Python%20Project/chqwer2.github.io/img/Typora/image-20220429154600358.png)
+
+ 
+
+![image-20220429154837326](/Users/haochen/Desktop/Python%20Project/chqwer2.github.io/img/Typora/image-20220429154837326.png)
+
+![image-20220429154953257](/Users/haochen/Desktop/Python%20Project/chqwer2.github.io/img/Typora/image-20220429154953257.png)
+
+![image-20220429155103422](/Users/haochen/Desktop/Python%20Project/chqwer2.github.io/img/Typora/image-20220429155103422.png)
+
+<img src="/Users/haochen/Desktop/Python%20Project/chqwer2.github.io/img/Typora/image-20220429155427677.png" alt="image-20220429155427677" style="zoom:50%;" />
+
+![image-20220429155549667](/Users/haochen/Desktop/Python%20Project/chqwer2.github.io/img/Typora/image-20220429155549667.png)
+

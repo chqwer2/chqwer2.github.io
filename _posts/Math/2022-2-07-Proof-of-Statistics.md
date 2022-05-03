@@ -193,7 +193,7 @@ V(x^2) &=E(x^{4})-E(x^2)^{2} \\
 \end{aligned}
 
 
-\\
+\\4
 $$
 
 
@@ -208,7 +208,7 @@ Var(XY)
 
 ![image-20220301113212523](C:\Users\calvchen\PycharmProjects\chqwer2.github.io\_posts\Math\image-20220301113212523.png)
 
-
+![image-20220329155656760](/Users/haochen/Desktop/Python%20Project/chqwer2.github.io/img/Typora/image-20220329155656760.png)
 
 ### Covariance
 
