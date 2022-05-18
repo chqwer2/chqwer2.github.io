@@ -40,7 +40,8 @@ export PATH="$PSQL_DIR:$PATH"
 
 psql postgres
 #Username [postgres] [2022]
-psql -U postgres -W 
+psql -U postgres \
+
 ```
 
 ```

@@ -94,11 +94,19 @@ Or simply:
 
 All possible covariance between all pairs
 
+![image-20220509121352684](/Users/haochen/Desktop/Python%20Project/chqwer2.github.io/img/Typora/image-20220509121352684.png)
+
+![image-20220509121409900](/Users/haochen/Desktop/Python%20Project/chqwer2.github.io/img/Typora/image-20220509121409900.png)
+
 ### correlation coefficient
 
 ![image-20220315213838229](https://chqwer2.github.io/img/Typora/image-20220315213838229.png)
 
 is dimensionless
+
+![image-20220509102832663](/Users/haochen/Desktop/Python%20Project/chqwer2.github.io/img/Typora/image-20220509102832663.png)
+
+![we know that if (X,Y) N Bivariate Normal (x with Parapeters els, My, ox, oy and s (X,Y) ~ BIUN (ex, My, o, by 18) N 4x of ²,](/Users/haochen/Desktop/Python%20Project/chqwer2.github.io/img/Typora/1652008337080_20220508_163915.jpg)
 
 ### Interpreting the correlation coefficient
 

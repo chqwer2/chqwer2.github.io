@@ -1,4 +1,6 @@
 ---
+
+
 layout:     post
 title:      "Data Structures, Algorithms, and Databases"
 subtitle:   " \"Data Basic\""
@@ -27,7 +29,7 @@ Recommend Books:
 2. [Data Structures and Algorithm Analysis (vt.edu)](https://people.cs.vt.edu/~shaffer/Book/)
 3. [Book (williams.edu)](http://dept.cs.williams.edu/~bailey/JavaStructures/Book.html)
 
-- **Kinds:** List, Trees, Tables, Graphs
+- **Kinds:** Array, List, Trees, Tables, Graphs
 - **Algorithms:** Sort, Insert, Delete, Find
 - **Efficiency:** How fast? How mush memory?
 - **Abstraction:** How to use? (abstract) How to implement? (concrete)
@@ -41,6 +43,132 @@ Post-conditions is the condition that is guarenteed to hold at the end of the pr
 **Invariants** is the condition that is **expected to hold** at the beginning of each **loop** iteration
 
 Assertions is the condition that is **expected to hold** at the point where it is placed
+
+
+
+### Array
+
+<img src="/Users/haochen/Desktop/Python%20Project/chqwer2.github.io/img/Typora/image-20220516083320820.png" alt="image-20220516083320820" style="zoom:33%;" />
+
+How to store? **row-major or column major**: store by which
+
+In column major, there we see that the row index is changing most rapidly,
+
+
+
+Array is great if you want to move the end
+
+But we have **constant time access** to them
+
+<img src="/Users/haochen/Desktop/Python%20Project/chqwer2.github.io/img/Typora/image-20220516083725414.png" alt="image-20220516083725414" style="zoom:25%;" />
+
+Removing is $O(n)$cause we gotta move all those elements.
+
+### Dynamic Array
+
+Resizable, copy the old array in the new location (Double size)
+
+Also serve constant-time read and write
+
+<img src="/Users/haochen/Desktop/Python%20Project/chqwer2.github.io/img/Typora/image-20220517135040143.png" alt="image-20220517135040143" style="zoom:25%;" />
+
+Removing is $O(n)$cause we gotta move all those elements.
+
+### Amortized Analysis: Aggregate Method
+
+<img src="/Users/haochen/Desktop/Python%20Project/chqwer2.github.io/img/Typora/image-20220517214328707.png" alt="image-20220517214328707" style="zoom:25%;" />
+
+<img src="/Users/haochen/Desktop/Python%20Project/chqwer2.github.io/img/Typora/image-20220517214346453.png" alt="image-20220517214346453" style="zoom:25%;" />
+
+N operation / N
+
+<img src="/Users/haochen/Desktop/Python%20Project/chqwer2.github.io/img/Typora/image-20220517214652636.png" alt="image-20220517214652636" style="zoom:25%;" />
+
+It is like amortizing loan. Why the below is true?
+
+<img src="/Users/haochen/Desktop/Python%20Project/chqwer2.github.io/img/Typora/image-20220518085430890.png" alt="image-20220518085430890" style="zoom:25%;" />
+
+### Singly-Linked Lists
+
+List elements need not be contiguous.
+
+A key term and a pointer
+
+<img src="/Users/haochen/Desktop/Python%20Project/chqwer2.github.io/img/Typora/image-20220516083925643.png" alt="image-20220516083925643" style="zoom:25%;" />
+
+Insert: first create the node, update the pointer to the first number. Then update the **head pointer**
+
+<img src="/Users/haochen/Desktop/Python%20Project/chqwer2.github.io/img/Typora/image-20220516084316180.png" alt="image-20220516084316180" style="zoom:25%;" />
+
+Other like remove will be the same. But getting last element is expensive.
+
+So some times we have **tail pointer**.
+
+It can still be **expensive** when we remove the last term because we need a pointer to *13* to update the tail (Go through the array from the top).
+
+<img src="/Users/haochen/Desktop/Python%20Project/chqwer2.github.io/img/Typora/image-20220516084712543.png" alt="image-20220516084712543" style="zoom:25%;" />
+
+If before the insertion, the head and the tail were nil,
+
+so it was an empty list so we've gotta update the tail
+
+**Remember to:** check **empty** and **only one element?**
+
+<img src="/Users/haochen/Desktop/Python%20Project/chqwer2.github.io/img/Typora/image-20220516084930168.png" alt="image-20220516084930168" style="zoom:25%;" />
+
+In case there is only one element in the list, and get empty.
+
+<img src="/Users/haochen/Desktop/Python%20Project/chqwer2.github.io/img/Typora/image-20220516085107276.png" alt="image-20220516085107276" style="zoom:25%;" />
+
+<img src="/Users/haochen/Desktop/Python%20Project/chqwer2.github.io/img/Typora/image-20220516085322547.png" alt="image-20220516085322547" style="zoom:25%;" />
+
+<img src="/Users/haochen/Desktop/Python%20Project/chqwer2.github.io/img/Typora/image-20220516085414737.png" alt="image-20220516085414737" style="zoom:25%;" />
+
+<img src="/Users/haochen/Desktop/Python%20Project/chqwer2.github.io/img/Typora/image-20220516085533381.png" alt="image-20220516085533381" style="zoom:25%;" />
+
+Fast AddAfter….
+
+
+
+### Doubly-Linked Lists
+
+There is a way the get the pushback cheap
+
+<img src="/Users/haochen/Desktop/Python%20Project/chqwer2.github.io/img/Typora/image-20220516085636492.png" alt="image-20220516085636492" style="zoom:25%;" />
+
+But we need to manage both pointer
+
+<img src="/Users/haochen/Desktop/Python%20Project/chqwer2.github.io/img/Typora/image-20220516085722600.png" alt="image-20220516085722600" style="zoom:25%;" />
+
+### Stack
+
+can be based on Array
+
+We can Push(Key), Top() and Pop().
+
+**Remember:** Check if **empty**.
+
+It can used to track the **Balanced Brackets**
+
+<img src="/Users/haochen/Desktop/Python%20Project/chqwer2.github.io/img/Typora/image-20220516090613494.png" alt="image-20220516090613494" style="zoom:25%;" />
+
+### Queue
+
+can be based on linked list (with max size)
+
+It is a FIFS or FIFO situation
+
+Enqueue (Key): Add key to collection.
+
+Dequeue (): Remove the least recent key, which means the head from the front, not the tail.
+
+Empty ()
+
+<img src="/Users/haochen/Desktop/Python%20Project/chqwer2.github.io/img/Typora/image-20220516091740057.png" alt="image-20220516091740057" style="zoom:25%;" />
+
+Or implement with array (wrap around)
+
+<img src="/Users/haochen/Desktop/Python%20Project/chqwer2.github.io/img/Typora/image-20220516091830473.png" alt="image-20220516091830473" style="zoom:25%;" />
 
 
 
@@ -71,7 +199,21 @@ Because of BS Invariant
 
 
 
+### Trees
+
+<img src="/Users/haochen/Desktop/Python%20Project/chqwer2.github.io/img/Typora/image-20220516094722992.png" alt="image-20220516094722992" style="zoom:25%;" />
+
+
+
+Post-order: we evaluate all children fully before evaluating a node itself.
+
 ### Binary Search Tree (BST)
+
+Root, Descendant and Sibling.
+
+**Level** = 1+ edge between itself and root
+
+**Height** = maximum depth of subtree node and leaf
 
 If we want to **insert** and **delete** elements efficiently, it will require using BST.
 
@@ -203,7 +345,23 @@ graph TD
 
 ![image-20220221230620315](https://chqwer2.github.io/img/Typora/image-20220221230620315.png)
 
+### Tree Traverse
 
+**Depth-first**: completely traverse one sub-tree
+
+Three can used a Stack:
+
+InOrder: left-node-right
+
+PreOrder: node-left-right
+
+PostOrder: left-right-node
+
+**Breath-first**: Traverse all the node at one level
+
+used a queue
+
+<img src="/Users/haochen/Desktop/Python%20Project/chqwer2.github.io/img/Typora/image-20220517133917727.png" alt="image-20220517133917727" style="zoom:25%;" />
 
 ## AVL Trees
 
@@ -747,7 +905,7 @@ Attempt exercises in Paragraph 39.
 
 But the Exercise Sheet 1 is higher priority. We will have a quiz on it!
 
-## Relational Algebra
+## Relation Algebra
 
 Note:  that **SQL** is based on what are called "multisets" or "bags" and so does  **allow duplicates** whereas **Relational Algebra** is based on sets and so does **NOT allow duplicates**. 
 
@@ -928,6 +1086,26 @@ Time complixity: $O(n)$ if tables are sorted by the join column, $O(n^2)$ otherw
 
 
 
+#### inner join
+
+<img src="/Users/haochen/Desktop/Python%20Project/chqwer2.github.io/img/Typora/image-20220512222656814.png" alt="image-20220512222656814" style="zoom:25%;" />
+
+O(n^2), expensive
+
+#### Otter Join
+
+<img src="/Users/haochen/Desktop/Python%20Project/chqwer2.github.io/img/Typora/image-20220512222804431.png" alt="image-20220512222804431" style="zoom:25%;" />
+
+Doing join efficient: sort the join column
+
+One is sorted, other is not. 
+
+<img src="/Users/haochen/Desktop/Python%20Project/chqwer2.github.io/img/Typora/image-20220512223038390.png" alt="image-20220512223038390" style="zoom:25%;" />
+
+![image-20220512223119428](/Users/haochen/Desktop/Python%20Project/chqwer2.github.io/img/Typora/image-20220512223119428.png)
+
+
+
 #### Theta Join $⋈_\theta$
 
 The Theta Join operator while additionally implementing a condition. 
@@ -1084,9 +1262,13 @@ The selection operator σ should be done as early as possible, because it reduce
 
 Split large table into small ones
 
+efficiency?
+
+Or neat structural table to read or more meaningful
+
 We use decomposition to produce tables in “**normal form**”, which do have unwanted “**functional dependencies**”.
 
-![image-20220313222716579](https://chqwer2.github.io/img/Typora/image-20220313222716579.png)
+<img src="https://chqwer2.github.io/img/Typora/image-20220313222716579.png" alt="image-20220313222716579" style="zoom:50%;" />
 
 Normally if we change the manger name, it will need to process multiple times,  but after decomposition we only need to do it once.
 
@@ -1112,9 +1294,149 @@ B is the functional dependency on A,
 >
 >then they have the same value for B.
 
+<img src="/Users/haochen/Desktop/Python%20Project/chqwer2.github.io/img/Typora/image-20220512223532760.png" alt="image-20220512223532760" style="zoom:50%;" />
+
+A depends on B depends on C, so we don’t need to clarify A depends on C because it is clear in the relation.
+
+<img src="/Users/haochen/Desktop/Python%20Project/chqwer2.github.io/img/Typora/image-20220512223926368.png" alt="image-20220512223926368" style="zoom:30%;" />
+
+Transitivity
+
+<img src="/Users/haochen/Desktop/Python%20Project/chqwer2.github.io/img/Typora/image-20220512225125078.png" alt="image-20220512225125078" style="zoom:33%;" />
+
+Closure algo
+
+<img src="/Users/haochen/Desktop/Python%20Project/chqwer2.github.io/img/Typora/image-20220512225507189.png" alt="image-20220512225507189" style="zoom:50%;" />
+
+### Exercise 59 and 60 in handout.
+
+### Candidate Keys
+
+<img src="/Users/haochen/Desktop/Python%20Project/chqwer2.github.io/img/Typora/image-20220513100136744.png" alt="image-20220513100136744" style="zoom:33%;" />
+
+Here, *empID* is a candidate key that determine any other attribute in the table
+
+<img src="/Users/haochen/Desktop/Python%20Project/chqwer2.github.io/img/Typora/image-20220513100226348.png" alt="image-20220513100226348" style="zoom:25%;" />
+
+#### Unwanted Key
+
+**Redundancy**
+
+<img src="/Users/haochen/Desktop/Python%20Project/chqwer2.github.io/img/Typora/image-20220513100554030.png" alt="image-20220513100554030" style="zoom:25%;" />
+
+<img src="/Users/haochen/Desktop/Python%20Project/chqwer2.github.io/img/Typora/image-20220513100507463.png" alt="image-20220513100507463" style="zoom:25%;" />
+
+Potential problem
+
+<img src="/Users/haochen/Desktop/Python%20Project/chqwer2.github.io/img/Typora/image-20220513100624694.png" alt="image-20220513100624694" style="zoom:25%;" />
+
+**Anomalies**
+
+<img src="/Users/haochen/Desktop/Python%20Project/chqwer2.github.io/img/Typora/image-20220513100850447.png" alt="image-20220513100850447" style="zoom:25%;" />
+
+<img src="/Users/haochen/Desktop/Python%20Project/chqwer2.github.io/img/Typora/image-20220513101011964.png" alt="image-20220513101011964" style="zoom:25%;" />
+
+Delete
+
+<img src="/Users/haochen/Desktop/Python%20Project/chqwer2.github.io/img/Typora/image-20220513101338450.png" alt="image-20220513101338450" style="zoom:25%;" />
+
+Aggregate, See paragraph 66
+
+<img src="/Users/haochen/Desktop/Python%20Project/chqwer2.github.io/img/Typora/image-20220513101609888.png" alt="image-20220513101609888" style="zoom:25%;" />
+
+Many lecturers are teaching same course this year..
+
+<img src="/Users/haochen/Desktop/Python%20Project/chqwer2.github.io/img/Typora/image-20220513101645392.png" alt="image-20220513101645392" style="zoom:50%;" />
+
+### BCNF
+
+has not unwanted dependency 
+
+<img src="/Users/haochen/Desktop/Python%20Project/chqwer2.github.io/img/Typora/image-20220513102326642.png" alt="image-20220513102326642" style="zoom:33%;" />
+
+Decompose them
+
+<img src="/Users/haochen/Desktop/Python%20Project/chqwer2.github.io/img/Typora/image-20220513102604289.png" alt="image-20220513102604289" style="zoom:25%;" />
+
+If we join this two sub-tables, we will get the origin table (*losslessness*)
+
+But when we get new record?
+
+<img src="/Users/haochen/Desktop/Python%20Project/chqwer2.github.io/img/Typora/image-20220513103049304.png" alt="image-20220513103049304" style="zoom:25%;" />
+
+We cannot have different value $W$ accociated with $U$.
+
+<img src="/Users/haochen/Desktop/Python%20Project/chqwer2.github.io/img/Typora/image-20220513103335525.png" alt="image-20220513103335525" style="zoom:25%;" />
+
+How to get BCNF?
+
+<img src="/Users/haochen/Desktop/Python%20Project/chqwer2.github.io/img/Typora/image-20220513103649455.png" alt="image-20220513103649455" style="zoom:25%;" />
+
+ACID
+
+<img src="/Users/haochen/Desktop/Python%20Project/chqwer2.github.io/img/Typora/image-20220513130744030.png" alt="image-20220513130744030" style="zoom: 25%;" />
+
+### Database Transactions
+
+<img src="/Users/haochen/Desktop/Python%20Project/chqwer2.github.io/img/Typora/image-20220513123857826.png" alt="image-20220513123857826" style="zoom:25%;" />
+
+<img src="/Users/haochen/Desktop/Python%20Project/chqwer2.github.io/img/Typora/image-20220513124129932.png" alt="image-20220513124129932" style="zoom:25%;" />
+
+<img src="/Users/haochen/Desktop/Python%20Project/chqwer2.github.io/img/Typora/image-20220513130138688.png" alt="image-20220513130138688" style="zoom:25%;" />
+
+SET TRANSACTION **READ ONLY**
+
+BEGIN TRANSACTION
+
+•A read-only transaction can be executed in parallel with other **read-only transactions** without any worry of inconsistency.
+
+•But they will not be executed in parallel with **read-write transactions** for the same data.
+
+•Use this, for example, if you want to tell the user about the **availability** of all the window seats.
+
+**READ WRITE** is default, The transaction is allowed to do both select queries and updates. 
 
 
 
+**Dirty**
+
+SET TRANSACTION READ WRITE
+    ISOLATION LEVEL READ UNCOMMITTED
+BEGIN TRANSACTION
+
+“Dirty” data means data that is currently being modified by another transaction, but not yet committed.
+
+If the other transactions **aborts** instead of committing, the data in our possession would have become **invalid**.
+
+<img src="/Users/haochen/Desktop/Python%20Project/chqwer2.github.io/img/Typora/image-20220513130608147.png" alt="image-20220513130608147" style="zoom: 25%;" />
+
+<img src="/Users/haochen/Desktop/Python%20Project/chqwer2.github.io/img/Typora/image-20220513130709312.png" alt="image-20220513130709312" style="zoom: 25%;" />
+
+
+
+
+
+### Serializability
+
+<img src="/Users/haochen/Desktop/Python%20Project/chqwer2.github.io/img/Typora/image-20220513124354976.png" alt="image-20220513124354976" style="zoom: 33%;" />
+
+•Then the first client’s booking would **get overwritten**, and that customer would have lost their seat even though they have a confirmation that their seat was booked!
+
+•The solution is to package the two steps **into a single transaction**.
+
+•Then the server ensures that the second client gets **delayed** if it is trying to book the same seat as the first client.
+
+### Atomicity
+
+<img src="/Users/haochen/Desktop/Python%20Project/chqwer2.github.io/img/Typora/image-20220513125931182.png" alt="image-20220513125931182" style="zoom:25%;" />
+
+
+
+
+
+
+
+### Some SQL example
 
 querying the database
 
@@ -1159,8 +1481,6 @@ CREATE TABLE airplane (
 
 
 
-
-
 ```sql
 CREATE TABLE belongto (
     	bid SERIAL PRIMARY KEY  UNIQUE
@@ -1176,8 +1496,6 @@ CREATE TABLE belongto (
 ```
 
 
-
-### Some SQL example
 
 Create Table
 
@@ -1297,7 +1615,24 @@ Please record these assumptions in your answer.
 
 [Multiplicities](#Multiplicities)
 
+### Design theory of relational databases
+
+### Physical design and concurrency
+
+
+
+
+
+
+
 
 
 ### 
 
+# Exam
+
+Focus on data algorithm and analysis
+
+
+
+1.How long? What can it do? Variables?

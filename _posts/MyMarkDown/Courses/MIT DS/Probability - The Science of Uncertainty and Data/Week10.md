@@ -1,4 +1,4 @@
-# Random / Stochastic Process
+# pRandom / Stochastic Process
 
 ### The Bernoulli Process
 
@@ -192,3 +192,21 @@ https://learning.edx.org/course/course-v1:MITx+6.431x+1T2022/block-v1:MITx+6.431
 ![image-20220428144601090](/Users/haochen/Desktop/Python%20Project/chqwer2.github.io/img/Typora/image-20220428144601090.png)
 
 ![image-20220428150516109](/Users/haochen/Desktop/Python%20Project/chqwer2.github.io/img/Typora/image-20220428150516109.png)
+
+# Poisson process practice
+
+![image-20220508214232248](/Users/haochen/Desktop/Python%20Project/chqwer2.github.io/img/Typora/image-20220508214232248.png)
+
+replace with new A/B bulb.
+
+<img src="/Users/haochen/Desktop/Python%20Project/chqwer2.github.io/img/Typora/image-20220508214610424.png" alt="image-20220508214610424" style="zoom:50%;" />
+
+<img src="/Users/haochen/Desktop/Python%20Project/chqwer2.github.io/img/Typora/image-20220508214904712.png" alt="image-20220508214904712" style="zoom:50%;" />
+
+e,f passed
+
+![image-20220508215704525](/Users/haochen/Desktop/Python%20Project/chqwer2.github.io/img/Typora/image-20220508215704525.png)
+
+<img src="/Users/haochen/Desktop/Python%20Project/chqwer2.github.io/img/Typora/image-20220508220336367.png" alt="image-20220508220336367" style="zoom:50%;" />
+
+![image-20220508220451851](/Users/haochen/Desktop/Python%20Project/chqwer2.github.io/img/Typora/image-20220508220451851.png)
