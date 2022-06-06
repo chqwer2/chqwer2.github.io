@@ -36,6 +36,10 @@ The last step is iterate inside the two subarray.
 
 Also D&C algo.
 
+<img src="/Users/haochen/Desktop/Python%20Project/chqwer2.github.io/img/Typora/image-20220524234046040.png" alt="image-20220524234046040" style="zoom:33%;" />
+
+https://www.youtube.com/watch?v=PgBzjlCcFvc
+
 **Step 1** – Select an element from an array, called **Pivot**.
 
 **Step 2** – Partition the array by moving all elements that are **smaller than the Pivot** to the left side of the Pivot, and all elements that are **bigger than** the Pivot to the right side of the Pivot.
@@ -58,13 +62,15 @@ R try to find the first smaller than P
 
 And then apply it to the two sub-array.
 
+https://en.wikipedia.org/wiki/Quicksort
+
 **Time Complexity**:
 
- The pivot partition process will segregate the larger and smaller values within the array. So that we reduce the sorting of a problem of size n to two problems of size n/2 (approximately). 
+The pivot partition process will segregate the larger and smaller values within the array. So that we reduce the sorting of a problem of size n to two problems of size n/2 (approximately). 
 
-  On average: O(nlog(n))
+On average: O(nlog(n))
 
-  Worst case: O(n^2 ) e.g. sort a nearly sorted array and use the first or last element as the pivot.
+Worst case: O(n^2 ) e.g. sort a nearly sorted array and use the first or last element as the pivot.
 
 
 
@@ -82,7 +88,7 @@ And then apply it to the two sub-array.
 
 ### Heapsort
 
-Comparison based algo, not D&C algo.
+Comparison based algo, **not D&C algo**.
 
 <img src="/Users/haochen/Desktop/Python%20Project/chqwer2.github.io/img/Typora/image-20220328222414051.png" alt="image-20220328222414051" style="zoom:25%;" />
 
@@ -124,7 +130,7 @@ The value of its leaf within is **either all smaller or larger** than its parent
 
 From a normal tree to heap tree…
 
-Step 1: Find the “last” parent node in the tree and its children. (Means index in order of 5,4,3,2,1…)
+Step 1: Find the **“last” parent node** in the tree and its children. (Means index in order of 5,4,3,2,1…)
 
 Step 2: Within this subtree, find the largest number and swap it with the root node within this subtree (To make it heap). Then do this again on the swapped node.
 

@@ -194,3 +194,5 @@ because the second eigenvalue (0.618) to the power is extremely **small**…
 
 
 
+
+

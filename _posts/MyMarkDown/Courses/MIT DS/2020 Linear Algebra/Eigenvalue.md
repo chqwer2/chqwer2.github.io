@@ -56,5 +56,6 @@ This example only has one eigenvector.
 
 
 
+### Find the eigenvector
 
-
+![image-20220605161834995](/Users/haochen/Desktop/Python%20Project/chqwer2.github.io/img/Typora/image-20220605161834995.png)

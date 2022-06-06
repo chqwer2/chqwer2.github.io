@@ -63,7 +63,7 @@ in percentage
 
 Expected: 1/2
 
-So use Maximal Load Factor (Only $\lambda$ will be used )
+So use **Maximal Load Factor** (Only $\lambda$ will be used )
 
 So the time used for search will be faster
 
@@ -150,3 +150,24 @@ Amortized time is **the way  to express the time complexity when an algorithm ha
 <img src="/Users/haochen/Desktop/Python%20Project/chqwer2.github.io/img/Typora/image-20220512221518677.png" alt="image-20220512221518677" style="zoom:50%;" />
 
 Hash tables need more space (need to keep factor low)
+
+
+
+### What can go wrong?
+
+ Not terminate" is often described as go into an infinite loop."
+
+
+i. A lookup operation may not terminate.
+ii. A lookup operation may not find a value that is actually in the table
+
+
+
+
+
+**Dijkstra’s algorithm** for computing lowest-cost paths from a single source node is always
+correct for graphs without negative-cost edges. If a graph has negative-cost edges, the algorithm might
+or might not give the right answer.
+
+**the algorithm found the shortest path to it**, and will never have to develop this node again 
+

@@ -23,12 +23,6 @@ tags:
 
 # Data Structures, Algorithms, and Databases
 
-Recommend Books:
-
-1. [Algorithms, 4th Edition by Robert Sedgewick and Kevin Wayne (princeton.edu)](https://algs4.cs.princeton.edu/home/)
-2. [Data Structures and Algorithm Analysis (vt.edu)](https://people.cs.vt.edu/~shaffer/Book/)
-3. [Book (williams.edu)](http://dept.cs.williams.edu/~bailey/JavaStructures/Book.html)
-
 - **Kinds:** Array, List, Trees, Tables, Graphs
 - **Algorithms:** Sort, Insert, Delete, Find
 - **Efficiency:** How fast? How mush memory?
@@ -36,13 +30,13 @@ Recommend Books:
 - **Specification:** What we want the algo to do?
   - Reason about its con-time complexity and space complexity
 
-Preconditions is the condition that is **assumed to hold** at the beginning of the program.
+**Preconditions** is the condition that is **assumed to hold** at the beginning of the program.
 
-Post-conditions is the condition that is guarenteed to hold at the end of the program.
+**Post-conditions** is the condition that is **guarenteed** to hold at the end of the program.
 
 **Invariants** is the condition that is **expected to hold** at the beginning of each **loop** iteration
 
-Assertions is the condition that is **expected to hold** at the point where it is placed
+**Assertions** is the condition that is **expected to hold** at the point where it is placed
 
 
 
@@ -213,7 +207,7 @@ Root, Descendant and Sibling.
 
 **Level** = 1+ edge between itself and root
 
-**Height** = maximum depth of subtree node and leaf
+**Height** = maximum depth of **subtree node** and leaf
 
 If we want to **insert** and **delete** elements efficiently, it will require using BST.
 
@@ -224,7 +218,13 @@ If we want to **insert** and **delete** elements efficiently, it will require us
   - Delete require the left $z$ portion of the array to shift
   - Insert require the array to right $x$ portion to shift right
 
-The solution will be: ***Sorted Tree***.
+**Sorted list**:
+
+<img src="/Users/haochen/Desktop/Python%20Project/chqwer2.github.io/img/Typora/image-20220521154417723.png" alt="image-20220521154417723" style="zoom:33%;" />
+
+TCarry out logical design for the model, representing the design with relational
+schemas for tables. Annotate the schemas with primary keys and the possibility
+of null attributes.he solution will be: ***Sorted Tree***.
 
 How to build it?
 
@@ -273,9 +273,9 @@ n(\Box) = 0,\ h(\Box) = 0\\
 n(\text F) = 1 + n(l)+n(r)\\
 h(\text F) = 1 + \max(\ h(l),h(r)\ )
 $$
-**Perfectly balanced tree** **(PBT)**
+**Perfectly Balanced Tree** **(PBT)**
 
-The right the left tree of any node have the same height
+The right and the left tree of any node have the same height
 
 ```mermaid
 graph TD
@@ -300,6 +300,24 @@ $$
 The number of nodes of whole PBT is $2^{\text(height)}-1$, of each layer is $2^{\text(height-1)}$.
 
 If the tree is nearly balanced, the worst case of searching is $O(log\ n)$.
+
+**Complete Binary Tree**
+
+Filled from left to right.
+
+<img src="/Users/haochen/Desktop/Python%20Project/chqwer2.github.io/img/Typora/image-20220521160521844.png" alt="image-20220521160521844" style="zoom:33%;" />
+
+<img src="/Users/haochen/Desktop/Python%20Project/chqwer2.github.io/img/Typora/image-20220521160600737.png" alt="image-20220521160600737" style="zoom:25%;" />
+
+
+
+**ADV:** linear search time, and can be stored as array
+
+<img src="/Users/haochen/Desktop/Python%20Project/chqwer2.github.io/img/Typora/image-20220521160929973.png" alt="image-20220521160929973" style="zoom:25%;" />
+
+We need to ensure the tree is complete.
+
+
 
 ### Insert in BST
 
@@ -328,7 +346,7 @@ $$
 - Case 2: Delete a node with only one side.
   - We move up the other subtree
 - Case 3: Delete a node with both sides.
-  - We replace the vacant node by the *left-most* node or *smallest* node of the right subtree.
+  - We replace the vacant node by the *left-most* node or ***smallest* node of the right subtree**.
 
 ```mermaid
 graph TD
@@ -363,6 +381,45 @@ used a queue
 
 <img src="/Users/haochen/Desktop/Python%20Project/chqwer2.github.io/img/Typora/image-20220517133917727.png" alt="image-20220517133917727" style="zoom:25%;" />
 
+### Heap
+
+<img src="/Users/haochen/Desktop/Python%20Project/chqwer2.github.io/img/Typora/image-20220521154538919.png" alt="image-20220521154538919" style="zoom:25%;" />
+
+### MinHeap, MaxHeap and Binary Heap
+
+<img src="/Users/haochen/Desktop/Python%20Project/chqwer2.github.io/img/Typora/image-20220521154743098.png" alt="image-20220521154743098" style="zoom:33%;" />
+
+**Shift down**: swap parent node with larger child
+
+<img src="/Users/haochen/Desktop/Python%20Project/chqwer2.github.io/img/Typora/image-20220521155700286.png" alt="image-20220521155700286" style="zoom:25%;" />
+
+How to remove, boiled down to 2 steps:
+
+1. Change the root priority to $\infty$
+2. Heap the tree, move it to the root node
+3. Replace the root node with the last leaf (7 in this case)
+4. Heapify
+
+Time complexity $O(H)$
+
+But insert will destroy the balance.
+
+
+
+#### Heap Sort
+
+Sort using priority queue
+
+<img src="/Users/haochen/Desktop/Python%20Project/chqwer2.github.io/img/Typora/image-20220521161817576.png" alt="image-20220521161817576" style="zoom:25%;" />
+
+Build heap from the last sub tree to the root.
+
+<img src="/Users/haochen/Desktop/Python%20Project/chqwer2.github.io/img/Typora/image-20220521162417545.png" alt="image-20220521162417545" style="zoom:25%;" />
+
+
+
+
+
 ## AVL Trees
 
 Adelson-Velski and Lzudis Trees or called **self-balancing Binary Search Tree**
@@ -384,7 +441,7 @@ The worst case of BST is $O(n)$, but AVL remain still $O(log\ n)$.
 - Assume additional conditions to keep the trees balanced.
 - Define some concepts before we can state these conditions.
 
-**Concept #1** Height of the node 
+**Concept #1** **Height of the node** 
 
 Length of the *longest* path from that node to the leaf node
 
@@ -392,7 +449,7 @@ Equal to the height of the subtree at that node.
 
 **Concept #2** **Balance at the node**
 
-(Height of left subtree) - (Height of right subtree) 
+**(Height of left subtree) - (Height of right subtree)** 
 
 perfectly balanced, that is, the balance of each node is 0.
 
@@ -477,15 +534,15 @@ Four Result Cases:
 
 ![image-20220222100825348](https://chqwer2.github.io/img/Typora/image-20220222100825348.png)
 
-AVL insert Case LL:
+AVL insert Case LL: **Right Rotation**
 
 ![image-20220222101047920](https://chqwer2.github.io/img/Typora/image-20220222101047920.png)
 
-AVL insert Case RR:
+AVL insert Case RR: **Left Rotation**
 
 ![image-20220222101124897](https://chqwer2.github.io/img/Typora/image-20220222101124897.png)
 
-AVL insert Case LR:
+AVL insert Case LR: 
 
 ![image-20220222101148103](https://chqwer2.github.io/img/Typora/image-20220222101148103.png)
 
@@ -497,6 +554,16 @@ AVL insert Case RL:
 
 - Delete using the BST algo
 - Rebalance as necessary as before.
+
+Replace the largest (=right-most) node of the left
+subtree, or by the smallest (=left-most) node of the right subtree, deleting the
+replacing node.
+
+AVL trees have height of O(log n) even in the worst case.
+
+Each Rotation takes a constant time. 
+
+So all **rebalancing operations** can be done in O(logn) time as well
 
 ### Fibonacci Trees
 
@@ -728,7 +795,7 @@ Three possible ways:
 - Keep B and C, and omit A (Only subclasses)
 
   - respect to superclass table which is not stored 
-  - some attributes are duplicated
+  - some attributes are **duplicated**
   - only possible if the coverage is **total**, and overlap is **exclusive** (redundancy).
 
   
@@ -848,13 +915,11 @@ The DBMS ensures that, whenever we insert a record with a foreign key value, tha
 
 They allow us to **detect errors** and make sure that the data in the system is consistent and valid.
 
-- **Field constraints** – constraint on the value of a field (e.g., NOT NULL)
+- **Field constraints** – constraint on the value of a field (e.g., **NOT NULL**)
 - **Record constraints** – constraints on an entire record (e.g., you might check that the due_date is greater than the borrow_date)
-- **Table constraints** – constraints on the entire table (e.g., PRIMARY KEY or UNIQUE).
-- **Database constraints** – constraints that span multiple tables (e.g., REFERENCES)
+- **Table constraints** – constraints on the entire table (e.g., **PRIMARY KEY** or **UNIQUE**).
+- **Database constraints** – constraints that span multiple tables (e.g., **REFERENCES**)
 - **referential integrity constraint**
-
-
 
 
 
@@ -871,7 +936,7 @@ Think of what the effect of these declarations would be when a library member qu
 
 What should happen to a borrow record that might still be referencing that member?
 
-### 
+
 
 
 
@@ -891,11 +956,11 @@ We need to:
 
 **Which of them are really needed?**
 
-<img src="https://chqwer2.github.io/img/Typora/image-20220313174827172.png" alt="image-20220313174827172" style="zoom:50%;" />
+<img src="https://chqwer2.github.io/img/Typora/image-20220313174827172.png" alt="image-20220313174827172" style="zoom:70%;" />
 
 **Identifying relationship**
 
-![image-20220313175522768](https://chqwer2.github.io/img/Typora/image-20220313175522768.png)
+<img src="https://chqwer2.github.io/img/Typora/image-20220313175522768.png" alt="image-20220313175522768" style="zoom:70%;" />
 
 **Which of them are really needed?**
 
@@ -1092,7 +1157,7 @@ Time complixity: $O(n)$ if tables are sorted by the join column, $O(n^2)$ otherw
 
 O(n^2), expensive
 
-#### Otter Join
+#### Outer Join
 
 <img src="/Users/haochen/Desktop/Python%20Project/chqwer2.github.io/img/Typora/image-20220512222804431.png" alt="image-20220512222804431" style="zoom:25%;" />
 
@@ -1218,6 +1283,8 @@ $$
 
 <img src="https://chqwer2.github.io/img/Typora/image-20220313220837487.png" alt="image-20220313220837487" style="zoom:67%;" />
 
+### Self Join
+
 **Self Join** will get same table back, but with **renaming**
 
 <img src="https://chqwer2.github.io/img/Typora/image-20220313220936681.png" alt="image-20220313220936681" style="zoom:67%;" />
@@ -1232,7 +1299,7 @@ $$
 
 Will be efficient if tables are sorted on the **primary key**.
 
-#### Sortedness in databases
+### Sortedness in databases
 
 - To achieve sorted order, database tables are stored in a **search tree data** structure. (**B-tree**)
 - Data records are stored in the **leaf nodes**. The internal nodes only have **search keys** for navigation.
@@ -1368,7 +1435,9 @@ We cannot have different value $W$ accociated with $U$.
 
 <img src="/Users/haochen/Desktop/Python%20Project/chqwer2.github.io/img/Typora/image-20220513103335525.png" alt="image-20220513103335525" style="zoom:25%;" />
 
-How to get BCNF?
+### BCNF
+
+How to get **BCNF**?
 
 <img src="/Users/haochen/Desktop/Python%20Project/chqwer2.github.io/img/Typora/image-20220513103649455.png" alt="image-20220513103649455" style="zoom:25%;" />
 

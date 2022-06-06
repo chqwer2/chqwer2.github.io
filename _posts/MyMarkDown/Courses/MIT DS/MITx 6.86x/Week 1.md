@@ -46,3 +46,18 @@ np.vectorize() turn function in to array input
 
 **step into**: go into the sub-function
 
+<img src="/Users/haochen/Desktop/Python%20Project/chqwer2.github.io/img/Typora/image-20220519193651559.png" alt="image-20220519193651559" style="zoom:200%;" />
+
+
+
+### Decision Boundry
+
+![image-20220519200029905](/Users/haochen/Desktop/Python%20Project/chqwer2.github.io/img/Typora/image-20220519200029905.png)
+
+### Hinge Loss
+
+Used to maximize the boundary margins between classes
+
+<img src="/Users/haochen/Desktop/Python%20Project/chqwer2.github.io/img/Typora/image-20220522145137298.png" alt="image-20220522145137298" style="zoom:33%;" />
+
+### 
